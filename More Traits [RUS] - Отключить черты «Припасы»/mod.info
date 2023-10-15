@@ -1,6 +1,0 @@
-name=More Traits [RUS] - Отключить черты «Припасы»
-poster=generic.png
-versionMin=41.0
-description= Если этот сабмод включен, черты:«Припасы» будут отключены. Чтобы это работало, должны быть включён More Traits [RUS].
-id=ToadTraitsDisablePrepared
-icon=icon.png

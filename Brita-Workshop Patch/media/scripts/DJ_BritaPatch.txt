@@ -1,0 +1,69 @@
+ module DJ
+ {
+    imports
+    {
+        Base,
+		TW,
+    }
+
+    recipe Disassamble Gun
+	{
+		10855_Silver/A400/AA12/AAC_Honey/AAC_Honey_Fold/AAC_HoneySD/AAC_HoneySD_Fold/ADAR/AK103/AK12/AK12_Fold/AK12_New/AK308/AK47/AK5C/AK5C_Fold/AK74/AK74_Alpha/AK74_Alpha_Fold/AK74_Custom/AKM/AKM_Custom/AKMS_Fold/AKMS_Stock/AKS74/AKS74_Fold/AKS74U/AKS74U_Fold/American180/AMT1911/AMT1911_Long/APS/APS_Fold/AR18/AR18_Fold/AR7/Ash/AssaultRifle/AssaultRifle2/ASVAL/ASVAL_Fold/AUG/AUG9/AUTO_5/Automag/B93R/BAR/BAR_Monitor/Benjamin_M397/Bersa85F/BFG50/BOAR/BodyGuard380/BT380_Fold/BT380_Stock/BT9_Fold/BT9_Stock/Buckmark/Buckmark_Carbine/Buckmark_Long/Bush_AR15_MOE/Bush_XM15/Bush_XM15_Custom/Calico_22LR/Calico_M900_Fold/Calico_M900_Stock/Calico_M950_Pistol/CAR15_Survival/CAR15SMG/Carbon15_97/CAWS/CheyTac50/CheyTac50_Fold/Coachgun/Coachgun_Pistol/Coachgun_Sawed/Colt_Commander/Colt_Kimber/Colt_Navy_1851/Colt_Service38/Colt_Service45/Colt1855/Colt1903/Colt1911/ColtM16/Commando/CP33/Cricket_22/CZ75/CZ97B/DAO12/DAO12_Fold/DEagle/DEagle_Long/DoubleBarrelShotgun/DoubleBarrelShotgunSawnoff/DR_200/DT11/DT11_Pistol/DT11_Sawed/EDM96/EVO_Fold/EVO_Stock/EX41_HE/EX41_HE_FIRE/EX41_INC/EX41_INC_FIRE/F2000/FAL/FAL_PARA_Fold/FAL_PARA_Stock/FAMAS/FAMAS_Felin/FAMAS_G2/Federal_HE/Federal_HE_FIRE/Federal_INC/Federal_INC_FIRE/FN_57/FN_57_MK2/FN_FNC/FN_FNC_Fold/FN_P90/FN_PS90/G11K3/G17/G18/G21/G21LMG/G28/G3/G33/G34/G36/G36_Fold/G36C/G36C_Fold/G36KV/G36KV_Fold/G42/Galil/Galil_Fold/Galil_Sniper/Galil_Sniper_Fold/GAU17/GAU19/Gepard_M6/GM94_HE/GM94_HE_FIRE/GM94_INC/GM94_INC_FIRE/GP100_2/GP100_2_357/GP100_4/GP100_4_357/GP100_6/GP100_6_357/H416/Harris50/HK_MK23/HK_USP/HK_USP_Match/HK4_22/HK4_380/HuntingRifle/Ithaca_M37/Jatimatic/Jatimatic_Stock/Judge_410g/Judge_45LC/Judge513_410g/Judge513_45LC/Judge513_Long_410g/Judge513_Long_45LC/JW3_TTI_MPX/K1_1/K11/K11_HE/K11_INC/K12/K14/K1DEV/K2_1/K2_203/K2_C1/K2C1_PH/K3LMG/K5/K6S/K6S_357/K7_Fold/K7_Stock/KG9/KRISS_Fold/KRISS_Stock/KRISS22_CRB_Fold/KRISS22_CRB_Stock/KRISS22_MK11_Fold/KRISS22_MK11_Stock/KRISS9_Fold/KRISS9_MLOK_Fold/KRISS9_MLOK_Stock/KRISS9_Stock/KS23/KS23_S_Pistol/KSG/KSG25/L22/L85/L85A2/L86/L96/LCP380/Luger/Luger_Carbine/Luger_WW1/LVOA_C/M1/M1014/M1014_Fold/M1014_Stock/M1014_Wick/M1208/M1212/M1216/M14/M14EBR/M16A1/M16A2/M16A3/M16Tape/M16Wood/M1887/M1887_Sawed/M1897/M1903/M1911_Carbine/M1936/M1Carbine/M240/M249/M249E3/M249E3_Fold/M29_44/M29_44Carbine/M2A1/M2A1_FIRE/M2Carbine/M2Hyde/M32_HE/M32_HE_FIRE/M32_INC/M32_INC_FIRE/M4/M40/M40A1/M40A2/M40A3/M4506/M46_Mauser/M4A1/M5238/M5906/M60/M635/M635S/M635SD/M72_LAW/M72_LAW_FIRE/M723/M82/M85_Fold/M85_Stock/M870/M870_Breaching_Pistol/M870_CQB/M870_CQB_Fold/M870_Express/M870_MCS/M870_Police/M870_Wingmaster/M9/M9A3/MAC10_Fold/MAC10_Stock/Makarov/Makarov380/Marlin_1894/Marlin_1894_357/Marlin_M70/MAS36/MAS44/MAS49/MCX_Socom/MCX_Spear/MCX_Virtus/MCX_VirtusPatrol/MD65_Fold/MD65_Stock/MG42/MINI14/MINI14_Fold/MINI14_Stock/MINI14_T/MK18/MK43/MK47/Model50/Model55_Fold/Model55_Stock/Mosin/MosinObrez_Pistol/Moss500_20/MP133/MP133S_Pistol/MP45/MP5_Fixed/MP5_Fold/MP5_Stock/MP5SD6_Fixed/MP5SD6_Fold/MP5SD6_Stock/MP7/MP7_Stock/MP9/MPA57DMG/MPA57DMG_Carbine/MPA57DMG_Carbine_Fold/MSG90/Musk/Musk_FIRE/NEF_Handi_357/NEF_Handi_357_Sawed/NEF_Handi_38/NEF_Handi_38_Sawed/NEF_Handi_410/NEF_Handi_410_Sawed/NEF_Handi_45LC/NEF_Handi_45LC_Sawed/Origin/OSV_96/OTS_03_SVU/Ots14_1A_01/Ots14_1A_02/Ots14_4A/Ots14_4A_01/Ots14_4A_03/Ots14_4A_GL/Ots14_4A_GL_HE/Ots14_4A_GL_INC/P220/P226/PARA1911/PB/Pistol/Pistol2/Pistol3/PKM/PPK/PSG1/PULP_1911/QBZ_95/R11_87/Revolver/Revolver_357/Revolver_Long/Revolver_Long_357/Revolver_Short/Revolver_Short_357/Rhino_60DS/Rhino_60DS_357/ROYAL_SXS/RPD/RPG_7/RPG_7_FIRE/RPK16/RPK74/Ruger_1022/Ruger_MK4/Ruger_No1_3006/Ruger_No1_308/Ruger_No1_4570/RWS_M34/Saiga12/Saiga12_Long/Saiga12_Tromix/Sako85/Savage12/SCAR20/SCARH/SCARL/SCARSC_Fold/SCARSC_Stock/Shorty_Pistol/Shotgun/ShotgunSawnoff/SIX12/SIX12SD/SKS/SKS_A26/SKS_Bayo/SKS_PARA/SKS_PARA_Bayo/SKS30/SKS30_A26/SKS30_Bayo/SKS30_PARA/SKS30_PARA_Bayo/SPAS_15/SPAS12_Fixed/SPAS12_Fold/SPAS12_Stock/SS2000/SS2000_FIRE/STAR_Z45_Fixed/STAR_Z45_Fold/STAR_Z45_Stock/Sten/Sten_MK2/Sten_MK2SD/SUB2000/SV_98/SVD/SVDK/SW_327/SW_327_357/SW_M500/TAC15/TAC50/Taurus856/Tavor/Terminator/Terminator_Fold/Thompson/Thompson_1928/Thompson_Center_3006/Thompson_Center_308/Thompson_Center_4570/TOZ106/TOZ106_Fold/TOZ194_Pistol/TR1_UltraLight/Triple_Crown/TXS_804_410g/TXS_804_45LC/Type20/Type38/Type64/Type89/Type89_Fold/Type99/UmarexSS/UMP45_Fold/UMP45_Stock/UMP9_Fold/UMP9_Stock/USAS_12/UTS15/UZI/UZI_Fold/UZI_Micro/UZI_Micro_Fold/UZI_Wood/VarmintRifle/Viper/VIPER_G2/VP70/VP70_Stock/VSS/VSSK/Vz58/Vz58_Fold/Vz58_Mini_Fold/Vz58_Mini_Stock/Vz58_Stock/Vz61_Fixed/Vz61_Fold/Vz61_Stock/WA2000/WD_Flame/WD_Flame_FIRE/Win_1894/Win_1895/Winchester1866/Winchester1873/Winchester1903/XD4/XD9/XM117/XM214/XM8/XM8Compact_Pistol/XM8LMG/ZIP22,
+        keep TW.MetalWorkbench,
+
+		NoBrokenItems			: False,
+		AllowDestroyedItem      : true,
+		Result 					: GunParts,
+		Sound 					: GunDissasembly,
+		Time 					: 200,
+		Category 				: Scrapping,
+		SkillRequired 			: MetalWelding=4,
+		OnCreate                : DeconstructGun_OnCreate,
+		OnGiveXP 				: Give10MWXP,
+		AnimNode 				: Disassemble,
+		CanBeDoneFromFloor      : TRUE,
+		Prop1 					: Screwdriver,
+		Prop2 					: Source=1,
+		NeedToBeLearn			: true,
+	}
+
+
+
+    recipe Disassemble Gun Attachment
+    {
+    	
+		Ammobelt/Barrel_3006/Barrel_308/Barrel_357/Barrel_357_Short/Barrel_4570/Barrel_45LC/Barrel_45LC_Short/Bayonet_AK/Bayonet_M1917/Bayonet_M4/Bayonet_Type30/Bipod/Carrier_12g/Choke_Full/Choke_Full_Dbl/Compensator/CP33_17MagBase/Drum_Mag/Extended_Mag/ForeGrip/GhostRing/Grip_BCM/Grip_Fold/Grip_Magpul/Grip_MLOK/Grip_TG/Heavy/Laser_DVAL/Laser_Green/Laser_Light_Small_LAM/Laser_PEQ15/Laser_Red/Launcher/Lead00Buck_Pack/Lead30_Pack/Lead38_Pack/Lead44_Pack/Lead45_Pack/Lead50_Pack/Lead545_Pack/Lead556_Pack/Lead57_Pack/Lead9_Pack/Lee_LoadMaster/Light_Large/Light_Medium_SureFire_M952V/Light_Small/Lyman_TMag/Lyman49th_Manual/MuzzleBrake/MuzzleBrake_DK1/MuzzleBrake_DK2/Oil_Filter/Pad/PrimerLG_Pack/PrimerSG_Pack/PrimerSM_Pack/Scope_1-4x/Scope_12xPSO/Scope_20x/Scope_4xPSO/Scope_Trijicon_1-6x/Sight_1P63/Sight_1P87/Sight_3xEOTech/Sight_4xACOG/Sight_4xACOG_ECO/Sight_6xELCAN/Sight_6xHensoldt/Sight_ACRO/Sight_Aimpoint/Sight_Aimpoint_Dot/Sight_ATACR7_F1_Scope/Sight_Brownells/Sight_C79/Sight_EOTech/Sight_Fiber_Shotgun/Sight_G28_Scope/Sight_KOBRA/Sight_L2/Sight_LUX/Sight_M8/Sight_Malcom/Sight_Mepro_M21/Sight_Mepro_MOR/Sight_MicroDot/Sight_MRO/Sight_Nikon/Sight_NO32/Sight_Phantom_XL/Sight_PKAS/Sight_PU/Sight_PVS4/Sight_RaceDot/Sight_Raven/Sight_SRO/Sight_SRS/Sight_SUSAT/Sight_Thermal/Sight_Thermal_AK/Sight_UH1/Sight_VX3/Sight_XPS/Sling_1/Sling_2/Sling_3/SolventTrap_Adapter/Standard_Mag/Suppressor_BMG/Suppressor_Bottle/Suppressor_Oil/Suppressor_PBS1_Rifle/Suppressor_PBS4_Rifle/Suppressor_Pistol/Suppressor_Rifle/Suppressor_ROME_BMG/Suppressor_Shotgun/Suppressor_SOCOM_Pistol,
+		keep TW.MetalWorkbench,
+
+		NoBrokenItems			: False,
+		AllowDestroyedItem      : true,
+        Result           		: Spring,
+        Time             		: 200.0,
+	    Sound 					: ScrapStuff,
+		OnGiveXP 				: Give10MWXP,
+		Category 		        : Scrapping,
+		SkillRequired 			: MetalWelding=3,
+		OnCreate                : DeconstructGunMag_OnCreate,
+		AnimNode 				: Disassemble,
+        Prop1					: Screwdriver,
+        Prop2					: Source=1,
+		CanBeDoneFromFloor      : TRUE,
+		NeedToBeLearn: true,
+    }
+
+
+	item WorkshopMag6
+	{
+		Weight = 0.1,
+		Type = Literature,
+		DisplayName = D.I.Y Crafting for Idiots Vol. 4 (Gun Part Disassembly),
+		Icon = WorkshopMag5,
+		TeachedRecipes = Make Metal Workbench;Disassemble Gun Magazine;Disassemble Gun Attachment;Disassamble Gun,
+		StaticModel = WorkshopMag5,
+		ReplaceOnUse    =   TW.WorkshopMag6,
+		WorldStaticModel = WorkshopMag5_Ground,
+		Tooltip             = Tooltip_WorkshopMag6,
+		DisplayCategory = SkillBook,
+	}
+
+}

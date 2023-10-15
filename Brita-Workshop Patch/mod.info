@@ -1,0 +1,5 @@
+name=Brita-Workshop Compatibility Patch 
+id=DJ_BritaPatch
+poster=poster.png
+description=Patches The Workshop's workbench to allow dismantling of Brita's Firearms
+require=Brita,TheWorkshop(new version)

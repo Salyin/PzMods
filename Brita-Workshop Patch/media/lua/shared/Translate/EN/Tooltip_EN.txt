@@ -1,0 +1,4 @@
+Tooltip_EN = {
+--magazines
+    Tooltip_WorkshopMag6 		= "Teaches how to disassemble guns and gun parts",
+}

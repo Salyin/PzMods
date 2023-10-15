@@ -1,0 +1,341 @@
+module am_bc {
+
+	imports
+	{
+		Base
+	}
+
+	recipe Make 5.45x39mm Bullet (Brita's)
+	{
+		GunPowder=10,
+		ScrapMetal=1,
+		BlowTorch=1,
+		keep Hammer/BallPeenHammer,
+
+		Result:545x39Bullets=1,
+		Sound:Hammering,
+		Time:50.0,
+        	Category:Ammo Maker,
+		OnGiveXP:Recipe.OnGiveXP.Reloading5,
+		NeedToBeLearn:false,
+	}
+
+	recipe Make .45 LC (Long Colt) Bullet (Brita's)
+	{
+		GunPowder=10,
+		ScrapMetal=1,
+		BlowTorch=1,
+		keep Hammer/BallPeenHammer,
+
+		Result:Bullets45LC=1,
+		Sound:Hammering,
+		Time:50.0,
+        	Category:Ammo Maker,
+		OnGiveXP:Recipe.OnGiveXP.Reloading5,
+		NeedToBeLearn:false,
+	}
+
+	recipe Make .117 Plastic BB (Brita's)
+	{
+		ammomaker_RecPlastic=1,
+		BlowTorch=1,
+		keep Hammer/BallPeenHammer,
+
+		Result:BB177=1,
+		Sound:Hammering,
+		Time:50.0,
+        	Category:Ammo Maker,
+		OnGiveXP:Recipe.OnGiveXP.Reloading5,
+		NeedToBeLearn:false,
+	}
+
+	recipe Make .50 (12.7mm) Magnum Bullet (Brita's)
+	{
+		GunPowder=10,
+		ScrapMetal=1,
+		BlowTorch=1,
+		keep Hammer/BallPeenHammer,
+
+		Result:Bullets50MAG=1,
+		Sound:Hammering,
+		Time:50.0,
+        	Category:Ammo Maker,
+		OnGiveXP:Recipe.OnGiveXP.Reloading5,
+		NeedToBeLearn:false,
+	}
+
+	recipe Make 7.62x39mm Bullet (Brita's)
+	{
+		GunPowder=10,
+		ScrapMetal=1,
+		BlowTorch=1,
+		keep Hammer/BallPeenHammer,
+
+		Result:762x39Bullets=1,
+		Sound:Hammering,
+		Time:50.0,
+        	Category:Ammo Maker,
+		OnGiveXP:Recipe.OnGiveXP.Reloading5,
+		NeedToBeLearn:false,
+	}
+
+	recipe Make 20g Shotgun Shell (Brita's)
+	{
+		GunPowder=10,
+		ScrapMetal=1,
+		ammomaker_RecPlastic=1,
+		BlowTorch=1,
+		keep Hammer/BallPeenHammer,
+
+		Result:20gShotgunShells=1,
+		Sound:Hammering,
+		Time:50.0,
+        	Category:Ammo Maker,
+		OnGiveXP:Recipe.OnGiveXP.Reloading5,
+		NeedToBeLearn:false,
+	}
+
+	recipe Make 10g Shotgun Shell (Brita's)
+	{
+		GunPowder=10,
+		ScrapMetal=1,
+		ammomaker_RecPlastic=1,
+		BlowTorch=1,
+		keep Hammer/BallPeenHammer,
+
+		Result:10gShotgunShells=1,
+		Sound:Hammering,
+		Time:50.0,
+        	Category:Ammo Maker,
+		OnGiveXP:Recipe.OnGiveXP.Reloading5,
+		NeedToBeLearn:false,
+	}
+
+	recipe Make 410g Shotgun Shell (Brita's)
+	{
+		GunPowder=10,
+		ScrapMetal=1,
+		ammomaker_RecPlastic=1,
+		BlowTorch=1,
+		keep Hammer/BallPeenHammer,
+
+		Result:410gShotgunShells=1,
+		Sound:Hammering,
+		Time:50.0,
+        	Category:Ammo Maker,
+		OnGiveXP:Recipe.OnGiveXP.Reloading5,
+		NeedToBeLearn:false,
+	}
+
+	recipe Make 4g Shotgun Shell (Brita's)
+	{
+		GunPowder=10,
+		ScrapMetal=1,
+		ammomaker_RecPlastic=1,
+		BlowTorch=1,
+		keep Hammer/BallPeenHammer,
+
+		Result:4gShotgunShells=1,
+		Sound:Hammering,
+		Time:50.0,
+        	Category:Ammo Maker,
+		OnGiveXP:Recipe.OnGiveXP.Reloading5,
+		NeedToBeLearn:false,
+	}
+
+	recipe Make .22 LR (Long Rifle) Bullet (Brita's)
+	{
+		GunPowder=10,
+		ScrapMetal=1,
+		BlowTorch=1,
+		keep Hammer/BallPeenHammer,
+
+		Result:Bullets22=1,
+		Sound:Hammering,
+		Time:50.0,
+        	Category:Ammo Maker,
+		OnGiveXP:Recipe.OnGiveXP.Reloading5,
+		NeedToBeLearn:false,
+	}
+
+	recipe Make .50 BMG Bullet (Brita's)
+	{
+		GunPowder=15,
+		ScrapMetal=2,
+		BlowTorch=1,
+		keep Hammer/BallPeenHammer,
+
+		Result:50BMGBullets=1,
+		Sound:Hammering,
+		Time:50.0,
+        	Category:Ammo Maker,
+		OnGiveXP:Recipe.OnGiveXP.Reloading5,
+		NeedToBeLearn:false,
+	}
+
+	recipe Make 5.7x28mm Bullet (Brita's)
+	{
+		GunPowder=10,
+		ScrapMetal=1,
+		BlowTorch=1,
+		keep Hammer/BallPeenHammer,
+
+		Result:Bullets57=1,
+		Sound:Hammering,
+		Time:50.0,
+        	Category:Ammo Maker,
+		OnGiveXP:Recipe.OnGiveXP.Reloading5,
+		NeedToBeLearn:false,
+	}
+
+	recipe Make .380 ACP Bullet (Brita's)
+	{
+		GunPowder=10,
+		ScrapMetal=1,
+		BlowTorch=1,
+		keep Hammer/BallPeenHammer,
+
+		Result:Bullets380=1,
+		Sound:Hammering,
+		Time:50.0,
+        	Category:Ammo Maker,
+		OnGiveXP:Recipe.OnGiveXP.Reloading5,
+		NeedToBeLearn:false,
+	}
+
+	recipe Make .357 Bullet (Brita's)
+	{
+		GunPowder=10,
+		ScrapMetal=1,
+		BlowTorch=1,
+		keep Hammer/BallPeenHammer,
+
+		Result:Bullets357=1,
+		Sound:Hammering,
+		Time:50.0,
+        	Category:Ammo Maker,
+		OnGiveXP:Recipe.OnGiveXP.Reloading5,
+		NeedToBeLearn:false,
+	}
+
+	recipe Make .45-70 Government Bullet (Brita's)
+	{
+		GunPowder=10,
+		ScrapMetal=1,
+		BlowTorch=1,
+		keep Hammer/BallPeenHammer,
+
+		Result:Bullets4570=1,
+		Sound:Hammering,
+		Time:50.0,
+        	Category:Ammo Maker,
+		OnGiveXP:Recipe.OnGiveXP.Reloading5,
+		NeedToBeLearn:false,
+	}
+
+	recipe Make 7.62x51mm NATO Bullet (Brita's)
+	{
+		GunPowder=10,
+		ScrapMetal=1,
+		BlowTorch=1,
+		keep Hammer/BallPeenHammer,
+
+		Result:762x51Bullets=1,
+		Sound:Hammering,
+		Time:50.0,
+        	Category:Ammo Maker,
+		OnGiveXP:Recipe.OnGiveXP.Reloading5,
+		NeedToBeLearn:false,
+	}
+
+	recipe Make 7.62x54mmR Bullet (Brita's)
+	{
+		GunPowder=10,
+		ScrapMetal=1,
+		BlowTorch=1,
+		keep Hammer/BallPeenHammer,
+
+		Result:762x54rBullets=1,
+		Sound:Hammering,
+		Time:50.0,
+        	Category:Ammo Maker,
+		OnGiveXP:Recipe.OnGiveXP.Reloading5,
+		NeedToBeLearn:false,
+	}
+
+	recipe Make 30-06 Springfield Bullet (Brita's)
+	{
+		GunPowder=10,
+		ScrapMetal=1,
+		BlowTorch=1,
+		keep Hammer/BallPeenHammer,
+
+		Result:3006Bullets=1,
+		Sound:Hammering,
+		Time:50.0,
+        	Category:Ammo Maker,
+		OnGiveXP:Recipe.OnGiveXP.Reloading5,
+		NeedToBeLearn:false,
+	}
+
+	recipe Make 40mm Exlosive Round (Brita's)
+	{
+		GunPowder=20,
+		ScrapMetal=4,
+		BlowTorch=1,
+		keep Hammer/BallPeenHammer,
+
+		Result:40HERound=1,
+		Sound:Hammering,
+		Time:60.0,
+        	Category:Ammo Maker,
+		OnGiveXP:Recipe.OnGiveXP.Reloading5,
+		NeedToBeLearn:false,
+	}
+
+	recipe Make 40mm Incendiary Round (Brita's)
+	{
+		GunPowder=25,
+		ScrapMetal=4,
+		BlowTorch=1,
+		keep Hammer/BallPeenHammer,
+
+		Result:40INCRound=1,
+		Sound:Hammering,
+		Time:60.0,
+        	Category:Ammo Maker,
+		OnGiveXP:Recipe.OnGiveXP.Reloading5,
+		NeedToBeLearn:false,
+	}
+
+	recipe Make High Explosive Rocket (Brita's)
+	{
+		GunPowder=25,
+		ScrapMetal=6,
+		BlowTorch=1,
+		keep Hammer/BallPeenHammer,
+
+		Result:HERocket=1,
+		Sound:Hammering,
+		Time:60.0,
+        	Category:Ammo Maker,
+		OnGiveXP:Recipe.OnGiveXP.Reloading5,
+		NeedToBeLearn:false,
+	}
+
+	recipe Make Flame Fuel (Brita's)
+	{
+		ammomaker_Sulfur=5,
+		WaterBleachBottle=1,
+		BlowTorch=1,
+		keep Hammer/BallPeenHammer,
+
+		Result:FlameFuel=25,
+		Sound:Hammering,
+		Time:60.0,
+        	Category:Ammo Maker,
+		OnGiveXP:Recipe.OnGiveXP.Reloading5,
+		NeedToBeLearn:false,
+	}
+
+}
