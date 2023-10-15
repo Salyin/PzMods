@@ -1,0 +1,4 @@
+ContextMenu_PTBR = {
+    ContextMenu_SearchInTree = "Procurar na árvore",
+	ContextMenu_CutBranchFromTree = "Procurar na árvore",
+}

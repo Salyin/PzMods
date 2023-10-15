@@ -1,0 +1,58 @@
+module SpoonEssentialCrafting
+{
+
+	imports
+	{
+		Base
+	}
+
+	/****************************** SCRAP TOOLS ******************************/
+	
+	recipe Scrap Stone Axe
+    {
+        AxeStone,
+
+        Result:SharpedStone,
+        Time:80.0,
+        Category:Survivalist,
+    }
+
+    recipe Scrap Stone Hammer
+    {
+        HammerStone,
+
+        Result:Stone,
+        Time:80.0,
+        Category:Survivalist,
+    }
+
+    recipe Scrap Stone Knife
+    {
+		FlintKnife,
+
+	    Result:SharpedStone,
+	    Time:80.0,
+	    Category:Survivalist,
+    }
+	
+	recipe Scrap Wooden Tool
+	{
+		Poolcue/Mop/Broom/HockeyStick/IceHockeyStick/CanoePadel/LeafRake/Rake/Paintbrush/CraftedFishingRod/CraftedFishingRodTwineLine/FishingRod/FishingRodBreak/FishingRodTwineLine,
+		
+		Result: UnusableWood,
+		Time: 100,
+		CanBeDoneFromFloor: True,
+		Category: Survivalist,
+	}
+	
+	recipe Scrap Wooden Weapon
+	{
+		SpearCrafted,
+		
+		Result: UnusableWood,
+		Time: 100,
+		CanBeDoneFromFloor: True,
+		Category: Survivalist,
+	}
+	
+}

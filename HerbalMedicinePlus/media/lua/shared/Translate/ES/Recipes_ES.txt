@@ -1,0 +1,17 @@
+Recipe_ES = {
+	Recipe_Craft_Herbal_Vitamins = "Fabricar vitaminas herbales",
+	Recipe_Craft_Herbal_Antibiotics Brew = "Fabricar fermentado de antibióticos herbales",
+	Recipe_Empty_Bowl_of_Antibiotics = "Vaciar cuenco con fermentado de antibióticos herbales",
+	Recipe_Craft_Herbal_Painkillers_Brew = "Fabricar fermentado de analgésicos herbales",
+	Recipe_Empty_Bowl_of_Painkillers = "Vaciar cuenco con fermentado de analgésicos herbales",
+	Recipe_Disinfect_Rag = "Desinfectar retales de tela",
+	Recipe_Disinfect_Bandage = "Desinfectar venda",
+	Recipe_Make_Mortar_and_Pestle = "Hacer mortero y maja",	
+	Recipe_Extract_Antibiotics_from_Moldy_Bread = "Extraer antibióticos del pan con moho",
+	Recipe_Make_Herbal_Antibiotics = "Fabricar antibióticos herbales",
+	Recipe_Make_Vitamins = "Fabricar vitaminas",
+	Recipe_Make_Natural_Antidepressants = "Fabricar antidepresivos naturales",
+	Recipe_Make_Natural_Beta_Blockers = "Fabricar tranquilizantes naturales",	
+	Recipe_Prepare_Herbal_Tea = "Preparar té herbal",
+	Recipe_Break_pieces_of_charcoal = "Romper carbón",
+}

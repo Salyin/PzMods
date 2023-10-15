@@ -1,0 +1,5 @@
+EvolvedRecipeName_EN = {
+	EvolvedRecipeName_Base.ESaltedMeat = "Salted Meat",
+	EvolvedRecipeName_Base.ESmokedMeat = "Smoked Meat",
+	EvolvedRecipeName_Base.ESalami = "Salami",
+}

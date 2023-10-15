@@ -1,0 +1,165 @@
+/* Ammo Maker by STIMP_TM */
+
+module ammomaker {
+
+	imports
+	{
+		Base
+	}
+
+/* Recipes Ammo */
+
+	recipe Make .22 LR Bullets x40
+	{
+		OnTest:Recipe.OnTest.isActivated_FA,
+
+		GunPowder=1,
+		ScrapMetal=1,
+		BlowTorch=1,
+		keep Hammer/BallPeenHammer,
+
+		Result:firearmmod.Bullets22=1,
+		RemoveResultItem:true,
+		OnCreate:Recipe.OnCreate.Make_FA_22LR,
+		Sound:Hammering,
+		Time:50.0,
+        Category:Ammo Maker FA,
+		OnGiveXP:Recipe.OnGiveXP.Reloading5,
+		NeedToBeLearn:false,
+	}
+
+	recipe Make 7.62x51 NATO Bullets x5
+	{
+		OnTest:Recipe.OnTest.isActivated_FA,
+
+		GunPowder=3,
+		ScrapMetal=1,
+		BlowTorch=1,
+		keep Hammer/BallPeenHammer,
+
+		Result:firearmmod.762x51Bullets=1,
+		RemoveResultItem:true,
+		OnCreate:Recipe.OnCreate.Make_FA_762x51NATO,
+		Sound:Hammering,
+		Time:50.0,
+        Category:Ammo Maker FA,
+		OnGiveXP:Recipe.OnGiveXP.Reloading5,
+		NeedToBeLearn:false,
+	}
+
+	recipe Make .30-06 Spring Bullets x5
+	{
+		OnTest:Recipe.OnTest.isActivated_FA,
+
+		GunPowder=3,
+		ScrapMetal=1,
+		BlowTorch=1,
+		keep Hammer/BallPeenHammer,
+
+		Result:firearmmod.Bullets3006=1,
+		RemoveResultItem:true,
+		OnCreate:Recipe.OnCreate.Make_FA_3006Spring,
+		Sound:Hammering,
+		Time:50.0,
+        Category:Ammo Maker FA,
+		OnGiveXP:Recipe.OnGiveXP.Reloading5,
+		NeedToBeLearn:false,
+	}
+
+	recipe Make 7.62x39 Bullets x5
+	{
+		OnTest:Recipe.OnTest.isActivated_FA,
+
+		GunPowder=2,
+		ScrapMetal=1,
+		BlowTorch=1,
+		keep Hammer/BallPeenHammer,
+
+		Result:firearmmod.762x39Bullets=1,
+		RemoveResultItem:true,
+		OnCreate:Recipe.OnCreate.Make_FA_762x39,
+		Sound:Hammering,
+		Time:50.0,
+        Category:Ammo Maker FA,
+		OnGiveXP:Recipe.OnGiveXP.Reloading5,
+		NeedToBeLearn:false,
+	}
+
+	recipe Make .357 Mag Bullets x10
+	{
+		OnTest:Recipe.OnTest.isActivated_FA,
+
+		GunPowder=1,
+		ScrapMetal=1,
+		BlowTorch=1,
+		keep Hammer/BallPeenHammer,
+
+		Result:firearmmod.Bullets357=1,
+		RemoveResultItem:true,
+		OnCreate:Recipe.OnCreate.Make_FA_357Mag,
+		Sound:Hammering,
+		Time:50.0,
+        Category:Ammo Maker FA,
+		OnGiveXP:Recipe.OnGiveXP.Reloading5,
+		NeedToBeLearn:false,
+	}
+
+	recipe Make .44-40 WCF Bullets x10
+	{
+		OnTest:Recipe.OnTest.isActivated_FA,
+
+		GunPowder=1,
+		ScrapMetal=1,
+		BlowTorch=1,
+		keep Hammer/BallPeenHammer,
+
+		Result:firearmmod.Bullets4440=1,
+		RemoveResultItem:true,
+		OnCreate:Recipe.OnCreate.Make_FA_4440WCF,
+		Sound:Hammering,
+		Time:50.0,
+        Category:Ammo Maker FA,
+		OnGiveXP:Recipe.OnGiveXP.Reloading5,
+		NeedToBeLearn:false,
+	}
+
+	recipe Make .44 Mag Bullets x5
+	{
+		OnTest:Recipe.OnTest.isActivated_FA,
+
+		GunPowder=1,
+		ScrapMetal=1,
+		BlowTorch=1,
+		keep Hammer/BallPeenHammer,
+
+		Result:firearmmod.Bullets44=1,
+		RemoveResultItem:true,
+		OnCreate:Recipe.OnCreate.Make_FA_44Mag,
+		Sound:Hammering,
+		Time:50.0,
+        Category:Ammo Maker FA,
+		OnGiveXP:Recipe.OnGiveXP.Reloading5,
+		NeedToBeLearn:false,
+	}
+
+	recipe Make 12 Gauge Shells x5
+	{
+		OnTest:Recipe.OnTest.isActivated_FA,
+
+		GunPowder=2,
+		ScrapMetal=1,
+		ammomaker_RecPlastic=1,
+		BlowTorch=1,
+		keep Hammer/BallPeenHammer,
+
+		Result:firearmmod.ShotgunShells=1,
+		RemoveResultItem:true,
+		OnCreate:Recipe.OnCreate.Make_FA_12Gauge,
+		Sound:Hammering,
+		Time:50.0,
+        Category:Ammo Maker FA,
+		OnGiveXP:Recipe.OnGiveXP.Reloading5,
+		NeedToBeLearn:false,
+	}
+
+}

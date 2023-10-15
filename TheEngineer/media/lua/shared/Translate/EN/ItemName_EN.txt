@@ -1,0 +1,5 @@
+ItemName_EN = {
+    ItemName_Radio.RadioMag1 = "Engineering 101",
+    ItemName_Radio.RadioMag2 = "Engineer Like A Boss",
+    ItemName_Radio.RadioMag3 = "Advanced Engineering",
+}

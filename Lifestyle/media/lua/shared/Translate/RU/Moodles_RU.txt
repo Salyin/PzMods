@@ -1,0 +1,62 @@
+Moodles_RU = {
+
+	Moodles_MindfulState_L1 = "Покой",
+	Moodles_MindfulState_L1_desc = "Ваш разум чист...",
+	Moodles_MindfulState_L2 = "Осознание",
+	Moodles_MindfulState_L2_desc = "Оставьте боль и голод позади...",
+	Moodles_MindfulState_L3 = "Абсолютный Покой",
+	Moodles_MindfulState_L3_desc = "Ваши глаза по настоящему открыты...",
+
+	Moodles_HomeSick_L1 = "Тоска по дому",
+	Moodles_HomeSick_L1_desc = "Тоска по домашнему уюту.",
+	Moodles_HomeSick_L2 = "Сильная тоска по дому",
+	Moodles_HomeSick_L2_desc = "Жажда вновь оказаться в четырёх стенах.",
+	Moodles_HomeSick_L3 = "Очень сильная тоска по дому",
+	Moodles_HomeSick_L3_desc = "Отчаянное желание оказаться в любом месте для отдыха.",
+	Moodles_HomeSick_L4 = "Невыносимая тоска по дому",
+	Moodles_HomeSick_L4_desc = "Каждый час - пытка.",
+
+	Moodles_AtHouse_L1 = "Уютно внутри",
+	Moodles_AtHouse_L1_desc = "Провели время в здании. Ничего не колышет.",
+
+	Moodles_MusicGood_L1 = "Хорошие мелодии",
+	Moodles_MusicGood_L1_desc = "Недавно насладились приятной музыкой.",
+	Moodles_MusicGood_L2 = "Отличная музыка",
+	Moodles_MusicGood_L2_desc = "Гармоничные мелодии наполняют счастьем.",
+	
+	Moodles_MusicBad_L1 = "Пресная музыка",
+	Moodles_MusicBad_L1_desc = "Зачем вообще подобное слушать?",
+	Moodles_MusicBad_L2 = "Неприятный шум",
+	Moodles_MusicBad_L2_desc = "ААА! Выключите это!",
+
+	Moodles_PartyGood_L1 = "Неплохая вечеринка",
+	Moodles_PartyGood_L1_desc = "Ни так, ни сяк. Людей бы побольше.",
+	Moodles_PartyGood_L2 = "Убийственная вечеринка",
+	Moodles_PartyGood_L2_desc = "Выпустите пар так, как будто завтрашний день не наступит.",
+	Moodles_PartyGood_L3 = "Безумная вечеринка",
+	Moodles_PartyGood_L3_desc = "Чёрт, это нужно в книги записывать!",
+	
+	Moodles_PartyBad_L1 = "Надоедливая вечеринка",
+	Moodles_PartyBad_L1_desc = "Хотелось бы быть в менее неуютном месте.",
+	Moodles_PartyBad_L2 = "Очень надоедливая вечеринка",
+	Moodles_PartyBad_L2_desc = "Высокий риск стресса.",
+	Moodles_PartyBad_L3 = "Невыносимо надоедливая вечеринка",
+	Moodles_PartyBad_L3_desc = "Принудительное веселье, бессмыссленная болтовня, и всё, чего Я хочу - это убежать.",
+
+	Moodles_DJAudience_L1 = "Небольшая группа",
+	Moodles_DJAudience_L1_desc = "Играем для аудитории пост-апокалиптического размера!",
+	Moodles_DJAudience_L2 = "Аудитория солидного размера",
+	Moodles_DJAudience_L2_desc = "Звук погромче, толпа велика – время сиять!",
+	Moodles_DJAudience_L3 = "Большая толпа",
+	Moodles_DJAudience_L3_desc = "Повышаем градус для этого огроменного сбора людей!",
+	
+	Moodles_Embarrassed_L1 = "Немного стыдно",
+	Moodles_Embarrassed_L1_desc = "Опозорились.",
+	Moodles_Embarrassed_L2 = "Стыдно",
+	Moodles_Embarrassed_L2_desc = "Риск загрустить.",
+	Moodles_Embarrassed_L3 = "Очень стыдно",
+	Moodles_Embarrassed_L3_desc = "Очень высокий риск загрустить.",
+	Moodles_Embarrassed_L4 = "Ужасно стыдно",
+	Moodles_Embarrassed_L4_desc = "Хочется под землю провалиться!",
+
+}

@@ -1,0 +1,3 @@
+Recipes_FR = {
+	Recipe_Butcher_Crow = "Découper le corbeau",
+}

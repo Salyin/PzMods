@@ -1,0 +1,68 @@
+module Base
+{
+
+	item Carrots
+	{
+		DisplayName = Carrots,
+		DisplayCategory = Food,
+		Type = Food,
+		Weight = 0.2,
+		Icon = Carrots,
+		EvolvedRecipe = Soup:8;Stew:8;Pie:8;Stir fry Griddle Pan:8;Stir fry:8;Sandwich:4;Sandwich Baguette:4;Salad:4;Roasted Vegetables:8;RicePot:8;RicePan:8;PastaPot:8;PastaPan:8,
+		FoodType = Vegetables,
+		DaysFresh = 6,
+		DaysTotallyRotten = 8,
+		HungerChange = -8,
+		ThirstChange = -4,
+		Calories = 70,
+		Carbohydrates = 15.84,
+		Lipids = 0.45,
+		Proteins = 1.57,
+		StaticModel = CylinderFood_Orange,
+		WorldStaticModel = Carrots_Ground,
+		EvolvedRecipeName = Carrot,
+	}
+	
+	item Corn
+	{
+		DisplayName = Corn,
+		DisplayCategory = Food,
+		Type = Food,
+		Weight = 0.2,
+		Icon = Corn,
+		EvolvedRecipe = Soup:14;Stew:14;Stir fry Griddle Pan:14;Stir fry:14;Burger:7;Salad:7;Roasted Vegetables:14;RicePot:14;RicePan:14;PastaPot:14;PastaPan:14;Burrito:7;Taco:7,
+		FoodType = Vegetables,
+		DaysFresh = 5,
+		DaysTotallyRotten = 8,
+		HungerChange = -14,
+		ThirstChange = -4,
+		Calories = 170,
+		Carbohydrates = 36.74,
+		Lipids = 2.93,
+		Proteins = 12.68,
+		StaticModel = CylinderFood_Yellow,
+		WorldStaticModel = Corn_Ground,
+	}
+	
+	item Broccoli
+	{
+		DisplayName = Broccoli,
+		DisplayCategory = Food,
+		Type = Food,
+		Weight = 0.2,
+		Icon = Broccoli,
+		EvolvedRecipe = Pizza:9;Omelette:9;Soup:9;Stew:9;Pie:9;Stir fry Griddle Pan:9;Stir fry:9;Salad:9;Roasted Vegetables:9;RicePot:9;RicePan:9;PastaPot:9;PastaPan:9,
+		FoodType = Vegetables,
+		DaysFresh = 4,
+		DaysTotallyRotten = 6,
+		HungerChange = -9,
+		ThirstChange = -4,
+		Carbohydrates = 7.06,
+        Proteins = 2.57,
+        Lipids = 0.31,
+        Calories = 22,
+		StaticModel = CylinderFood_Green,
+		WorldStaticModel = Broccoli_Ground,
+	}
+
+}

@@ -1,0 +1,4 @@
+Tooltip_PTBR = {
+    Tooltip_BookTitle_Music = "Música",
+    Tooltip_BookTitle_Dancing = "Dança",
+}

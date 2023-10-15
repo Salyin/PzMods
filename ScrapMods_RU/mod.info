@@ -1,0 +1,5 @@
+name=Перевод Scrap Mods
+id=ScrapMods_RU
+require=TheWorkshop(new version)
+description=Перевод серии модов от djvirus
+poster=poster.png

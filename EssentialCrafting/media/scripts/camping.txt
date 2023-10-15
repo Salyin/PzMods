@@ -1,0 +1,130 @@
+module camping
+{
+	imports
+	{
+		Base
+	}
+
+/**********************************************************************/
+/************************* Camping Items ******************************/
+/**********************************************************************/
+  
+	item CampfireKit
+	{
+	    DisplayCategory = Camping,
+		Type				=		Normal,
+		DisplayName			=	 Campfire Materials,
+		Icon				=		TZ_CampfireKitWood,
+		Weight				=		0.1,
+		WorldStaticModel = CampfireMaterials,
+	}
+  
+	item Flint
+	{
+	    DisplayCategory = Material,
+		Type				=		Normal,
+		DisplayName			=		Flint,
+		Icon				=		TZ_Flint,
+		Weight				=		0.2,
+		WorldStaticModel = Flint_Ground,
+	}
+	
+	item SteelKnuckle
+	{
+	    DisplayCategory = Hidden,
+		Type				=		Normal,
+		DisplayName			=		Steel Knuckle,
+		Icon				=		TZ_SteelKnuckle,
+		Weight				=		0.2,
+		WorldStaticModel = SteelKnuckle,
+	}
+	
+	item SteelAndFlint
+	{
+	    DisplayCategory = Tool,
+		Type				=		Normal,
+		DisplayName			=		Flint and Steel,
+		Icon				=		TZ_SteelAndFlint,
+		Weight				=		0.4,
+		WorldStaticModel = FlintAndSteel,
+	}
+  
+    item CampingTent
+	{
+	    DisplayCategory = Camping,
+		Type				=		Normal,
+		DisplayName			=	 Tent,
+		Icon				=		TZ_Tent,
+		Weight				=		3.0,		
+	}
+  
+    item CampingTentKit
+	{
+	    DisplayCategory = Camping,
+		Type				=		Normal,
+		DisplayName			=	 Tent Kit,
+		Icon				=		TZ_TentKit,
+		Weight				=		3.0,
+		WorldStaticModel  = CampingTentKit_Ground,
+	}
+  
+  item TentPeg
+	{
+	    DisplayCategory = Material,
+		Type				=		Normal,
+		DisplayName			=	 Tent Peg,
+		Icon				=		TZ_TentPeg,
+		Weight				=		0.2,
+		WorldStaticModel  = TentPegs_Ground,
+	}
+  
+/**********************************************************************/
+/**************************** Recipe **********************************/
+/**********************************************************************/
+
+    recipe Make Campfire Kit
+    {
+        Twigs,
+
+        Result:CampfireKit,
+        Time:50.0,
+        Category:Survivalist,
+    }
+	
+	recipe Make Campfire Kit
+    {
+        SheetPaper2,
+
+        Result:CampfireKit,
+        Time:50.0,
+        Category:Survivalist,
+    }
+	
+	recipe Make Tent Kit
+    {
+        Tarp,
+        Stake = 4,
+		Twine/Wire/DuctTape = 3,
+        WoodenStick/Plank/TreeBranch/Poolcue/Mop/Broom/HockeyStick/IceHockeyStick/CanoePadel/LeafRake/Rake = 2,
+
+        Result:CampingTentKit,
+        Time:220.0,
+        Category:Survivalist,
+		SkillRequired:Woodwork=1,
+		OnGiveXP:Recipe.OnGiveXP.WoodWork5,
+    }
+  
+    recipe Make Tent Kit
+    {
+        Tarp,
+        TentPeg = 4,
+		Twine/Wire/DuctTape = 3,
+        WoodenStick/Plank/TreeBranch/Poolcue/Mop/Broom/HockeyStick/IceHockeyStick/CanoePadel/LeafRake/Rake = 2,
+
+        Result:CampingTentKit,
+        Time:220.0,
+        Category:Survivalist,
+		SkillRequired:Woodwork=1,
+		OnGiveXP:Recipe.OnGiveXP.WoodWork5,
+    }
+}

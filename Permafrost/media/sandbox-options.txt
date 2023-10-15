@@ -1,0 +1,19 @@
+VERSION = 1,
+
+option Permafrost.MinimumTemperature
+{
+	type = integer, min = -100, max = 100, default = -40,
+	page = Permafrost, translation = PF_MinimumTemperature,
+}
+
+option Permafrost.MaximumTemperature
+{
+	type = integer, min = -100, max = 100, default = 0,
+	page = Permafrost, translation = PF_MaximumTemperature,
+}
+
+option Permafrost.PermanentSnowstorm
+{
+	type = boolean, default = false,
+	page = Permafrost, translation = PF_PermanentSnowstorm,
+}

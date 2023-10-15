@@ -1,0 +1,44 @@
+module Lifestyle
+{
+
+    imports
+        {
+             Base,
+        }
+
+
+	/* -------------------------------- Furniture -------------------------------- */
+
+	/* -------------------------------- Electronics -------------------------------- */
+
+	recipe Craft Standing Disco Ball
+	{
+		ElectronicsScrap=50,
+		keep Hammer,
+
+		Result:LS_Discoball,
+		OnCreate:Recipe.OnCreate.DiscoBall,
+		NeedToBeLearn:true,
+		Time:60.0,
+		OnGiveXP:Recipe.LSXP.Electricity50,
+		Category:Electrical,
+		SkillRequired:Electrical=3,
+
+	}
+
+	recipe Assemble DJ Booth
+	{
+		ElectronicsScrap=100,
+		keep Hammer,
+
+		Result:LS_DJBooth01,
+		NeedToBeLearn:true,
+		Time:60.0,
+		OnGiveXP:Recipe.LSXP.Electricity50,
+		Category:Electrical,
+		SkillRequired:Electrical=3,
+
+	}
+
+
+}

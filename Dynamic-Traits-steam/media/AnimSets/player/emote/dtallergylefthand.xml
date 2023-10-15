@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<animNode x_extends="dtdefault.xml">
+	<m_Name>dtallergylefthand</m_Name>
+	<m_AnimName>Bob_EmotePainLeftHand</m_AnimName>
+	<m_Conditions>
+		<m_StringValue>dtallergylefthand</m_StringValue>
+	</m_Conditions>
+</animNode>

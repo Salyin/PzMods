@@ -1,0 +1,106 @@
+module Base
+{
+	model 97bushmasterstorageright0
+	{
+		mesh = vehicles/Vehicles_97bushmaster_Body|bush_right_storage,
+		shader = vehicle_noreflect,
+		scale = 0.1,
+	}
+	model 97bushmasterspareFloor0
+	{
+		mesh = vehicles/Vehicles_97bushmaster_Body|bush_spare_bottom0,
+		texture = vehicles/Vehicles_RunFlatTire_MK2,
+		shader = vehiclewheel,
+		scale = 0.1,
+	}
+	model 97bushmasterspareFloor1
+	{
+		mesh = vehicles/Vehicles_97bushmaster_Body|bush_spare_bottom1,
+		shader = vehicle_noreflect,
+		scale = 0.1,
+	}
+
+	template vehicle BUSHRightSideStorage
+		{
+		part BUSHStorageRight
+        	{
+
+			model Bushstorageright0
+				{
+                		file = 97bushmasterstorageright0,
+				}
+			model Bushstorageright1
+				{
+                		file = 97bushmasterspareFloor0,
+				}
+			model Bushstorageright1b
+				{
+                		file = 97bushmasterspareFloor1,
+				}
+
+			area = Storage3,
+			specificItem = false,
+			itemType = Base.97BushRightStorage0;Base.BushmasterTire,
+			category = bodywork,
+			mechanicRequireKey = false,
+
+			container
+			{
+				conditionAffectsCapacity = false,
+				test = BUSH.ContainerAccess.SR,
+			}
+
+			table install
+			{
+                	items
+                	{
+                    	1
+                    		{
+                        	type = Base.Wrench,
+                        	count = 1,
+                        	keep = true,
+							equip = primary,
+                    		}
+                	}
+
+                	time = 800,
+                	skills = Mechanics:1,
+                	recipes = Intermediate Mechanics,
+                	test = Vehicles.InstallTest.Default,
+                	complete = BUSH.InstallComplete.RightStorage,
+
+            		}
+
+            table uninstall
+            		{
+                	items
+                	{
+                    	1
+                    		{
+			  				type = Base.Wrench,
+							count = 1,
+							keep = true,
+							equip = primary,
+                    		}
+                	}
+
+					time = 750,
+					skills = Mechanics:1,
+					recipes = Intermediate Mechanics,
+		            test = Vehicles.UninstallTest.Default,
+					complete = BUSH.UninstallComplete.RightStorage,
+					requireUninstalled = StorageLid3,
+
+				}
+
+				lua
+            		{
+					create = BUSH.Create.RightStorage,
+					init = BUSH.Init.RightStorage,
+					}
+			}
+
+		
+	}
+
+}

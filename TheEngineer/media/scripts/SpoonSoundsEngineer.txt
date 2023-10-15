@@ -1,0 +1,9 @@
+module Base {
+
+    sound SpoonIEDEngineerONE
+    {
+        category = SpoonIEDEngineerONE, loop = false, is3D = true,
+        clip { file = media/sound/Bang/SpoonIED_1.ogg, distanceMax = 500, volume = 2.5, }
+    }
+
+}

@@ -1,0 +1,62 @@
+Moodles_EN = {
+
+	Moodles_MindfulState_L1 = "Mindfulness",
+	Moodles_MindfulState_L1_desc = "Your mind is clear...",
+	Moodles_MindfulState_L2 = "Strong Mindfulness",
+	Moodles_MindfulState_L2_desc = "Abandon pain and hunger...",
+	Moodles_MindfulState_L3 = "Perfect Mindfulness",
+	Moodles_MindfulState_L3_desc = "Your eyes are truly open...",
+
+	Moodles_HomeSick_L1 = "Homesick",
+	Moodles_HomeSick_L1_desc = "Missing the comfort of a house.",
+	Moodles_HomeSick_L2 = "Bad Homesickness",
+	Moodles_HomeSick_L2_desc = "Yearning to be back indoors.",
+	Moodles_HomeSick_L3 = "Very Bad Homesickness",
+	Moodles_HomeSick_L3_desc = "Desperate for a place to lie-down.",
+	Moodles_HomeSick_L4 = "Severe Homesickness",
+	Moodles_HomeSick_L4_desc = "Each passing hour is torment.",
+
+	Moodles_AtHouse_L1 = "Comfortably Inside",
+	Moodles_AtHouse_L1_desc = "Spent some time indoors. Not a care in the world.",
+
+	Moodles_MusicGood_L1 = "Nice Tunes",
+	Moodles_MusicGood_L1_desc = "Enjoyed a good song recently.",
+	Moodles_MusicGood_L2 = "Great Music",
+	Moodles_MusicGood_L2_desc = "The harmonious melody fills you with joy.",
+	
+	Moodles_MusicBad_L1 = "Bland Music",
+	Moodles_MusicBad_L1_desc = "Why even bother listening to this?",
+	Moodles_MusicBad_L2 = "Awful Noise",
+	Moodles_MusicBad_L2_desc = "AAahh!! Make it stop!",
+
+	Moodles_PartyGood_L1 = "Chill Party",
+	Moodles_PartyGood_L1_desc = "Not bad, not great. If only we could get more people here.",
+	Moodles_PartyGood_L2 = "Killer Party",
+	Moodles_PartyGood_L2_desc = "Just let loose like there's no tomorrow.",
+	Moodles_PartyGood_L3 = "Insane Party",
+	Moodles_PartyGood_L3_desc = "Damn, this is gonna be one for the books!",
+	
+	Moodles_PartyBad_L1 = "Annoying Party",
+	Moodles_PartyBad_L1_desc = "Wishing they could be somewhere less cringe.",
+	Moodles_PartyBad_L2 = "Very Annoying Party",
+	Moodles_PartyBad_L2_desc = "High risk of stress.",
+	Moodles_PartyBad_L3 = "Extremely Annoying Party",
+	Moodles_PartyBad_L3_desc = "Forced fun, mindless chatter, and all I want is an escape.",
+
+	Moodles_DJAudience_L1 = "Small Crew",
+	Moodles_DJAudience_L1_desc = "Spinning for a post-apocalyptic audience!",
+	Moodles_DJAudience_L2 = "Sizable Audience",
+	Moodles_DJAudience_L2_desc = "Volume up, crowd's large – time to shine!",
+	Moodles_DJAudience_L3 = "Big Crowd",
+	Moodles_DJAudience_L3_desc = "Turning up the energy for this massive gathering!",
+	
+	Moodles_Embarrassed_L1 = "A Bit Embarrassed",
+	Moodles_Embarrassed_L1_desc = "Embarrassed yourself",
+	Moodles_Embarrassed_L2 = "Embarrassed",
+	Moodles_Embarrassed_L2_desc = "Risk of becoming unhappy",
+	Moodles_Embarrassed_L3 = "Very Embarrassed",
+	Moodles_Embarrassed_L3_desc = "Very high risk of becoming unhappy",
+	Moodles_Embarrassed_L4 = "Extremely Embarrassed",
+	Moodles_Embarrassed_L4_desc = "I wish the ground would swallow me!",
+
+}

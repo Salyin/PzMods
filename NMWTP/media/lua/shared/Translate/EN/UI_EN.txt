@@ -1,0 +1,7 @@
+UI_EN = {
+    UI_no_more_workshop_tab_problem_welcome = "No More Workshop Tab Problem Mod activated.",
+    UI_no_more_workshop_tab_problem_forgot = "You forgot to activate the mod on the 'Steam Workshop' tab.",
+    UI_no_more_workshop_tab_problem_ok = "The mod has been added to the server.",
+    UI_no_more_workshop_tab_problem_local = "This mod is installed locally. Make sure your friends have it on their computer too.",
+    UI_no_more_workshop_tab_problem_require = "First, activate the required mods:",
+}

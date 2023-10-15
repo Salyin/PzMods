@@ -1,0 +1,12 @@
+Sandbox_RU = {
+Sandbox_Permafrost = "Вечная мерзлота",
+
+Sandbox_PF_MinimumTemperature = "Минимальная Температура",
+Sandbox_PF_MinimumTemperature_tooltip = "Может быть ниже или выше нуля. Должна быть МЕНЬШЕ, чем Максимальная.",
+
+Sandbox_PF_MaximumTemperature = "Максимальная Температура",
+Sandbox_PF_MaximumTemperature_tooltip = "Может быть ниже или выше нуля. Должна быть БОЛЬШЕ, чем Минимальная.",
+
+Sandbox_PF_PermanentSnowstorm = "Бесконечный Снегопад",
+Sandbox_PF_PermanentSnowstorm_tooltip = "Включает постоянный снегопад.",
+}

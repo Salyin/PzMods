@@ -1,0 +1,8 @@
+ItemName_NO = {
+	ItemName_Base.Bag_Satchel = "Veske (Front)",
+    ItemName_Base.Bag_SatchelBack = "Veske (Bak)",
+	ItemName_Base.MysteriousSatchel_New = "Taktisk veske (Front)",
+	ItemName_Base.MysteriousSatchelBack = "Taktisk veske (Bak)",
+	ItemName_Base.MysteriousHazmat = "Beskyttelsesdrakt",
+    }
+    

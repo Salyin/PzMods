@@ -1,0 +1,17 @@
+Recipe_DE = {
+    Recipe_Craft Herbal Vitamins = "Kräutervitamine herstellen",
+    Recipe_Craft Herbal Antibiotics Brew = "Fermentiertes Kräuterantibiotikum herstellen",
+    Recipe_Empty Bowl of Antibiotics = "Schüssel mit fermentiertem Kräuterantibiotikum leeren",
+    Recipe_Craft Herbal Painkillers Brew = "Fermentierte Kräuterschmerzmittel herstellen",
+    Recipe_Empty Bowl of Painkillers = "Schüssel mit fermentierten Kräuterschmerzmitteln leeren",
+    Recipe_Disinfect Rag = "Stoffreste desinfizieren",
+    Recipe_Disinfect Bandage = "Verband desinfizieren",
+    Recipe_Make Mortar and Pestle = "Mörser und Stößel herstellen",
+    Recipe_Extract Antibiotics from Moldy Bread = "Antibiotika aus schimmligem Brot gewinnen",
+    Recipe_Make Herbal Antibiotics = "Kräuterantibiotikum herstellen",
+    Recipe_Make Vitamins = "Vitamine herstellen",
+    Recipe_Make Natural Antidepressants = "Natürliches Antidepressiva herstellen",
+    Recipe_Make Natural Beta Blockers = "Natürliche Betablocker herstellen",
+    Recipe_Prepare Herbal Tea = "Kräutertee zubereiten",
+    Recipe_Break pieces of charcoal = "Holzkohlestücke brechen",
+}

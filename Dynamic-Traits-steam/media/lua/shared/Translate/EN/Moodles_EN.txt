@@ -1,0 +1,42 @@
+Moodles_EN = {
+
+	Moodles_DTOverdose2_lvl2 = "Overdose",
+	Moodles_Desc_DTOverdose2_lvl2 = "Slight agitation and sweating.",
+	Moodles_DTOverdose3_lvl3 = "Overdose",
+	Moodles_Desc_DTOverdose3_lvl3 = "You feel a little drowsy.",
+	Moodles_DTOverdose4_lvl4 = "Overdose",
+	Moodles_Desc_DTOverdose4_lvl4 = "High intoxication, danger of death.",
+	
+	Moodles_DTFoodAllergy1_lvl1 = "Food allergy",
+	Moodles_Desc_DTFoodAllergy1_lvl1 = "Sporadic sneezing.",
+	Moodles_DTFoodAllergy2_lvl2 = "Food allergy",
+	Moodles_Desc_DTFoodAllergy2_lvl2 = "Frequent sneezing and itching in various parts of the body. You feel pain from scratching.",
+	Moodles_DTFoodAllergy3_lvl3 = "Food allergy",
+	Moodles_Desc_DTFoodAllergy3_lvl3 = "Itching almost all over the body. The pain increases a lot.",
+	Moodles_DTFoodAllergy4_lvl4 = "Anaphylaxis",
+	Moodles_Desc_DTFoodAllergy4_lvl4 = "The allergy has taken over your whole body. You are suffocating, your fatigue, tiredness and health decrease.",
+	
+	Moodles_DTDrugsAllergy1_lvl1 = "Drugs Allergy",
+	Moodles_Desc_DTDrugsAllergy1_lvl1 = "Frequent cough.",
+	Moodles_DTDrugsAllergy2_lvl2 = "Drugs Allergy",
+	Moodles_Desc_DTDrugsAllergy2_lvl2 = "Frequent cough and itching in various parts of the body. You feel pain from scratching.",
+	Moodles_DTDrugsAllergy3_lvl3 = "Drugs Allergy",
+	Moodles_Desc_DTDrugsAllergy3_lvl3 = "Malaise and tiredness. Itching almost all over the body. The pain increases a lot.",
+	Moodles_DTDrugsAllergy4_lvl4 = "Anaphylaxis",
+	Moodles_Desc_DTDrugsAllergy4_lvl4 = "The allergy has taken over your whole body. You are suffocating, your fatigue, tiredness and health decrease.",
+	
+	Moodles_DTBloodlust1_lvl1 = "Bloodlust",
+	Moodles_Desc_DTBloodlust1_lvl1 = "You start thinking about your next victim.",
+	Moodles_DTBloodlust2_lvl2 = "Bloodlust",
+	Moodles_Desc_DTBloodlust2_lvl2 = "Long time without killing anyone, your mood is affected.",
+	Moodles_DTBloodlust3_lvl3 = "Bloodlust",
+	Moodles_Desc_DTBloodlust3_lvl3 = "Too long without killing anyone, your mood is affected even more.",
+	Moodles_DTBloodlust4_lvl4 = "Bloodlust",
+	Moodles_Desc_DTBloodlust4_lvl4 = "In danger of developing permanent mood problems.",
+	
+	Moodles_DTCaffeinePositive1_lvl1 = "Addiction to caffeine",
+	Moodles_Desc_DTCaffeinePositive1_lvl1 = "Caffeine in the body. You are in a good mood.",
+	Moodles_DTCaffeineNegative1_lvl1 = "Addiction to caffeine",
+	Moodles_Desc_DTCaffeineNegative1_lvl1 = "No caffeine in the body. You are in a bad mood.",
+
+}

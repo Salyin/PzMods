@@ -1,0 +1,7 @@
+ItemName_ES = {
+	ItemName_Base.Bag_Satchel = "Cartera (delante)",
+	ItemName_Base.Bag_SatchelBack = "Cartera (detrás)",
+	ItemName_Base.MysteriousSatchel_New = "Cartera táctica  (delante)",
+	ItemName_Base.MysteriousSatchelBack = "Cartera táctica  (detrás)",
+	ItemName_Base.MysteriousHazmat = "Traje NBQ",
+}

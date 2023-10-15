@@ -1,0 +1,75 @@
+IG_UI_FR = {
+
+IGUI_addOption_context_add_padlock 				= "Ajouter un cadenas à la trappe",
+IGUI_addOption_YouHavePadlock 					= "Vous avez un cadenas.",
+IGUI_addOption_YouHavePadlock_info 				= "Si vous voulez plusieurs clés, trouvez plusieurs cadenas, détruisez et rajoutez un cadenas, vous obtiendrez une clé supplémentaire.",
+
+IGUI_addOption_context_lock_padlock 			= "Verrouiller la trappe",
+IGUI_addOption_context_remove_padlock 			= "Récupérer le cadenas",
+IGUI_addOption_YouHaveTheKey 					= "Vous avez la clé correspondante.",
+IGUI_addOption_YouCanlockInside 				= "Vous pouvez verrouiller la trappe, sans clé et de l'interieur uniquement.",
+
+IGUI_addOption_context_removeWithoutKey_padlock = "Détruire le cadenas",
+IGUI_addOption_YouWillDestroyeThePadLock 		= "Vous ne récupérerez pas le cadenas, si vous remettez un cadenas, vous récupérerez la clé de cette trappe.",
+
+IGUI_addOption_context_unlock_padlock 			= "Déverrouiller la trappe",
+IGUI_addOption_YouCanUnlockInside 				= "Vous pouvez déverrouiller la trappe, sans clé et de l'interieur uniquement",
+
+IGUI_addOption_context_force_padlock 			= "Forcer le cadenas",
+IGUI_addOption_ForcePadlockWithCrowbar 			= "Utilisez votre pied de biche pour essayer de forcer le cadenas.",
+IGUI_addOption_ForcePadlockWithCrowbar_youHaveOneChanceTo 	= "Vous avez 1 chance sur ",
+IGUI_addOption_ForcePadlockWithCrowbar_toSuccess 			= " de réussir l'action.",
+
+
+
+
+IGUI_addOption_thereIsProblem 					= "Il y a eu un probléme !!",
+
+IGUI_addOption_breakWithCrowbarISok 			= "Succès !",
+IGUI_addOption_breakWithCrowbarISfail 			= "Raté !!",
+
+
+IGUI_addOption_Reassign_Assigned 				= "Attribuez un numéro de sous-sol déjà déclaré à cette trappe, attention à ne pas attribuer un sous-sol à plusieurs trappes, cela ferait deux points d'entrée.",
+IGUI_addOption_Assign_FreeBasement 				= "Attribuez ce numéro de sous-sol libre à cette trappe.",
+
+IGUI_addOption_Info_BuildSpecialArrivalHatch 	= "Si vous avez cette option, c'est que vous êtes en cours construction.<br>Vous devez construire cette trappe ou l'annuler et voir ca plus tard.",
+IGUI_addOption_Info_CancelBuildSpecialHatch 		= "Vous pouvez annuler la construction de cette trappe qui est en attente de construction.<br>Elle sera affichée dans Pending si la trappes d'arrivée n'existe pas encore",
+
+IGUI_addOption_Say_basementIsAlreadyAssigned 			= "Cette trappe est déjà affiliée à une autre trappe !",
+IGUI_addOption_Say_buildOfHatchIsPending 				= "Une trappe est en attente de construction ... ",
+IGUI_addOption_Say_buildOfHatchIsCancelled 				= "Une trappe en attente de construction a été annulée",
+IGUI_addOption_Say_impossibleEnterCoordinateProblem 	= "Impossible d'utiliser cette trappe, elle ne méne nulle part !",
+IGUI_addOption_Say_impossibleEnter 						= "Impossible d'utiliser cette trappe !",
+IGUI_addOption_context_Debug_Confirm 					= "Confirmez",
+
+IGUI_addOption_Info_optionAdminMenu_reassign 			= "Réassignez ce sous sol dans la liste des assignées.<br>Afin que les trappes puissent être réempruntées par des joueurs non-admin.",
+IGUI_addOption_Info_optionAdminMenu_unassign 			= "Retirer de la liste des assignées, sera visible dans les non assignées.<br>Seuls les administrateurs pourront entrer par les trappes.<br>Cela peut être utilisé pour restreindre temporairement l'accès aux non-administrateurs, car vous pourrez la réassigner.",
+
+IGUI_addOption_Info_optionAdminMenu_resume 				= "Reprenez la construction de la trappe d'arrivée.<br>Vérifiez que la trappe d'entrée est bien construite au sol en vous y téléportant.",
+IGUI_addOption_Info_optionAdminMenu_remove 				= "Supprimer définitivement des listes assignées et non assignées.<br>L'ID de ces trappes sera réattribué automatiquement lors de la construction d'autres trappes spéciales.",
+IGUI_addOption_Info_RebuildAssignedHatch 				= "Vous pouvez reconstruire l'entrée ou l'arrivé<br>Pensez à détruire la trappe d'entrée ou de sortie affiliée à cet ID avant de la reconstruire, afin de ne pas laisser deux trappes qui ménerait au même endroit, à moins que ce soit souhaité.",
+
+
+IGUI_addOption_Info_Build_sewer_SpecialHatch 			= "Cette option vous permettra de construire et d'affilier une trappes à une échelle.<br>Cette categorie est prévu pour un genre d'égout, tunnel, bunker.<br>Vous aurez besoin d'activer le Build cheat mode.<br>D'abord, construisez la première trappe (entrée), ensuite construisez la deuxiéme trappes (arrivée)<br>Si vous deviez retirer une trappe, utilisez brush tool du panel admin.<br>En tant qu'admin, pour constuire des sous sols, vous pouvez utiliser des murs invincible dans la liste des tiles de brush tool, recherchez dans basement.",
+
+IGUI_addOption_Info_Build_travel_SpecialHatch 			= "Cette option vous permettra de construire et d'affilier une trappes à une autre trappe.<br>Cette categorie sert à effectuer un voyage d'un point A à un point B<br>Une consommation des stats sera appliquée (sandbox)<br>Un voyage est autorisé suivant le temps écoulé de votre dernier voyage effectué (sandbox)<br>Vous aurez besoin d'activer le Build cheat mode.<br>D'abord, construisez la première trappe (entrée), ensuite construisez la deuxiéme trappes (arrivée)<br>Si vous deviez retirer une trappe, utilisez brush tool du panel admin.<br>En tant qu'admin, pour constuire des sous sols, vous pouvez utiliser des murs invincible dans la liste des tiles de brush tool, recherchez dans basement.",
+
+IGUI_addOption_Info_Build_basement_SpecialHatch 		= "Cette option vous permettra de construire et d'affilier une trappes à une échelle.<br>Cette categorie est prévu pour un genre de sous sol, cave, abris<br>Vous aurez besoin d'activer le Build cheat mode.<br>D'abord, construisez la première trappe (entrée), ensuite construisez la deuxiéme trappes (arrivée)<br>Si vous deviez retirer une trappe, utilisez brush tool du panel admin.<br>En tant qu'admin, pour constuire des sous sols, vous pouvez utiliser des murs invincible dans la liste des tiles de brush tool, recherchez dans basement.<br>En tant qu'admin, pour constuire des sous sols, vous pouvez utiliser des murs invincible dans la liste des tiles de brush tool, recherchez dans basement.",
+
+IGUI_addOption_Info_Build_playerBasement_SpecialHatch 	= "Cette option vous permettra de construire une échelle d'arrivée.<br>Cette categorie est prévu exclusivement pour la construction de sous sol par les joueurs comme le mod vanilla<br>Les joueurs auront accés à un menu contextuel, avec la possibilité de construire la trappe d'entrée ou il le souhaite, si une trappes d'entrée est disponible dans la liste<br>Vous aurez besoin d'activer le Build cheat mode.<br>D'abord, construisez la  l'échelle d'arrivée), ensuite ce sera par le menu dedié aux joueurs pour contruire l'entrée<br>Si vous deviez retirer une trappe, utilisez brush tool du panel admin.<br>En tant qu'admin, pour constuire des sous sols, vous pouvez utiliser des murs invincible dans la liste des tiles de brush tool, recherchez dans basement.",
+
+
+IGUI_addOption_ContextMenu_addOptions_EnterTravel 		= "Entrer pour Voyager",
+IGUI_addOption_ContextMenu_addOptionsEnter 				= "Entrer",
+IGUI_addOption_ContextMenu_addOptionsExit 				= "Sortir",
+
+
+IGUI_addOption_Say_iHaveTraveledDistance 				= "J'ai voyagé sur une distance de ",
+IGUI_addOption_TraveledFromTravelHatch_isNotAllowed 	= "Je ne pourrais pas voyager, car les voyages ne sont autorisés qu'une fois toute les ",
+IGUI_addOption_dialogInfo_travelConfirmationAndDistance = "Cette trappe vous permettera de voyager vers un lieux situé à une distance de ",
+IGUI_addOption_dialogInfo_travelAllowedByTimeElapsed 	= "Vous n'êtes autorisé à voyager qu'une fois toute les ",
+IGUI_addOption_dialogInfo_travelConsuption 				= "Ce voyage consommera vos stats de faim, soif, fatigue et d'endurance suivant la distance parcouru.",
+
+IGUI_addOption_TraveledFromTravelHatch_isNotAllowedWithAvatar = "Je ne pourrais pas voyager, car je transporte au moins un avatar.",
+IGUI_addOption_Say_needWaitingForTraveling 				= "Pour mon prochain voyage, je devrai patienter ",
+}

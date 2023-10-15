@@ -1,0 +1,4 @@
+name=True Crouching
+id=TrueCrouching
+description=Character model will crouch rather than slouch while sneaking when idle.
+poster=poster.png

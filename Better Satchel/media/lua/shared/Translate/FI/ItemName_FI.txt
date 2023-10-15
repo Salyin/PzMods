@@ -1,0 +1,7 @@
+ItemName_FI = {
+	ItemName_Base.Bag_Satchel = "Reppu (Edes)",
+    ItemName_Base.Bag_SatchelBack = "Reppu (Takana)",
+	ItemName_Base.MysteriousSatchel_New = "Taktinen reppu (Edes)",
+	ItemName_Base.MysteriousSatchelBack = "Taktinen reppu (Takana)",
+	ItemName_Base.MysteriousHazmat = "Hazmat-puku",
+}

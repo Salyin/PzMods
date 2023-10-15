@@ -1,0 +1,59 @@
+Sandbox_EN = {
+
+	Sandbox_Lifestyle = "Lifestyle: Hobbies - Settings",
+
+	Sandbox_Divider_Music = "________________ Music ________________",
+	Sandbox_Divider_Music_tooltip = "This is only a line separator, checking it has no effect.",
+	Sandbox_Divider_Dancing = "________________ Dancing ________________",
+	Sandbox_Divider_Dancing_tooltip = "This is only a line separator, checking it has no effect.",
+	Sandbox_Divider_Meditation = "_______________ Meditation _______________",
+	Sandbox_Divider_Meditation_tooltip = "This is only a line separator, checking it has no effect.",
+	Sandbox_Divider_Debug = "__________________ Debug _________________",
+	Sandbox_Divider_Debug_tooltip = "This is only a line separator, checking it has no effect.",
+	
+	Sandbox_DividerBox_A = "",
+
+	Sandbox_Music_StrengthMultiplier = "Music Strength",
+	Sandbox_Music_StrengthMultiplier_tooltip = "Controls how powerful music related activities are. Higher values increase their effectiveness.",
+	Sandbox_Music_StrengthMultiplier_option1 = "Low",
+	Sandbox_Music_StrengthMultiplier_option2 = "Normal",
+	Sandbox_Music_StrengthMultiplier_option3 = "High",
+	Sandbox_Music_StrengthMultiplier_option4 = "Very High",
+
+	Sandbox_Dancing_StrengthMultiplier = "Dancing Strength",
+	Sandbox_Dancing_StrengthMultiplier_tooltip = "Controls how powerful dancing is. Higher values increase it's effectiveness.",
+	Sandbox_Dancing_StrengthMultiplier_option1 = "Low",
+	Sandbox_Dancing_StrengthMultiplier_option2 = "Normal",
+	Sandbox_Dancing_StrengthMultiplier_option3 = "High",
+	Sandbox_Dancing_StrengthMultiplier_option4 = "Very High",
+
+	Sandbox_Meditation_StrengthMultiplier = "Meditation Strength",
+	Sandbox_Meditation_StrengthMultiplier_tooltip = "Controls how powerful meditation is. Higher values increase it's effectiveness.",
+	Sandbox_Meditation_StrengthMultiplier_option1 = "Low",
+	Sandbox_Meditation_StrengthMultiplier_option2 = "Normal",
+	Sandbox_Meditation_StrengthMultiplier_option3 = "High",
+	Sandbox_Meditation_StrengthMultiplier_option4 = "Very High",
+
+	Sandbox_Meditation_MindfulnessDuration = "Meditation Mindfulness Duration",
+	Sandbox_Meditation_MindfulnessDuration_tooltip = "Controls the duration of all mindfulness states.",
+	Sandbox_Meditation_MindfulnessDuration_option1 = "Short",
+	Sandbox_Meditation_MindfulnessDuration_option2 = "Normal",
+	Sandbox_Meditation_MindfulnessDuration_option3 = "Long",
+
+	Sandbox_Meditation_HealFactor = "Meditation Perfect Mindfulness healing factor",
+	Sandbox_Meditation_HealFactor_tooltip = "How much healing occurs during during the Perfect Mindfulness state.<br>The amount varies depending on your character overall health and game-time settings.",
+
+	Sandbox_Meditation_EffectMultiplier = "Meditation Mindfulness Effects Strength",
+	Sandbox_Meditation_EffectMultiplier_tooltip = "Controls the effectiveness of the mindfulness states bonuses (stress, pain, panic, etc...).",
+	Sandbox_Meditation_EffectMultiplier_option1 = "Weak",
+	Sandbox_Meditation_EffectMultiplier_option2 = "Normal",
+	Sandbox_Meditation_EffectMultiplier_option3 = "Strong",
+
+	Sandbox_Debug_MoodlePriority = "Debug Invert Moodle Y",
+	Sandbox_Debug_MoodlePriority_tooltip = "Enabling this will cause other modded moodles to appear above lifestyle moodles.",
+	Sandbox_Debug_Expressions = "Debug Expressions",
+	Sandbox_Debug_Expressions_tooltip = "Enables manual expressions in the admin context menu",
+	Sandbox_Debug_DanceAnim = "Debug Names",
+	Sandbox_Debug_DanceAnim_tooltip = "Enabling this will make animation names appear above some of the new animations",
+
+}

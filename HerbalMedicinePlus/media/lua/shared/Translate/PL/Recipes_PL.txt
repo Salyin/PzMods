@@ -1,0 +1,21 @@
+Recipe_PL = {
+
+Recipe_Craft Herbal Vitamins = "Tworzenie witamin zio³owych",
+Recipe_Craft Herbal Antibiotics Brew = "Tworzenie naparu zio³owych antybiotyków",
+Recipe_Empty Bowl of Antibiotics = "Pusta miska z naparem zio³owych antybiotyków",
+Recipe_Craft Herbal Painkillers Brew = "Tworzenie naparu zio³owych leków przeciwbólowych",
+Recipe_Empty Bowl of Painkillers = "Pusta miska z naparem zio³owych leków przeciwbólowych",
+Recipe_Disinfect Rag = "Dezynfekcja szmatki",
+Recipe_Disinfect Bandage = "Dezynfekcja opatrunku",
+Recipe_Make Mortar and Pestle = "Tworzenie mo¼dzierza i t³uczka",
+
+Recipe_Extract Antibiotics from Moldy Bread = "Wyodrêbnianie antybiotyków z ple¶niowego chleba",
+Recipe_Make Herbal Antibiotics = "Tworzenie antybiotyków zio³owych",
+Recipe_Make Vitamins = "Tworzenie witamin",
+Recipe_Make Natural Antidepressants = "Tworzenie naturalnych leków przeciwdepresyjnych",
+Recipe_Make Natural Beta Blockers = "Tworzenie naturalnych beta-blokerów",
+
+Recipe_Prepare Herbal Tea = "Przygotowanie herbaty zio³owej",
+Recipe_Break pieces of charcoal = "Rozbijanie kawa³ków wêgla drzewnego",
+
+}

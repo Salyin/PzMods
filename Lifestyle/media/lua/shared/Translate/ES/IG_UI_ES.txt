@@ -1,0 +1,5 @@
+IGUI_ES = {
+	IGUI_perks_Meditation = "Meditación",
+	IGUI_perks_Music = "Musica",
+	IGUI_perks_Lifestyle = "Estilo de vida",
+}

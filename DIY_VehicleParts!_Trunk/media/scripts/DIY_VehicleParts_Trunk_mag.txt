@@ -1,0 +1,21 @@
+module T15K_VehicleParts
+{
+    imports 
+    {
+        Base
+    }
+/*написать рецепты для ТРАНКС*/
+
+	item DIY_VehiclePartsMag5 {
+		Weight = 0.1,
+		Type = Literature,
+		DisplayName = DIY_VehiclePartsMag5,
+		Icon = DIY_VehiclePartsMag5,
+		TeachedRecipes = Make BigTrunk1;Make BigTrunk2;Make BigTrunk3;Make SmallTrunk1;Make SmallTrunk2;Make SmallTrunk3;Make NormalTrunk1;Make NormalTrunk2;Make NormalTrunk3;Make TrailerTrunk1;Make TrailerTrunk2;Make TrailerTrunk3,
+		ReplaceOnUse = DIY_VehiclePartsMag5,
+		StaticModel = Magazine,
+		Tooltip = Tooltip_DIY_VehiclePartsMag5,
+		DisplayCategory = SkillBook,
+	}
+
+}

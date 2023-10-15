@@ -1,0 +1,140 @@
+VERSION = 1,
+
+option SatchelFrontNewBag.Capacity
+{
+	type = integer, 
+	min = 1, 
+	max = 1000, 
+	default = 9,
+	
+	page = NewBag, 
+	translation = SatchelFrontNewBag_Capacity,
+	valueTranslation = SatchelFrontNewBag_Capacity,
+}
+option SatchelFrontNewBag.WeightReduction
+{
+	type = integer, 
+	min = 1, 
+	max = 100, 
+	default = 40,
+	
+	page = NewBag, 
+	translation = SatchelFrontNewBag_WeightReduction,
+	valueTranslation = SatchelFrontNewBag_WeightReduction,
+}
+option SatchelFrontNewBag.Weight
+{
+	type = double,
+	min = 0, 
+	max = 100, 
+	default = 1,
+	
+	page = NewBag, 
+	translation = SatchelFrontNewBag_Weight,
+	valueTranslation = SatchelFrontNewBag_Weight,
+}
+
+
+option SatchelBackNewBag.Capacity
+{
+	type = integer, 
+	min = 1, 
+	max = 1000, 
+	default = 9,
+	
+	page = NewBag, 
+	translation = SatchelBackNewBag_Capacity,
+	valueTranslation = SatchelBackNewBag_Capacity,
+}
+option SatchelBackNewBag.WeightReduction
+{
+	type = integer, 
+	min = 1, 
+	max = 100, 
+	default = 40,
+	
+	page = NewBag, 
+	translation = SatchelBackNewBag_WeightReduction,
+	valueTranslation = SatchelBackNewBag_WeightReduction,
+}
+option SatchelBackNewBag.Weight
+{
+	type = double, 
+	min = 0, 
+	max = 100, 
+	default = 1,
+	
+	page = NewBag, 
+	translation = SatchelBackNewBag_Weight,
+	valueTranslation = SatchelBackNewBag_Weight,
+}
+
+
+option TacticalSatchelFrontNewBag.Capacity
+{
+	type = integer, 
+	min = 1, 
+	max = 1000, 
+	default = 11,
+	
+	page = NewBag, 
+	translation = TacticalSatchelFrontNewBag_Capacity,
+	valueTranslation = TacticalSatchelFrontNewBag_Capacity,
+}
+option TacticalSatchelFrontNewBag.WeightReduction
+{
+	type = integer, 
+	min = 1, 
+	max = 100, 
+	default = 50,
+	
+	page = NewBag, 
+	translation = TacticalSatchelFrontNewBag_WeightReduction,
+	valueTranslation = TacticalSatchelFrontNewBag_WeightReduction,
+}
+option TacticalSatchelFrontNewBag.Weight
+{
+	type = double, 
+	min = 0, 
+	max = 100, 
+	default = 1,
+	
+	page = NewBag, 
+	translation = TacticalSatchelFrontNewBag_Weight,
+	valueTranslation = TacticalSatchelFrontNewBag_Weight,
+}
+
+
+option TacticalSatchelBackNewBag.Capacity
+{
+	type = integer, 
+	min = 1, 
+	max = 1000, 
+	default = 11,
+	
+	page = NewBag, 
+	translation = TacticalSatchelBackNewBag_Capacity,
+	valueTranslation = TacticalSatchelBackNewBag_Capacity,
+}
+option TacticalSatchelBackNewBag.WeightReduction
+{
+	type = integer, 
+	min = 1, 
+	max = 100, 
+	default = 50,
+	
+	page = NewBag, 
+	translation = TacticalSatchelBackNewBag_WeightReduction,
+	valueTranslation = TacticalSatchelBackNewBag_WeightReduction,
+}
+option TacticalSatchelBackNewBag.Weight
+{
+	type = double, 
+	min = 0, 
+	max = 100, 
+	default = 1,
+	
+	page = NewBag, 
+	translation = TacticalSatchelBackNewBag_Weight,
+	valueTranslation = TacticalSatchelBackNewBag_Weight,
+}

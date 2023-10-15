@@ -1,0 +1,62 @@
+module SpoonEssentialCrafting
+{
+
+	imports
+	{
+		Base
+	}
+	
+	recipe Make into Usable Parts
+	{
+		VarmintRifle/AssaultRifle/AssaultRifle2/HuntingRifle,
+		keep Screwdriver,
+		
+		Result:WeaponParts=15,
+		SkillRequired:MetalWelding=1,
+		OnGiveXP:Recipe.OnGiveXP.MetalWelding20,
+		Time:400.0,
+	}
+	
+	recipe Make into Usable Parts
+	{
+		Shotgun/DoubleBarrelShotgun/ShotgunSawnoff,
+		keep Screwdriver,
+		
+		Result:WeaponParts=10,
+		SkillRequired:MetalWelding=1,
+		OnGiveXP:Recipe.OnGiveXP.MetalWelding20,
+		Time:400.0,
+	}
+	
+	recipe Make into Usable Parts
+	{
+		Pistol/Pisto2/Pisto3/Revolver/Revolver_Long/Revolver_Short,
+		keep Screwdriver,
+		
+		Result:WeaponParts=5,
+		SkillRequired:MetalWelding=1,
+		OnGiveXP:Recipe.OnGiveXP.MetalWelding20,
+		Time:400.0,
+	}
+	
+	recipe Scrap Weapon Parts
+	{
+		WeaponParts,
+		keep Screwdriver,
+		keep [Recipe.GetItemTypes.Hammer],
+		
+		Result:ScrapMetal,
+		Time:100.0,
+	}
+	
+	item WeaponParts
+    {
+        DisplayCategory = Material,
+        Weight	=	0.1,
+        Type	=	Normal,
+        DisplayName	= Weapon Parts,
+        Icon	=	ScrapMetal,
+        WorldStaticModel = ScrapMetal,
+    }
+
+}

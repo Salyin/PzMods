@@ -1,0 +1,18 @@
+Recipe_EN = {
+	Recipe_Make_BigTrunk1 = "Make Big Trunk - Standart",
+	Recipe_Make_BigTrunk2 = "Make Big Trunk - Heavy-Duty",
+	Recipe_Make_BigTrunk3 = "Make Big Trunk - Sport",
+	Recipe_Make_SmallTrunk1 = "Make Small Trunk - Standart",
+	Recipe_Make_SmallTrunk2 = "Make Small Trunk - Heavy-Duty",
+	Recipe_Make_SmallTrunk3 = "Make Small Trunk - Sport",
+	Recipe_Make_NormalTrunk1 = "Make Standart Trunk - Standart",
+	Recipe_Make_NormalTrunk2 = "Make Standart Trunk - Heavy-Duty",
+	Recipe_Make_NormalTrunk3 = "Make Standart Trunk - Sport",
+	Recipe_Make_TrailerTrunk1 = "Make Trailer Trunk - Standart",
+	Recipe_Make_TrailerTrunk2 = "Make Trailer Trunk - Heavy-Duty",
+	Recipe_Make_TrailerTrunk3 = "Make Trailer Trunk - Sport",
+
+
+	/*Recipe_Make_ = "Make ",*/
+
+}

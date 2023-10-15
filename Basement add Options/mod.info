@@ -1,0 +1,6 @@
+name=Basement Add Options
+id=BasementAddOptions
+description= adds admin tools and new features (in development)
+poster=poster.png
+pack=AuD_basement
+tiledef=AuD_basementdefinitions 6777

@@ -1,0 +1,15 @@
+ItemName_PL = {
+
+ItemName_Base.AntibioticsHerbalBrew = "Napar z antybiotykami zio這wymi (surowy)",
+ItemName_Base.AntibioticsHerbalBrewReady = "Napar z antybiotykami zio這wymi (gotowy)",
+ItemName_Base.AntibioticsHerbal = "Antybiotyki zio這we",
+ItemName_Base.PainkillersHerbalBrew = "Napar z lekami przeciwb鏊owymi zio這wymi (surowy)",
+ItemName_Base.PainkillersHerbalBrewReady = "Napar z lekami przeciwb鏊owymi zio這wymi (gotowy)",
+ItemName_Base.PainkillersHerbal = "Leki przeciwb鏊owe zio這we",
+
+ItemName_Base.SpoonHerbalTea = "Herbata zio這wa w 造瞠czce",
+ItemName_Base.PieceOfCharcoal = "Kawa貫k w璕la drzewnego",
+
+ItemName_Base.SpoonMagazineHerbal = "Magazyn z przepisami na dania zio這we",
+
+}

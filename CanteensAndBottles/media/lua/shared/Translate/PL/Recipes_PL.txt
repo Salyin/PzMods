@@ -1,0 +1,8 @@
+Recipes_PL = 
+{
+	Recipe_Extract_Bladder_from_Soccer_Ball = "Wyciagnij srodek z pilki noznej",
+	Recipe_Extract_Bladder_from_Football = "Wyciagnij srodek z pilki futbolowej",
+	Recipe_Make_a_Small_Waterskin = "Zrób maly buklak",
+	Recipe_Make_a_Large_Waterskin = "Zrób duzy buklak",
+	Recipe_Make_a_Quality_Waterskin = "Zrób buklak dobrej jakosci",
+} 

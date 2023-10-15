@@ -1,0 +1,6 @@
+Recipe_PT = {
+  Recipe_Dismantle_Cardboard_Bed = "Desfazer Cama de Papelão",
+  Recipe_Make_Cardboard_Bed = "Fazer Cama de Papelão",
+  Recipe_Open_Letter = "Aprire Lettera",
+  Recipe_Open_Package = "Aprire Pacchetto",
+}

@@ -1,0 +1,28 @@
+Sandbox_RU = {
+    Sandbox_VehicleRecycling_UninstallParts = "Перед разборкой необходимо снять детали",
+    Sandbox_VehicleRecycling_UninstallParts_tooltip = "Перед разборкой необходимо снять следующие детали: капот, крышку багажника, двери, окна, сиденья.",
+    
+	Sandbox_VehicleRecycling_RecyclingClaimedVehicle = "Разбирать заприваченные авто - нормальные",
+    Sandbox_VehicleRecycling_RecyclingClaimedVehicle_tooltip = "Если настройка включена, значит можно будет разобрать заприваченное авто.<br>Мод на автомобили Valhala Aegis",
+	
+	Sandbox_VehicleRecycling_RecyclingClaimedSmashedCar = "Разбирать заприваченные авто - разбитые",
+    Sandbox_VehicleRecycling_RecyclingClaimedSmashedCar_tooltip = "При включенной настройке можно будет разбирать заприваченные разбитые машины.<br>Все машины в названии которых есть Smashed. К примеру Base.SUVSmashedFront.",
+	
+	Sandbox_VehicleRecycling_RecyclingClaimedBurntCar = "Разбирать заприваченные авто - сожжённые",
+    Sandbox_VehicleRecycling_RecyclingClaimedBurntCar_tooltip = "При включенной настройке можно будет разбирать заприваченные разбитые машины.<br>Все машины в названии которых есть Smashed. К примеру Base.VanBurnt.",
+	
+	Sandbox_VehicleRecycling_RecyclingSmashedCar = "Разбирать разбитые(Smashed) машины не снимая детали",
+	Sandbox_VehicleRecycling_RecyclingSmashedCar_tooltip = "Включая данную настройку вы даёте возможность разваривать разбитые машины.<br>Настройка работает только с машинами в ID которых есть текст Smashed.<br>К примеру: Base.SUVSmashedFront",
+	
+	Sandbox_VehicleRecycling_RecyclingBurntCar = "Разбирать сожжённые(Burnt) машины не снимая детали",
+	Sandbox_VehicleRecycling_RecyclingBurntCar_tooltip = "Включая данную настройку вы даёте возможность разваривать сожённые машины.<br>Настройка работает только с машинами в ID которых есть текст Burnt.<br>К примеру: Base.VanBurnt",
+	
+	Sandbox_VehicleRecycling_ExceptionListRate = "Список машин-исключений с которых не нужно снимать детали",
+	Sandbox_VehicleRecycling_ExceptionListRate_tooltip = "Исключения для машин которым не нужно снимать детали.<br>Эта настройка нужна для машин на которых есть детали которые невозможно снять.<br>Вписывайте ID машины полностью, через ; .<br>Например: Base.CarPolice;Base.CarPolice2;Base.CarPolice3",
+	
+	Sandbox_VehicleRecycling_OldVersionNeededPropane = "Использовать старую версию требования пропана",
+	Sandbox_VehicleRecycling_OldVersionNeededPropane_tooltip = "После включения данной настройки требования пропана возрастёт в 10 раз.<br>Эта настройка нужна для тех кто играет с модами которые возвращают вместительность горелки и пропанновых баллонов как это было в старых патчах.<br>К примеру «Propane Tank Fix»",
+	
+	Sandbox_VehicleRecycling_ActionTimeMultiplier = "Множитель времени разборки",
+
+}

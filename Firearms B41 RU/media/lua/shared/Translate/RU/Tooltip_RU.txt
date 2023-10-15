@@ -1,0 +1,14 @@
+
+Tooltip_RU = {
+  /*Attachments*/
+  Tooltip_Silencer = "Подавляет звук стреляющего оружия."
+  Tooltip_ImprovisedSilencer = "Подавляет звук стреляющего оружия лучше чем ничего."
+  Tooltip_Bipod = "Уменьшают отдачу, повышая шансы на попадание."
+  Tooltip_AmmoStock = "Уменьшает время перезарядки."
+  Tooltip_TacticalStock = "Стабилизирует отдачу, повышая шансы на попадание."
+  Tooltip_ExtendableStock = "Стабилизирует отдачу, повышая шансы на попадание. Может быть сложено."
+  Tooltip_Compensator = "Уменьшает отдачу, повышая шансы на попадание."
+  Tooltip_ServiceFirearms  = "Может быть использовано для ухода за оружием."
+  Tooltip_22  = ".22 LR"
+  Tooltip_9mm  = "9x19мм"
+}

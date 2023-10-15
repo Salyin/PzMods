@@ -1,0 +1,7 @@
+﻿ItemName_JP = {
+	ItemName_Base.Bag_Satchel = "サッチェル(前側)",
+    ItemName_Base.Bag_SatchelBack = "サッチェル(後側)",
+	ItemName_Base.MysteriousSatchel_New = "タクティカル サッチェル(前側)",
+	ItemName_Base.MysteriousSatchelBack = "タクティカル サッチェル(後側)",
+	ItemName_Base.MysteriousHazmat = "化学防護服",
+	}

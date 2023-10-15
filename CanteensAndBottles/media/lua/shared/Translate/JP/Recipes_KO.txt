@@ -1,0 +1,8 @@
+Recipes_JP =
+{
+	Recipe_Extract_Bladder_from_Soccer_Ball = "サッカーボールからゴム袋を取り出す",
+	Recipe_Extract_Bladder_from_Football = "フットボールからゴム袋を取り出す",
+	Recipe_Make_a_Small_Waterskin = "小さな水袋を作る",
+	Recipe_Make_a_Large_Waterskin = "大きな水袋を作る",
+	Recipe_Make_a_Quality_Waterskin = "高品質の水袋を作る",
+}

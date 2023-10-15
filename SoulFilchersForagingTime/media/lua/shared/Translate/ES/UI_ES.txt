@@ -1,0 +1,6 @@
+UI_ES = {
+  UI_prof_Homeless = "Mendigo",
+
+  UI_trait_Scavenger = "Basusero",
+  UI_trait_ScavengerDesc = "Perda de resistência mais lenta ao catar.",
+}

@@ -1,0 +1,177 @@
+module Base
+{	
+	sound basement_egout_close
+	{
+		category = Player,
+		clip
+		{
+			file = media/sound/basement_egout_close.ogg,
+			volume = 0.3,
+		}
+	}
+	sound basement_egout_close_eco
+	{
+		category = Player,
+		clip
+		{
+			file = media/sound/basement_egout_close_eco.ogg,
+			volume = 0.3,
+		}
+	}
+	sound basement_egout_open
+	{
+		category = Player,
+		clip
+		{
+			file = media/sound/basement_egout_open.ogg,
+			volume = 0.3,
+		}
+	}
+	sound basement_egout_open_eco
+	{
+		category = Player,
+		clip
+		{
+			file = media/sound/basement_egout_open_eco.ogg,
+			volume = 0.3,
+		}
+	}
+
+
+	sound basement_lockPadlock
+	{
+		category = Player,
+		clip
+		{
+			file = media/sound/basement_lock_sound.ogg,
+			volume = 0.5,
+		}
+	}
+
+	sound basement_manipPadlock
+	{
+		category = Player,
+		clip
+		{
+			file = media/sound/basement_manipPadlock_sound_1.ogg,
+			volume = 0.7,
+		}
+	}
+	sound basement_manipPadlock
+	{
+		category = Player,
+		clip
+		{
+			file = media/sound/basement_manipPadlock_sound_2.ogg,
+			volume = 0.7,
+		}
+	}
+	sound basement_manipPadlock
+	{
+		category = Player,
+		clip
+		{
+			file = media/sound/basement_manipPadlock_sound_3.ogg,
+			volume = 0.7,
+		}
+	}
+
+	sound basement_unlockPadlock
+	{
+		category = Player,
+		clip
+		{
+			file = media/sound/basement_unlock_sound.ogg,
+			volume = 0.5,
+		}
+	}
+
+	sound basement_takePadlock
+	{
+		category = Player,
+		clip
+		{
+			file = media/sound/basement_takePadlock_sound.ogg,
+			volume = 0.7,
+		}
+	}
+
+	sound basement_addPadlock
+	{
+		category = Player,
+		clip
+		{
+			file = media/sound/basement_addPadlock_sound.ogg,
+			volume = 0.7,
+		}
+	}
+
+	sound basement_breakCrowbar
+	{
+		category = Player,
+		clip
+		{
+			file = media/sound/basement_breakCrowbar_sound.ogg,
+			volume = 0.3,
+		}
+	}
+
+	sound basement_breakPadlockISfail
+	{
+		category = Player,
+		clip
+		{
+			file = media/sound/basement_breakPadlockISfail_sound.ogg,
+			volume = 0.7,
+		}
+	}
+
+	sound basement_breakPadlockISok
+	{
+		category = Player,
+		clip
+		{
+			file = media/sound/basement_breakPadlockISok_sound.ogg,
+			volume = 0.3,
+		}
+	}
+
+	sound basement_breakPadlockWithCrowbar
+	{
+		category = Player,
+		clip
+		{
+			file = media/sound/basement_breakPadlockWithCrowbar_sound.ogg,
+			volume = 0.6,
+		}
+	}
+
+	sound basement_doorISlocked
+	{
+		category = Player,
+		clip
+		{
+			file = media/sound/basement_doorISlocked_sound_1.ogg,
+			volume = 0.35,
+		}
+	}
+	sound basement_doorISlocked
+	{
+		category = Player,
+		clip
+		{
+			file = media/sound/basement_doorISlocked_sound_2.ogg,
+			volume = 0.35,
+		}
+	}
+	sound basement_doorISlocked
+	{
+		category = Player,
+		clip
+		{
+			file = media/sound/basement_doorISlocked_sound_3.ogg,
+			volume = 0.35,
+		}
+	}
+	
+}

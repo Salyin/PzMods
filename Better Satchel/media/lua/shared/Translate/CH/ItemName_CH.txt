@@ -1,0 +1,7 @@
+﻿ItemName_CH = {
+	ItemName_Base.Bag_Satchel = "側背包 (前) ",
+    ItemName_Base.Bag_SatchelBack = "側背包 (背) ",
+	ItemName_Base.MysteriousSatchel_New = "戰術側背包 (前) ",
+	ItemName_Base.MysteriousSatchelBack = "戰術側背包 (背) ",
+	ItemName_Base.MysteriousHazmat = "化學防護衣",
+}

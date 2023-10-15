@@ -1,0 +1,172 @@
+module Base
+{
+	template vehicle Trunk
+	{
+		/* FIXME: This should be "Trunk" */
+		part TruckBed
+		{
+			area = TruckBed,
+			category = bodywork,
+			itemType = Base.NormalTrunk,
+			mechanicRequireKey = true,
+			repairMechanic = true,
+			container
+			{
+				conditionAffectsCapacity = true,
+				/* FIXME: This should be "ContainerAccess.Trunk" */
+				test = Vehicles.ContainerAccess.TruckBedNew,
+			}
+/*Демонтаж багажника*/
+			table install
+			{
+				items
+				{
+					1
+					{
+						type = Base.Screwdriver,
+						count = 1,
+						keep = true,
+						equip = secondary,
+					}
+					2
+					{
+						type = Base.Wrench,
+						count = 1,
+						keep = true,
+						equip = primary,
+					}
+				}
+				time = 700,
+				skills = Mechanics:7,
+				recipes = Basic Mechanics,
+				test = Vehicles.InstallTest.Default,
+			}
+			table uninstall
+			{
+				items
+				{
+					1
+					{
+						type = Base.Screwdriver,
+						count = 1,
+						keep = true,
+						equip = secondary,
+					}
+					2
+					{
+						type = Base.Wrench,
+						count = 1,
+						keep = true,
+						equip = primary,
+					}
+				}
+				time = 700,
+				skills = Mechanics:7,
+				recipes = Basic Mechanics,
+				test = Vehicles.UninstallTest.Default,
+				requireEmpty = true,
+			}
+
+			lua
+			{
+				create = Vehicles.Create.Default,
+			}
+
+		}
+
+		/* FIXME: This should be "TruckBed" */
+		part TruckBedOpen
+		{
+			area = TruckBed,
+			category = bodywork,
+			itemType = Base.NormalTrunk,
+			mechanicRequireKey = false,
+			repairMechanic = true,
+			container
+			{
+				conditionAffectsCapacity = true,
+				/* FIXME: This should be "ContainerAccess.TruckBed" */
+				test = Vehicles.ContainerAccess.TruckBedOpen,
+			}
+			lua
+			{
+				create = Vehicles.Create.Default,
+			}
+		}
+
+		part TrailerTrunk
+		{
+			area = TruckBed,
+			category = bodywork,
+			itemType = Base.TrailerTrunk,
+			mechanicRequireKey = false,
+			repairMechanic = true,
+			container
+			{
+			    capacity = 100,
+				conditionAffectsCapacity = false,
+				/* FIXME: This should be "ContainerAccess.TruckBed" */
+				test = Vehicles.ContainerAccess.TruckBedOpenNew,
+			}
+
+
+			table install
+			{
+				items
+				{
+					1
+					{
+						type = Base.Screwdriver,
+						count = 1,
+						keep = true,
+						equip = secondary,
+					}
+					2
+					{
+						type = Base.Wrench,
+						count = 1,
+						keep = true,
+						equip = primary,
+					}
+				}
+				time = 700,
+				skills = Mechanics:7,
+				recipes = Basic Mechanics,
+				test = Vehicles.InstallTest.Default,
+			}
+			table uninstall
+			{
+				items
+				{
+					1
+					{
+						type = Base.Screwdriver,
+						count = 1,
+						keep = true,
+						equip = secondary,
+					}
+					2
+					{
+						type = Base.Wrench,
+						count = 1,
+						keep = true,
+						equip = primary,
+					}
+				}
+				time = 700,
+				skills = Mechanics:7,
+				recipes = Basic Mechanics,
+				test = Vehicles.UninstallTest.Default,
+				requireEmpty = true,
+			}
+
+
+
+			lua
+			{
+				create = Vehicles.Create.Default,
+			}
+		}
+	}
+}
+

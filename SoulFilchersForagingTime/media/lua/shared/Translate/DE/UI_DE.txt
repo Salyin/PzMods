@@ -1,0 +1,5 @@
+UI_DE = {
+  UI_prof_Homeless = "Bettler",
+
+  UI_trait_Scavenger = "Aasgeier",
+}

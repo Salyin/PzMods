@@ -1,0 +1,4 @@
+Moveables_EN = {
+	Switch1_Outdoor_Lamp = "New Light Switch (Right)",
+	Switch2_Outdoor_Lamp = "New Light Switch (Left)",
+}

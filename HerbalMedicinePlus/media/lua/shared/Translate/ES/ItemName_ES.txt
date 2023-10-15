@@ -1,0 +1,11 @@
+ItemName_ES = {
+	ItemName_Base.AntibioticsHerbalBrew = "Fermentado de antibióticos herbales (crudo)",
+	ItemName_Base.AntibioticsHerbalBrewReady = "Fermentado de antibióticos herbales (listo)",
+	ItemName_Base.AntibioticsHerbal = "Anitibióticos herbales",
+	ItemName_Base.PainkillersHerbalBrew = "Fermentado de analgésicos herbales (crudo)",
+	ItemName_Base.PainkillersHerbalBrewReady = "Fermentado de analgésicos herbales (listo)",
+	ItemName_Base.PainkillersHerbal = "Analgésicos herbales",	
+	ItemName_Base.SpoonHerbalTea = "Té herbal",
+	ItemName_Base.PieceOfCharcoal = "Pedazo de carbón",	
+	ItemName_Base.SpoonMagazineHerbal = "Revista de recetas herbales",
+}

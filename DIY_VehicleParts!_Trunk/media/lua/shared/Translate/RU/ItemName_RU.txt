@@ -1,0 +1,5 @@
+Items_RU = {
+	DisplayName_DIY_VehiclePartsMag5 = "Журнал «Всратый DIY: Багажник»",
+	ItemName_T15K_VehicleParts.DIY_VehiclePartsMag5 = "Журнал «Всратый DIY: Багажник»",
+
+}

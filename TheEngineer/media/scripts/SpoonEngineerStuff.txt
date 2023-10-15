@@ -1,0 +1,679 @@
+module SpoonEngineerStuff
+{
+
+	imports
+	{
+		Base
+	}
+	
+	/****************************** TINY STUFF ******************************/
+	
+	recipe Assemble a Amplifier
+	{
+	   Screws=5,
+	   ElectronicsScrap=2,
+       BlowTorch,
+	   Radio.ElectricWire,
+       Aluminum,
+	   keep [Recipe.GetItemTypes.SharpKnife],
+	   keep [Recipe.GetItemTypes.Screwdriver],
+
+	   Result:Amplifier,
+       Time:500.0,
+	   Sound:Dismantle,
+		AnimNode 				: Disassemble,
+        Prop1					: Screwdriver,
+       Category:Engineer,
+	   NeedToBeLearn:true,
+       SkillRequired:MetalWelding=8;Electricity=6,
+	   OnGiveXP:Recipe.OnGiveXP.RadioCraft,
+	   CanBeDoneFromFloor      : TRUE,
+	}
+	
+	recipe Assemble a Radio Receiver
+	{
+	   Screws=5,
+	   ElectronicsScrap=2,
+       BlowTorch,
+	   Radio.ElectricWire,
+       Aluminum,
+	   keep [Recipe.GetItemTypes.SharpKnife],
+	   keep [Recipe.GetItemTypes.Screwdriver],
+
+	   Result:RadioReceiver,
+       Time:500.0,
+	   Sound:Dismantle,
+		AnimNode 				: Disassemble,
+        Prop1					: Screwdriver,
+       Category:Engineer,
+	   NeedToBeLearn:true,
+       SkillRequired:MetalWelding=8;Electricity=6,
+	   OnGiveXP:Recipe.OnGiveXP.RadioCraft,
+	   CanBeDoneFromFloor      : TRUE,
+	}
+	
+	recipe Assemble a Radio Transmitter
+	{
+	   Screws=5,
+	   ElectronicsScrap=2,
+       BlowTorch,
+	   Radio.ElectricWire,
+       Aluminum,
+	   keep [Recipe.GetItemTypes.SharpKnife],
+	   keep [Recipe.GetItemTypes.Screwdriver],
+
+	   Result:RadioTransmitter,
+       Time:500.0,
+	   Sound:Dismantle,
+		AnimNode 				: Disassemble,
+        Prop1					: Screwdriver,
+       Category:Engineer,
+	   NeedToBeLearn:true,
+       SkillRequired:MetalWelding=8;Electricity=6,
+	   OnGiveXP:Recipe.OnGiveXP.RadioCraft,
+	   CanBeDoneFromFloor      : TRUE,
+	}
+	
+	recipe Assemble a Receiver
+	{
+	   Screws=5,
+	   ElectronicsScrap=2,
+       BlowTorch,
+	   Radio.ElectricWire,
+       Aluminum,
+	   keep [Recipe.GetItemTypes.SharpKnife],
+	   keep [Recipe.GetItemTypes.Screwdriver],
+
+	   Result:Receiver,
+       Time:500.0,
+	   Sound:Dismantle,
+		AnimNode 				: Disassemble,
+        Prop1					: Screwdriver,
+       Category:Engineer,
+	   NeedToBeLearn:true,
+       SkillRequired:MetalWelding=8;Electricity=6,
+	   OnGiveXP:Recipe.OnGiveXP.RadioCraft,
+	   CanBeDoneFromFloor      : TRUE,
+	}
+	
+	recipe Assemble a Motion Sensor
+	{
+	   Screws=5,
+	   ElectronicsScrap=2,
+       BlowTorch,
+	   Radio.ElectricWire,
+       Aluminum,
+	   keep [Recipe.GetItemTypes.SharpKnife],
+	   keep [Recipe.GetItemTypes.Screwdriver],
+
+	   Result:MotionSensor,
+       Time:500.0,
+	   Sound:Dismantle,
+		AnimNode 				: Disassemble,
+        Prop1					: Screwdriver,
+       Category:Engineer,
+	   NeedToBeLearn:true,
+       SkillRequired:MetalWelding=8;Electricity=6,
+	   OnGiveXP:Recipe.OnGiveXP.RadioCraft,
+	   CanBeDoneFromFloor      : TRUE,
+	}
+
+	/****************************** RAW MATERIAL ******************************/
+
+	recipe Dissasemble to Electronic Parts
+	{
+       Amplifier/RadioReceiver/RadioTransmitter/Receiver/MotionSensor,
+	   keep [Recipe.GetItemTypes.Screwdriver],
+
+	  Result:ElectronicsScrap,
+       Time:250.0,
+	   Sound:Dismantle,
+		AnimNode 				: Disassemble,
+        Prop1					: Screwdriver,
+       Category:Electrical,
+	   OnCreate:DismantleTinyElectronics_OnCreate,
+	   OnGiveXP:Recipe.OnGiveXP.RadioCraft,
+	   CanBeDoneFromFloor      : TRUE,
+	}
+	
+	recipe Dissasemble to Electronic Parts
+	{
+       GuitarElectricBassBlack/GuitarElectricBassBlue/GuitarElectricBassRed/Keytar/GuitarElectricBlack/GuitarElectricBlue/GuitarElectricRed,
+	   keep [Recipe.GetItemTypes.Screwdriver],
+
+	  Result:ElectronicsScrap,
+       Time:400.0,
+	   Sound:Dismantle,
+		AnimNode 				: Disassemble,
+        Prop1					: Screwdriver,
+       Category:Electrical,
+	   OnCreate:DismantleBigElectronics_OnCreate,
+	   OnGiveXP:Recipe.OnGiveXP.RadioCraft,
+	   CanBeDoneFromFloor      : TRUE,
+	}
+	
+	recipe Dissasemble to Electronic Parts
+    {
+        Mov_GreyOven/Mov_ModernOven/Mov_GreenOven/Mov_RedOven,
+		keep [Recipe.GetItemTypes.Screwdriver],
+		keep [Recipe.GetItemTypes.Hammer],
+		
+        Result:UnusableMetal=20,
+        Time: 400.0,
+        Sound:LogAddToStack,
+		AnimNode 				: Disassemble,
+        Prop1					: Screwdriver,
+        Category:Welding,
+	    OnGiveXP:Recipe.OnGiveXP.MetalWelding10,
+		OnCreate: GetEngDisBig_OnCreate,
+		CanBeDoneFromFloor      : TRUE,
+    }
+	
+	recipe Dissasemble to Electronic Parts
+    {
+        Mov_LightConstruction/Mov_PinballMachine/Mov_ArcadeMachine1/Mov_ArcadeMachine2/Mov_SatelliteDish,
+		keep [Recipe.GetItemTypes.Screwdriver],
+		keep [Recipe.GetItemTypes.Hammer],
+		
+        Result:UnusableMetal=12,
+        Time: 400.0,
+        Sound:LogAddToStack,
+		AnimNode 				: Disassemble,
+        Prop1					: Screwdriver,
+        Category:Welding,
+	    OnGiveXP:Recipe.OnGiveXP.MetalWelding10,
+		OnCreate: GetEngDisMed_OnCreate,
+		CanBeDoneFromFloor      : TRUE,
+    }
+	
+	recipe Dissasemble to Electronic Parts
+    {
+        Mov_TVCamera/Mov_Microphone/Mov_FridgeMini/Mov_AirConditioner/Mov_HotdogMachine/Mov_PopcornMachine/Mov_SodaMachine/Mov_Microwave/Mov_Microwave2/Mov_Toaster,
+		keep [Recipe.GetItemTypes.Screwdriver],
+		keep [Recipe.GetItemTypes.Hammer],
+		
+        Result:UnusableMetal=3,
+        Time: 400.0,
+        Sound:LogAddToStack,
+		AnimNode 				: Disassemble,
+        Prop1					: Screwdriver,
+        Category:Welding,
+	    OnGiveXP:Recipe.OnGiveXP.MetalWelding10,
+		OnCreate: GetEngDisLil_OnCreate,
+		CanBeDoneFromFloor      : TRUE,
+    }
+	
+	/****************************** WIRE ******************************/
+	
+	recipe Assemble Electric Wire
+	{
+       Wire=5,
+       Aluminum,
+	   ElectronicsScrap,
+	   keep [Recipe.GetItemTypes.SharpKnife],
+
+	   Result:Radio.ElectricWire=5,
+       Time:100.0,
+	   Sound:Dismantle,
+		AnimNode 				: Disassemble,
+        Prop1					: HuntingKnife,
+       Category:Electrical,
+	   NeedToBeLearn:true,
+       SkillRequired:Electricity=2,
+	   OnGiveXP:Recipe.OnGiveXP.MetalWelding10,
+	   CanBeDoneFromFloor      : TRUE,
+	}
+	
+	recipe Disassemble Electric Wire
+	{
+       Radio.ElectricWire=5,
+	   keep [Recipe.GetItemTypes.SharpKnife],
+
+	   Result:Wire,
+       Time:100.0,
+	   Sound:Dismantle,
+		AnimNode 				: Disassemble,
+        Prop1					: HuntingKnife,
+       Category:Electrical,
+	    OnCreate:DismantleEWire_OnCreate,
+	   OnGiveXP:Recipe.OnGiveXP.MetalWelding10,
+	   CanBeDoneFromFloor      : TRUE,
+	}
+
+	/****************************** PRODUCTS ******************************/
+	
+	recipe Assemble a Generator
+	{
+       SheetMetal,
+	   Screws=50,
+	   MetalPipe=5,
+       ScrapMetal=10,
+	   ElectronicsScrap=5,
+	   EngineParts=10,
+	   WeldingRods=3,
+       BlowTorch=3,
+	   Radio.ElectricWire=10,
+       Aluminum=5,
+	   keep [Recipe.GetItemTypes.Saw],
+	   keep [Recipe.GetItemTypes.Hammer],
+	   keep [Recipe.GetItemTypes.Screwdriver],
+
+	   Result:Generator,
+       Time:1000.0,
+	   Sound:Dismantle,
+		AnimNode 				: Disassemble,
+        Prop1					: Screwdriver,
+       Category:Engineer,
+	   NeedToBeLearn:true,
+       SkillRequired:Mechanics=4;MetalWelding=4;Electricity=8,
+	   OnGiveXP:Recipe.OnGiveXP.RadioCraft,
+	   CanBeDoneFromFloor      : TRUE,
+	}
+	
+	recipe Assemble a Blowtorch
+	{
+	   MetalPipe=2,
+       ScrapMetal=2,
+	   Screws=5,
+	   ElectronicsScrap,
+	   EngineParts=2,
+	   keep [Recipe.GetItemTypes.Saw],
+	   keep [Recipe.GetItemTypes.Hammer],
+	   keep [Recipe.GetItemTypes.Screwdriver],
+
+	   Result:BlowTorch;1,
+       Time:600.0,
+	   Sound:Dismantle,
+		AnimNode 				: Disassemble,
+        Prop1					: Screwdriver,
+       Category:Engineer,
+	   NeedToBeLearn:true,
+       SkillRequired:Mechanics=6;MetalWelding=6;Electricity=1,
+	   OnGiveXP:Recipe.OnGiveXP.RadioCraft,
+	   CanBeDoneFromFloor      : TRUE,
+	}
+	
+	recipe Assemble a Car Battery Charger
+	{ 
+	   SmallSheetMetal=2,
+       ScrapMetal=5,
+	   Screws=25,
+	   ElectronicsScrap=10,
+	   EngineParts,
+	   WeldingRods,
+       BlowTorch=3,
+	   Radio.ElectricWire=5,
+       Aluminum=5,
+	   keep [Recipe.GetItemTypes.Saw],
+	   keep [Recipe.GetItemTypes.Hammer],
+	   keep [Recipe.GetItemTypes.Screwdriver],
+
+	   Result:CarBatteryCharger,
+       Time:1000.0,
+	   Sound:Dismantle,
+		AnimNode 				: Disassemble,
+        Prop1					: Screwdriver,
+       Category:Engineer,
+	   NeedToBeLearn:true,
+       SkillRequired:Mechanics=1;MetalWelding=4;Electricity=6,
+	   OnGiveXP:Recipe.OnGiveXP.RadioCraft,
+	   CanBeDoneFromFloor      : TRUE,
+	}
+
+	recipe Assemble a Big Flashlight
+	{
+	   Plank/BleachEmpty,
+	   DuctTape=5,
+	   Screws=5,
+	   LightBulb=3,
+       ScrapMetal,
+	   ElectronicsScrap=2,
+	   Radio.ElectricWire=1,
+	   BlowTorch,
+       Aluminum=2,
+	   keep [Recipe.GetItemTypes.SharpKnife],
+	   keep [Recipe.GetItemTypes.Screwdriver],
+
+	   Result:Torch,
+       Time:500.0,
+	   Sound:Dismantle,
+		AnimNode 				: Disassemble,
+        Prop1					: Screwdriver,
+       Category:Engineer,
+	   NeedToBeLearn:true,
+       SkillRequired:Mechanics=1;MetalWelding=4;Electricity=4,
+	   OnGiveXP:Recipe.OnGiveXP.RadioCraft,
+	   CanBeDoneFromFloor      : TRUE,
+	}
+	
+	recipe Assemble a TV Remote
+	{  
+	   DuctTape,
+	   Receiver,
+	   Screws=5,
+       ScrapMetal,
+	   ElectronicsScrap=2,
+       Aluminum,
+	   keep [Recipe.GetItemTypes.SharpKnife],
+	   keep [Recipe.GetItemTypes.Screwdriver],
+
+	   Result:Remote,
+       Time:400.0,
+	   Sound:Dismantle,
+		AnimNode 				: Disassemble,
+        Prop1					: Screwdriver,
+       Category:Engineer,
+	   NeedToBeLearn:true,
+       SkillRequired:Electricity=4,
+	   OnGiveXP:Recipe.OnGiveXP.RadioCraft,
+	   CanBeDoneFromFloor      : TRUE,
+	}
+	
+	recipe Assemble a Speaker
+	{
+	   DuctTape,
+	   Plank=2,
+	   Amplifier,
+	   LeatherStrips=5,
+	   Screws=10,
+       ScrapMetal=5,
+	   ElectronicsScrap=3,
+       Aluminum,
+	   keep [Recipe.GetItemTypes.SharpKnife],
+	   keep [Recipe.GetItemTypes.Screwdriver],
+
+	   Result:Speaker,
+       Time:800.0,
+	   Sound:Dismantle,
+		AnimNode 				: Disassemble,
+        Prop1					: Screwdriver,
+       Category:Engineer,
+	   NeedToBeLearn:true,
+       SkillRequired:Woodwork=2;Electricity=6,
+	   OnGiveXP:Recipe.OnGiveXP.RadioCraft,
+	   CanBeDoneFromFloor      : TRUE,
+	}
+
+	recipe Assemble a Alarm Clock
+	{	   
+	   DuctTape,
+	   Plank,
+	   Screws=5,
+       ScrapMetal=3,
+	   ElectronicsScrap=2,
+	   keep [Recipe.GetItemTypes.SharpKnife],
+	   keep [Recipe.GetItemTypes.Screwdriver],
+
+	   Result:AlarmClock2,
+       Time:600.0,
+	   Sound:Dismantle,
+		AnimNode 				: Disassemble,
+        Prop1					: Screwdriver,
+       Category:Engineer,
+	   NeedToBeLearn:true,
+       SkillRequired:Mechanics=2;Woodwork=4;Electricity=2,
+	   OnGiveXP:Recipe.OnGiveXP.RadioCraft,
+	   CanBeDoneFromFloor      : TRUE,
+	}
+	
+	recipe Assemble Headphones
+	{
+	   DuctTape,
+	   LeatherStrips=2,
+       ScrapMetal,
+	   ElectronicsScrap=4,
+	   keep [Recipe.GetItemTypes.SharpKnife],
+	   keep [Recipe.GetItemTypes.Screwdriver],
+
+	   Result:Headphones,
+       Time:500.0,
+	   Sound:Dismantle,
+		AnimNode 				: Disassemble,
+        Prop1					: Screwdriver,
+       Category:Engineer,
+	   NeedToBeLearn:true,
+       SkillRequired:Mechanics=4;Electricity=4,
+	   OnGiveXP:Recipe.OnGiveXP.RadioCraft,
+	   CanBeDoneFromFloor      : TRUE,
+	}
+	
+	/****************************** GUNS ******************************/
+	
+	item ScrappyBlunderbuss
+    {
+        DisplayCategory = Weapon,
+        ImpactSound	=	null,
+        MaxRange	=	8,
+        RangeFalloff	=	TRUE,
+        WeaponSprite	=	ShotgunDoubleBarrelSawn,
+        SoundVolume	=	200,
+        MinAngle	=	0.657,
+        Type	=	Weapon,
+        KnockBackOnNoDeath	=	TRUE,
+        Ranged	=	TRUE,
+        ProjectileCount	=	5,
+        ConditionLowerChanceOneIn	=	60,
+        Weight	=	3.5,
+        SplatNumber	=	5,
+        PushBackMod	=	0.8,
+        SubCategory	=	Firearm,
+        AimingMod	=	2,
+        ConditionMax	=	10,
+        ShareDamage	=	FALSE,
+        MaxHitCount	=	4,
+        IsAimedHandWeapon	=	TRUE,
+        IsAimedFirearm	=	TRUE,
+        DoorDamage	=	30,
+        UseEndurance	=	FALSE,
+        DisplayName	=	Scrappy Blunderbuss,
+        MinRange	=	0.67,
+        SwingTime	=	2,
+        AngleFalloff	=	TRUE,
+        MultipleHitConditionAffected	=	FALSE,
+        SwingSound	=	SawnOffDoubleBarrelShotgunShoot,
+		ClickSound = SawnOffDoubleBarrelShotgunJam,
+        SoundRadius	=	200,
+        MinDamage	=	2,
+        MaxDamage	=	2.7,
+        KnockdownMod	=	8,
+        SplatBloodOnNoDeath	=	TRUE,
+        Icon	=	ShotgunDoublebarrel,
+        RunAnim	=	Run_Weapon2,
+        CriticalChance = 60,
+        CritDmgMultiplier = 2,
+        AimingPerkCritModifier = 4,
+        HitChance = 70,
+        AimingPerkHitChanceModifier = 5,
+        RecoilDelay = 50,
+        SoundGain = 2,
+        ReloadTime = 45,
+        AimingTime = 20,
+        RequiresEquippedBothHands = TRUE,
+        BreakSound  =   SawnOffDoubleBarrelShotgunBreak,
+        TwoHandWeapon = TRUE,
+        AmmoBox = BlunderbussShellsBox,
+        MaxAmmo = 1,
+		EquipSound = SawnOffDoubleBarrelShotgunEquip,
+		UnequipSound = SawnOffDoubleBarrelShotgunUnEquip,
+        InsertAmmoSound = SawnOffDoubleBarrelShotgunInsertAmmo,
+        EjectAmmoSound = SawnOffDoubleBarrelShotgunEjectAmmo,
+		InsertAmmoStartSound = SawnOffDoubleBarrelShotgunInsertAmmoStart,
+		InsertAmmoStopSound = SawnOffDoubleBarrelShotgunInsertAmmoStop,
+		EjectAmmoStartSound = SawnOffDoubleBarrelShotgunEjectAmmoStart,
+		EjectAmmoStopSound = SawnOffDoubleBarrelShotgunEjectAmmoStop,
+        ShellFallSound = SawnOffDoubleBarrelShotgunCartridgeFall,
+        AmmoType = SpoonEngineerStuff.BlunderbussShells,
+        WeaponReloadType = doublebarrelshotgunsawn,
+        JamGunChance = 0,
+        AttachmentType = Rifle,
+        InsertAllBulletsReload = TRUE,
+        RackAfterShoot = FALSE,
+        haveChamber = FALSE,
+        StopPower = 45,
+    }
+	
+	item BlunderbussShells
+	{
+	    DisplayCategory = Ammo,
+		Weight	=	0.15,
+		AlwaysWelcomeGift	=	TRUE,
+		Type	=	Normal,
+		DisplayName	=	Blunderbuss Ammo,
+		Icon	=	BlunderbussShell,
+		WorldStaticModel = ShotGunShells,
+	}
+
+    item BlunderbussShellsBox
+    {
+        DisplayCategory = Ammo,
+        Weight	=	3.0,
+        Type	=	Normal,
+        DisplayName	=	Box of Blunderbuss Ammo,
+        Icon	=	DrawstringBag,
+        WorldStaticModel = SeedBag,
+        PlaceOneSound = BoxOfShellsPlaceOne,
+        PlaceMultipleSound = BoxOfShellsPlaceAll,
+    }
+	
+	recipe Open Bag of Blunderbuss Ammo
+    {
+        BlunderbussShellsBox,
+
+        Result:BlunderbussShells=24,
+        Sound:BoxOfShellsOpenOne,
+        Time:15.0,
+    }
+	
+	recipe Place Blunderbuss Ammo in Bag
+    {
+        BlunderbussShells=24,
+
+        Result:BlunderbussShellsBox,
+        Sound:BoxOfShellsOpenOne,
+        Time:15.0,
+    }
+	
+	recipe Assemble a Scrappy Blunderbuss
+	{
+	   TreeBranch,
+	   LeatherStrips=4,
+	   MetalPipe=2,
+       ScrapMetal=2,
+	   EngineParts=2,
+	   WeldingRods,
+       BlowTorch,
+	   keep [Recipe.GetItemTypes.SharpKnife],
+	   keep [Recipe.GetItemTypes.Saw],
+	   keep [Recipe.GetItemTypes.Hammer],
+	   keep [Recipe.GetItemTypes.Screwdriver],
+
+	   Result:ScrappyBlunderbuss,
+       Time:500.0,
+	   Sound:Dismantle,
+		AnimNode 				: Disassemble,
+        Prop1					: Screwdriver,
+       Category:Engineer,
+	   NeedToBeLearn:true,
+       SkillRequired:Mechanics=3;MetalWelding=6,
+	   OnGiveXP:Recipe.OnGiveXP.MetalWelding25,
+	   CanBeDoneFromFloor      : TRUE,
+	}
+	
+	recipe Disassemble a Scrappy Blunderbuss
+	{
+	   ScrappyBlunderbuss,
+	   BlowTorch,
+	   keep [Recipe.GetItemTypes.Hammer],
+
+	   Result:UnusableMetal,
+       Time:200.0,
+	   Sound:Dismantle,
+		AnimNode 				: Disassemble,
+        Prop1					: Screwdriver,
+       Category:Engineer,
+	   CanBeDoneFromFloor      : TRUE,
+	}
+	
+	recipe Craft Blunderbuss Ammo
+	{
+	   Stone,
+	   RippedSheets,
+	   GunPowder=6,
+	   keep [Recipe.GetItemTypes.SharpKnife],
+	   keep [Recipe.GetItemTypes.Hammer],
+
+	   Result:BlunderbussShells=6,
+       Time:200.0,
+	   Sound:Dismantle,
+		AnimNode 				: Disassemble,
+        Prop1					: Screwdriver,
+       Category:Engineer,
+	   NeedToBeLearn:true,
+	   CanBeDoneFromFloor      : TRUE,
+	}
+	
+	recipe Make Gunpowder
+	{
+	   Fertilizer=4,
+	   Charcoal=10,
+	   [Recipe.GetItemTypes.Petrol]=10,
+	   keep Saucepan/Pot/BucketEmpty,
+	   keep WoodenStick/Poolcue/Mop/Broom/HockeyStick/IceHockeyStick/CanoePadel/LeafRake/Rake/Paintbrush/TreeBranch/Plank,
+
+	   Result:GunPowder=50,
+       Time:500.0,
+	   Sound:Dismantle,
+		AnimNode 				: Disassemble,
+        Prop1					: WoodenStick,
+       Category:Engineer,
+	   NeedToBeLearn:true,
+	   CanBeDoneFromFloor      : TRUE,
+	}
+	
+	recipe Make IED
+	{
+      Fertilizer=8,
+	  PetrolCan/PetrolBleachBottle/PetrolPopBottle/WaterBottlePetrol/WhiskeyPetrol/WinePetrol=10,
+	  ElectricWire,
+	  WristWatch_Right_DigitalBlack/WristWatch_Left_DigitalBlack/WristWatch_Right_DigitalRed/WristWatch_Left_DigitalRed/WristWatch_Right_DigitalDress/WristWatch_Left_DigitalDress,
+	  Nails/Screws=25,
+	  
+	  Result:SpoonIEDTriggered,
+      Time:100.0,
+      Category:Misc,
+      AnimNode:Disassemble,
+	  SkillRequired:Electricity=3;MetalWelding=1;Mechanics=1,
+      Prop1:Screwdriver,
+	  CanBeDoneFromFloor :TRUE,
+	}
+
+	item SpoonIEDTriggered
+	{
+	    DisplayCategory = Explosives,
+		MaxRange	=	3,
+		KnockdownMod	=	0,
+		Type	=	Weapon,
+		MinimumSwingTime	=	1.5,
+		SwingAnim	=	Throw,
+        WeaponSprite = Molotov,
+		UseSelf	=	TRUE,
+		DisplayName	=	IED with Timer,
+		SwingTime	=	1.5,
+		SwingAmountBeforeImpact	=	0.1,
+		PhysicsObject	=	CompostBag,
+		MinDamage	=	0,
+		Weight	=	5,
+		MaxDamage	=	0,
+		MaxHitCount	=	0,
+		Icon	=	Compost,
+		ExplosionPower  =   200,
+		ExplosionRange  =   30,
+		ExplosionTimer = 30,
+		CanBePlaced = TRUE,
+		ExplosionSound  =   SpoonIEDEngineerONE,
+		SwingSound = AerosolBombThrow,
+		PlacedSprite = constructedobjects_01_32,
+		WorldStaticModel = CompostBag,
+	}
+	
+}

@@ -1,0 +1,7 @@
+ItemName_HU = {
+	ItemName_Base.Bag_Satchel = "Elülsõ Táska",
+	ItemName_Base.Bag_SatchelBack = "Hátulsó Táska",
+	ItemName_Base.MysteriousSatchel_New = "Elülsõ taktikai táska",
+	ItemName_Base.MysteriousSatchelBack = "Hátulsó taktikai táska",
+	ItemName_Base.MysteriousHazmat = "Vegyvédelmi Ruha",
+}

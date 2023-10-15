@@ -1,0 +1,9 @@
+IGUI_RU = {
+    IGUI_VehicleRecycling_ConfirmDialog_Vehicle = "Вы точно хотите разобрать этот автомобиль?",
+    IGUI_VehicleRecycling_ConfirmDialog_Trailer = "Вы точно хотите разобрать этот прицеп?",
+
+    IGUI_VehicleRecycling_VehicleIsClamedThe15karatFix = "Машина находится в привате",
+	IGUI_VRR_Not_BlowTorch = "У меня нет в инвентаре горелки",
+	IGUI_VRR_Not_BlowTorchLow = "Маловато пропана для разбора",
+
+}

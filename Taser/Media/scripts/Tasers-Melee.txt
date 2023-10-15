@@ -1,0 +1,130 @@
+module Base
+{
+    imports    
+    {
+		Base
+	}
+
+item HandTaser
+	{
+		DisplayCategory = Weapon,
+		MaxRange	=	0.9,
+		WeaponSprite	=	HandTaser,
+		MinAngle	=	0.65,
+		Type		=	Weapon,
+		MinimumSwingTime	=	2,
+		KnockBackOnNoDeath	=	FALSE,
+		SwingAmountBeforeImpact	=	0.02,
+		ConditionLowerChanceOneIn	=	25,
+		Weight	=	0.5,
+		SplatNumber	=	0,
+		PushBackMod	=	0.3,
+		AimingMod	=	0.8,
+		ConditionMax	=	5,
+		MaxHitCount	=	1,
+		IsAimedHandWeapon	=	TRUE,
+		DoorDamage	=	1,
+		SwingAnim	=	Stab,
+		DisplayName	=	Stun Gun,
+		MinRange	=	0.61,
+		SwingTime	=	2,
+		KnockdownMod	=	0,
+		SplatBloodOnNoDeath	=	TRUE,
+		Icon	=	HandTaser,
+		RunAnim	=	Run_Weapon2,
+     		IdleAnim	=	Idle_Weapon2,
+     	 	TreeDamage  =   0,
+        	EnduranceMod = 0.5,
+        	BreakSound  =   HuntingKnifeBreak,
+        	MetalValue = 30,
+        	CriticalChance	=	0,
+        	CritDmgMultiplier = 0,
+        	MinDamage	=	0,
+        	MaxDamage	=	0,
+	 	WeaponLength = 0.45,
+        	DamageCategory = Blunt,
+        	DamageMakeHole = FALSE,
+        	HitFloorSound	=	NULL,
+        	ImpactSound	=	NULL,
+        	DoorHitSound = NULL,
+		HitSound	=	ShootTaser,
+		SwingSound = HandScytheSwing,
+		AttachmentType = Knife,
+		WorldStaticModel = HandTaser,
+    }
+
+item HandTaserMakeshift
+	{
+		DisplayCategory = Weapon,
+		MaxRange	=	0.9,
+		WeaponSprite	=	HandTaserMakeshift,
+		MinAngle	=	0.65,
+		Type		=	Weapon,
+		MinimumSwingTime	=	2,
+		KnockBackOnNoDeath	=	FALSE,
+		SwingAmountBeforeImpact	=	0.02,
+		ConditionLowerChanceOneIn	=	25,
+		Weight	=	0.5,
+		SplatNumber	=	0,
+		PushBackMod	=	0.3,
+		AimingMod	=	0.8,
+		ConditionMax	=	2,
+		MaxHitCount	=	1,
+		IsAimedHandWeapon	=	TRUE,
+		DoorDamage	=	1,
+		SwingAnim	=	Stab,
+		DisplayName	=	Makeshift Stun Gun,
+		MinRange	=	0.61,
+		SwingTime	=	2,
+		KnockdownMod	=	0,
+		SplatBloodOnNoDeath	=	TRUE,
+		Icon	=	HandTaserMakeshift,
+		RunAnim	=	Run_Weapon2,
+     		IdleAnim	=	Idle_Weapon2,
+     	 	TreeDamage  =   0,
+        	EnduranceMod = 0.5,
+        	BreakSound  =   HuntingKnifeBreak,
+        	MetalValue = 30,
+        	CriticalChance	=	0,
+        	CritDmgMultiplier = 0,
+        	MinDamage	=	0,
+        	MaxDamage	=	0,
+	 	WeaponLength = 0.45,
+        	DamageCategory = Blunt,
+        	DamageMakeHole = FALSE,
+        	HitFloorSound	=	NULL,
+        	ImpactSound	=	NULL,
+        	DoorHitSound = NULL,
+		HitSound	=	ShootTaser,
+		SwingSound = NULL,
+		AttachmentType = Knife,
+		WorldStaticModel = HandTaser,
+    }
+
+    model HandTaser
+	{
+		mesh = weapons/1handed/HandTaser,
+		texture = weapons/1handed/HandTaser,
+		
+
+		attachment world
+		{
+			offset = 0.0000 0.0000 0.0000,
+			rotate = 0.0000 0.0000 90.0000,
+		}
+	}
+
+    model HandTaserMakeshift
+	{
+		mesh = weapons/1handed/HandTaser,
+		texture = weapons/1handed/HandTaser,
+		
+
+		attachment world
+		{
+			offset = 0.0000 0.0000 0.0000,
+			rotate = 0.0000 0.0000 90.0000,
+		}
+	}
+
+}

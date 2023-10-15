@@ -1,0 +1,3 @@
+Tooltip_RU = {
+	Tooltip_DIY_VehiclePartsMag5 = "Изучи журнал и узнай как сделать багажник своими руками!",
+}

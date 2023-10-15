@@ -1,0 +1,8 @@
+Not on Steam:
+- Adjusted loot tables so twigs are the most common item in a search action.
+- Fruits can now spawn with a different state: fresh, stale and rotten.
+- Added DeadBird, DeadSquirrel, DeadMouse and DeadRat for some loot tables which can also spawn with a different state: fresh, stale and rotten.
+- Increased the chances of obtaining an item after a search is performed. At Lv7+ of Foraging if a search is performed in a tree of size 6 (max size) there is a 100% of chances of getting something (balanced by next point).
+- Now each tree can deplete its loot after a search is performed. This loot is renewed after 24 hours (similar to the old foraging zones).
+- Halved XP when an item is found.
+- Added a Halo text with the obtained item and XP earned after performing a search action that found something.

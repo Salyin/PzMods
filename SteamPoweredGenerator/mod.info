@@ -1,0 +1,7 @@
+name=Steam Powered Generator
+poster=poster.png
+id=SteamPoweredGenerator
+pack=steamgenerator
+description=A Generator that produces electricity from heating water into steam.
+tiledef=steamgenerator 280
+versionMin=41.56

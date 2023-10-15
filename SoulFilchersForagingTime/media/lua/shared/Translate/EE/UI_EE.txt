@@ -1,0 +1,7 @@
+UI_EE = {
+  UI_prof_Homeless = "Homeless",
+
+  UI_trait_Scavenger = "Scavenger",
+  UI_trait_ScavengerDesc = "Faster scavenging.",
+  UI_profdesc_Homeless = "Knows how to improvise.<br>+3 Scavenging",
+}

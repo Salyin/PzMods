@@ -1,0 +1,18 @@
+ItemName_ES = {
+	
+	/* SpoonMiscStuff.txt */
+	ItemName_SpoonEssentialCrafting.PolymerScrap = "Chatarra de polímero",
+	ItemName_SpoonEssentialCrafting.SheetPaperX = "Trozo de Papel",
+	
+	/* SpoonEssentialCraftingBook.txt */
+	ItemName_SpoonEssentialCrafting.SpoonMagEssentialC = "Revista de Crafteo Básico 101",
+	
+	/* SpoonWeaponParts.txt */
+	ItemName_SpoonEssentialCrafting.WeaponParts = "Partes de arma",
+	
+	/* SpoonSurvivalStuff.txt */
+	ItemName_SpoonEssentialCrafting.SpoonMassGraveFull = "Fosa Común (Llena)",
+	ItemName_SpoonEssentialCrafting.SpoonMassGraveEmpty = "Fosa Común (Vacía)",
+	ItemName_SpoonEssentialCrafting.SpoonDeadBody = "Cadáver",
+
+}

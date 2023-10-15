@@ -1,0 +1,27 @@
+ItemName_ES = {
+/****** SpoonVanillaMetalPatch.txt ******/
+	ItemName_Base.PropaneTank = "Depósito de Propano",
+	ItemName_Base.PropaneTankEmpty = "Depósito de Propano Vacío",
+	ItemName_Base.ConcretePowder = "Cemento",
+
+/****** SpoonMetalworkStuff.txt ******/
+/* LIBROS */
+	ItemName_Base.SpoonMagazineBlacksmith = "Forja 101",
+	ItemName_Base.SpoonMagazineBlacksmithTwo = "El Metal es su Amigo",
+
+/* BANCOS DE TRABAJO */
+	ItemName_Base.SpoonFurnace = "Horno",
+	ItemName_Base.SpoonAnvil = "Yunque",
+	ItemName_Base.SpoonGrindstone = "Piedra de Esmolar",
+	
+/* POZO DE CARBÓN */
+	ItemName_Base.LogPrepared = "Tronco Preparado",
+	ItemName_Base.SpoonCharcoalPitWorking = "Pozo de Carbón (Funcionando)",
+	ItemName_Base.SpoonCharcoalPitReady = "Pozo de Carbón (Preparado)",
+
+/* HERRAMIENTAS */
+	ItemName_Base.SpoonMoldFull = "Molde Básico",
+	ItemName_Base.SpoonMoldEmpty = "Molde Básico Vacío",
+	ItemName_Base.SpoonHandDrill = "Taladro de Mano",
+	ItemName_Base.SpoonMetalCutter = "Cortador de Metal",
+}

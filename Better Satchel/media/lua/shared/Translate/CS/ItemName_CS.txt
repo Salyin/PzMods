@@ -1,0 +1,7 @@
+ItemName_CS = {
+	ItemName_Base.Bag_Satchel = "Brašna (vpøedu)",
+    ItemName_Base.Bag_SatchelBack = "Brašna (vzadu)",
+	ItemName_Base.MysteriousSatchel_New = "Taktická brašna (vpøedu)",
+	ItemName_Base.MysteriousSatchelBack = "Taktická brašna (vzadu)",
+	ItemName_Base.MysteriousHazmat = "Protichemický odìv",
+}

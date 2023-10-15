@@ -1,0 +1,10 @@
+name=Snow is water - Rain Barrels only
+poster=poster.png
+id=snowiswater
+description= Snow is still water, so Rain Collectors/Metal Barrels will be filled when snowing just at a slower rate. v1.1
+description= To read the full details, see the changelog for this Workshop's item
+icon=logo.png
+modVersion=1.1.0
+authors=Buhorl
+tags=Realistic,Multiplayer
+versionMin=41.65

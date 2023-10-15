@@ -1,0 +1,461 @@
+module SpoonMetalworkStuff
+{
+
+	imports
+	{
+		Base
+	}
+	
+	/****************************** MELTING FURNACE******************************/
+	
+	recipe Melt Metal
+    {
+        BigTrunk1/SmallTrunk2/NormalTrunk2/BigTrunk2,
+		Charcoal;1,
+		keep [Recipe.GetItemTypes.Hammer],
+		keep Tongs,
+		keep SpoonMetalCutter,
+		keep SpoonFurnace,
+		keep PercedWood/Lighter/Matches,
+		
+        Result:UnusableMetal=32,
+        Time: 400.0,
+        Sound:LogAddToStack,
+		AnimNode 				: Disassemble,
+        Prop1					: Tongs,
+       Category:Welding,
+	   NeedToBeLearn:true,
+	   SkillRequired:MetalWelding=3,
+	   OnGiveXP:Recipe.OnGiveXP.MetalWelding15,
+	   OnCreate: GetMetalworkingInjury_OnCreate,
+		CanBeDoneFromFloor      : TRUE,
+    }
+	
+	recipe Melt Metal
+    {
+        SmallTrunk1/NormalTrunk1/BigTrunk3/TrailerTrunk1/TrailerTrunk2/TrailerTrunk3,
+		Charcoal;1,
+		keep [Recipe.GetItemTypes.Hammer],
+		keep Tongs,
+		keep SpoonMetalCutter,
+		keep SpoonFurnace,
+		keep PercedWood/Lighter/Matches,
+		
+        Result:UnusableMetal=25,
+        Time: 400.0,
+        Sound:LogAddToStack,
+		AnimNode 				: Disassemble,
+        Prop1					: Tongs,
+       Category:Welding,
+	   NeedToBeLearn:true,
+	   SkillRequired:MetalWelding=3,
+	   OnGiveXP:Recipe.OnGiveXP.MetalWelding15,
+	   OnCreate: GetMetalworkingInjury_OnCreate,
+		CanBeDoneFromFloor      : TRUE,
+    }
+	
+	recipe Melt Metal
+    {
+        BigGasTank2/VanSeatsTrunk2/SmallTrunk3/NormalTrunk3/RearCarDoorDouble1/RearCarDoorDouble2/RearCarDoorDouble3,
+		Charcoal;1,
+		keep [Recipe.GetItemTypes.Hammer],
+		keep Tongs,
+		keep SpoonMetalCutter,
+		keep SpoonFurnace,
+		keep PercedWood/Lighter/Matches,
+		
+        Result:UnusableMetal=16,
+        Time: 400.0,
+        Sound:LogAddToStack,
+		AnimNode 				: Disassemble,
+        Prop1					: Tongs,
+       Category:Welding,
+	   NeedToBeLearn:true,
+	   SkillRequired:MetalWelding=3,
+	   OnGiveXP:Recipe.OnGiveXP.MetalWelding15,
+	   OnCreate: GetMetalworkingInjury_OnCreate,
+		CanBeDoneFromFloor      : TRUE,
+    }
+	
+	recipe Melt Metal
+    {
+        BigGasTank1/SmallGasTank2/NormalGasTank2/BigGasTank3/EngineDoor1/EngineDoor2/EngineDoor3/TrunkDoor1/TrunkDoor2/TrunkDoor3,
+		Charcoal;1,
+		keep [Recipe.GetItemTypes.Hammer],
+		keep Tongs,
+		keep SpoonMetalCutter,
+		keep SpoonFurnace,
+		keep PercedWood/Lighter/Matches,
+		
+        Result:UnusableMetal=12,
+        Time: 400.0,
+        Sound:LogAddToStack,
+		AnimNode 				: Disassemble,
+        Prop1					: Tongs,
+       Category:Welding,
+	   NeedToBeLearn:true,
+	   SkillRequired:MetalWelding=3,
+	   OnGiveXP:Recipe.OnGiveXP.MetalWelding15,
+	   OnCreate: GetMetalworkingInjury_OnCreate,
+		CanBeDoneFromFloor      : TRUE,
+    }
+	
+	recipe Melt Metal
+    {
+        SmallGasTank1/NormalGasTank1/SmallGasTank3/NormalGasTank3/FrontCarDoor1/RearCarDoor1/FrontCarDoor2/RearCarDoor2/FrontCarDoor3/RearCarDoor3/OldCarMuffler1/NormalCarMuffler1/ModernCarMuffler1/OldCarMuffler2/NormalCarMuffler2/ModernCarMuffler2/OldCarMuffler3/NormalCarMuffler3/ModernCarMuffler3,
+		Charcoal;1,
+		keep [Recipe.GetItemTypes.Hammer],
+		keep Tongs,
+		keep SpoonMetalCutter,
+		keep SpoonFurnace,
+		keep PercedWood/Lighter/Matches,
+		
+        Result:UnusableMetal=7,
+        Time: 400.0,
+        Sound:LogAddToStack,
+		AnimNode 				: Disassemble,
+        Prop1					: Tongs,
+       Category:Welding,
+	   NeedToBeLearn:true,
+	   SkillRequired:MetalWelding=3,
+	   OnGiveXP:Recipe.OnGiveXP.MetalWelding15,
+	   OnCreate: GetMetalworkingInjury_OnCreate,
+		CanBeDoneFromFloor      : TRUE,
+    }
+	
+	recipe Melt Metal
+    {
+        OldTire1/NormalTire1/ModernTire1/OldTire2/NormalTire2/ModernTire2/OldTire3/NormalTire3/ModernTire3/OldBrake1/NormalBrake1/ModernBrake1/OldBrake2/NormalBrake2/ModernBrake2/OldBrake3/NormalBrake3/ModernBrake3/NormalSuspension1/ModernSuspension1/NormalSuspension2/ModernSuspension2/NormalSuspension3/ModernSuspension3/NormalCarSeat1/NormalCarSeat2/NormalCarSeat3,
+		Charcoal;1,
+		keep [Recipe.GetItemTypes.Hammer],
+		keep Tongs,
+		keep SpoonMetalCutter,
+		keep SpoonFurnace,
+		keep PercedWood/Lighter/Matches,
+		
+        Result:UnusableMetal=3,
+        Time: 400.0,
+        Sound:LogAddToStack,
+		AnimNode 				: Disassemble,
+        Prop1					: Tongs,
+       Category:Welding,
+	   NeedToBeLearn:true,
+	   SkillRequired:MetalWelding=3,
+	   OnGiveXP:Recipe.OnGiveXP.MetalWelding15,
+	   OnCreate: GetMetalworkingInjury_OnCreate,
+		CanBeDoneFromFloor      : TRUE,
+    }
+	
+	/****************************** MELTING BLOWTORCH ******************************/
+	
+	recipe Melt Metal with Blowtorch
+    {
+        BigTrunk1/SmallTrunk2/NormalTrunk2/BigTrunk2,
+		BlowTorch=1,
+        keep [Recipe.GetItemTypes.Hammer],
+		
+        Result:UnusableMetal=32,
+        Time: 450.0,
+        Sound:LogAddToStack,
+		AnimNode 				: Disassemble,
+        Prop1					: BlowTorch,
+       Category:Welding,
+	   NeedToBeLearn:true,
+	   SkillRequired:MetalWelding=3,
+	   OnGiveXP:Recipe.OnGiveXP.MetalWelding15,
+	   OnCreate: GetMetalworkingInjury_OnCreate,
+		CanBeDoneFromFloor      : TRUE,
+    }
+	
+	recipe Melt Metal with Blowtorch
+    {
+        SmallTrunk1/NormalTrunk1/BigTrunk3/TrailerTrunk1/TrailerTrunk2/TrailerTrunk3,
+		BlowTorch=1,
+        keep [Recipe.GetItemTypes.Hammer],
+		
+        Result:UnusableMetal=25,
+        Time: 400.0,
+        Sound:LogAddToStack,
+		AnimNode 				: Disassemble,
+        Prop1					: BlowTorch,
+       Category:Welding,
+	   NeedToBeLearn:true,
+	   SkillRequired:MetalWelding=3,
+	   OnGiveXP:Recipe.OnGiveXP.MetalWelding15,
+	   OnCreate: GetMetalworkingInjury_OnCreate,
+		CanBeDoneFromFloor      : TRUE,
+    }
+	
+	recipe Melt Metal with Blowtorch
+    {
+        BigGasTank2/VanSeatsTrunk2/SmallTrunk3/NormalTrunk3/RearCarDoorDouble1/RearCarDoorDouble2/RearCarDoorDouble3,
+		BlowTorch=1,
+        keep [Recipe.GetItemTypes.Hammer],
+		
+        Result:UnusableMetal=16,
+        Time: 300.0,
+        Sound:LogAddToStack,
+		AnimNode 				: Disassemble,
+        Prop1					: BlowTorch,
+       Category:Welding,
+	   NeedToBeLearn:true,
+	   SkillRequired:MetalWelding=3,
+	   OnGiveXP:Recipe.OnGiveXP.MetalWelding15,
+	   OnCreate: GetMetalworkingInjury_OnCreate,
+		CanBeDoneFromFloor      : TRUE,
+    }
+	
+	recipe Melt Metal with Blowtorch
+    {
+        BigGasTank1/SmallGasTank2/NormalGasTank2/BigGasTank3/EngineDoor1/EngineDoor2/EngineDoor3/TrunkDoor1/TrunkDoor2/TrunkDoor3,
+		BlowTorch=1,
+        keep [Recipe.GetItemTypes.Hammer],
+		
+        Result:UnusableMetal=12,
+        Time: 250.0,
+        Sound:LogAddToStack,
+		AnimNode 				: Disassemble,
+        Prop1					: BlowTorch,
+       Category:Welding,
+	   NeedToBeLearn:true,
+	   SkillRequired:MetalWelding=3,
+	   OnGiveXP:Recipe.OnGiveXP.MetalWelding15,
+	   OnCreate: GetMetalworkingInjury_OnCreate,
+		CanBeDoneFromFloor      : TRUE,
+    }
+	
+	recipe Melt Metal with Blowtorch
+    {
+        SmallGasTank1/NormalGasTank1/SmallGasTank3/NormalGasTank3/FrontCarDoor1/RearCarDoor1/FrontCarDoor2/RearCarDoor2/FrontCarDoor3/RearCarDoor3/OldCarMuffler1/NormalCarMuffler1/ModernCarMuffler1/OldCarMuffler2/NormalCarMuffler2/ModernCarMuffler2/OldCarMuffler3/NormalCarMuffler3/ModernCarMuffler3,
+		BlowTorch=1,
+        keep [Recipe.GetItemTypes.Hammer],
+		
+        Result:UnusableMetal=7,
+        Time: 200.0,
+        Sound:LogAddToStack,
+		AnimNode 				: Disassemble,
+        Prop1					: BlowTorch,
+       Category:Welding,
+	   NeedToBeLearn:true,
+	   SkillRequired:MetalWelding=3,
+	   OnGiveXP:Recipe.OnGiveXP.MetalWelding15,
+	   OnCreate: GetMetalworkingInjury_OnCreate,
+		CanBeDoneFromFloor      : TRUE,
+    }
+	
+	recipe Melt Metal with Blowtorch
+    {
+        OldTire1/NormalTire1/ModernTire1/OldTire2/NormalTire2/ModernTire2/OldTire3/NormalTire3/ModernTire3/OldBrake1/NormalBrake1/ModernBrake1/OldBrake2/NormalBrake2/ModernBrake2/OldBrake3/NormalBrake3/ModernBrake3/NormalSuspension1/ModernSuspension1/NormalSuspension2/ModernSuspension2/NormalSuspension3/ModernSuspension3/NormalCarSeat1/NormalCarSeat2/NormalCarSeat3,
+		BlowTorch=1,
+        keep [Recipe.GetItemTypes.Hammer],
+		
+        Result:UnusableMetal=3,
+        Time: 100.0,
+        Sound:LogAddToStack,
+		AnimNode 				: Disassemble,
+        Prop1					: BlowTorch,
+       Category:Welding,
+	   NeedToBeLearn:true,
+	   SkillRequired:MetalWelding=3,
+	   OnGiveXP:Recipe.OnGiveXP.MetalWelding15,
+	   OnCreate: GetMetalworkingInjury_OnCreate,
+		CanBeDoneFromFloor      : TRUE,
+    }
+	
+	/****************************** CRAFTING ******************************/
+	
+	recipe Construct-Forge Engine parts
+    {	
+       IronIngot=120,
+	   Charcoal;3,
+       SpoonMoldFull;3,
+       keep Tongs,
+	   keep SpoonHandDrill,
+	   keep SpoonMetalCutter,
+	   keep SpoonAnvil,
+       keep SpoonFurnace,
+       keep PercedWood/Lighter/Matches,
+       keep [Recipe.GetItemTypes.Hammer],
+
+       Result                   :EngineParts=10,
+       Time                     :800.0,
+       Sound                    :LogAddToStack,
+       AnimNode 				:Disassemble,
+       Prop1					:Tongs,
+       Category                 :Welding,
+	   NeedToBeLearn            :true,
+	   SkillRequired            :MetalWelding=8;Mechanics=8,
+	   OnGiveXP:Recipe.OnGiveXP.MetalWelding25,
+	   OnCreate: GetMetalworkingInjury_OnCreate,
+       CanBeDoneFromFloor       :TRUE,
+    }
+	
+	recipe Forge Small Standard Gas tank
+    {	
+       SheetMetal=7,
+	   MetalPipe=3,
+	   Charcoal;3,
+	   WeldingRods=3,
+       BlowTorch=3,
+       keep Tongs,
+	   keep SpoonHandDrill,
+	   keep SpoonMetalCutter,
+	   keep SpoonAnvil,
+       keep SpoonFurnace,
+       keep PercedWood/Lighter/Matches,
+       keep [Recipe.GetItemTypes.Hammer],
+
+       Result                   :SmallGasTank1,
+       Time                     :800.0,
+       Sound                    :LogAddToStack,
+       AnimNode 				:Disassemble,
+       Prop1					:Tongs,
+       Category                 :Welding,
+	   NeedToBeLearn            :true,
+	   SkillRequired            :MetalWelding=4;Mechanics=4,
+	   OnGiveXP:Recipe.OnGiveXP.MetalWelding25,
+	   OnCreate: GetMetalworkingInjury_OnCreate,
+       CanBeDoneFromFloor       :TRUE,
+    }
+	
+	recipe Forge Small Sport Gas tank
+    {	
+       SheetMetal=7,
+	   MetalPipe=3,
+	   Charcoal;3,
+	   WeldingRods=3,
+       BlowTorch=3,
+       keep Tongs,
+	   keep SpoonHandDrill,
+	   keep SpoonMetalCutter,
+	   keep SpoonAnvil,
+       keep SpoonFurnace,
+       keep PercedWood/Lighter/Matches,
+       keep [Recipe.GetItemTypes.Hammer],
+
+       Result                   :SmallGasTank3,
+       Time                     :800.0,
+       Sound                    :LogAddToStack,
+       AnimNode 				:Disassemble,
+       Prop1					:Tongs,
+       Category                 :Welding,
+	   NeedToBeLearn            :true,
+	   SkillRequired            :MetalWelding=4;Mechanics=4,
+	   OnGiveXP:Recipe.OnGiveXP.MetalWelding25,
+	   OnCreate: GetMetalworkingInjury_OnCreate,
+       CanBeDoneFromFloor       :TRUE,
+    }
+	
+	recipe Forge Small Heavy-Duty Gas tank
+    {	
+       SheetMetal=10,
+	   MetalPipe=5,
+	   Charcoal;3,
+	   WeldingRods=3,
+       BlowTorch=3,
+       keep Tongs,
+	   keep SpoonHandDrill,
+	   keep SpoonMetalCutter,
+	   keep SpoonAnvil,
+       keep SpoonFurnace,
+       keep PercedWood/Lighter/Matches,
+       keep [Recipe.GetItemTypes.Hammer],
+
+       Result                   :SmallGasTank2,
+       Time                     :800.0,
+       Sound                    :LogAddToStack,
+       AnimNode 				:Disassemble,
+       Prop1					:Tongs,
+       Category                 :Welding,
+	   NeedToBeLearn            :true,
+	   SkillRequired            :MetalWelding=4;Mechanics=4,
+	   OnGiveXP:Recipe.OnGiveXP.MetalWelding25,
+	   OnCreate: GetMetalworkingInjury_OnCreate,
+       CanBeDoneFromFloor       :TRUE,
+    }
+	
+	recipe Forge Shotty Standard Muffler
+    {	
+       SheetMetal=7,
+	   MetalPipe=3,
+	   Charcoal;3,
+	   WeldingRods=3,
+       BlowTorch=3,
+       keep Tongs,
+	   keep SpoonHandDrill,
+	   keep SpoonMetalCutter,
+	   keep SpoonAnvil,
+       keep SpoonFurnace,
+       keep PercedWood/Lighter/Matches,
+       keep [Recipe.GetItemTypes.Hammer],
+
+       Result                   :OldCarMuffler1,
+       Time                     :800.0,
+       Sound                    :LogAddToStack,
+       AnimNode 				:Disassemble,
+       Prop1					:Tongs,
+       Category                 :Welding,
+	   NeedToBeLearn            :true,
+	   SkillRequired            :MetalWelding=4;Mechanics=4,
+	   OnGiveXP:Recipe.OnGiveXP.MetalWelding25,
+	   OnCreate: GetMetalworkingInjury_OnCreate,
+       CanBeDoneFromFloor       :TRUE,
+    }
+	
+	recipe Forge Shotty Sport Muffler
+    {	
+       SheetMetal=7,
+	   MetalPipe=3,
+	   Charcoal;3,
+	   WeldingRods=3,
+       BlowTorch=3,
+       keep Tongs,
+	   keep SpoonHandDrill,
+	   keep SpoonMetalCutter,
+	   keep SpoonAnvil,
+       keep SpoonFurnace,
+       keep PercedWood/Lighter/Matches,
+       keep [Recipe.GetItemTypes.Hammer],
+
+       Result                   :OldCarMuffler3,
+       Time                     :800.0,
+       Sound                    :LogAddToStack,
+       AnimNode 				:Disassemble,
+       Prop1					:Tongs,
+       Category                 :Welding,
+	   NeedToBeLearn            :true,
+	   SkillRequired            :MetalWelding=4;Mechanics=4,
+	   OnGiveXP:Recipe.OnGiveXP.MetalWelding25,
+	   OnCreate: GetMetalworkingInjury_OnCreate,
+       CanBeDoneFromFloor       :TRUE,
+    }
+	
+	recipe Forge Shotty Heavy-Duty Muffler
+    {	
+       SheetMetal=7,
+	   MetalPipe=3,
+	   Charcoal;3,
+	   WeldingRods=3,
+       BlowTorch=3,
+       keep Tongs,
+	   keep SpoonHandDrill,
+	   keep SpoonMetalCutter,
+	   keep SpoonAnvil,
+       keep SpoonFurnace,
+       keep PercedWood/Lighter/Matches,
+       keep [Recipe.GetItemTypes.Hammer],
+
+       Result                   :OldCarMuffler2,
+       Time                     :800.0,
+       Sound                    :LogAddToStack,
+       AnimNode 				:Disassemble,
+       Prop1					:Tongs,
+       Category                 :Welding,
+	   NeedToBeLearn            :true,
+	   SkillRequired            :MetalWelding=4;Mechanics=4,
+	   OnGiveXP:Recipe.OnGiveXP.MetalWelding25,
+	   OnCreate: GetMetalworkingInjury_OnCreate,
+       CanBeDoneFromFloor       :TRUE,
+    }
+	
+}

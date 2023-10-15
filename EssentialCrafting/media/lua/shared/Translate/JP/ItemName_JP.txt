@@ -1,0 +1,6 @@
+ItemName_JP = { 
+ItemName_SpoonEssentialCrafting.PolymerScrap = "廃プラスチック",
+ItemName_SpoonEssentialCrafting.SheetPaperX = "くず紙",
+ItemName_SpoonEssentialCrafting.SpoonMagEssentialC = "必要不可欠な工作",
+ItemName_SpoonEssentialCrafting.WeaponParts = "武器パーツ",
+}

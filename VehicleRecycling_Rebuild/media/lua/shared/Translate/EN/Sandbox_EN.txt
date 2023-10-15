@@ -1,0 +1,30 @@
+Sandbox_EN = {
+    Sandbox_VehicleRecycling = "Vehicle Recycling",
+
+	Sandbox_VehicleRecycling_UninstallParts = "Parts Must Be Uninstalled Before Dismantling",
+    Sandbox_VehicleRecycling_UninstallParts_tooltip = "The following parts must be uninstalled before dismantling: hood, trunk lid, doors, windows, seats.",
+    
+	Sandbox_VehicleRecycling_RecyclingClaimedVehicle = "Disassemble claimed - normal car",
+    Sandbox_VehicleRecycling_RecyclingClaimedVehicle_tooltip = "If the setting is enabled, it means that you can dismantle a privatised vehicle.<br>Mod for Valhala Aegis vehicles",
+	
+	Sandbox_VehicleRecycling_RecyclingClaimedSmashedCar = "Disassemble claimed - smashed car",
+    Sandbox_VehicleRecycling_RecyclingClaimedSmashedCar_tooltip = "With this setting enabled it will be possible to dismantle a squashed machine.<br>All machines that have Smashed in their name. For example Base.SUVSmashedFront.",
+	
+	Sandbox_VehicleRecycling_RecyclingClaimedBurntCar = "Disassemble claimed - burnt car",
+    Sandbox_VehicleRecycling_RecyclingClaimedBurntCar_tooltip = "With this setting enabled it will be possible to dismantle a squashed machine.<br>All machines that have Smashed in their name. For example Base.VanBurnt.",
+	
+	Sandbox_VehicleRecycling_RecyclingSmashedCar = "Disassemble broken(Smashed) cars without removing parts",
+	Sandbox_VehicleRecycling_RecyclingSmashedCar_tooltip = "By enabling this setting you give you the ability to smashed machines.<br>The setting only works with machines whose ID has the text Smashed.<br>For example: Base.SUVSmashedFront",
+	
+	Sandbox_VehicleRecycling_RecyclingBurntCar = "Disassemble burnt out (Burnt) cars without removing parts",
+	Sandbox_VehicleRecycling_RecyclingBurntCar_tooltip = "By enabling this setting you give you the opportunity to unbuild burnt machines.<br>The setting only works with machines whose IDs contain the text Burnt.<br>For example: Base.VanBurnt",
+	
+	Sandbox_VehicleRecycling_ExceptionListRate = "List of exempted machines from which parts do not need to be removed",
+	Sandbox_VehicleRecycling_ExceptionListRate_tooltip = "Exception for machines which do not need to remove parts.<br>This setting is needed for machines which have parts which cannot be removed.<br>Write the machine ID in full, through ; .<br>For example: Base.CarPolice;Base.CarPolice2;Base.CarPolice3",
+	
+	Sandbox_VehicleRecycling_OldVersionNeededPropane = "Use an older version of the propane requirement",
+	Sandbox_VehicleRecycling_OldVersionNeededPropane_tooltip = "After turning on this setting propane requirements will increase by 10 times.<br>This setting is necessary for those who play with mods that return the capacity of the burner and propane tanks as it was in the old patches.<br>For example «Propane Tank Fix»",
+	
+	Sandbox_VehicleRecycling_ActionTimeMultiplier = "Disassembly time multiplier",
+
+}

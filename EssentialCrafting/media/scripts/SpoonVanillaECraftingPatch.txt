@@ -1,0 +1,426 @@
+module Base
+{
+	
+	item PlasterPowder
+	{
+	    DisplayCategory = Material,
+		Weight	=	5,
+		Type	=	Normal,
+		Type	=	Drainable,
+		UseDelta	=	1,
+		ReplaceOnDeplete	=	Garbagebag,
+		DisplayName	=	Bag of Plaster Powder,
+		Icon	=	Plaster_Powder,
+		Tooltip = Tooltip_PlasterPowder,
+		SurvivalGear = TRUE,
+		WorldStaticModel = BagOfPlasterPowder,
+	}
+	
+	item KnittingNeedles
+    {
+        DisplayCategory = Junk,
+        Weight	=	0.2,
+        Type	=	Normal,
+        DisplayName	=	Knitting Needles,
+        Icon	=	KnittingNeedles,
+        WorldStaticModel = KnittingNeedles,
+    }
+	
+	item Cologne
+    {		
+		DisplayName = Cologne,
+		DisplayCategory = Food,
+		Type = Food,
+		Weight = 0.4,
+		Icon = Cologne,
+		EvolvedRecipe = Beverage:4;Beverage2:4;HotDrink:4;HotDrinkRed:4;HotDrinkWhite:4;HotDrinkSpiffo:4;HotDrinkTea:4, /*;Soup:4;Stew:4,*/
+		FoodType = Liquor,
+		AlcoholPower = 8,
+		Alcoholic = TRUE,
+		CantBeFrozen = TRUE,
+		EatType = Bourbon,
+		Packaged = TRUE,
+		ReplaceOnUse = WhiskeyEmpty,
+		Poison = true,
+		PoisonDetectionLevel = 0,
+		PoisonPower = 2,
+		HungerChange = -10,
+		ThirstChange = -20,
+		UnhappyChange = 60,
+		Calories = 500,
+		Carbohydrates = 0,
+		Lipids = 0,
+		Proteins = 0,
+		CustomContextMenu = Drink,
+		CustomEatSound = DrinkingFromBottleGlass,
+		StaticModel = Cologne,
+		WorldStaticModel = WhiskeyBottleGround,
+		Tags = Liquor,
+    }
+	
+	item Perfume
+    {		
+		DisplayName = Perfume,
+		DisplayCategory = Food,
+		Type = Food,
+		Weight = 0.4,
+		Icon = Perfume1,
+		EvolvedRecipe = Beverage:4;Beverage2:4;HotDrink:4;HotDrinkRed:4;HotDrinkWhite:4;HotDrinkSpiffo:4;HotDrinkTea:4, /*;Soup:4;Stew:4,*/
+		FoodType = Liquor,
+		AlcoholPower = 8,
+		Alcoholic = TRUE,
+		CantBeFrozen = TRUE,
+		EatType = Bourbon,
+		Packaged = TRUE,
+		ReplaceOnUse = WhiskeyEmpty,
+		Poison = true,
+		PoisonDetectionLevel = 0,
+		PoisonPower = 2,
+		HungerChange = -10,
+		ThirstChange = -20,
+		UnhappyChange = 60,
+		Calories = 500,
+		Carbohydrates = 0,
+		Lipids = 0,
+		Proteins = 0,
+		CustomContextMenu = Drink,
+		CustomEatSound = DrinkingFromBottleGlass,
+		StaticModel = Perfume,
+		WorldStaticModel = WhiskeyBottleGround,
+		Tags = Liquor,
+    }
+	
+	item WhiskeyFull
+	{
+		DisplayName = Whiskey Bottle,
+		DisplayCategory = Food,
+		Type = Food,
+		Weight = 0.7,
+		Icon = WhiskeyFull,
+		EvolvedRecipe = Beverage:4;Beverage2:4;HotDrink:4;HotDrinkRed:4;HotDrinkWhite:4;HotDrinkSpiffo:4;HotDrinkTea:4, /*;Soup:4;Stew:4,*/
+		FoodType = Liquor,
+		AlcoholPower = 4,
+		Alcoholic = TRUE,
+		CantBeFrozen = TRUE,
+		EatType = Bourbon,
+		Packaged = TRUE,
+		ReplaceOnUse = WhiskeyEmpty,
+		HungerChange = -20,
+		ThirstChange = -40,
+		UnhappyChange = -80,
+		Calories = 1500,
+		Carbohydrates = 0,
+		Lipids = 0,
+		Proteins = 0,
+		CustomContextMenu = Drink,
+		CustomEatSound = DrinkingFromBottleGlass,
+		StaticModel = WhiskeyBottle,
+		WorldStaticModel = WhiskeyBottleGround,
+		Tags = Liquor,
+	}
+
+	item Lighter
+	{
+	    DisplayCategory = LightSource,
+		LightDistance	=	2,
+		Weight	=	0.1,
+		Type	=	Drainable,
+		UseWhileEquipped	=	TRUE,
+		TorchCone	=	FALSE,
+		LightStrength	=	0.4,
+		DisplayName	=	Lighter,
+		ActivatedItem	=	TRUE,
+		Icon	=	Lighter,
+		MetalValue = 1,
+		StaticModel = Zippo,
+		WorldStaticModel = ZippoGround,
+		ticksPerEquipUse = 300,
+		ReplaceOnDeplete	=	LighterEmpty,
+	}
+	
+	item LighterEmpty
+    {
+		DisplayCategory = LightSource,
+		Weight	=	0.1,
+		DisplayName	=	Lighter (Empty),
+		Icon	=	Lighter,
+		StaticModel = Zippo,
+		WorldStaticModel = ZippoGround,
+    }
+	
+	recipe Refill Lighter
+    {
+       destroy LighterEmpty/Lighter,
+       [Recipe.GetItemTypes.Petrol]=1,
+
+       Result:Lighter,
+       Time:100.0,
+       Category:Survivalist,
+	   Override:true
+    }
+	
+	item SheetPaper2
+    {
+        DisplayCategory = Literature,
+        Weight	=	0.01,
+        Type	=	Literature,
+        DisplayName	=	Sheet of Paper,
+        Icon	=	Paper,
+        CanBeWrite  =   true,
+        PageToWrite =   1,
+        WorldStaticModel = SheetOfPaper,
+    }
+	
+	recipe Create Spear
+    {
+        Plank/TreeBranch/Poolcue/Mop/Broom/HockeyStick/IceHockeyStick/CanoePadel/LeafRake/Rake,
+        keep [Recipe.GetItemTypes.SharpKnife]/SharpedStone/MeatCleaver,
+
+        Result:SpearCrafted,
+        Time:100.0,
+        OnCreate:Recipe.OnCreate.CreateSpear,
+        Category:Survivalist,
+        OnGiveXP:Recipe.OnGiveXP.WoodWork5,
+		Override:true
+    }
+
+    recipe Rip Clothing The Hardway
+    {
+        [Recipe.GetItemTypes.RipClothing_Denim],
+        keep [Recipe.GetItemTypes.SharpKnife],
+
+        Result:DenimStrips,
+        RemoveResultItem:true,
+        InSameInventory:true,
+        Sound:ClothesRipping,
+        Time:200.0,
+        AnimNode:RipSheets,
+        OnCreate:Recipe.OnCreate.RipClothing,
+		OnTest:Recipe.OnTest.IsNotWorn,
+    }
+
+    recipe Rip Clothing The Hardway /*this second recipe is so that worn clothing items are not consumed when ripping all clothing*/
+    {
+        [Recipe.GetItemTypes.RipClothing_Denim],
+        keep [Recipe.GetItemTypes.SharpKnife],
+
+        Result:DenimStrips,
+        RemoveResultItem:true,
+        InSameInventory:true,
+        Sound:ClothesRipping,
+        Time:200.0,
+        AnimNode:RipSheets,
+        OnCreate:Recipe.OnCreate.RipClothing,
+		OnTest:Recipe.OnTest.IsWorn,
+    }
+
+    recipe Rip Clothing The Hardway
+    {
+        [Recipe.GetItemTypes.RipClothing_Leather],
+        keep [Recipe.GetItemTypes.SharpKnife],
+
+        Result:LeatherStrips,
+        RemoveResultItem:true,
+        InSameInventory:true,
+        Sound:ClothesRipping,
+        Time:200.0,
+        AnimNode:RipSheets,
+        OnCreate:Recipe.OnCreate.RipClothing,
+		OnTest:Recipe.OnTest.IsNotWorn,
+    }
+
+    recipe Rip Clothing The Hardway/*this second recipe is so that worn clothing items are not consumed when ripping all clothing*/
+    {
+        [Recipe.GetItemTypes.RipClothing_Leather],
+        keep [Recipe.GetItemTypes.SharpKnife],
+
+        Result:LeatherStrips,
+        RemoveResultItem:true,
+        InSameInventory:true,
+        Sound:ClothesRipping,
+        Time:200.0,
+        AnimNode:RipSheets,
+        OnCreate:Recipe.OnCreate.RipClothing,
+		OnTest:Recipe.OnTest.IsWorn,
+    }
+	
+	recipe Craft Sheet Rope
+    {
+        RippedSheets=16,
+
+        Result:SheetRope,
+        Time:300.0,
+		Override:true
+    }
+	
+	recipe Craft Nicer Sheet Rope
+    {
+        RippedSheets=13,
+
+        Result:SheetRope,
+        Time:250.0,
+		SkillRequired:Tailoring=2,
+    }
+	
+	item SheetRope
+	{
+	    DisplayCategory = Material,
+		Weight	=	2,
+		Type	=	Normal,
+		DisplayName	=	Sheet Rope,
+		Icon	=	SheetRope,
+		Tooltip = Tooltip_SheetRope,
+		WorldStaticModel = SheetRope,
+		Tags    =   Rope,
+	}
+	
+	item Rope
+    {
+        DisplayCategory = Material,
+        Weight	=	0.5,
+        Type	=	Normal,
+        DisplayName	=	Rope,
+        Icon	=	Rope,
+        SurvivalGear = TRUE,
+        WorldStaticModel = Rope,
+        Tags    =   Rope,
+    }
+	
+	recipe Make Mattress
+    {
+		Thread=5,
+        Sheet=4,
+        Pillow=6,
+		keep [Recipe.GetItemTypes.Scissors]/[Recipe.GetItemTypes.SharpKnife],
+		
+		Result:Mattress,
+		Time:600.0,
+		SkillRequired:Tailoring=2,
+		Category:Tailoring,	
+        OnGiveXP:Recipe.OnGiveXP.TailoringHigh,
+		Override:true
+    }
+	
+	recipe Take Mattress Apart
+    {
+		Mattress,
+		keep [Recipe.GetItemTypes.Scissors]/[Recipe.GetItemTypes.SharpKnife],
+		
+		Result:Pillow=4,
+		Time:300.0,
+		Category:Tailoring,	
+        OnCreate: GetTailorLeftoversMattress_OnCreate,
+    }
+	
+	recipe Make Fishing Net
+    {
+        Twine=10,
+        Wire=10,
+		keep [Recipe.GetItemTypes.Scissors]/[Recipe.GetItemTypes.SharpKnife],
+
+        Result:FishingNet,
+        Time:150.0,
+        Category:Fishing,
+        NeedToBeLearn:true,
+		SkillRequired:Woodwork=1,
+		CanBeDoneFromFloor: True,
+		Override:true
+    }
+	
+	recipe Get Wire Back
+    {
+        BrokenFishingNet,
+		keep [Recipe.GetItemTypes.Scissors]/[Recipe.GetItemTypes.SharpKnife],
+
+        Result:Wire;8,
+        Time:100.0,
+        Category:Fishing,
+        NeedToBeLearn:true,
+		CanBeDoneFromFloor: True,
+		Override:true
+    }
+	
+	recipe Fix Fishing Net
+    {
+        BrokenFishingNet,
+		Wire=2,
+		Twine=2,
+		keep [Recipe.GetItemTypes.Scissors]/[Recipe.GetItemTypes.SharpKnife],
+
+        Result:FishingNet,
+        Time:100.0,
+        Category:Fishing,
+        NeedToBeLearn:true,
+		SkillRequired:Woodwork=1,
+		CanBeDoneFromFloor: True,
+		Override:true
+    }
+	
+	item FishingMag2
+    {
+        DisplayCategory = SkillBook,
+        Weight	=	0.1,
+        Type	=	Literature,
+        DisplayName	=	Angler USA Magazine Vol. 2,
+        Icon	=	MagazineFish2,
+        TeachedRecipes  =   Make Fishing Net;Get Wire Back;Fix Fishing Net,
+        ReplaceOnUse    =   FishingMag2,
+        StaticModel = Magazine,
+        WorldStaticModel = MagazineFish2Ground,
+    }
+	
+	item Disinfectant
+    {
+        DisplayCategory = FirstAid,
+        Type	            =	        Drainable,
+        UseDelta	        =	        0.1,
+        UseWhileEquipped	=           FALSE,
+        DisplayName			=		    Bottle of Disinfectant,
+        Icon				=			Alcohol,
+        Weight				=			0.3,
+        AlcoholPower        =           3,
+		ReplaceOnUse = PopBottleEmpty,
+        Tooltip = Tooltip_Disinfectant,
+        Medical = TRUE,
+        WorldStaticModel = Disinfectant,
+		Tags = Disinfectant,
+    }
+	
+	item CleaningLiquid2
+    {
+        DisplayCategory = Household,
+        Type	            =	        Drainable,
+        UseDelta	        =	        0.02,
+        UseWhileEquipped	=           FALSE,
+        DisplayName			=		    Cleaning Liquid,
+        Icon				=			CleaningLiquid,
+        Weight				=			1.0,
+        WeightEmpty         =           0.3,
+		ReplaceOnDeplete	=	PopBottleEmpty,
+        WorldStaticModel = CleaningLiquid,
+    }
+	
+	item Bleach
+	{
+		DisplayName = Bleach,
+		DisplayCategory = Household,
+		Type = Food,
+		Weight = 1.6,
+		Icon = Bleach,
+		CantBeFrozen = TRUE,
+		EatType = BleachBottle,
+		Poison = true,
+		PoisonDetectionLevel = 7,
+		PoisonPower = 120,
+		ReplaceOnUse = BleachEmpty,
+		UseForPoison = 38,
+		HungerChange = -5,
+		ThirstChange = -60,
+		UnhappyChange = 99,
+		CustomContextMenu = Drink,
+		CustomEatSound = DrinkingFromBottlePlastic,
+		StaticModel = BleachBottle,
+		WorldStaticModel = BleachBottle,
+	}
+
+}

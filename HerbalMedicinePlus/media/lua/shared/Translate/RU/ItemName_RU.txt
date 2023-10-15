@@ -1,0 +1,11 @@
+ItemName_RU = {
+	ItemName_Base.AntibioticsHerbalBrew = "‘ерментированные трав€нные антибиотики (некип€чЄные)",
+	ItemName_Base.AntibioticsHerbalBrewReady = "‘ерментированные трав€нные антибиотики (сварено)",
+	ItemName_Base.AntibioticsHerbal = "“рав€нные антибиотики",
+	ItemName_Base.PainkillersHerbalBrew = "‘ерментированный трав€нное болеутол€ющее (сырое)",
+	ItemName_Base.PainkillersHerbalBrewReady = "‘ерментированный трав€нное болеутол€ющее (готовое)",
+	ItemName_Base.PainkillersHerbal = "“рав€нное болеутол€ющие",	
+	ItemName_Base.SpoonHerbalTea = "“рав€нной чай",
+	ItemName_Base.PieceOfCharcoal = " усок угл€",	
+	ItemName_Base.SpoonMagazineHerbal = "∆урнал традиционного лечени€",
+}

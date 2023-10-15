@@ -1,0 +1,884 @@
+/* Ammo Maker by STIMP_TM */
+
+module ammomaker {
+
+	imports
+	{
+		Base
+	}
+
+/* Recipes Gather Gunpowder */
+
+	recipe Gather Gunpowder 5.45x39
+	{
+		OnTest:Recipe.OnTest.isActivated_A26GF,
+
+		545x39Bullets=5,
+
+		Result:GunPowder,
+		RemoveResultItem:true,
+		OnCreate:Recipe.OnCreate.GatherGunpowder,
+		Time:30.0,
+        Category:Ammo Maker Gather Gunpowder,
+		NeedToBeLearn:false,
+	}
+
+	recipe Gather Gunpowder 5.45x39
+	{
+		OnTest:Recipe.OnTest.isActivated_PSA,
+
+		Bullets545=5,
+
+		Result:GunPowder,
+		RemoveResultItem:true,
+		OnCreate:Recipe.OnCreate.GatherGunpowder,
+		Time:30.0,
+        Category:Ammo Maker Gather Gunpowder,
+		NeedToBeLearn:false,
+	}
+
+	recipe Gather Gunpowder 5.45x39
+	{
+		OnTest:Recipe.OnTest.isActivated_CJ,
+
+		CJ545=3,
+
+		Result:GunPowder,
+		RemoveResultItem:true,
+		OnCreate:Recipe.OnCreate.GatherGunpowder,
+		Time:30.0,
+        Category:Ammo Maker Gather Gunpowder,
+		NeedToBeLearn:false,
+	}
+
+	recipe Gather Gunpowder .223 Rem
+	{
+		/* isBase */
+
+		223Bullets=5,
+
+		Result:GunPowder,
+		RemoveResultItem:true,
+		OnCreate:Recipe.OnCreate.GatherGunpowder,
+		Time:30.0,
+        Category:Ammo Maker Gather Gunpowder,
+		NeedToBeLearn:false,
+	}
+
+	recipe Gather Gunpowder 5.56x45 NATO
+	{
+		/* isBase */
+
+		556Bullets=5,
+
+		Result:GunPowder,
+		RemoveResultItem:true,
+		OnCreate:Recipe.OnCreate.GatherGunpowder,
+		Time:30.0,
+        Category:Ammo Maker Gather Gunpowder,
+		NeedToBeLearn:false,
+	}
+
+	recipe Gather Gunpowder 5.7x28
+	{
+		OnTest:Recipe.OnTest.isActivated_A26GF,
+
+		Bullets57=10,
+
+		Result:GunPowder,
+		RemoveResultItem:true,
+		OnCreate:Recipe.OnCreate.GatherGunpowder,
+		Time:30.0,
+        Category:Ammo Maker Gather Gunpowder,
+		NeedToBeLearn:false,
+	}
+
+	recipe Gather Gunpowder .22 LR
+	{
+		OnTest:Recipe.OnTest.isActivated_A26GF,
+
+		Bullets22=40,
+
+		Result:GunPowder,
+		RemoveResultItem:true,
+		OnCreate:Recipe.OnCreate.GatherGunpowder,
+		Time:30.0,
+        Category:Ammo Maker Gather Gunpowder,
+		NeedToBeLearn:false,
+	}
+
+	recipe Gather Gunpowder .22 LR
+	{
+		OnTest:Recipe.OnTest.isActivated_FA,
+
+		Bullets22=40,
+
+		Result:GunPowder,
+		RemoveResultItem:true,
+		OnCreate:Recipe.OnCreate.GatherGunpowder,
+		Time:30.0,
+        Category:Ammo Maker Gather Gunpowder,
+		NeedToBeLearn:false,
+	}
+
+	recipe Gather Gunpowder .22 LR
+	{
+		OnTest:Recipe.OnTest.isActivated_VFE,
+
+		22Bullets=40,
+
+		Result:GunPowder,
+		RemoveResultItem:true,
+		OnCreate:Recipe.OnCreate.GatherGunpowder,
+		Time:30.0,
+        Category:Ammo Maker Gather Gunpowder,
+		NeedToBeLearn:false,
+	}
+
+	recipe Gather Gunpowder .22 LR
+	{
+		OnTest:Recipe.OnTest.isActivated_PSA,
+
+		Bullets22LR=40,
+
+		Result:GunPowder,
+		RemoveResultItem:true,
+		OnCreate:Recipe.OnCreate.GatherGunpowder,
+		Time:30.0,
+        Category:Ammo Maker Gather Gunpowder,
+		NeedToBeLearn:false,
+	}
+
+	recipe Gather Gunpowder .22 LR
+	{
+		OnTest:Recipe.OnTest.isActivated_CJ,
+
+		CJ22LR=40,
+
+		Result:GunPowder,
+		RemoveResultItem:true,
+		OnCreate:Recipe.OnCreate.GatherGunpowder,
+		Time:30.0,
+        Category:Ammo Maker Gather Gunpowder,
+		NeedToBeLearn:false,
+	}
+
+	recipe Gather Gunpowder Salvaged Bullets
+	{
+		OnTest:Recipe.OnTest.isActivated_SG,
+
+		SBullets=10,
+
+		Result:GunPowder,
+		RemoveResultItem:true,
+		OnCreate:Recipe.OnCreate.GatherGunpowder,
+		Time:30.0,
+        Category:Ammo Maker Gather Gunpowder,
+		NeedToBeLearn:false,
+	}
+
+	recipe Gather Gunpowder 7.62x25 Tok
+	{
+		OnTest:Recipe.OnTest.isActivated_PSA,
+
+		Bullets762Tokarev=10,
+
+		Result:GunPowder,
+		RemoveResultItem:true,
+		OnCreate:Recipe.OnCreate.GatherGunpowder,
+		Time:30.0,
+        Category:Ammo Maker Gather Gunpowder,
+		NeedToBeLearn:false,
+	}
+
+	recipe Gather Gunpowder 7.62x38 R Nag
+	{
+		OnTest:Recipe.OnTest.isActivated_PSA,
+
+		Bullets762Nagant=20,
+
+		Result:GunPowder,
+		RemoveResultItem:true,
+		OnCreate:Recipe.OnCreate.GatherGunpowder,
+		Time:30.0,
+        Category:Ammo Maker Gather Gunpowder,
+		NeedToBeLearn:false,
+	}
+
+	recipe Gather Gunpowder 7.62x51 NATO
+	{
+		OnTest:Recipe.OnTest.isActivated_A26GF,
+
+		762x51Bullets=5,
+
+		Result:GunPowder,
+		RemoveResultItem:true,
+		OnCreate:Recipe.OnCreate.GatherGunpowder,
+		Time:30.0,
+        Category:Ammo Maker Gather Gunpowder,
+		NeedToBeLearn:false,
+	}
+
+	recipe Gather Gunpowder 7.62x51 NATO
+	{
+		OnTest:Recipe.OnTest.isActivated_FA,
+
+		762x51Bullets=5,
+
+		Result:GunPowder,
+		RemoveResultItem:true,
+		OnCreate:Recipe.OnCreate.GatherGunpowder,
+		Time:30.0,
+        Category:Ammo Maker Gather Gunpowder,
+		NeedToBeLearn:false,
+	}
+
+	recipe Gather Gunpowder 7.62x51 NATO
+	{
+		OnTest:Recipe.OnTest.isActivated_CJ,
+
+		762NATO=2,
+
+		Result:GunPowder,
+		RemoveResultItem:true,
+		OnCreate:Recipe.OnCreate.GatherGunpowder,
+		Time:30.0,
+        Category:Ammo Maker Gather Gunpowder,
+		NeedToBeLearn:false,
+	}
+
+	recipe Gather Gunpowder .30-06 Spring
+	{
+		OnTest:Recipe.OnTest.isActivated_A26GF,
+
+		3006Bullets=5,
+
+		Result:GunPowder,
+		RemoveResultItem:true,
+		OnCreate:Recipe.OnCreate.GatherGunpowder,
+		Time:30.0,
+        Category:Ammo Maker Gather Gunpowder,
+		NeedToBeLearn:false,
+	}
+
+	recipe Gather Gunpowder .30-06 Spring
+	{
+		OnTest:Recipe.OnTest.isActivated_FA,
+
+		Bullets3006=5,
+
+		Result:GunPowder,
+		RemoveResultItem:true,
+		OnCreate:Recipe.OnCreate.GatherGunpowder,
+		Time:30.0,
+        Category:Ammo Maker Gather Gunpowder,
+		NeedToBeLearn:false,
+	}
+
+	recipe Gather Gunpowder .308 Win
+	{
+		/* isBase */
+
+		308Bullets=5,
+
+		Result:GunPowder,
+		RemoveResultItem:true,
+		OnCreate:Recipe.OnCreate.GatherGunpowder,
+		Time:30.0,
+        Category:Ammo Maker Gather Gunpowder,
+		NeedToBeLearn:false,
+	}
+
+	recipe Gather Gunpowder 7.62x39
+	{
+		OnTest:Recipe.OnTest.isActivated_A26GF,
+
+		762x39Bullets=5,
+
+		Result:GunPowder,
+		RemoveResultItem:true,
+		OnCreate:Recipe.OnCreate.GatherGunpowder,
+		Time:30.0,
+        Category:Ammo Maker Gather Gunpowder,
+		NeedToBeLearn:false,
+	}
+
+	recipe Gather Gunpowder 7.62x39
+	{
+		OnTest:Recipe.OnTest.isActivated_FA,
+
+		762x39Bullets=5,
+
+		Result:GunPowder,
+		RemoveResultItem:true,
+		OnCreate:Recipe.OnCreate.GatherGunpowder,
+		Time:30.0,
+        Category:Ammo Maker Gather Gunpowder,
+		NeedToBeLearn:false,
+	}
+
+	recipe Gather Gunpowder 7.62x39
+	{
+		OnTest:Recipe.OnTest.isActivated_VFE,
+
+		762Bullets=5,
+
+		Result:GunPowder,
+		RemoveResultItem:true,
+		OnCreate:Recipe.OnCreate.GatherGunpowder,
+		Time:30.0,
+        Category:Ammo Maker Gather Gunpowder,
+		NeedToBeLearn:false,
+	}
+
+	recipe Gather Gunpowder 7.62x39
+	{
+		OnTest:Recipe.OnTest.isActivated_PSA,
+
+		Bullets762AK=5,
+
+		Result:GunPowder,
+		RemoveResultItem:true,
+		OnCreate:Recipe.OnCreate.GatherGunpowder,
+		Time:30.0,
+        Category:Ammo Maker Gather Gunpowder,
+		NeedToBeLearn:false,
+	}
+
+	recipe Gather Gunpowder 7.62x39
+	{
+		OnTest:Recipe.OnTest.isActivated_CJ,
+
+		CJ762=3,
+
+		Result:GunPowder,
+		RemoveResultItem:true,
+		OnCreate:Recipe.OnCreate.GatherGunpowder,
+		Time:30.0,
+        Category:Ammo Maker Gather Gunpowder,
+		NeedToBeLearn:false,
+	}
+
+	recipe Gather Gunpowder 7.62x54 R
+	{
+		OnTest:Recipe.OnTest.isActivated_A26GF,
+
+		762x54rBullets=5,
+
+		Result:GunPowder,
+		RemoveResultItem:true,
+		OnCreate:Recipe.OnCreate.GatherGunpowder,
+		Time:30.0,
+        Category:Ammo Maker Gather Gunpowder,
+		NeedToBeLearn:false,
+	}
+
+	recipe Gather Gunpowder 7.62x54 R
+	{
+		OnTest:Recipe.OnTest.isActivated_PSA,
+
+		Bullets762PKM=5,
+
+		Result:GunPowder,
+		RemoveResultItem:true,
+		OnCreate:Recipe.OnCreate.GatherGunpowder,
+		Time:30.0,
+        Category:Ammo Maker Gather Gunpowder,
+		NeedToBeLearn:false,
+	}
+
+	recipe Gather Gunpowder 7.62x54 R
+	{
+		OnTest:Recipe.OnTest.isActivated_CJ,
+
+		762_54R=2,
+
+		Result:GunPowder,
+		RemoveResultItem:true,
+		OnCreate:Recipe.OnCreate.GatherGunpowder,
+		Time:30.0,
+        Category:Ammo Maker Gather Gunpowder,
+		NeedToBeLearn:false,
+	}
+
+	recipe Gather Gunpowder .380 ACP
+	{
+		OnTest:Recipe.OnTest.isActivated_A26GF,
+
+		Bullets380=25,
+
+		Result:GunPowder,
+		RemoveResultItem:true,
+		OnCreate:Recipe.OnCreate.GatherGunpowder,
+		Time:30.0,
+        Category:Ammo Maker Gather Gunpowder,
+		NeedToBeLearn:false,
+	}
+
+	recipe Gather Gunpowder 9mm Luger
+	{
+		/* isBase */
+
+		Bullets9mm=15,
+
+		Result:GunPowder,
+		RemoveResultItem:true,
+		OnCreate:Recipe.OnCreate.GatherGunpowder,
+		Time:30.0,
+        Category:Ammo Maker Gather Gunpowder,
+		NeedToBeLearn:false,
+	}
+
+	recipe Gather Gunpowder .38 SP
+	{
+		/* isBase */
+
+		Bullets38=15,
+
+		Result:GunPowder,
+		RemoveResultItem:true,
+		OnCreate:Recipe.OnCreate.GatherGunpowder,
+		Time:30.0,
+        Category:Ammo Maker Gather Gunpowder,
+		NeedToBeLearn:false,
+	}
+
+	recipe Gather Gunpowder .357 Mag
+	{
+		OnTest:Recipe.OnTest.isActivated_A26GF,
+
+		Bullets357=10,
+
+		Result:GunPowder,
+		RemoveResultItem:true,
+		OnCreate:Recipe.OnCreate.GatherGunpowder,
+		Time:30.0,
+        Category:Ammo Maker Gather Gunpowder,
+		NeedToBeLearn:false,
+	}
+
+	recipe Gather Gunpowder .357 Mag
+	{
+		OnTest:Recipe.OnTest.isActivated_FA,
+
+		Bullets357=10,
+
+		Result:GunPowder,
+		RemoveResultItem:true,
+		OnCreate:Recipe.OnCreate.GatherGunpowder,
+		Time:30.0,
+        Category:Ammo Maker Gather Gunpowder,
+		NeedToBeLearn:false,
+	}
+
+	recipe Gather Gunpowder .357 Mag
+	{
+		OnTest:Recipe.OnTest.isActivated_CJ,
+
+		357Magnum=9,
+
+		Result:GunPowder,
+		RemoveResultItem:true,
+		OnCreate:Recipe.OnCreate.GatherGunpowder,
+		Time:30.0,
+        Category:Ammo Maker Gather Gunpowder,
+		NeedToBeLearn:false,
+	}
+
+	recipe Gather Gunpowder 9x39
+	{
+		OnTest:Recipe.OnTest.isActivated_PSA,
+
+		Bullets939=10,
+
+		Result:GunPowder,
+		RemoveResultItem:true,
+		OnCreate:Recipe.OnCreate.GatherGunpowder,
+		Time:30.0,
+        Category:Ammo Maker Gather Gunpowder,
+		NeedToBeLearn:false,
+	}
+
+	recipe Gather Gunpowder 9x18 Mak
+	{
+		OnTest:Recipe.OnTest.isActivated_PSA,
+
+		Bullets9x18mm=24,
+
+		Result:GunPowder,
+		RemoveResultItem:true,
+		OnCreate:Recipe.OnCreate.GatherGunpowder,
+		Time:30.0,
+        Category:Ammo Maker Gather Gunpowder,
+		NeedToBeLearn:false,
+	}
+
+	recipe Gather Gunpowder Scrap Bullets
+	{
+		OnTest:Recipe.OnTest.isActivated_SG,
+
+		ScrapBullets=10,
+
+		Result:GunPowder,
+		RemoveResultItem:true,
+		OnCreate:Recipe.OnCreate.GatherGunpowder,
+		Time:30.0,
+        Category:Ammo Maker Gather Gunpowder,
+		NeedToBeLearn:false,
+	}
+
+	recipe Gather Gunpowder .410 Gauge
+	{
+		OnTest:Recipe.OnTest.isActivated_A26GF,
+
+		410gShotgunShells=5,
+
+		Result:GunPowder,
+		RemoveResultItem:true,
+		OnCreate:Recipe.OnCreate.GatherGunpowder,
+		Time:30.0,
+        Category:Ammo Maker Gather Gunpowder,
+		NeedToBeLearn:false,
+	}
+
+	recipe Gather Gunpowder .44-40 WCF
+	{
+		OnTest:Recipe.OnTest.isActivated_FA,
+
+		Bullets4440=10,
+
+		Result:GunPowder,
+		RemoveResultItem:true,
+		OnCreate:Recipe.OnCreate.GatherGunpowder,
+		Time:30.0,
+        Category:Ammo Maker Gather Gunpowder,
+		NeedToBeLearn:false,
+	}
+
+	recipe Gather Gunpowder .44 Mag
+	{
+		/* isBase */
+
+		OnTest:Recipe.OnTest.isNotActivated_A26GF_FA,
+
+		Bullets44=6,
+
+		Result:GunPowder,
+		RemoveResultItem:true,
+		OnCreate:Recipe.OnCreate.GatherGunpowder,
+		Time:30.0,
+        Category:Ammo Maker Gather Gunpowder,
+		NeedToBeLearn:false,
+	}
+
+	recipe Gather Gunpowder .44 Mag
+	{
+		OnTest:Recipe.OnTest.isActivated_A26GF,
+
+		Bullets44=5,
+
+		Result:GunPowder,
+		RemoveResultItem:true,
+		OnCreate:Recipe.OnCreate.GatherGunpowder,
+		Time:30.0,
+        Category:Ammo Maker Gather Gunpowder,
+		NeedToBeLearn:false,
+	}
+
+	recipe Gather Gunpowder .44 Mag
+	{
+		OnTest:Recipe.OnTest.isActivated_FA,
+
+		Bullets44=5,
+
+		Result:GunPowder,
+		RemoveResultItem:true,
+		OnCreate:Recipe.OnCreate.GatherGunpowder,
+		Time:30.0,
+        Category:Ammo Maker Gather Gunpowder,
+		NeedToBeLearn:false,
+	}
+
+	recipe Gather Gunpowder .45 ACP
+	{
+		/* isBase */
+
+		Bullets45=10,
+
+		Result:GunPowder,
+		RemoveResultItem:true,
+		OnCreate:Recipe.OnCreate.GatherGunpowder,
+		Time:30.0,
+        Category:Ammo Maker Gather Gunpowder,
+		NeedToBeLearn:false,
+	}
+
+	recipe Gather Gunpowder .45 LC
+	{
+		OnTest:Recipe.OnTest.isActivated_A26GF,
+
+		Bullets45LC=10,
+
+		Result:GunPowder,
+		RemoveResultItem:true,
+		OnCreate:Recipe.OnCreate.GatherGunpowder,
+		Time:30.0,
+        Category:Ammo Maker Gather Gunpowder,
+		NeedToBeLearn:false,
+	}
+
+	recipe Gather Gunpowder .45-70 Gov
+	{
+		OnTest:Recipe.OnTest.isActivated_A26GF,
+
+		Bullets4570=5,
+
+		Result:GunPowder,
+		RemoveResultItem:true,
+		OnCreate:Recipe.OnCreate.GatherGunpowder,
+		Time:30.0,
+        Category:Ammo Maker Gather Gunpowder,
+		NeedToBeLearn:false,
+	}
+
+	recipe Gather Gunpowder .50 AE
+	{
+		OnTest:Recipe.OnTest.isActivated_A26GF,
+
+		Bullets50MAG=5,
+
+		Result:GunPowder,
+		RemoveResultItem:true,
+		OnCreate:Recipe.OnCreate.GatherGunpowder,
+		Time:30.0,
+        Category:Ammo Maker Gather Gunpowder,
+		NeedToBeLearn:false,
+	}
+
+	recipe Gather Gunpowder .50 BMG
+	{
+		OnTest:Recipe.OnTest.isActivated_A26GF,
+
+		50BMGBullets=5,
+
+		Result:GunPowder,
+		RemoveResultItem:true,
+		OnCreate:Recipe.OnCreate.GatherGunpowder,
+		Time:30.0,
+        Category:Ammo Maker Gather Gunpowder,
+		NeedToBeLearn:false,
+	}
+
+	recipe Gather Gunpowder 20 Gauge
+	{
+		OnTest:Recipe.OnTest.isActivated_A26GF,
+
+		20gShotgunShells=5,
+
+		Result:GunPowder,
+		RemoveResultItem:true,
+		OnCreate:Recipe.OnCreate.GatherGunpowder,
+		Time:30.0,
+        Category:Ammo Maker Gather Gunpowder,
+		NeedToBeLearn:false,
+	}
+
+	recipe Gather Gunpowder 12 Gauge
+	{
+		/* isBase */
+
+		OnTest:Recipe.OnTest.isNotActivated_A26GF_FA,
+
+		ShotgunShells=6,
+
+		Result:GunPowder,
+		RemoveResultItem:true,
+		OnCreate:Recipe.OnCreate.GatherGunpowder,
+		Time:30.0,
+        Category:Ammo Maker Gather Gunpowder,
+		NeedToBeLearn:false,
+	}
+
+	recipe Gather Gunpowder 12 Gauge
+	{
+		OnTest:Recipe.OnTest.isActivated_A26GF,
+
+		ShotgunShells=5,
+
+		Result:GunPowder,
+		RemoveResultItem:true,
+		OnCreate:Recipe.OnCreate.GatherGunpowder,
+		Time:30.0,
+        Category:Ammo Maker Gather Gunpowder,
+		NeedToBeLearn:false,
+	}
+
+	recipe Gather Gunpowder 12 Gauge
+	{
+		OnTest:Recipe.OnTest.isActivated_FA,
+
+		ShotgunShells=5,
+
+		Result:GunPowder,
+		RemoveResultItem:true,
+		OnCreate:Recipe.OnCreate.GatherGunpowder,
+		Time:30.0,
+        Category:Ammo Maker Gather Gunpowder,
+		NeedToBeLearn:false,
+	}
+
+	recipe Gather Gunpowder Flare
+	{
+		OnTest:Recipe.OnTest.isActivated_A26GF2,
+
+		Flare=2,
+
+		Result:GunPowder,
+		RemoveResultItem:true,
+		OnCreate:Recipe.OnCreate.GatherGunpowder,
+		Time:30.0,
+        Category:Ammo Maker Gather Gunpowder,
+		NeedToBeLearn:false,
+	}
+
+	recipe Gather Gunpowder 10 Gauge
+	{
+		OnTest:Recipe.OnTest.isActivated_A26GF,
+
+		10gShotgunShells=5,
+
+		Result:GunPowder,
+		RemoveResultItem:true,
+		OnCreate:Recipe.OnCreate.GatherGunpowder,
+		Time:30.0,
+        Category:Ammo Maker Gather Gunpowder,
+		NeedToBeLearn:false,
+	}
+
+	recipe Gather Gunpowder 4 Gauge
+	{
+		OnTest:Recipe.OnTest.isActivated_A26GF,
+
+		4gShotgunShells=5,
+
+		Result:GunPowder,
+		RemoveResultItem:true,
+		OnCreate:Recipe.OnCreate.GatherGunpowder,
+		Time:30.0,
+        Category:Ammo Maker Gather Gunpowder,
+		NeedToBeLearn:false,
+	}
+
+	recipe Gather Gunpowder 4 Gauge
+	{
+		OnTest:Recipe.OnTest.isActivated_PSA,
+
+		23x75ShotgunShells=4,
+
+		Result:GunPowder,
+		RemoveResultItem:true,
+		OnCreate:Recipe.OnCreate.GatherGunpowder,
+		Time:30.0,
+        Category:Ammo Maker Gather Gunpowder,
+		NeedToBeLearn:false,
+	}
+
+	recipe Gather Gunpowder 40mm HE
+	{
+		OnTest:Recipe.OnTest.isActivated_A26GF,
+
+		40HERound=1,
+
+		Result:GunPowder,
+		RemoveResultItem:true,
+		OnCreate:Recipe.OnCreate.GatherGunpowder,
+		Time:30.0,
+        Category:Ammo Maker Gather Gunpowder,
+		NeedToBeLearn:false,
+	}
+
+	recipe Gather Gunpowder 40mm INC
+	{
+		OnTest:Recipe.OnTest.isActivated_A26GF,
+
+		40INCRound=1,
+
+		Result:GunPowder,
+		RemoveResultItem:true,
+		OnCreate:Recipe.OnCreate.GatherGunpowder,
+		Time:30.0,
+        Category:Ammo Maker Gather Gunpowder,
+		NeedToBeLearn:false,
+	}
+
+	recipe Gather Gunpowder HE Rocket
+	{
+		OnTest:Recipe.OnTest.isActivated_A26GF,
+
+		HERocket=1,
+
+		Result:GunPowder,
+		RemoveResultItem:true,
+		OnCreate:Recipe.OnCreate.GatherGunpowder,
+		Time:30.0,
+        Category:Ammo Maker Gather Gunpowder,
+		NeedToBeLearn:false,
+	}
+
+	recipe Gather Gunpowder Nail Bomb
+	{
+		OnTest:Recipe.OnTest.isActivated_SG,
+
+		NailBomb=1,
+
+		Result:GunPowder,
+		RemoveResultItem:true,
+		OnCreate:Recipe.OnCreate.GatherGunpowder,
+		Time:30.0,
+        Category:Ammo Maker Gather Gunpowder,
+		NeedToBeLearn:false,
+	}
+
+	recipe Gather Gunpowder Glass Bomb
+	{
+		OnTest:Recipe.OnTest.isActivated_SG,
+
+		GlassBomb=1,
+
+		Result:GunPowder,
+		RemoveResultItem:true,
+		OnCreate:Recipe.OnCreate.GatherGunpowder,
+		Time:30.0,
+        Category:Ammo Maker Gather Gunpowder,
+		NeedToBeLearn:false,
+	}
+
+	recipe Gather Gunpowder Pipe Bomb
+	{
+		OnTest:Recipe.OnTest.isActivated_SG,
+
+		HPB=1,
+
+		Result:GunPowder,
+		RemoveResultItem:true,
+		OnCreate:Recipe.OnCreate.GatherGunpowder,
+		Time:30.0,
+        Category:Ammo Maker Gather Gunpowder,
+		NeedToBeLearn:false,
+	}
+
+	recipe Gather Gunpowder Decoy
+	{
+		OnTest:Recipe.OnTest.isActivated_SG,
+
+		HD=1,
+
+		Result:GunPowder,
+		RemoveResultItem:true,
+		OnCreate:Recipe.OnCreate.GatherGunpowder,
+		Time:30.0,
+        Category:Ammo Maker Gather Gunpowder,
+		NeedToBeLearn:false,
+	}
+
+}

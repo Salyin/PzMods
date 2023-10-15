@@ -1,0 +1,5 @@
+name=Playable Harmonica! Lifestyle Addon
+id=HarmonicaLS
+description=Adds playable harmonicas to the game. Requires Lifestyle.
+poster=lifestylemusicharmonicaaddon.png
+require=Lifestyle

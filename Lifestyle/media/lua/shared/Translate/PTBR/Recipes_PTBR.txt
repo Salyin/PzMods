@@ -1,0 +1,4 @@
+Recipes_PTBR {
+    Recipe_Craft_Standing_Disco_Ball = "Criar Bola de Disco",
+    Recipe_Assemble_DJ_Booth = "Montar Mesa de DJ",
+}

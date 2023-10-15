@@ -1,0 +1,4 @@
+ContextMenu_EN = {
+    ContextMenu_SearchInTree = "Przeszukaj drzewo",
+	ContextMenu_CutBranchFromTree = "Obetnij ga³¹Ÿ z drzewa",
+}

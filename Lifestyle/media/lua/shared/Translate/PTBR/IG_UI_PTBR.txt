@@ -1,0 +1,17 @@
+IGUI_PTBR = {
+	IGUI_perks_Meditation = "Meditação",
+	IGUI_perks_Dancing = "Dança",
+	IGUI_perks_Music = "Música",
+	IGUI_perks_Lifestyle = "Estilo de Vida",
+
+	IGUI_HaloNote_XP = "XP",
+	IGUI_HaloNote_XPBonus = "XP+",
+	IGUI_HaloNote_Stress = "Estresse",
+	IGUI_HaloNote_Embarrassed = "Vergonha",
+	IGUI_HaloNote_Boredom = "Tédio",
+	IGUI_HaloNote_Happyness = "Felicidade",
+	IGUI_HaloNote_Unhappyness = "Infelicidade",
+	IGUI_HaloNote_Pain = "Dor",
+	IGUI_HaloNote_Pain_BadPosture = "Dor Por Má Postura",
+
+}

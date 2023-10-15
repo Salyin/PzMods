@@ -1,0 +1,4 @@
+﻿ContextMenu_TH = {
+    ContextMenu_SearchInTree = "ค้นหาของในต้นไม้",
+	ContextMenu_CutBranchFromTree = "ตัดกิ่งไม้ออกจากต้น",
+}

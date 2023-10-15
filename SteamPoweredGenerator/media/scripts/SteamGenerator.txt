@@ -1,0 +1,31 @@
+module SteamGenerator {
+	imports { Base }
+	item Generator {
+		DisplayCategory = Electronics,
+		Weight = 40,
+		Type = Normal,
+		DisplayName = Steam Powered Generator,
+		Icon = SteamGenerator,
+		Tooltip = Tooltip_SteamGenerator,
+		RequiresEquippedBothHands = true,
+		MetalValue = 500,
+		ConditionMax = 100,
+	}
+	recipe Make Steam Generator {
+		Base.Generator,
+		ScrapMetal=10,
+		SheetMetal=5,
+		SmallSheetMetal=5,
+		MetalPipe=5,
+		MetalBar=5,
+		BlowTorch=7,
+		keep WeldingMask,
+		Result:SteamGenerator.Generator,
+		SkillRequired:MetalWelding=5,
+		OnGiveXP:Recipe.OnGiveXP.MetalWelding25,
+		OnCreate:Recipe.OnCreate.SteamGenerator,
+		NeedToBeLearn:false,
+		Category:Welding,
+		Time:800,
+	}
+}

@@ -1,0 +1,9 @@
+IGUI_DE = {
+	-- All the UI text used in game
+    IGUI_ScavengeUI_Title = "Plünderer fokus",
+    IGUI_ScavengeUI_Materials = "Materialien",
+    IGUI_ScavengeUI_Medicine = "Medizin",
+    IGUI_ScavengeUI_Food = "Lebensmittel",
+    IGUI_ScavengeUI_Tools = "Werkzeuge",
+}
+

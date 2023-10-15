@@ -1,0 +1,71 @@
+module Base
+{
+	fixing Fix 97bushmaster Storage Welding
+	{
+	   Require : 97BushLeftFender0;97BushRightFender0;97BushLeftStorage0;97BushRightStorage0;97BushGasTank2,
+	   GlobalItem : BlowTorch=3,
+	   ConditionModifier : 1.0,
+
+       Fixer : SheetMetal; MetalWelding=3;Mechanics=2,
+       Fixer : SmallSheetMetal=2; MetalWelding=3;Mechanics=2,
+	}
+
+	fixing Fix 97bushmaster Roof Storage
+	{
+	   Require : 97BushRoofStorage0,
+	   ConditionModifier : 1.0,
+
+       Fixer : Nails=1; Mechanics=2,
+	}
+
+	fixing Fix 97bushmaster Door Welding
+	{
+	   Require : 97BushStorageLidSmall;97BushStorageLidLarge;97BushEngineDoor2;97BushDoor2;97BushHatch2,
+	   GlobalItem : BlowTorch=3,
+	   ConditionModifier : 1.0,
+
+       Fixer : SheetMetal;MetalWelding=6;Mechanics=4,
+	}
+
+	fixing Fix 97bushmaster Window
+	{
+	   Require : 97BushWindshield2;97BushFrontSideWindow2;97BushSideWindow2;97BushWindshieldRear2,
+	   ConditionModifier : 0.5,
+	   
+       Fixer : Glue=4;Mechanics=3,
+	}
+	
+	fixing Fix 97bushmaster Tire
+	{
+	   Require : BushmasterTire,
+	   ConditionModifier : 0.45,
+
+       Fixer : DuctTape=2;Mechanics=2,
+	}
+
+	fixing Fix 97bushmaster Tire 1
+	{
+	   Require : BushmasterTire,
+	   ConditionModifier : 0.45,
+
+       Fixer : Glue=2;Mechanics=2,
+	}
+
+	fixing Fix 97bushmaster Seat
+	{
+	   Require : 97BushmasterSeat;97BushmasterGunnerSeat,
+	   ConditionModifier : 0.4,
+
+       Fixer : DuctTape=2;Mechanics=1,
+	}
+
+	fixing Fix 97bushmaster Bullbar Welding
+	{
+	   Require : 97BushBullbarSAS,
+	   GlobalItem : BlowTorch=6,
+	   ConditionModifier : 1.0,
+
+       Fixer : SheetMetal;MetalWelding=5;Mechanics=4,
+	}
+
+}

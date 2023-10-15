@@ -1,0 +1,492 @@
+module SpoonDM
+{
+
+	imports
+	{
+		Base
+	}
+	
+	/****************************** MINE ITEMS ******************************/
+	
+	item SDMOreOne
+	{
+	    DisplayCategory = Material,
+		Weight	=	15,
+		Type	=	Normal,
+		DisplayName	=  You have prospected an ore,
+		Icon	=	SDMOreRock,
+		WorldStaticModel = SDMOreOne,
+		ScaleWorldIcon 		= 0.5,
+		Tags = TestOre,
+	}
+	
+	item SDMOreTwo
+	{
+	    DisplayCategory = Material,
+		Weight	=	5000,
+		Type	=	Normal,
+		DisplayName	=  Unidentified rock formations,
+		Icon	=	SDMOreRock,
+		WorldStaticModel = SDMOreOne,
+		ScaleWorldIcon 		= 0.5,
+		Tooltip = Tooltip_item_WhatIsThisOre,
+		Tags = TestOre,
+	}
+	
+	/****************************** RESOURCES ******************************/
+	
+	item RockSalt 
+	{
+		DisplayCategory = Material,
+        Weight	=	0.2,
+        Type	=	Normal,
+        DisplayName	=	Rock Salt,
+        Icon	=	RockSalt,
+        WorldStaticModel = Stone,
+		Tooltip = Tooltip_item_SaltOre,
+	}
+	
+	item CoalOre 
+	{
+		DisplayCategory = Material,
+        Weight	=	0.2,
+        Type	=	Normal,
+        DisplayName	=	Coal,
+        Icon	=	CoalOre,
+        WorldStaticModel = Stone,
+		Tooltip = Tooltip_item_CoalOre,
+	}
+
+	/****************************** DIFFERENT MINES ******************************/
+	
+	item SDMOreRockMine1
+	{
+	    DisplayCategory 	= Material,
+		Weight				= 10000,
+		Type	            = Drainable,
+		UseWhileEquipped	= FALSE,
+        UseDelta	        = 0.05,
+		DisplayName			= Rock pile,
+		Icon				= SDMOreRock,
+		WorldStaticModel 	= SDMOreRockMine,
+		ScaleWorldIcon 		= 2.0,
+		Tooltip = Tooltip_item_MineWarning,
+	}
+	
+	item SDMOreRockMine2
+	{
+	    DisplayCategory 	= Material,
+		Weight				= 10000,
+		Type	            = Drainable,
+		UseWhileEquipped	= FALSE,
+        UseDelta	        = 0.1,
+		DisplayName			= Rock pile,
+		Icon				= SDMOreRock,
+		WorldStaticModel 	= SDMOreRockMine,
+		ScaleWorldIcon 		= 1.5,
+		Tooltip = Tooltip_item_MineWarning,
+	}
+	
+	item SDMOreRockMine3
+	{
+	    DisplayCategory 	= Material,
+		Weight				= 10000,
+		Type	            = Drainable,
+		UseWhileEquipped	= FALSE,
+        UseDelta	        = 0.2,
+		DisplayName			= Rock pile,
+		Icon				= SDMOreRock,
+		WorldStaticModel 	= SDMOreRockMine,
+		ScaleWorldIcon 		= 1.0,
+		Tooltip = Tooltip_item_MineWarning,
+	}
+	
+	item SDMOreIronMine1
+	{
+	    DisplayCategory 	= Material,
+		Weight				= 10000,
+		Type	            = Drainable,
+		UseWhileEquipped	= FALSE,
+        UseDelta	        = 0.05,
+		DisplayName			= Iron Ore Deposit,
+		Icon				= SDMOreIron,
+		WorldStaticModel 	= SDMOreIronMine,
+		ScaleWorldIcon 		= 2.0,
+		Tooltip = Tooltip_item_MineWarning,
+	}
+	
+	item SDMOreIronMine2
+	{
+	    DisplayCategory 	= Material,
+		Weight				= 10000,
+		Type	            = Drainable,
+		UseWhileEquipped	= FALSE,
+        UseDelta	        = 0.1,
+		DisplayName			= Iron Ore Deposit,
+		Icon				= SDMOreIron,
+		WorldStaticModel 	= SDMOreIronMine,
+		ScaleWorldIcon 		= 1.5,
+		Tooltip = Tooltip_item_MineWarning,
+	}
+	
+	item SDMOreIronMine3
+	{
+	    DisplayCategory 	= Material,
+		Weight				= 10000,
+		Type	            = Drainable,
+		UseWhileEquipped	= FALSE,
+        UseDelta	        = 0.2,
+		DisplayName			= Iron Ore Deposit,
+		Icon				= SDMOreIron,
+		WorldStaticModel 	= SDMOreIronMine,
+		ScaleWorldIcon 		= 1.0,
+		Tooltip = Tooltip_item_MineWarning,
+	}
+	
+	item SDMOreSaltMine1
+	{
+	    DisplayCategory 	= Material,
+		Weight				= 10000,
+		Type	            = Drainable,
+		UseWhileEquipped	= FALSE,
+        UseDelta	        = 0.05,
+		DisplayName			= Salt Deposit,
+		Icon				= SDMOreSalt,
+		WorldStaticModel	= SDMOreSaltMine,
+		ScaleWorldIcon 		= 2.0,
+		Tooltip = Tooltip_item_MineWarning,
+	}
+	
+	item SDMOreSaltMine2
+	{
+	    DisplayCategory 	= Material,
+		Weight				= 10000,
+		Type	            = Drainable,
+		UseWhileEquipped	= FALSE,
+        UseDelta	        = 0.1,
+		DisplayName			= Salt Deposit,
+		Icon				= SDMOreSalt,
+		WorldStaticModel	= SDMOreSaltMine,
+		ScaleWorldIcon 		= 1.5,
+		Tooltip = Tooltip_item_MineWarning,
+	}
+	
+	item SDMOreSaltMine3
+	{
+	    DisplayCategory 	= Material,
+		Weight				= 10000,
+		Type	            = Drainable,
+		UseWhileEquipped	= FALSE,
+        UseDelta	        = 0.2,
+		DisplayName			= Salt Deposit,
+		Icon				= SDMOreSalt,
+		WorldStaticModel	= SDMOreSaltMine,
+		ScaleWorldIcon 		= 1.0,
+		Tooltip = Tooltip_item_MineWarning,
+	}
+	
+	item SDMOreAluminumMine1
+	{
+	    DisplayCategory 	= Material,
+		Weight				= 10000,
+		Type	            = Drainable,
+		UseWhileEquipped	= FALSE,
+        UseDelta	        = 0.05,
+		DisplayName			= Aluminum Deposit,
+		Icon				= SDMOreRock,
+		WorldStaticModel	= SDMOreAluminumMine,
+		ScaleWorldIcon 		= 2.0,
+		Tooltip = Tooltip_item_MineWarning,
+	}
+	
+	item SDMOreAluminumMine2
+	{
+	    DisplayCategory 	= Material,
+		Weight				= 10000,
+		Type	            = Drainable,
+		UseWhileEquipped	= FALSE,
+        UseDelta	        = 0.1,
+		DisplayName			= Aluminum Deposit,
+		Icon				= SDMOreRock,
+		WorldStaticModel	= SDMOreAluminumMine,
+		ScaleWorldIcon 		= 1.5,
+		Tooltip = Tooltip_item_MineWarning,
+	}
+	
+	item SDMOreAluminumMine3
+	{
+	    DisplayCategory 	= Material,
+		Weight				= 10000,
+		Type	            = Drainable,
+		UseWhileEquipped	= FALSE,
+        UseDelta	        = 0.2,
+		DisplayName			= Aluminum Deposit,
+		Icon				= SDMOreRock,
+		WorldStaticModel	= SDMOreAluminumMine,
+		ScaleWorldIcon 		= 1.0,
+		Tooltip = Tooltip_item_MineWarning,
+	}
+	
+	item SDMOreCoalMine1
+	{
+	    DisplayCategory 	= Material,
+		Weight				= 10000,
+		Type	            = Drainable,
+		UseWhileEquipped	= FALSE,
+        UseDelta	        = 0.05,
+		DisplayName			= Coal Deposit,
+		Icon				= SDMOreRock,
+		WorldStaticModel	= SDMOreCoalMine,
+		ScaleWorldIcon 		= 2.0,
+		Tooltip = Tooltip_item_MineWarning,
+	}
+	
+	item SDMOreCoalMine2
+	{
+	    DisplayCategory 	= Material,
+		Weight				= 10000,
+		Type	            = Drainable,
+		UseWhileEquipped	= FALSE,
+        UseDelta	        = 0.1,
+		DisplayName			= Coal Deposit,
+		Icon				= SDMOreRock,
+		WorldStaticModel	= SDMOreCoalMine,
+		ScaleWorldIcon 		= 1.5,
+		Tooltip = Tooltip_item_MineWarning,
+	}
+	
+	item SDMOreCoalMine3
+	{
+	    DisplayCategory 	= Material,
+		Weight				= 10000,
+		Type	            = Drainable,
+		UseWhileEquipped	= FALSE,
+        UseDelta	        = 0.2,
+		DisplayName			= Coal Deposit,
+		Icon				= SDMOreRock,
+		WorldStaticModel	= SDMOreCoalMine,
+		ScaleWorldIcon 		= 1.0,
+		Tooltip = Tooltip_item_MineWarning,
+	}
+	
+	item SDMOreSilverMine1
+	{
+	    DisplayCategory 	= Material,
+		Weight				= 10000,
+		Type	            = Drainable,
+		UseWhileEquipped	= FALSE,
+        UseDelta	        = 0.05,
+		DisplayName			= Silver Deposit,
+		Icon				= SDMOreRock,
+		WorldStaticModel	= SDMOreSilverMine,
+		ScaleWorldIcon 		= 2.0,
+		Tooltip = Tooltip_item_MineWarning,
+	}
+	
+	item SDMOreSilverMine2
+	{
+	    DisplayCategory 	= Material,
+		Weight				= 10000,
+		Type	            = Drainable,
+		UseWhileEquipped	= FALSE,
+        UseDelta	        = 0.1,
+		DisplayName			= Silver Deposit,
+		Icon				= SDMOreRock,
+		WorldStaticModel	= SDMOreSilverMine,
+		ScaleWorldIcon 		= 1.5,
+		Tooltip = Tooltip_item_MineWarning,
+	}
+	
+	item SDMOreSilverMine3
+	{
+	    DisplayCategory 	= Material,
+		Weight				= 10000,
+		Type	            = Drainable,
+		UseWhileEquipped	= FALSE,
+        UseDelta	        = 0.2,
+		DisplayName			= Silver Deposit,
+		Icon				= SDMOreRock,
+		WorldStaticModel	= SDMOreSilverMine,
+		ScaleWorldIcon 		= 1.0,
+		Tooltip = Tooltip_item_MineWarning,
+	}
+	
+	item SDMOreGoldMine1
+	{
+	    DisplayCategory 	= Material,
+		Weight				= 10000,
+		Type	            = Drainable,
+		UseWhileEquipped	= FALSE,
+        UseDelta	        = 0.05,
+		DisplayName			= Gold Deposit,
+		Icon				= SDMOreRock,
+		WorldStaticModel	= SDMOreGoldMine,
+		ScaleWorldIcon 		= 2.0,
+		Tooltip = Tooltip_item_MineWarning,
+	}
+	
+	item SDMOreGoldMine2
+	{
+	    DisplayCategory 	= Material,
+		Weight				= 10000,
+		Type	            = Drainable,
+		UseWhileEquipped	= FALSE,
+        UseDelta	        = 0.1,
+		DisplayName			= Gold Deposit,
+		Icon				= SDMOreRock,
+		WorldStaticModel	= SDMOreGoldMine,
+		ScaleWorldIcon 		= 1.5,
+		Tooltip = Tooltip_item_MineWarning,
+	}
+	
+	item SDMOreGoldMine3
+	{
+	    DisplayCategory 	= Material,
+		Weight				= 10000,
+		Type	            = Drainable,
+		UseWhileEquipped	= FALSE,
+        UseDelta	        = 0.2,
+		DisplayName			= Gold Deposit,
+		Icon				= SDMOreRock,
+		WorldStaticModel	= SDMOreGoldMine,
+		ScaleWorldIcon 		= 1.0,
+		Tooltip = Tooltip_item_MineWarning,
+	}
+	
+	/****************************** MINING ACTIONS ******************************/
+
+	recipe Investigate the rocks
+    {
+        keep PickAxe,
+		destroy SDMOreTwo,
+		
+        Result:Stone,
+        Time:500,
+		OnCreate:SDMOreSpawn_OnCreate,
+        AnimNode:DigPickAxe,
+		Sound:miningSound1,
+		Prop1:PickAxe,
+		CanBeDoneFromFloor :TRUE,
+    }
+	
+	recipe Crush rocks
+    {
+        keep PickAxe,
+		SDMOreRockMine1/SDMOreRockMine2/SDMOreRockMine3=1,
+		
+        Result:Stone,
+        Time:500,
+		OnCreate:SDMOreRock_OnCreate,
+        AnimNode:DigPickAxe,
+		Sound:miningSound1,
+		Prop1:PickAxe,
+		CanBeDoneFromFloor :TRUE,
+    }
+	
+	recipe Mine Iron
+    {
+        keep PickAxe,
+		SDMOreIronMine1/SDMOreIronMine2/SDMOreIronMine3=1,
+		
+        Result:Stone,
+        Time:500,
+		OnCreate:SDMOreIron_OnCreate,
+        AnimNode:DigPickAxe,
+		Sound:miningSound1,
+		Prop1:PickAxe,
+		CanBeDoneFromFloor :TRUE,
+    }
+	
+	recipe Mine Salt
+    {
+        keep PickAxe,
+		SDMOreSaltMine1/SDMOreSaltMine2/SDMOreSaltMine3=1,
+		
+        Result:Stone,
+        Time:500,
+		OnCreate:SDMOreSalt_OnCreate,
+        AnimNode:DigPickAxe,
+		Sound:miningSound1,
+		Prop1:PickAxe,
+		CanBeDoneFromFloor :TRUE,
+    }
+	
+	recipe Mine Coal
+    {
+        keep PickAxe,
+		SDMOreCoalMine1/SDMOreCoalMine2/SDMOreCoalMine3=1,
+		
+        Result:Stone,
+        Time:500,
+		OnCreate:SDMOreCoal_OnCreate,
+        AnimNode:DigPickAxe,
+		Sound:miningSound1,
+		Prop1:PickAxe,
+		CanBeDoneFromFloor :TRUE,
+    }
+	
+	recipe Mine Aluminum
+    {
+        keep PickAxe,
+		SDMOreAluminumMine1/SDMOreAluminumMine2/SDMOreAluminumMine3=1,
+		
+        Result:Stone,
+        Time:500,
+		OnCreate:SDMOreAluminum_OnCreate,
+        AnimNode:DigPickAxe,
+		Sound:miningSound1,
+		Prop1:PickAxe,
+		CanBeDoneFromFloor :TRUE,
+    }
+	
+	recipe Mine Silver
+    {
+        keep PickAxe,
+		SDMOreSilverMine1/SDMOreSilverMine2/SDMOreSilverMine3=1,
+		
+        Result:Stone,
+        Time:500,
+		OnCreate:SDMOreSilver_OnCreate,
+        AnimNode:DigPickAxe,
+		Sound:miningSound1,
+		Prop1:PickAxe,
+		CanBeDoneFromFloor :TRUE,
+    }
+	
+	recipe Mine Gold
+    {
+        keep PickAxe,
+		SDMOreGoldMine1/SDMOreGoldMine2/SDMOreGoldMine3=1,
+		
+        Result:Stone,
+        Time:500,
+		OnCreate:SDMOreGold_OnCreate,
+        AnimNode:DigPickAxe,
+		Sound:miningSound1,
+		Prop1:PickAxe,
+		CanBeDoneFromFloor :TRUE,
+    }
+
+	/****************************** RESOURCE CONVERSION ******************************/
+	
+	recipe Stomp Rock Salt to Salt 
+	{
+		RockSalt=5,
+		keep RippedSheets=5,
+		keep [Recipe.GetItemTypes.Hammer]/Log/MetalBar/HandAxe/Crowbar/Axe/WoodAxe,
+		
+		Result:Salt,
+		Time:500,
+	}
+	
+	recipe Break down Coal Ore to Charcoal
+	{
+		CoalOre=5,
+		keep RippedSheets=5,
+		keep [Recipe.GetItemTypes.Hammer]/Log/MetalBar/HandAxe/Crowbar/Axe/WoodAxe,
+		
+		Result:Charcoal,
+		Time:500,
+	}
+
+}

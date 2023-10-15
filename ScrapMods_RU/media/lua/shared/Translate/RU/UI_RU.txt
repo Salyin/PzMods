@@ -1,0 +1,7 @@
+UI_RU = {
+	UI_trait_preparedscrapweapons = "Подготовленный: Оружие из металлолома",
+        UI_trait_preparedscrapweaponsdesc = "Собирал импровизированное оружие еще до апокалипсиса.<br>Имеет 2 оружия из металлолома в инвентаре.",
+	UI_trait_scrapwarrior = "Рыцарь свалки",
+        UI_trait_scrapwarriordesc = "+1 Газосварка<br>Знает как делать простое оружие из металлолома.",
+	UI_ClothingType_SpecialBelt = "Специальный пояс",
+}

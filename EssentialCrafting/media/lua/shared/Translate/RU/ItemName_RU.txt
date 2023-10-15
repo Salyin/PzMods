@@ -1,0 +1,7 @@
+ItemName_RU = {
+  ItemName_SpoonEssentialCrafting.SpoonMagEssentialC = "Журнал «Изготовление необходимых предметов»",
+  ItemName_SpoonEssentialCrafting.WeaponParts = "Оружейные запчасти",
+  ItemName_Base.LighterEmpty = "Пустая зажигалка",
+  ItemName_SpoonEssentialCrafting.PolymerScrap = "Утильсырьё",
+  ItemName_SpoonEssentialCrafting.SheetPaperX = "Клочки бумаги",
+}

@@ -1,0 +1,23 @@
+Recipe_RU = {
+Recipe_Improvise Bandage = "Изготовить Бинт",
+Recipe_Improvise Splint = "Изготовить Шина",
+Recipe_Improvise Suture = "Изготовить Хирургическая игла",
+Recipe_Improvise Suture Holder = "Изготовить Держатель хирургической иглы",
+Recipe_Improvise Disinfectant = "Изготовить Дезинфицирующие средство",
+Recipe_Improvise Disinfectant = "Изготовить Дезинфицирующие средство",
+Recipe_Improvise Disinfectant = "Изготовить Дезинфицирующие средство",
+Recipe_Improvise Painkillers = "Изготовить Обезболивающее",
+Recipe_Improvise Antibiotics = "Изготовить Антибиотики",
+Recipe_Improvise Betablockers = "Изготовить Бета-блокаторы",
+Recipe_Improvise Antidepressants = "Изготовить Антидепрессанты",
+Recipe_Improvise Sleeping Pills = "Изготовить Снотворное",
+Recipe_Improvise Zombification Cure = "Изготовить Лекарство от зомби-вируса",
+Recipe_Inject Zombification Cure = "Использовать Лекарство от зомби-вируса",
+Recipe_Mince Corpse into Fertilizer = "Измельчить труп в удобрение",
+Recipe_Make Papier Mache = "Изготовить Папье маше",
+Recipe_Make Papier Mache Sword = "Изготовить меч из Папье маше",
+Recipe_Make Wood Glue = "Изготовить Клей для дерева",
+Recipe_Make Duct Tape = "Изготовить Скотч",
+Recipe_Strip Meat from Corpse = "Взять мясо с трупа",
+}
+

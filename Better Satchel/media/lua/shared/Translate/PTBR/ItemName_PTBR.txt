@@ -1,0 +1,7 @@
+ItemName_PTBR = {
+	ItemName_Base.Bag_Satchel = "Bolsa (Frente)",
+    ItemName_Base.Bag_SatchelBack = "Bolsa (Atrás)",
+	ItemName_Base.MysteriousSatchel_New = "Bolsa Tática (Frente)",
+	ItemName_Base.MysteriousSatchelBack = "Bolsa Tática (Atrás)",
+	ItemName_Base.MysteriousHazmat = "Traje de Isolamento",
+}

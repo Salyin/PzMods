@@ -1,0 +1,232 @@
+module SpoonEssentialCrafting
+{
+
+	imports
+	{
+		Base
+	}
+	
+	recipe Clean Light Bulb
+	{
+		LightBulbPurple/LightBulbRed/LightBulbGreen/LightBulbMagenta/LightBulbOrange/LightBulbBlue/LightBulbYellow/LightBulbCyan/LightBulbPink,
+		[Recipe.GetItemTypes.Petrol]=1,
+		Water=5,
+		
+		Result:LightBulb,
+		Time:100.0,
+	}
+	
+	recipe Clean Light Bulbs Bulk
+	{
+		LightBulbPurple/LightBulbRed/LightBulbGreen/LightBulbMagenta/LightBulbOrange/LightBulbBlue/LightBulbYellow/LightBulbCyan/LightBulbPink=5,
+		[Recipe.GetItemTypes.Petrol]=1,
+		Water=10,
+		
+		Result:LightBulb,
+		Time:200.0,
+	}
+
+	recipe Make Purple Light Bulb
+	{
+		LightBulb,
+		PaintPurple;1,
+		Water=5,
+		
+		Result:LightBulbPurple,
+		Time:300.0,
+	}
+	
+	recipe Make Red Light Bulb
+	{
+		LightBulb,
+		PaintRed;1,
+		Water=5,
+		
+		Result:LightBulbRed,
+		Time:500.0,
+	}
+	
+	recipe Make Green Light Bulb
+	{
+		LightBulb,
+		PaintGreen;1,
+		Water=5,
+		
+		Result:LightBulbGreen,
+		Time:500.0,
+	}
+	
+		
+	recipe Make Magenta Light Bulb
+	{
+		LightBulb,
+		PaintPink,;1,
+		PaintPurple,
+		Water=5,
+		
+		Result:LightBulbMagenta,
+		Time:500.0,
+	}
+	
+	recipe Make Orange Light Bulb
+	{
+		LightBulb,
+		PaintOrange;1,
+		Water=5,
+		
+		Result:LightBulbOrange,
+		Time:500.0,
+	}
+	
+	recipe Make Blue Light Bulb
+	{
+		LightBulb,
+		PaintBlue;1,
+		Water=5,
+		
+		Result:LightBulbBlue,
+		Time:500.0,
+	}
+	
+	recipe Make Yellow Light Bulb
+	{
+		LightBulb,
+		PaintYellow;1,
+		Water=5,
+		
+		Result:LightBulbYellow,
+		Time:500.0,
+	}
+	
+	recipe Make Cyan Light Bulb
+	{
+		LightBulb,
+		PaintCyan;1,
+		Water=5,
+		
+		Result:LightBulbCyan,
+		Time:500.0,
+	}
+	
+	recipe Make Pink Light Bulb
+	{
+		LightBulb,
+		PaintPink;1,
+		Water=5,
+		
+		Result:LightBulbPink,
+		Time:500.0,
+	}
+	
+	recipe Make Green Paint
+	{
+		PaintBlue;5,
+		PaintYellow;5,
+		PaintbucketEmpty,
+		keep WoodenStick/Poolcue/Mop/Broom/HockeyStick/IceHockeyStick/CanoePadel/LeafRake/Rake/Paintbrush/TreeBranch/Plank,
+		
+		Result:PaintGreen,
+		Time:200.0,
+	}
+	
+	recipe Make Light Blue Paint
+	{
+		PaintBlue;5,
+		PaintWhite;5,
+		PaintbucketEmpty,
+		keep WoodenStick/Poolcue/Mop/Broom/HockeyStick/IceHockeyStick/CanoePadel/LeafRake/Rake/Paintbrush/TreeBranch/Plank,
+		
+		Result:PaintLightBlue,
+		Time:200.0,
+	}
+	
+	recipe Make Purple Paint
+	{
+		PaintBlue;4,
+		PaintRed;6,
+		PaintbucketEmpty,
+		keep WoodenStick/Poolcue/Mop/Broom/HockeyStick/IceHockeyStick/CanoePadel/LeafRake/Rake/Paintbrush/TreeBranch/Plank,
+		
+		Result:PaintPurple,
+		Time:200.0,
+	}
+	
+	recipe Make Gray Paint
+	{
+		PaintBlack;5,
+		PaintWhite;5,
+		PaintbucketEmpty,
+		keep WoodenStick/Poolcue/Mop/Broom/HockeyStick/IceHockeyStick/CanoePadel/LeafRake/Rake/Paintbrush/TreeBranch/Plank,
+		
+		Result:PaintGrey,
+		Time:200.0,
+	}
+	
+	recipe Make Brown Paint
+	{
+		PaintRed;2,
+		PaintBlue;2,
+		PaintYellow;1,
+		PaintbucketEmpty,
+		keep WoodenStick/Poolcue/Mop/Broom/HockeyStick/IceHockeyStick/CanoePadel/LeafRake/Rake/Paintbrush/TreeBranch/Plank,
+		
+		Result:PaintBrown,
+		Time:200.0,
+	}
+	
+	recipe Make Turquoise Paint
+	{
+		PaintGreen;4,
+		PaintBlue;6,
+		PaintbucketEmpty,
+		keep WoodenStick/Poolcue/Mop/Broom/HockeyStick/IceHockeyStick/CanoePadel/LeafRake/Rake/Paintbrush/TreeBranch/Plank,
+		
+		Result:PaintTurquoise,
+		Time:200.0,
+	}
+	
+	recipe Make Cyan Paint
+	{
+		PaintGreen;6,
+		PaintBlue;4,
+		PaintbucketEmpty,
+		keep WoodenStick/Poolcue/Mop/Broom/HockeyStick/IceHockeyStick/CanoePadel/LeafRake/Rake/Paintbrush/TreeBranch/Plank,
+		
+		Result:PaintCyan,
+		Time:200.0,
+	}
+	
+	recipe Make Light Brown Paint
+	{
+		PaintBrown;5,
+		PaintWhite;5,
+		PaintbucketEmpty,
+		keep WoodenStick/Poolcue/Mop/Broom/HockeyStick/IceHockeyStick/CanoePadel/LeafRake/Rake/Paintbrush/TreeBranch/Plank,
+		
+		Result:PaintLightBrown,
+		Time:200.0,
+	}
+	
+	recipe Make Orange Paint
+	{
+		PaintRed;6,
+		PaintYellow;4,
+		PaintbucketEmpty,
+		keep WoodenStick/Poolcue/Mop/Broom/HockeyStick/IceHockeyStick/CanoePadel/LeafRake/Rake/Paintbrush/TreeBranch/Plank,
+		
+		Result:PaintOrange,
+		Time:200.0,
+	}
+	
+	recipe Make Pink Paint
+	{
+		PaintRed;4,
+		PaintWhite;6,
+		PaintbucketEmpty,
+		keep WoodenStick/Poolcue/Mop/Broom/HockeyStick/IceHockeyStick/CanoePadel/LeafRake/Rake/Paintbrush/TreeBranch/Plank,
+		
+		Result:PaintPink,
+		Time:200.0,
+	}
+
+}

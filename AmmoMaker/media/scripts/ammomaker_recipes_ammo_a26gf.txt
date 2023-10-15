@@ -1,0 +1,497 @@
+/* Ammo Maker by STIMP_TM */
+
+module ammomaker {
+
+	imports
+	{
+		Base
+	}
+
+/* Recipes Ammo */
+
+	recipe Make .177 BB Bullets x25
+	{
+		OnTest:Recipe.OnTest.isActivated_A26GF,
+
+		ScrapMetal=1,
+		BlowTorch=1,
+		keep Hammer/BallPeenHammer,
+
+		Result:BB177=1,
+		RemoveResultItem:true,
+		OnCreate:Recipe.OnCreate.Make_A26GF_177BB,
+		Sound:Hammering,
+		Time:50.0,
+        Category:Ammo Maker A26GF,
+		OnGiveXP:Recipe.OnGiveXP.Reloading5,
+		NeedToBeLearn:false,
+	}
+
+	recipe Make 5.45x39 Bullets x5
+	{
+		OnTest:Recipe.OnTest.isActivated_A26GF,
+
+		GunPowder=2,
+		ScrapMetal=1,
+		BlowTorch=1,
+		keep Hammer/BallPeenHammer,
+
+		Result:545x39Bullets=1,
+		RemoveResultItem:true,
+		OnCreate:Recipe.OnCreate.Make_A26GF_545x39,
+		Sound:Hammering,
+		Time:50.0,
+        Category:Ammo Maker A26GF,
+		OnGiveXP:Recipe.OnGiveXP.Reloading5,
+		NeedToBeLearn:false,
+	}
+
+	recipe Make 5.7x28 Bullets x10
+	{
+		OnTest:Recipe.OnTest.isActivated_A26GF,
+
+		GunPowder=1,
+		ScrapMetal=1,
+		BlowTorch=1,
+		keep Hammer/BallPeenHammer,
+
+		Result:Bullets57=1,
+		RemoveResultItem:true,
+		OnCreate:Recipe.OnCreate.Make_A26GF_57x28,
+		Sound:Hammering,
+		Time:50.0,
+        Category:Ammo Maker A26GF,
+		OnGiveXP:Recipe.OnGiveXP.Reloading5,
+		NeedToBeLearn:false,
+	}
+
+	recipe Make .22 LR Bullets x40
+	{
+		OnTest:Recipe.OnTest.isActivated_A26GF,
+
+		GunPowder=1,
+		ScrapMetal=1,
+		BlowTorch=1,
+		keep Hammer/BallPeenHammer,
+
+		Result:Bullets22=1,
+		RemoveResultItem:true,
+		OnCreate:Recipe.OnCreate.Make_A26GF_22LR,
+		Sound:Hammering,
+		Time:50.0,
+        Category:Ammo Maker A26GF,
+		OnGiveXP:Recipe.OnGiveXP.Reloading5,
+		NeedToBeLearn:false,
+	}
+
+	recipe Make 7.62x51 NATO Bullets x5
+	{
+		OnTest:Recipe.OnTest.isActivated_A26GF,
+
+		GunPowder=3,
+		ScrapMetal=1,
+		BlowTorch=1,
+		keep Hammer/BallPeenHammer,
+
+		Result:762x51Bullets=1,
+		RemoveResultItem:true,
+		OnCreate:Recipe.OnCreate.Make_A26GF_762x51NATO,
+		Sound:Hammering,
+		Time:50.0,
+        Category:Ammo Maker A26GF,
+		OnGiveXP:Recipe.OnGiveXP.Reloading5,
+		NeedToBeLearn:false,
+	}
+
+	recipe Make .30-06 Spring Bullets x5
+	{
+		OnTest:Recipe.OnTest.isActivated_A26GF,
+
+		GunPowder=3,
+		ScrapMetal=1,
+		BlowTorch=1,
+		keep Hammer/BallPeenHammer,
+
+		Result:3006Bullets=1,
+		RemoveResultItem:true,
+		OnCreate:Recipe.OnCreate.Make_A26GF_3006Spring,
+		Sound:Hammering,
+		Time:50.0,
+        Category:Ammo Maker A26GF,
+		OnGiveXP:Recipe.OnGiveXP.Reloading5,
+		NeedToBeLearn:false,
+	}
+
+	recipe Make 7.62x39 Bullets x5
+	{
+		OnTest:Recipe.OnTest.isActivated_A26GF,
+
+		GunPowder=3,
+		ScrapMetal=1,
+		BlowTorch=1,
+		keep Hammer/BallPeenHammer,
+
+		Result:762x39Bullets=1,
+		RemoveResultItem:true,
+		OnCreate:Recipe.OnCreate.Make_A26GF_762x39,
+		Sound:Hammering,
+		Time:50.0,
+        Category:Ammo Maker A26GF,
+		OnGiveXP:Recipe.OnGiveXP.Reloading5,
+		NeedToBeLearn:false,
+	}
+
+	recipe Make 7.62x54 R Bullets x5
+	{
+		OnTest:Recipe.OnTest.isActivated_A26GF,
+
+		GunPowder=3,
+		ScrapMetal=1,
+		BlowTorch=1,
+		keep Hammer/BallPeenHammer,
+
+		Result:762x54rBullets=1,
+		RemoveResultItem:true,
+		OnCreate:Recipe.OnCreate.Make_A26GF_762x54R,
+		Sound:Hammering,
+		Time:50.0,
+        Category:Ammo Maker A26GF,
+		OnGiveXP:Recipe.OnGiveXP.Reloading5,
+		NeedToBeLearn:false,
+	}
+
+	recipe Make .380 ACP Bullets x25
+	{
+		OnTest:Recipe.OnTest.isActivated_A26GF,
+
+		GunPowder=1,
+		ScrapMetal=1,
+		BlowTorch=1,
+		keep Hammer/BallPeenHammer,
+
+		Result:Bullets380=1,
+		RemoveResultItem:true,
+		OnCreate:Recipe.OnCreate.Make_A26GF_380ACP,
+		Sound:Hammering,
+		Time:50.0,
+        Category:Ammo Maker A26GF,
+		OnGiveXP:Recipe.OnGiveXP.Reloading5,
+		NeedToBeLearn:false,
+	}
+
+	recipe Make .357 Mag Bullets x10
+	{
+		OnTest:Recipe.OnTest.isActivated_A26GF,
+
+		GunPowder=1,
+		ScrapMetal=1,
+		BlowTorch=1,
+		keep Hammer/BallPeenHammer,
+
+		Result:Bullets357=1,
+		RemoveResultItem:true,
+		OnCreate:Recipe.OnCreate.Make_A26GF_357Mag,
+		Sound:Hammering,
+		Time:50.0,
+        Category:Ammo Maker A26GF,
+		OnGiveXP:Recipe.OnGiveXP.Reloading5,
+		NeedToBeLearn:false,
+	}
+
+	recipe Make .410 Gauge Shells x5
+	{
+		OnTest:Recipe.OnTest.isActivated_A26GF,
+
+		GunPowder=1,
+		ScrapMetal=1,
+		ammomaker_RecPlastic=1,
+		BlowTorch=1,
+		keep Hammer/BallPeenHammer,
+
+		Result:410gShotgunShells=1,
+		RemoveResultItem:true,
+		OnCreate:Recipe.OnCreate.Make_A26GF_410Gauge,
+		Sound:Hammering,
+		Time:50.0,
+        Category:Ammo Maker A26GF,
+		OnGiveXP:Recipe.OnGiveXP.Reloading5,
+		NeedToBeLearn:false,
+	}
+
+	recipe Make .44 Mag Bullets x5
+	{
+		OnTest:Recipe.OnTest.isActivated_A26GF,
+
+		GunPowder=1,
+		ScrapMetal=1,
+		BlowTorch=1,
+		keep Hammer/BallPeenHammer,
+
+		Result:Bullets44=1,
+		RemoveResultItem:true,
+		OnCreate:Recipe.OnCreate.Make_A26GF_44Mag,
+		Sound:Hammering,
+		Time:50.0,
+        Category:Ammo Maker A26GF,
+		OnGiveXP:Recipe.OnGiveXP.Reloading5,
+		NeedToBeLearn:false,
+	}
+
+	recipe Make .45 LC Bullets x10
+	{
+		OnTest:Recipe.OnTest.isActivated_A26GF,
+
+		GunPowder=1,
+		ScrapMetal=1,
+		BlowTorch=1,
+		keep Hammer/BallPeenHammer,
+
+		Result:Bullets45LC=1,
+		RemoveResultItem:true,
+		OnCreate:Recipe.OnCreate.Make_A26GF_45LC,
+		Sound:Hammering,
+		Time:50.0,
+        Category:Ammo Maker A26GF,
+		OnGiveXP:Recipe.OnGiveXP.Reloading5,
+		NeedToBeLearn:false,
+	}
+
+	recipe Make .45-70 Gov Bullets x5
+	{
+		OnTest:Recipe.OnTest.isActivated_A26GF,
+
+		GunPowder=3,
+		ScrapMetal=1,
+		BlowTorch=1,
+		keep Hammer/BallPeenHammer,
+
+		Result:Bullets4570=1,
+		RemoveResultItem:true,
+		OnCreate:Recipe.OnCreate.Make_A26GF_4570Gov,
+		Sound:Hammering,
+		Time:50.0,
+        Category:Ammo Maker A26GF,
+		OnGiveXP:Recipe.OnGiveXP.Reloading5,
+		NeedToBeLearn:false,
+	}
+
+	recipe Make .50 AE Bullets x5
+	{
+		OnTest:Recipe.OnTest.isActivated_A26GF,
+
+		GunPowder=2,
+		ScrapMetal=1,
+		BlowTorch=1,
+		keep Hammer/BallPeenHammer,
+
+		Result:Bullets50MAG=1,
+		RemoveResultItem:true,
+		OnCreate:Recipe.OnCreate.Make_A26GF_50AE,
+		Sound:Hammering,
+		Time:50.0,
+        Category:Ammo Maker A26GF,
+		OnGiveXP:Recipe.OnGiveXP.Reloading5,
+		NeedToBeLearn:false,
+	}
+
+	recipe Make .50 BMG Bullets x5
+	{
+		OnTest:Recipe.OnTest.isActivated_A26GF,
+
+		GunPowder=7,
+		ScrapMetal=1,
+		BlowTorch=1,
+		keep Hammer/BallPeenHammer,
+
+		Result:50BMGBullets=1,
+		RemoveResultItem:true,
+		OnCreate:Recipe.OnCreate.Make_A26GF_50BMG,
+		Sound:Hammering,
+		Time:50.0,
+        Category:Ammo Maker A26GF,
+		OnGiveXP:Recipe.OnGiveXP.Reloading5,
+		NeedToBeLearn:false,
+	}
+
+	recipe Make 20 Gauge Shells x5
+	{
+		OnTest:Recipe.OnTest.isActivated_A26GF,
+
+		GunPowder=1,
+		ScrapMetal=1,
+		ammomaker_RecPlastic=1,
+		BlowTorch=1,
+		keep Hammer/BallPeenHammer,
+
+		Result:20gShotgunShells=1,
+		RemoveResultItem:true,
+		OnCreate:Recipe.OnCreate.Make_A26GF_20Gauge,
+		Sound:Hammering,
+		Time:50.0,
+        Category:Ammo Maker A26GF,
+		OnGiveXP:Recipe.OnGiveXP.Reloading5,
+		NeedToBeLearn:false,
+	}
+
+	recipe Make .68 Paintballs x15
+	{
+		OnTest:Recipe.OnTest.isActivated_A26GF,
+
+		PaintPink;1,
+		ammomaker_RecPlastic=1,
+		Lighter=2,
+		keep ScrapMetal,
+		keep Hammer/BallPeenHammer,
+
+		Result:PB68=1,
+		RemoveResultItem:true,
+		OnCreate:Recipe.OnCreate.Make_A26GF_68PB,
+		Sound:Hammering,
+		Time:50.0,
+        Category:Ammo Maker A26GF,
+		OnGiveXP:Recipe.OnGiveXP.Reloading5,
+		NeedToBeLearn:false,
+	}
+
+	recipe Make 12 Gauge Shells x5
+	{
+		OnTest:Recipe.OnTest.isActivated_A26GF,
+
+		GunPowder=2,
+		ScrapMetal=1,
+		ammomaker_RecPlastic=1,
+		BlowTorch=1,
+		keep Hammer/BallPeenHammer,
+
+		Result:ShotgunShells=1,
+		RemoveResultItem:true,
+		OnCreate:Recipe.OnCreate.Make_A26GF_12Gauge,
+		Sound:Hammering,
+		Time:50.0,
+        Category:Ammo Maker A26GF,
+		OnGiveXP:Recipe.OnGiveXP.Reloading5,
+		NeedToBeLearn:false,
+	}
+
+	recipe Make Flare Shells x2
+	{
+		OnTest:Recipe.OnTest.isActivated_A26GF2,
+
+		GunPowder=2,
+		ammomaker_RecPlastic=1,
+		BlowTorch=1,
+		keep Hammer/BallPeenHammer,
+
+		Result:Flare=1,
+		RemoveResultItem:true,
+		OnCreate:Recipe.OnCreate.Make_A26GF_Flare,
+		Sound:Hammering,
+		Time:50.0,
+        Category:Ammo Maker A26GF,
+		OnGiveXP:Recipe.OnGiveXP.Reloading5,
+		NeedToBeLearn:false,
+	}
+
+	recipe Make 10 Gauge Shells x5
+	{
+		OnTest:Recipe.OnTest.isActivated_A26GF,
+
+		GunPowder=3,
+		ScrapMetal=1,
+		ammomaker_RecPlastic=1,
+		BlowTorch=1,
+		keep Hammer/BallPeenHammer,
+
+		Result:10gShotgunShells=1,
+		RemoveResultItem:true,
+		OnCreate:Recipe.OnCreate.Make_A26GF_10Gauge,
+		Sound:Hammering,
+		Time:50.0,
+        Category:Ammo Maker A26GF,
+		OnGiveXP:Recipe.OnGiveXP.Reloading5,
+		NeedToBeLearn:false,
+	}
+
+	recipe Make 4 Gauge Shells x5
+	{
+		OnTest:Recipe.OnTest.isActivated_A26GF,
+
+		GunPowder=4,
+		ScrapMetal=1,
+		ammomaker_RecPlastic=1,
+		BlowTorch=1,
+		keep Hammer/BallPeenHammer,
+
+		Result:4gShotgunShells=1,
+		RemoveResultItem:true,
+		OnCreate:Recipe.OnCreate.Make_A26GF_4Gauge,
+		Sound:Hammering,
+		Time:50.0,
+        Category:Ammo Maker A26GF,
+		OnGiveXP:Recipe.OnGiveXP.Reloading5,
+		NeedToBeLearn:false,
+	}
+
+	recipe Make 40mm HE Grenade x1
+	{
+		OnTest:Recipe.OnTest.isActivated_A26GF,
+
+		GunPowder=4,
+		ScrapMetal=1,
+		ammomaker_RecPlastic=1,
+		BlowTorch=1,
+		keep Hammer/BallPeenHammer,
+
+		Result:40HERound=1,
+		RemoveResultItem:true,
+		OnCreate:Recipe.OnCreate.Make_A26GF_40mmHE,
+		Sound:Hammering,
+		Time:50.0,
+        Category:Ammo Maker A26GF,
+		OnGiveXP:Recipe.OnGiveXP.Reloading5,
+		NeedToBeLearn:false,
+	}
+
+	recipe Make 40mm INC Grenade x1
+	{
+		OnTest:Recipe.OnTest.isActivated_A26GF,
+
+		GunPowder=4,
+		ScrapMetal=1,
+		ammomaker_RecPlastic=1,
+		BlowTorch=1,
+		keep Hammer/BallPeenHammer,
+
+		Result:40INCRound=1,
+		RemoveResultItem:true,
+		OnCreate:Recipe.OnCreate.Make_A26GF_40mmINC,
+		Sound:Hammering,
+		Time:50.0,
+        Category:Ammo Maker A26GF,
+		OnGiveXP:Recipe.OnGiveXP.Reloading5,
+		NeedToBeLearn:false,
+	}
+
+	recipe Make HE Rocket x1
+	{
+		OnTest:Recipe.OnTest.isActivated_A26GF,
+
+		GunPowder=40,
+		ElectronicsScrap=5,
+		ScrapMetal=4,
+		SheetMetal=1,
+		ammomaker_RecPlastic=2,
+		BlowTorch=1,
+		keep Hammer/BallPeenHammer,
+
+		Result:HERocket=1,
+		RemoveResultItem:true,
+		OnCreate:Recipe.OnCreate.Make_A26GF_HERocket,
+		Sound:Hammering,
+		Time:50.0,
+        Category:Ammo Maker A26GF,
+		OnGiveXP:Recipe.OnGiveXP.Reloading5,
+		NeedToBeLearn:false,
+	}
+
+}

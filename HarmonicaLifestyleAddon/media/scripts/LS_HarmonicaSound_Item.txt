@@ -1,0 +1,14 @@
+module Base
+{
+	sound SmallMetalBluntHit
+    {
+        category = Object,
+        clip
+        {
+            file = media/sound/SmallMetalBluntHit.ogg,
+            
+        }
+    }
+
+}
+

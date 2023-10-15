@@ -1,0 +1,7 @@
+﻿ItemName_EN = {
+	ItemName_Base.Bag_Satchel = "Satchel (Front)",
+	ItemName_Base.Bag_SatchelBack = "Satchel (Back)",
+	ItemName_Base.MysteriousSatchel_New = "Tactical Satchel (Front)",
+	ItemName_Base.MysteriousSatchelBack = "Tactical Satchel (Back)",
+	ItemName_Base.MysteriousHazmat = "Tactical Hazmat Suit",
+}

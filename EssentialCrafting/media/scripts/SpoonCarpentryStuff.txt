@@ -1,0 +1,266 @@
+module SpoonEssentialCrafting
+{
+
+	imports
+	{
+		Base
+	}
+	
+	/****************************** EVERYDAY ITEMS ******************************/
+		
+	recipe Carve a Wooden Bowl
+	{
+		Log,
+		keep Saw/HandAxe/AxeStone/Axe/WoodAxe,
+		keep [Recipe.GetItemTypes.SharpKnife],
+		
+		Result:Bowl,
+		Time:300.0,
+		SkillRequired:Woodwork=2,
+		Category:Carpentry,
+		OnCreate: GetWoodworkLeftovers_OnCreate,
+		OnGiveXP:Recipe.OnGiveXP.WoodWork5,
+	}
+	
+	recipe Carve a Sturdy Stick
+	{
+		TreeBranch,
+		keep [Recipe.GetItemTypes.SharpKnife],
+		
+		Result:WoodenStick,
+		Time:300.0,
+		SkillRequired:Woodwork=2,
+		Category:Carpentry,
+	}
+	
+	recipe Carve Knitting Needles
+	{
+		Log/Plank/TreeBranch/Poolcue/Mop/Broom/HockeyStick/IceHockeyStick/CanoePadel/LeafRake/Rake,
+		keep [Recipe.GetItemTypes.SharpKnife],
+		
+		Result:KnittingNeedles,
+		Time:200.0,
+		SkillRequired:Woodwork=2,
+		Category:Carpentry,
+		OnCreate: GetWoodworkLeftoversSmall_OnCreate,
+		OnGiveXP:Recipe.OnGiveXP.WoodWork5,
+	}
+	
+	recipe Carve Buttons from Wood
+	{
+		Log/Plank/TreeBranch/Poolcue/Mop/Broom/HockeyStick/IceHockeyStick/CanoePadel/LeafRake/Rake,
+		keep [Recipe.GetItemTypes.SharpKnife],
+		
+		Result:Button=10,
+		Time:400.0,
+		SkillRequired:Woodwork=2,
+		Category:Carpentry,
+		OnCreate: GetWoodworkLeftoversSmall_OnCreate,
+		OnGiveXP:Recipe.OnGiveXP.WoodWork5,
+	}
+
+	recipe Carve a Wooden Rolling Pin
+	{
+		Log,
+		keep Saw/HandAxe/AxeStone/Axe/WoodAxe,
+		keep [Recipe.GetItemTypes.SharpKnife],
+		
+		Result:RollingPin,
+		Time:300.0,
+		SkillRequired:Woodwork=1,
+		Category:Carpentry,
+		OnCreate: GetWoodworkLeftovers_OnCreate,
+		OnGiveXP:Recipe.OnGiveXP.WoodWork5,
+	}
+	
+	recipe Assemble a Mop
+	{
+		Plank/TreeBranch/Poolcue/Mop/Broom/HockeyStick/IceHockeyStick/CanoePadel/LeafRake/Rake,
+		RippedSheets=6,
+		
+		Result: Mop,
+		Time: 150,
+		Category:Carpentry,
+		OnGiveXP:Recipe.OnGiveXP.WoodWork5,
+	}
+	
+	recipe Assemble a Paintbrush
+	{
+		Plank/TreeBranch/Poolcue/Mop/Broom/HockeyStick/IceHockeyStick/CanoePadel/LeafRake/Rake,
+		RippedSheets=4,
+		keep [Recipe.GetItemTypes.SharpKnife]/SharpedStone/MeatCleaver,
+		
+		Result: Paintbrush,
+		Time: 150,
+		Category:Carpentry,
+		OnGiveXP:Recipe.OnGiveXP.WoodWork5,
+	}
+	
+	recipe Craft a Pencil
+	{
+		LeatherStrips,
+		Plank/TreeBranch/Poolcue/Mop/Broom/HockeyStick/IceHockeyStick/CanoePadel/LeafRake/Rake,
+		Charcoal,
+		keep [Recipe.GetItemTypes.SharpKnife],
+		
+		Result: Pencil,
+		Time: 250,
+		Category:Carpentry,
+		SkillRequired:Woodwork=3,
+		OnGiveXP:Recipe.OnGiveXP.WoodWork5,
+	}
+	
+	recipe Make Duct Tape
+	{
+		LeatherStrips=3,
+		RippedSheets=3,
+		PolymerScrap/Garbagebag/Plasticbag/GroceryBag1/GroceryBag2/GroceryBag3/GroceryBag4/GroceryBag5/LeatherStrips,
+		Glue=5,
+		keep [Recipe.GetItemTypes.SharpKnife]/SharpedStone/MeatCleaver,
+				
+		Result: DuctTape,
+		Time: 250,
+		Category:Carpentry,
+		NeedToBeLearn:true,
+		SkillRequired:Woodwork=3,
+		OnGiveXP:Recipe.OnGiveXP.WoodWork5,
+	}
+	
+	/****************************** WEAPONS ******************************/
+	
+	recipe Craft a Baseball bat
+	{
+		LeatherStrips=2,
+		Log,
+		keep Saw/HandAxe/AxeStone/Axe/WoodAxe,
+		keep [Recipe.GetItemTypes.SharpKnife],
+		
+		Result:BaseballBat,
+		Time:400.0,
+		Category:Carpentry,
+		SkillRequired:Woodwork=2,
+		OnGiveXP:Recipe.OnGiveXP.WoodWork5,
+	}
+	
+	recipe Carve Hockey Stick
+	{
+		LeatherStrips=2,
+		Log,
+		keep Saw/HandAxe/AxeStone/Axe/WoodAxe,
+		keep [Recipe.GetItemTypes.SharpKnife],
+		
+		Result:HockeyStick,
+		Time:600.0,
+		SkillRequired:Woodwork=3,
+		Category:Carpentry,
+		OnGiveXP:Recipe.OnGiveXP.WoodWork5,
+	}
+	
+	recipe Carve Ice Hockey Stick
+	{
+		LeatherStrips=2,
+		Log,
+		keep Saw/HandAxe/AxeStone/Axe/WoodAxe,
+		keep [Recipe.GetItemTypes.SharpKnife],
+		
+		Result:IceHockeyStick,
+		Time:600.0,
+		SkillRequired:Woodwork=4,
+		NeedToBeLearn:true,
+		Category:Carpentry,
+		OnGiveXP:Recipe.OnGiveXP.WoodWork5,
+	}
+	
+	recipe Carve Canoe Paddle
+	{
+		LeatherStrips=2,
+		Log,
+		keep Saw/HandAxe/AxeStone/Axe/WoodAxe,
+		keep [Recipe.GetItemTypes.SharpKnife],
+		
+		Result:CanoePadel,
+		Time:400.0,
+		SkillRequired:Woodwork=5,
+		NeedToBeLearn:true,
+		Category:Carpentry,
+		OnGiveXP:Recipe.OnGiveXP.WoodWork5,
+	}
+		
+	recipe Carve Double Canoe Paddle
+	{
+		LeatherStrips=2,
+		Log=2,
+		keep Saw/HandAxe/AxeStone/Axe/WoodAxe,
+		keep [Recipe.GetItemTypes.SharpKnife],
+		
+		Result:CanoePadelX2,
+		Time:800.0,
+		SkillRequired:Woodwork=5,
+		NeedToBeLearn:true,
+		Category:Carpentry,
+		OnGiveXP:Recipe.OnGiveXP.WoodWork5,
+	}
+	
+	recipe Attach Canoe Paddles
+	{
+		CanoePadel=2,
+		DuctTape=2,
+		
+		Result:CanoePadelX2,
+		Time:200.0,
+		SkillRequired:Woodwork=1,
+		Category:Carpentry,
+	}
+	
+	recipe Detach Canoe Paddles
+	{
+		CanoePadel=2,
+		keep [Recipe.GetItemTypes.SharpKnife],
+		
+		Result:CanoePadel=2,
+		Time:100.0,
+		Category:Carpentry,
+	}
+	
+	/****************************** RAW MATERIALS ******************************/
+
+	recipe Crush Rocks to Gravel
+	{
+		EmptySandbag,
+		Stone=5,
+		keep [Recipe.GetItemTypes.Hammer],
+		
+		Result:Gravelbag,
+		Time:400.0,
+		Category:Carpentry,
+	}
+	
+	recipe Crush Gravel to Sand
+	{
+		Gravelbag,
+		keep [Recipe.GetItemTypes.Hammer],
+		
+		Result:Sandbag,
+		Time:400.0,
+		Category:Carpentry,
+	}
+	
+	recipe Make a Bag of Plaster Powder
+    {      
+       Glue=15,
+	   ConcretePowder,
+	   Sandbag,
+	   Water=10,
+	   Garbagebag,
+	   keep WoodenStick/TreeBranch,
+	   keep BucketEmpty/PaintbucketEmpty,
+
+       Result:PlasterPowder,
+       Time:200.0,
+       Category:Carpentry,
+	   NeedToBeLearn:true,
+	   SkillRequired:Woodwork=2,
+       OnGiveXP:Recipe.OnGiveXP.WoodWork5,
+    }
+
+}

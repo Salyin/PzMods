@@ -1,0 +1,126 @@
+/* Ammo Maker by STIMP_TM */
+
+module ammomaker {
+
+	imports
+	{
+		Base
+	}
+
+/* Recipes Ammo */
+
+	recipe Make 5.45x39 Bullets x3
+	{
+		OnTest:Recipe.OnTest.isActivated_CJ,
+
+		GunPowder=1,
+		ScrapMetal=1,
+		BlowTorch=1,
+		keep Hammer/BallPeenHammer,
+
+		Result:CJ545=1,
+		RemoveResultItem:true,
+		OnCreate:Recipe.OnCreate.Make_CJ_545x39,
+		Sound:Hammering,
+		Time:50.0,
+        Category:Ammo Maker CJ,
+		OnGiveXP:Recipe.OnGiveXP.Reloading5,
+		NeedToBeLearn:false,
+	}
+
+	recipe Make .22 LR Bullets x40
+	{
+		OnTest:Recipe.OnTest.isActivated_CJ,
+
+		GunPowder=1,
+		ScrapMetal=1,
+		BlowTorch=1,
+		keep Hammer/BallPeenHammer,
+
+		Result:CJ22LR=1,
+		RemoveResultItem:true,
+		OnCreate:Recipe.OnCreate.Make_CJ_22LR,
+		Sound:Hammering,
+		Time:50.0,
+        Category:Ammo Maker CJ,
+		OnGiveXP:Recipe.OnGiveXP.Reloading5,
+		NeedToBeLearn:false,
+	}
+
+	recipe Make 7.62x51 NATO Bullets x2
+	{
+		OnTest:Recipe.OnTest.isActivated_CJ,
+
+		GunPowder=1,
+		ScrapMetal=1,
+		BlowTorch=1,
+		keep Hammer/BallPeenHammer,
+
+		Result:762NATO=1,
+		RemoveResultItem:true,
+		OnCreate:Recipe.OnCreate.Make_CJ_762x51NATO,
+		Sound:Hammering,
+		Time:50.0,
+        Category:Ammo Maker CJ,
+		OnGiveXP:Recipe.OnGiveXP.Reloading5,
+		NeedToBeLearn:false,
+	}
+
+	recipe Make 7.62x39 Bullets x3
+	{
+		OnTest:Recipe.OnTest.isActivated_CJ,
+
+		GunPowder=1,
+		ScrapMetal=1,
+		BlowTorch=1,
+		keep Hammer/BallPeenHammer,
+
+		Result:CJ762=1,
+		RemoveResultItem:true,
+		OnCreate:Recipe.OnCreate.Make_CJ_762x39,
+		Sound:Hammering,
+		Time:50.0,
+        Category:Ammo Maker CJ,
+		OnGiveXP:Recipe.OnGiveXP.Reloading5,
+		NeedToBeLearn:false,
+	}
+
+	recipe Make 7.62x54 R Bullets x2
+	{
+		OnTest:Recipe.OnTest.isActivated_CJ,
+
+		GunPowder=1,
+		ScrapMetal=1,
+		BlowTorch=1,
+		keep Hammer/BallPeenHammer,
+
+		Result:762_54R=1,
+		RemoveResultItem:true,
+		OnCreate:Recipe.OnCreate.Make_CJ_762x54R,
+		Sound:Hammering,
+		Time:50.0,
+        Category:Ammo Maker CJ,
+		OnGiveXP:Recipe.OnGiveXP.Reloading5,
+		NeedToBeLearn:false,
+	}
+
+	recipe Make .357 Mag Bullets x9
+	{
+		OnTest:Recipe.OnTest.isActivated_CJ,
+
+		GunPowder=1,
+		ScrapMetal=1,
+		BlowTorch=1,
+		keep Hammer/BallPeenHammer,
+
+		Result:357Magnum=1,
+		RemoveResultItem:true,
+		OnCreate:Recipe.OnCreate.Make_CJ_357Mag,
+		Sound:Hammering,
+		Time:50.0,
+        Category:Ammo Maker CJ,
+		OnGiveXP:Recipe.OnGiveXP.Reloading5,
+		NeedToBeLearn:false,
+	}
+
+}

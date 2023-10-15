@@ -1,0 +1,7 @@
+name=Inventory Tetris - Balanced
+id=IT_balanced
+description= Bags are more compact, fair, and manageable. Every backpack will have a base grid, with pockets that won't exceed 10(with the exception of a few). All equipable bags that are not backpacks have had their grids rearranged to be more horizontally compacted (same grid, different look)
+poster=logo.png
+icon=logo_mini.png
+modversion=1.0
+require=INVENTORY_TETRIS,

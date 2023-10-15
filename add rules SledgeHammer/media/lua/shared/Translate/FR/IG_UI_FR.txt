@@ -1,0 +1,14 @@
+IG_UI_FR = {
+   
+	IGUI_sledgeBroken = "Ma masse est détruite !",
+	IGUI_notStrongForThat = "Je ne suis pas assez fort pour ça !  (niveau ",
+	IGUI_notStrongForThat2 = " necessaire)",
+	IGUI_noSledge = "Je n'ai pas de masse !",
+	IGUI_imExhausted = "Je ne suis pas en assez bonne forme !!",
+	IGUI_noMoreLong = "y-en a plus pour longtemps ...",
+	IGUI_missed = "Loupé !",
+	IGUI_sledgeDestroyed = "La masse est définitevement détruite, vous l'avez perdu !!",
+	IGUI_tooFarSledge = "Je dois retenter l'action ici !",
+	IGUI_OtherSafeHouseforbidden = "Je ne suis pas chez moi ici !",
+
+    }

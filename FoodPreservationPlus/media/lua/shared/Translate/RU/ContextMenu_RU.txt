@@ -1,0 +1,5 @@
+ContextMenu_RU = {
+	ContextMenu_EvolvedRecipe_ESaltedMeat = "(Солонина)",
+	ContextMenu_EvolvedRecipe_ESmokedMeat = "(Копченое мясо)",
+	ContextMenu_EvolvedRecipe_ESalami = "Салями",
+} 

@@ -1,0 +1,59 @@
+Sandbox_PTBR = {
+
+	Sandbox_Lifestyle = "Lifestyle: Hobbies - Configurações",
+
+	Sandbox_Divider_Music = "________________ Música ________________",
+	Sandbox_Divider_Music_tooltip = "Este é apenas um separador de linha, marcá-lo não surtirá nenhum efeito.",
+	Sandbox_Divider_Dancing = "________________ Dança ________________",
+	Sandbox_Divider_Dancing_tooltip = "Este é apenas um separador de linha, marcá-lo não surtirá nenhum efeito.",
+	Sandbox_Divider_Meditation = "_______________ Meditação _______________",
+	Sandbox_Divider_Meditation_tooltip = "Este é apenas um separador de linha, marcá-lo não surtirá nenhum efeito.",
+	Sandbox_Divider_Debug = "__________________ Debug _________________",
+	Sandbox_Divider_Debug_tooltip = "Este é apenas um separador de linha, marcá-lo não surtirá nenhum efeito.",
+	
+	Sandbox_DividerBox_A = "",
+
+	Sandbox_Music_StrengthMultiplier = "Efetividade da Música",
+	Sandbox_Music_StrengthMultiplier_tooltip = "Controla a potência dos benefícios de atividades relacionadas à música. Valores mais altos aumentam a eficiência.",
+	Sandbox_Music_StrengthMultiplier_option1 = "Baixa",
+	Sandbox_Music_StrengthMultiplier_option2 = "Normal",
+	Sandbox_Music_StrengthMultiplier_option3 = "Alta",
+	Sandbox_Music_StrengthMultiplier_option4 = "Muito Alta",
+
+	Sandbox_Dancing_StrengthMultiplier = "Efetividade da Dança",
+	Sandbox_Dancing_StrengthMultiplier_tooltip = "Controla a potência dos benefícios da dança. Valores mais altos aumentam a eficiência.",
+	Sandbox_Dancing_StrengthMultiplier_option1 = "Baixa",
+	Sandbox_Dancing_StrengthMultiplier_option2 = "Normal",
+	Sandbox_Dancing_StrengthMultiplier_option3 = "Alta",
+	Sandbox_Dancing_StrengthMultiplier_option4 = "Muito Alta",
+
+	Sandbox_Meditation_StrengthMultiplier = "Efetividade da Meditação",
+	Sandbox_Meditation_StrengthMultiplier_tooltip = "Controla a potência dos benefícios da meditação. Valores mais altos aumentam a eficiência.",
+	Sandbox_Meditation_StrengthMultiplier_option1 = "Baixa",
+	Sandbox_Meditation_StrengthMultiplier_option2 = "Normal",
+	Sandbox_Meditation_StrengthMultiplier_option3 = "Alta",
+	Sandbox_Meditation_StrengthMultiplier_option4 = "Muito Alta",
+
+	Sandbox_Meditation_MindfulnessDuration = "Duração da Plenitude de Meditação",
+	Sandbox_Meditation_MindfulnessDuration_tooltip = "Controla a duração de todos os estágios de plenitude.",
+	Sandbox_Meditation_MindfulnessDuration_option1 = "Curta",
+	Sandbox_Meditation_MindfulnessDuration_option2 = "Normal",
+	Sandbox_Meditation_MindfulnessDuration_option3 = "Longa",
+
+	Sandbox_Meditation_HealFactor = "Fator de Cura da Perfeita Plenitude de Meditação",
+	Sandbox_Meditation_HealFactor_tooltip = "Taxa de cura que ocorre durante o estágio de Perfeita Plenitude.<br>A quantidade precisa varia dependendo da saúde geral do personagem e configurações de tempo.",
+
+	Sandbox_Meditation_EffectMultiplier = "Efetividade dos efeitos da Plenitude de Meditação",
+	Sandbox_Meditation_EffectMultiplier_tooltip = "Controla a potência dos benefícios dos estágios de plenitude (redução de estresse, dor, pânico, etc...).",
+	Sandbox_Meditation_EffectMultiplier_option1 = "Fraca",
+	Sandbox_Meditation_EffectMultiplier_option2 = "Normal",
+	Sandbox_Meditation_EffectMultiplier_option3 = "Forte",
+
+	Sandbox_Debug_MoodlePriority = "Debug Inverter Moodle Y",
+	Sandbox_Debug_MoodlePriority_tooltip = "Habilitar esta opção inverterá a ordem e fará com que outros moodles personalizados apareçam acima dos moodles do Lifestyle.",
+	Sandbox_Debug_Expressions = "Debug Expressões",
+	Sandbox_Debug_Expressions_tooltip = "Habilita expressões manuais no menu de contexto de administrador.",
+	Sandbox_Debug_DanceAnim = "Debug Nomes",
+	Sandbox_Debug_DanceAnim_tooltip = "Habilitar esta opção fará com que os nomes de animações apareçam sobre algumas das novas animações.",
+
+}

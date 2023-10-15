@@ -1,0 +1,191 @@
+module Base
+{
+	
+	recipe Butcher Small Animal
+    {
+        keep [Recipe.GetItemTypes.SharpKnife]/MeatCleaver,
+        DeadMouse/DeadSquirrel/DeadRat,
+
+        Result:Smallanimalmeat,
+        Sound:SliceMeat,
+        Time:100.0,
+		OnCreate:Recipe.OnCreate.CutAnimal,
+        Category:Cooking,
+        OnGiveXP:Recipe.OnGiveXP.Cooking10,
+		Override:true
+    }
+
+    recipe Butcher Rabbit
+    {
+        keep [Recipe.GetItemTypes.SharpKnife]/MeatCleaver,
+        DeadRabbit,
+
+        Result:Rabbitmeat,
+        Sound:SliceMeat,
+        Time:100.0,
+		OnCreate:Recipe.OnCreate.CutAnimal,
+        Category:Cooking,
+        OnGiveXP:Recipe.OnGiveXP.Cooking10,
+		Override:true
+    }
+
+    recipe Butcher Bird
+    {
+        keep [Recipe.GetItemTypes.SharpKnife]/MeatCleaver,
+        DeadBird,
+
+        Result:Smallbirdmeat,
+        Sound:SliceMeat,
+        Time:100.0,
+		OnCreate:Recipe.OnCreate.CutAnimal,
+        Category:Cooking,
+        OnGiveXP:Recipe.OnGiveXP.Cooking10,
+		Override:true
+    }
+	
+	recipe Butcher a Small Animal
+    {
+        keep [Recipe.GetItemTypes.SharpKnife]/MeatCleaver,
+        DeadMouse/DeadSquirrel/DeadRat,
+
+        Result:Smallanimalmeat,
+        Sound:SliceMeat,
+        Time:100.0,
+		OnCreate:Recipe.OnCreate.CutAnimal,
+        Category:Cooking,
+        OnGiveXP:Recipe.OnGiveXP.Cooking10,
+    }
+
+    recipe Butcher a Rabbit
+    {
+        keep [Recipe.GetItemTypes.SharpKnife]/MeatCleaver,
+        DeadRabbit,
+
+        Result:Rabbitmeat,
+        Sound:SliceMeat,
+        Time:100.0,
+		OnCreate:Recipe.OnCreate.CutAnimal,
+        Category:Cooking,
+        OnGiveXP:Recipe.OnGiveXP.Cooking10,
+    }
+
+    recipe Butcher a Bird
+    {
+        keep [Recipe.GetItemTypes.SharpKnife]/MeatCleaver,
+        DeadBird,
+
+        Result:Smallbirdmeat,
+        Sound:SliceMeat,
+        Time:100.0,
+		OnCreate:Recipe.OnCreate.CutAnimal,
+        Category:Cooking,
+        OnGiveXP:Recipe.OnGiveXP.Cooking10,
+    }
+
+	item DeadRabbit
+	{
+		DisplayName = Dead Rabbit,
+		DisplayCategory = Food,
+		Type = Food,
+		Weight = 1.0,
+		Icon = RabbitDead,
+		BadCold = true,
+		BadInMicrowave = true,
+		DangerousUncooked = TRUE,
+		GoodHot = true,
+		IsCookable = TRUE,
+		RemoveUnhappinessWhenCooked = true,
+		MinutesToCook = 25,
+		MinutesToBurn = 60,
+		DaysFresh = 8,
+		DaysTotallyRotten = 12,
+		HungerChange = -100,
+		UnhappyChange = 20,
+		Calories = 1730,
+		Carbohydrates = 0,
+		Lipids = 35,
+		Proteins = 330,
+		CustomEatSound = EatingDeadAnimal,
+		WorldStaticModel = DeadRabbit,
+	}
+	
+	item Rabbitmeat
+	{
+		DisplayName = Rabbit Meat,
+		DisplayCategory = Food,
+		Type = Food,
+		Weight = 0.3,
+		Icon = Rabbitmeat,
+		BadCold = true,
+		BadInMicrowave = true,
+		DangerousUncooked = TRUE,
+		EvolvedRecipe = ESalami:15;ESaltedMeat:15;ESmokedMeat:15;Soup:15;Stew:15;Pie:15;Stir fry Griddle Pan:15;Stir fry:15;Sandwich:5|Cooked;Sandwich Baguette:5|Cooked;Burger:10|Cooked;Salad:10|Cooked;Roasted Vegetables:15;RicePot:15;RicePan:15;PastaPot:15;PastaPan:15,
+		FoodType = Game,
+		GoodHot = true,
+		IsCookable = TRUE,
+		MinutesToCook = 25,
+		MinutesToBurn = 70,
+		DaysFresh = 2,
+		DaysTotallyRotten = 4,
+		HungerChange = -30,
+		Calories = 969,
+		Carbohydrates = 20,
+		Lipids = 20,
+		Proteins = 185,
+		WorldStaticModel = RabbitMeat,
+		EvolvedRecipeName = Rabbit,
+	}
+
+	item Smallanimalmeat
+	{
+		DisplayName = Small Animal Meat,
+		DisplayCategory = Food,
+		Type = Food,
+		Weight = 0.3,
+		Icon = Smallanimalmeat,
+		BadCold = true,
+		BadInMicrowave = true,
+		DangerousUncooked = TRUE,
+		EvolvedRecipe = ESalami:15;ESaltedMeat:15;ESmokedMeat:15;Soup:15;Stew:15;Pie:15;Stir fry Griddle Pan:15;Stir fry:15;Sandwich:5|Cooked;Sandwich Baguette:5|Cooked;Burger:10|Cooked;Salad:10|Cooked;Roasted Vegetables:15;RicePot:15;RicePan:15;PastaPot:15;PastaPan:15,
+		FoodType = Game,
+		GoodHot = true,
+		IsCookable = TRUE,
+		MinutesToCook = 20,
+		MinutesToBurn = 70,
+		DaysFresh = 2,
+		DaysTotallyRotten = 4,
+		HungerChange = -15,
+		Calories = 201,
+		Carbohydrates = 5,
+		Lipids = 7.25,
+		Proteins = 45,
+		WorldStaticModel = SmallAnimalMeat_Ground,
+	}
+
+	item Smallbirdmeat
+	{
+		DisplayName = Small Bird Meat,
+		DisplayCategory = Food,
+		Type = Food,
+		Weight = 0.3,
+		Icon = Smallbirdmeat,
+		BadCold = true,
+		BadInMicrowave = true,
+		DangerousUncooked = TRUE,
+		EvolvedRecipe = ESalami:15;ESaltedMeat:15;ESmokedMeat:15;Soup:15;Stew:15;Pie:15;Stir fry Griddle Pan:15;Stir fry:15;Sandwich:5|Cooked;Sandwich Baguette:5|Cooked;Burger:10|Cooked;Salad:10|Cooked;Roasted Vegetables:15;RicePot:15;RicePan:15;PastaPot:15;PastaPan:15,
+		FoodType = Game,
+		GoodHot = true,
+		IsCookable = TRUE,
+		MinutesToCook = 20,
+		MinutesToBurn = 70,
+		DaysFresh = 2,
+		DaysTotallyRotten = 4,
+		HungerChange = -15,
+		Calories = 261,
+		Carbohydrates = 5,
+		Lipids = 8.25,
+		Proteins = 90,
+		WorldStaticModel = SmallBirdMeat_Ground,
+	}
+	
+}

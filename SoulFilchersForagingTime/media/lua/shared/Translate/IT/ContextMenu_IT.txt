@@ -1,0 +1,8 @@
+ContextMenu_IT = {
+	ContextMenu_Place_Cardboard_Bed = "Colocar Letto di Cartone",
+	ContextMenu_Remove_Cardboard_Bed = "Remover Letto di Cartone",
+	ContextMenu_Scavenging = "Cercare",
+	ContextMenu_Sort_Trash = "Cercare",
+
+	ContextMenu_LetterTo = "Lettera a ",
+}

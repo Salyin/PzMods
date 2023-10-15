@@ -1,0 +1,4 @@
+Recipes_RU {
+    Recipe_Craft_Standing_Disco_Ball = "Собрать Стоящий Дискошар",
+    Recipe_Assemble_DJ_Booth = "Собрать установку диджея",
+}

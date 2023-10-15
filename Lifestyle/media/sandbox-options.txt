@@ -1,0 +1,121 @@
+VERSION = 1,
+
+option Text.DividerMusic
+{
+	type = boolean,
+	default = false,
+	page = Lifestyle,
+	translation = Divider_Music,
+}
+
+option Music.StrengthMultiplier
+{
+	type = enum,
+	numValues = 4,
+	default = 2,
+
+	page = Lifestyle,
+	translation = Music_StrengthMultiplier,
+}
+
+option Text.DividerDancing
+{
+	type = boolean,
+	default = false,
+	page = Lifestyle,
+	translation = Divider_Dancing,
+}
+
+option Dancing.StrengthMultiplier
+{
+	type = enum,
+	numValues = 4,
+	default = 2,
+
+	page = Lifestyle,
+	translation = Dancing_StrengthMultiplier,
+}
+
+option Text.DividerMeditation
+{
+	type = boolean,
+	default = false,
+	page = Lifestyle,
+	translation = Divider_Meditation,
+}
+
+option Meditation.StrengthMultiplier
+{
+	type = enum,
+	numValues = 4,
+	default = 2,
+
+	page = Lifestyle,
+	translation = Meditation_StrengthMultiplier,
+}
+
+option Meditation.MindfulnessDuration
+{
+	type = enum,
+	numValues = 3,
+	default = 2,
+
+	page = Lifestyle,
+	translation = Meditation_MindfulnessDuration,
+}
+
+option Meditation.HealFactor
+{
+	type = double,
+	min = 0,
+	max = 10,
+	default = 2,
+
+	page = Lifestyle,
+	translation = Meditation_HealFactor,
+}
+
+option Meditation.EffectMultiplier
+{
+	type = enum,
+	numValues = 3,
+	default = 2,
+
+	page = Lifestyle,
+	translation = Meditation_EffectMultiplier,
+}
+
+option Text.DividerDebug
+{
+	type = boolean,
+	default = false,
+	page = Lifestyle,
+	translation = Divider_Debug,
+}
+
+option Debug.MoodlePriority
+{
+	type = boolean,
+	default = false,
+
+	page = Lifestyle,
+	translation = Debug_MoodlePriority,
+}
+
+option Debug.Expressions
+{
+	type = boolean,
+	default = false,
+
+	page = Lifestyle,
+	translation = Debug_Expressions,
+}
+
+option Debug.DanceAnim
+{
+	type = boolean,
+	default = false,
+
+	page = Lifestyle,
+	translation = Debug_DanceAnim,
+}

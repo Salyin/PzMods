@@ -1,0 +1,7 @@
+﻿ItemName_TH= {
+	ItemName_Base.Bag_Satchel = "กระเป๋าหนังสือ (หน้า)",
+    ItemName_Base.Bag_SatchelBack = "กระเป๋าหนังสือ (หลัง)",
+	ItemName_Base.MysteriousSatchel_New = "ยุทธวิธีกระเป๋าหนังสือ  (หน้า)",
+	ItemName_Base.MysteriousSatchelBack = "ยุทธวิธีกระเป๋าหนังสือ  (หลัง)",
+	ItemName_Base.MysteriousHazmat = "ชุดป้องกันสารเคมี",
+}

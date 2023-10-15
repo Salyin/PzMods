@@ -1,0 +1,29 @@
+module SpoonMetalworkStuff
+{
+
+	imports
+	{
+		Base
+	}
+
+	/****************************** RESOURCE ITEMS ******************************/
+	
+	item GoldNugget
+    {
+        DisplayCategory = Material,
+        Weight	=	1,
+        Type	=	Normal,
+        DisplayName	=	Gold Nugget,
+        Icon	=	GoldNugget,
+    }
+	
+	item SilverNugget
+    {
+        DisplayCategory = Material,
+        Weight	=	1,
+        Type	=	Normal,
+        DisplayName	=	Silver Nugget,
+        Icon	=	SilverNugget,
+    }
+	
+}

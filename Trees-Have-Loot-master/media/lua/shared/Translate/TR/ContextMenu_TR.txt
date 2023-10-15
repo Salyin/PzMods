@@ -1,0 +1,4 @@
+ContextMenu_TR = {
+    ContextMenu_SearchInTree = "Aðacý araþtýr",
+	ContextMenu_CutBranchFromTree = "Aðaçtan dal kes",
+}

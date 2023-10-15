@@ -1,0 +1,34 @@
+ContainerButtonIcons = ContainerButtonIcons or {}
+
+local t = {}
+t.floor = getTexture("media/textures/Item_97BUSHfloor.png")
+t.roofcrates = getTexture("media/textures/Item_97BUSHstorage_roof.png")
+t.cabinet = getTexture("media/textures/Item_97BUSHcabinet.png")
+t.storage1 = getTexture("media/textures/Item_97BUSHfender_l.png")
+t.storage2 = getTexture("media/textures/Item_97BUSHfender_r.png")
+t.storage3 = getTexture("media/textures/Item_97BUSHstorage_r.png")
+t.storage4 = getTexture("media/textures/Item_97BUSHstorage_l.png")
+t.seat = getTexture("media/textures/Item_97BUSHseat.png")
+t.gunner = getTexture("media/textures/Item_97BUSHseatG.png")
+t.stretcher = getTexture("media/textures/Item_97BUSHstretcher.png")
+
+ContainerButtonIcons.BUSHFloor = t.floor
+ContainerButtonIcons.BUSHRoofCrates = t.roofcrates
+ContainerButtonIcons.BUSHAmmoCabinet = t.cabinet
+ContainerButtonIcons.BUSHMedicCabinet = t.cabinet
+ContainerButtonIcons.BUSHFenderLeft = t.storage1
+ContainerButtonIcons.BUSHFenderRight = t.storage2
+ContainerButtonIcons.BUSHStorageRight = t.storage3
+ContainerButtonIcons.BUSHStorageLeft = t.storage4
+ContainerButtonIcons.SeatDriver = t.seat
+ContainerButtonIcons.SeatSupport = t.seat
+ContainerButtonIcons.Gunner = t.gunner
+ContainerButtonIcons.SeatCrew1 = t.seat
+ContainerButtonIcons.SeatCrew2 = t.seat
+ContainerButtonIcons.SeatCrew3 = t.seat
+ContainerButtonIcons.SeatCrew4 = t.seat
+ContainerButtonIcons.SeatCrew5 = t.seat
+ContainerButtonIcons.SeatCrew6 = t.seat
+ContainerButtonIcons.SeatCrew7 = t.seat
+ContainerButtonIcons.SeatCrew8 = t.seat
+ContainerButtonIcons.SeatStretcher = t.stretcher

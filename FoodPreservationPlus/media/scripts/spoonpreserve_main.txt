@@ -1,0 +1,1728 @@
+module Base
+{
+	/****************************** SMOKED AND SALTED ******************************/
+	
+	item Steak
+	{
+		DisplayName = Chunk of meat,
+		DisplayCategory = Food,
+		Type = Food,
+		Weight = 0.2,
+		Icon = Steak,
+		BadCold = true,
+		BadInMicrowave = true,
+		DangerousUncooked = TRUE,
+		EvolvedRecipe = ESalami:15;ESaltedMeat:15;ESmokedMeat:15;Pizza:20;Stew:20;Stir fry Griddle Pan:20;Stir fry:20;Sandwich:5|Cooked;Sandwich Baguette:5|Cooked;Salad:10|Cooked;Roasted Vegetables:20;PastaPot:20;PastaPan:20;RicePot:20;RicePan:20;Taco:20|Cooked;Burrito:20|Cooked,
+		FoodType = Beef,
+		GoodHot = true,
+		IsCookable = TRUE,
+		RemoveNegativeEffectOnCooked = TRUE,
+		MinutesToCook = 25,
+		MinutesToBurn = 50,
+		DaysFresh = 2,
+		DaysTotallyRotten = 4,
+		HungerChange = -20,
+		Calories = 220,
+		Carbohydrates = 0,
+		Lipids = 10,
+		Proteins = 30,
+		WorldStaticModel = Steak,
+	}
+	
+	item SteakSlice
+	{
+		DisplayName = Slice of Meat,
+		DisplayCategory = Food,
+		Type = Food,
+		Weight = 0.2,
+		Icon = Steak,
+		BadCold = true,
+		BadInMicrowave = true,
+		DangerousUncooked = TRUE,
+		EvolvedRecipe = ESalami:15;ESaltedMeat:15;ESmokedMeat:15;Pizza:20;Stew:20;Stir fry Griddle Pan:20;Stir fry:20;Sandwich:5|Cooked;Sandwich Baguette:5|Cooked;Salad:10|Cooked;Roasted Vegetables:20;PastaPot:20;PastaPan:20;RicePot:20;RicePan:20;Taco:20|Cooked;Burrito:20|Cooked,
+		FoodType = Beef,
+		GoodHot = true,
+		IsCookable = TRUE,
+		RemoveNegativeEffectOnCooked = TRUE,
+		MinutesToCook = 25,
+		MinutesToBurn = 50,
+		DaysFresh = 2,
+		DaysTotallyRotten = 4,
+		HungerChange = -20,
+		Calories = 220,
+		Carbohydrates = 0,
+		Lipids = 10,
+		Proteins = 30,
+		WorldStaticModel = Steak,
+	}
+	
+	item FishFillet
+	{
+		DisplayName = Fish Fillet,
+		DisplayCategory = Food,
+		Type = Food,
+		Weight = 0.2,
+		Icon = FishFillet,
+		BadInMicrowave = true,
+		DangerousUncooked = TRUE,
+		EvolvedRecipe = ESaltedMeat:15;ESmokedMeat:15;Pizza:15;Soup:15;Stew:15;Pie:15;Stir fry Griddle Pan:15;Stir fry:15;Sandwich:5|Cooked;Sandwich Baguette:5|Cooked;Burger:10|Cooked;Salad:10|Cooked;Roasted Vegetables:15;RicePot:15;RicePan:15;PastaPot:15;PastaPan:15;Taco:10|Cooked;Burrito:15|Cooked,
+		FoodType = Fish,
+		GoodHot = true,
+		IsCookable = TRUE,
+		MinutesToCook = 20,
+		MinutesToBurn = 50,
+		DaysFresh = 2,
+		DaysTotallyRotten = 4,
+		HungerChange = -25,
+		Calories = 205,
+		Carbohydrates = 1,
+		Lipids = 12,
+		Proteins = 28.52,
+		WorldStaticModel = FishFillet,
+		Tags = FishMeat,
+		EvolvedRecipeName = Fish,
+	}
+	
+	recipe Slice Up Meat
+    {
+        keep [Recipe.GetItemTypes.SharpKnife]/MeatCleaver,
+        Steak,
+
+        Result:SteakSlice=5,
+        Sound:SliceMeat,
+        Time:80.0,
+        OnTest:Recipe.OnTest.CutSteak,
+        OnCreate:Recipe.OnCreate.CutSteak,
+        Category:Cooking,
+        OnGiveXP:Recipe.OnGiveXP.Cooking10,
+		CanBeDoneFromFloor      : TRUE,
+    }
+	
+	/****************************** MEAT PRESERVATION ******************************/
+
+	recipe Prepare Salt for Salting Meat
+    {
+	   Salt;1,
+
+       Result:SaltedMeatPre,
+       Time:200.0,
+       Category:Cooking,
+	   NeedToBeLearn:true,
+	   SkillRequired:Cooking=2,
+       OnGiveXP:Recipe.OnGiveXP.Cooking3,
+    }
+	
+	recipe Prepare Smokepit for Smoking Meat
+    {
+	   FishFillet/SteakSlice/Steak/Smallanimalmeat/Rabbitmeat/Smallbirdmeat;1,
+
+       Result:SmokedMeatPre,
+       Time:200.0,
+       Category:Cooking,
+	   NeedToBeLearn:true,
+	   SkillRequired:Cooking=1,
+       OnGiveXP:Recipe.OnGiveXP.Cooking3,
+    }
+	
+	recipe Prepare Spice Mix to Create Salami
+    {      
+	   WildGarlic2/Pepper/PepperJalapeno/PepperHabanero;10,
+	   keep [Recipe.GetItemTypes.SharpKnife],
+
+       Result:SalamiHomemadePre,
+       Time:400.0,
+       Category:Cooking,
+	   NeedToBeLearn:true,
+	   SkillRequired:Cooking=6,
+       OnGiveXP:Recipe.OnGiveXP.Cooking3,
+    }
+	
+	item SaltedMeatPre
+	{
+		DisplayName = Salted Meat Preparation,
+		DisplayCategory = Food,
+		Type = Food,
+		Weight = 0.5,
+		Icon 				= SaltedMeat,
+		DangerousUncooked 	= TRUE,
+		DaysFresh = 2,
+		DaysTotallyRotten = 4,
+		HungerChange = -1,
+		ThirstChange = 2,
+		Calories = 4,
+		Carbohydrates = 0,
+		Lipids = 2,
+		Proteins = 1,
+		UnhappyChange = 5,
+		WorldStaticModel = Steak,
+		Tooltip = Tooltip_item_Salted,
+	}
+	
+	item SmokedMeatPre
+	{
+		DisplayName = Smoke Meat Preparation,
+		DisplayCategory = Food,
+		Type = Food,
+		Weight = 0.5,
+		Icon 				= SmokedMeat,
+		DangerousUncooked 	= TRUE,
+		DaysFresh = 2,
+		DaysTotallyRotten = 4,
+		HungerChange = -1,
+		ThirstChange = -5,
+		Calories = 0,
+		Carbohydrates = 0,
+		Lipids = 0,
+		Proteins = 0,
+		UnhappyChange = 1,
+		WorldStaticModel = Steak,
+		Tooltip = Tooltip_item_Smoked,
+	}
+	
+	item SalamiHomemadePre
+	{
+		DisplayName = Salami Preparation,
+		DisplayCategory = Food,
+		Type = Food,
+		Weight = 0.5,
+		Icon = Salami,
+		DangerousUncooked 	= TRUE,
+		DaysFresh = 2,
+		DaysTotallyRotten = 4,
+		HungerChange = -10,
+		Calories = 30,
+		Carbohydrates = 5,
+		Lipids = 5,
+		Proteins = 5,
+		UnhappyChange = -5,
+		WorldStaticModel = Salami_Ground,
+		Tooltip = Tooltip_item_Smoked,
+	}
+		
+	item SaltedMeat
+	{
+		DisplayName = Salted Meat,
+		DisplayCategory = Food,
+		Type = Food,
+		Weight = 0.5,
+		EvolvedRecipe = Soup:15;Stew:15;Stir fry Griddle Pan:15;Stir fry:15,
+		Icon 				= SaltedMeat,
+		OnCooked            = SaltedMeat_OnCookedNew,
+		DangerousUncooked 	= TRUE,
+		IsCookable	        = TRUE,
+		MinutesToCook	    = 10,
+        MinutesToBurn	    = 60,
+		DaysFresh = 2,
+		DaysTotallyRotten = 4,
+		HungerChange = -1,
+		ThirstChange = 2,
+		Calories = 4,
+		Carbohydrates = 0,
+		Lipids = 2,
+		Proteins = 1,
+		UnhappyChange = 5,
+		WorldStaticModel = Steak,
+		RemoveNegativeEffectOnCooked = TRUE,
+	}
+	
+	item SmokedMeat
+	{
+		DisplayName = Smoked Meat,
+		DisplayCategory = Food,
+		Type = Food,
+		Weight = 0.5,
+		EvolvedRecipe = Pizza:15;Soup:15;Stew:15;Pie:15;Stir fry Griddle Pan:15;Stir fry:15;Sandwich:5|Cooked;Sandwich Baguette:5|Cooked;Burger:10|Cooked;Salad:10|Cooked;Roasted Vegetables:15;RicePot:15;RicePan:15;PastaPot:15;PastaPan:15;Taco:10|Cooked;Burrito:15|Cooked,
+		Icon 				= SmokedMeat,
+		OnCooked            = SmokedMeat_OnCookedNew,
+		DangerousUncooked 	= TRUE,
+		IsCookable 			= TRUE,
+		MinutesToCook 		= 400,
+		MinutesToBurn 		= 600,
+		DaysFresh = 2,
+		DaysTotallyRotten = 4,
+		HungerChange = -1,
+		ThirstChange = -5,
+		Calories = 0,
+		Carbohydrates = 0,
+		Lipids = 0,
+		Proteins = 0,
+		UnhappyChange = 1,
+		WorldStaticModel = Steak,
+		RemoveNegativeEffectOnCooked = TRUE,
+	}
+	
+	item SalamiHomemade
+	{
+		DisplayName = Salami Homemade,
+		DisplayCategory = Food,
+		Type = Food,
+		Weight = 0.5,
+		Icon = Salami,
+		EvolvedRecipe = Stew:20;Stir fry Griddle Pan:20;Stir fry:20;Sandwich:5;Sandwich Baguette:5;Roasted Vegetables:20;PastaPot:20;PastaPan:20;RicePot:20;RicePan:20,
+		OnCooked            = MakeSalami_OnCookedNew,
+		DangerousUncooked 	= TRUE,
+		IsCookable 			= TRUE,
+		MinutesToCook 		= 10,
+		MinutesToBurn 		= 120,
+		DaysFresh = 2,
+		DaysTotallyRotten = 4,
+		HungerChange = -10,
+		Calories = 30,
+		Carbohydrates = 5,
+		Lipids = 5,
+		Proteins = 5,
+		UnhappyChange = -5,
+		WorldStaticModel = Salami_Ground,
+		RemoveNegativeEffectOnCooked = TRUE,
+	}
+	
+	/****************************** SALT AND BONES ******************************/
+	
+	item SaltRock 
+	{
+		DisplayCategory = Material,
+        Weight	=	0.2,
+        Type	=	Normal,
+        DisplayName	=	Salt Rock,
+        Icon	=	SaltRock,
+        WorldStaticModel = Stone,
+		Tooltip = Tooltip_item_SaltRock,
+	}
+
+	recipe Stomp Salt Rocks to Salt 
+	{
+		SaltRock=10,
+		keep RippedSheets=5,
+		keep [Recipe.GetItemTypes.Hammer]/Log/MetalBar/HandAxe/Crowbar/Axe/WoodAxe,
+		
+		Result:Salt,
+		NeedToBeLearn:true,
+		SkillRequired:Cooking=2,
+		OnGiveXP:Recipe.OnGiveXP.Cooking10,
+		Time:500,
+	}
+	
+	item Bones 
+	{
+		DisplayCategory = Material,
+        Weight	=	1,
+        Type	=	Normal,
+        DisplayName	=	Bones,
+        Icon	=	Bones,
+		WorldStaticModel = Bones,
+		Tooltip = Tooltip_item_Bones,
+	}
+	
+	item CrushedBones 
+	{
+		DisplayCategory = Material,
+        Weight	=	3.5,
+        Type	=	Normal,
+        DisplayName	=	Crushed Bones,
+        Icon	=	CrushedBones,
+		WorldStaticModel = CrushedBones,
+	}
+	
+	recipe Crush Bones
+	{
+		Bones=5,
+		keep RippedSheets=5,
+		keep [Recipe.GetItemTypes.Hammer]/Log/MetalBar/HandAxe/Crowbar/Axe/WoodAxe,
+		
+		Result:CrushedBones,
+		NeedToBeLearn:true,
+		SkillRequired:Cooking=2,
+		OnGiveXP:Recipe.OnGiveXP.Cooking10,
+		Time:500,
+	}
+	
+	/****************************** HOMEMADE CANNED FOOD ******************************/
+	
+	recipe Empty Can
+    {
+        HomemadeMeatRaw/HomemadeTomatoesOpen/HomemadeCarrotsOpen/HomemadeCabbageOpen/DogfoodOpen/CannedCornedBeefOpen/CannedChiliOpen/CannedBologneseOpen/CannedCarrotsOpen/CannedCornOpen/CannedMushroomSoupOpen/CannedPeasOpen/CannedPotatoOpen/CannedSardinesOpen/CannedTomatoOpen/TinnedSoupOpen/TunaTinOpen/OpenBeans/CannedFruitCocktailOpen/CannedFruitBeverageOpen/CannedPeachesOpen/CannedPineappleOpen,
+		
+        Result: TinCanEmpty,
+        Time: 30.0,
+        Category: Cooking,
+		AllowRottenItem:true,
+    }
+	
+	item CanSealer
+	{
+		DisplayName	= Can Sealer,
+	    DisplayCategory = Cooking,
+		Weight	= 1.5,
+		Type	= Normal,
+		Icon	= CanSealer,
+		MetalValue = 3,
+		StaticModel = CanSealer,
+		Tags = CanSealer,
+		WorldStaticModel = CanSealer,
+	}
+	
+	recipe Create Can Sealer
+	{
+	ScrapMetal = 1,
+	MetalPipe = 1,
+	BlowTorch=5,
+    keep [Recipe.GetItemTypes.WeldingMask],
+	
+    Category:Welding,
+	Result:CanSealer = 1,
+	Time:400.0,
+    SkillRequired:MetalWelding=5,
+	NeedToBeLearn:true,   
+	}
+	
+	recipe Make Can of Tomatoes
+    {
+        TinCanEmpty,
+        farming.Tomato;40,
+        Water=10,
+        Vinegar=1,
+		keep CanSealer,
+
+        Result:HomemadeTomatoes,
+        Time:200.0,
+        Category:Cooking,
+		NeedToBeLearn:true,
+		SkillRequired:Cooking=3,
+        OnGiveXP:Recipe.OnGiveXP.Cooking3,
+    }
+	
+	recipe Open Can of Tomatoes
+    {
+		HomemadeTomatoes,
+		keep [Recipe.GetItemTypes.CanOpener]/[Recipe.GetItemTypes.SharpKnife]/[Recipe.GetItemTypes.Hammer]/MeatCleaver/Saw/HandAxe/AxeStone/Axe/WoodAxe,
+		
+        Result:HomemadeTomatoesOpen,
+        Time:100.0,
+        Category:Cooking,
+        OnGiveXP:Recipe.OnGiveXP.None,
+    }
+	
+	item HomemadeTomatoes
+	{
+		DisplayCategory 	= Food,
+		Type				= Food,
+		DisplayName			= Can of Tomatoes - Homemade,
+		Weight				= 0.8,
+		Icon				= HomemadeCan,
+		StaticModel 		= HomemadeCan,
+		WorldStaticModel 	= HomemadeCan,
+		Tags 				= HasMetal,
+	}
+	
+	item HomemadeTomatoesOpen
+	{
+		DisplayName = Opened Can of Tomatoes - Homemade,
+		DisplayCategory = Food,
+		Type = Food,
+		Weight = 0.8,
+		CannedFood = TRUE,
+		EatType = can,
+		EvolvedRecipe = Omelette:15;Stew:25;Stir fry Griddle Pan:25;Stir fry:25;RicePot:25;RicePan:25;Sandwich:15;Sandwich Baguette:15;Taco:15;Burrito:25,
+		EvolvedRecipeName = Tomato,
+		FoodType = Vegetables,
+		Packaged = TRUE,
+		ReplaceOnUse = TinCanEmpty,
+		DaysFresh = 2,
+		DaysTotallyRotten = 4,
+		HungerChange = -30,
+		ThirstChange = -15,
+		Carbohydrates = 28.53,
+        Proteins = 9.29,
+        Lipids = 1.81,
+        Calories = 150,
+		Icon 				= HomemadeCanOpen,
+		StaticModel 		= HomemadeCanOpen,
+		WorldStaticModel 	= HomemadeCanOpen,
+		Tags 				= HasMetal,
+	}
+	
+	recipe Make Can of Carrots
+    {
+        TinCanEmpty,
+        Carrots;45,
+        Water=10,
+        Vinegar=1,
+		keep CanSealer,
+
+        Result:HomemadeCarrots,
+        Time:200.0,
+        Category:Cooking,
+		NeedToBeLearn:true,
+		SkillRequired:Cooking=3,
+        OnGiveXP:Recipe.OnGiveXP.Cooking3,
+    }
+	
+	recipe Open Can of Carrots
+    {
+		HomemadeCarrots,
+		keep [Recipe.GetItemTypes.CanOpener]/[Recipe.GetItemTypes.SharpKnife]/[Recipe.GetItemTypes.Hammer]/MeatCleaver/Saw/HandAxe/AxeStone/Axe/WoodAxe,
+		
+        Result:HomemadeCarrotsOpen,
+        Time:100.0,
+        Category:Cooking,
+        OnGiveXP:Recipe.OnGiveXP.None,
+    }
+	
+	item HomemadeCarrots
+	{
+		DisplayCategory 	= Food,
+		Type				= Food,
+		DisplayName			= Can of Carrots - Homemade,
+		Weight				= 1.2,
+		Icon				= HomemadeCan,
+		StaticModel 		= HomemadeCan,
+		WorldStaticModel 	= HomemadeCan,
+		Tags 				= HasMetal,
+	}
+	
+	item HomemadeCarrotsOpen
+	{
+		DisplayName = Opened Can of Carrots - Homemade,
+		DisplayCategory = Food,
+		Type = Food,
+		Weight = 1.2,
+		CannedFood = TRUE,
+		EatType = can,
+		EvolvedRecipe = Omelette:25;Stew:35;Stir fry Griddle Pan:35;Stir fry:35;RicePot:35;RicePan:25;Sandwich:25;Sandwich Baguette:25;Taco:25;Burrito:35,
+		EvolvedRecipeName = Carrot,
+		FoodType = Vegetables,
+		Packaged = TRUE,
+		ReplaceOnUse = TinCanEmpty,
+		DaysFresh = 2,
+		DaysTotallyRotten = 4,
+		HungerChange = -35,
+		ThirstChange = -15,
+		Calories = 400,
+		Carbohydrates = 84.84,
+		Lipids = 2.45,
+		Proteins = 6.57,
+		Icon 				= HomemadeCanOpen,
+		StaticModel 		= HomemadeCanOpen,
+		WorldStaticModel 	= HomemadeCanOpen,
+		Tags 				= HasMetal,
+	}
+		
+	recipe Make Can of Cabbage
+    {
+        TinCanEmpty,
+        farming.Cabbage;100,
+        Water=10,
+        Vinegar=1,
+		keep CanSealer,
+
+        Result:HomemadeCabbage,
+        Time:200.0,
+        Category:Cooking,
+		NeedToBeLearn:true,
+		SkillRequired:Cooking=3,
+        OnGiveXP:Recipe.OnGiveXP.Cooking3,
+    }
+	
+	recipe Open Can of Cabbage
+    {
+		HomemadeCabbage,
+		keep [Recipe.GetItemTypes.CanOpener]/[Recipe.GetItemTypes.SharpKnife]/[Recipe.GetItemTypes.Hammer]/MeatCleaver/Saw/HandAxe/AxeStone/Axe/WoodAxe,
+		
+        Result:HomemadeCabbageOpen,
+        Time:100.0,
+        Category:Cooking,
+        OnGiveXP:Recipe.OnGiveXP.None,
+    }
+	
+	item HomemadeCabbage
+	{
+		DisplayCategory 	= Food,
+		Type				= Food,
+		DisplayName			= Can of Cabbage - Homemade,
+		Weight				= 1.2,
+		Icon				= HomemadeCan,
+		StaticModel 		= HomemadeCan,
+		WorldStaticModel 	= HomemadeCan,
+		Tags 				= HasMetal,
+	}
+	
+	item HomemadeCabbageOpen
+	{
+		DisplayName = Opened Can of Cabbage - Homemade,
+		DisplayCategory = Food,
+		Type = Food,
+		Weight = 1.2,
+		CannedFood = TRUE,
+		EatType = can,
+		EvolvedRecipe = Omelette:15;Stew:25;Stir fry Griddle Pan:25;Stir fry:25;RicePot:25;RicePan:50;Sandwich:15;Sandwich Baguette:15;Taco:15;Burrito:25,
+		FoodType = Vegetables,
+		Packaged = TRUE,
+		ReplaceOnUse = TinCanEmpty,
+		DaysFresh = 2,
+		DaysTotallyRotten = 4,
+		HungerChange = -40,
+		ThirstChange = -15,
+		Carbohydrates = 8.41,
+        Proteins = 20.14,
+        Lipids = 1.71,
+        Calories = 500,
+		Icon 				= HomemadeCanOpen,
+		StaticModel 		= HomemadeCanOpen,
+		WorldStaticModel 	= HomemadeCanOpen,
+		Tags 				= HasMetal,
+	}
+	
+	recipe Stomp Tomatoes to Tomatoe Paste
+    {	
+		Tomato;100,
+		Salt;1,
+		WildGarlic2/Pepper/PepperJalapeno/PepperHabanero;10,		
+		destroy Pot,
+		keep Log,
+
+        Result:TomatoePasteOnPot,
+        Time:400.0,
+        Category:Cooking,
+		NeedToBeLearn:true,
+		SkillRequired:Cooking=4,
+        OnGiveXP:Recipe.OnGiveXP.Cooking3,
+		OnCreate: GetYeast_OnCreate,
+		CanBeDoneFromFloor      : TRUE,
+    }
+
+	item TomatoePasteOnPot
+    {
+        DisplayName = Pot (Tomatoe Paste),
+		Weight = 2.0,
+        Icon = Pot_Water,
+        Type = Food,
+		DisplayCategory = Food,
+		DaysFresh = 4,
+		DaysTotallyRotten = 8,
+		HungerChange = -60,
+		Carbohydrates = 30.53,
+        Proteins = 10.29,
+        Lipids = 2.21,
+        Calories = 140,
+		MinutesToCook 	= 600,
+		MinutesToBurn 	= 800,
+		IsCookable = TRUE,
+		RemoveNegativeEffectOnCooked = TRUE,
+		DangerousUncooked = TRUE,
+		BadInMicrowave = TRUE,
+		UnhappyChange = 30,
+		WorldStaticModel = CookingPotPasta_Ground,
+		ReplaceOnCooked = Base.KetchupOnPot
+    }
+	
+	item KetchupOnPot
+    {
+        DisplayName = Pot (Ketchup),
+		Weight = 2.0,
+        Icon = Pot_Water,
+        Type = Food,
+		DisplayCategory = Food,
+		DaysFresh = 40,
+		DaysTotallyRotten = 80,
+		HungerChange = -40,
+		Calories = 500,
+		Carbohydrates = 150,
+		Lipids = 1.5,
+		Proteins = 4,
+		WorldStaticModel = CookingPotPasta_Ground,
+    }
+	
+	recipe Pour away stuff from pot
+    {
+        KetchupOnPot/TomatoePasteOnPot,
+		
+        Result: Pot,
+        Time: 30.0,
+        Category: Cooking,
+		AllowRottenItem:true,
+    }
+	
+	recipe Fill a bottle with Ketchup
+    {
+        destroy KetchupOnPot,
+		WaterBottleEmpty/PopBottleEmpty,
+		
+        Result: Ketchup,
+        Time: 125.0,
+        Category: Cooking,
+        OnCreate: GetPot_OnCreate
+    }
+
+	item Ketchup
+	{
+		DisplayName = Ketchup,
+		DisplayCategory = Food,
+		Type = Food,
+		Weight = 0.5,
+		Icon = Ketchup,
+		CantBeFrozen = TRUE,
+		EvolvedRecipe = Sandwich:2;Sandwich Baguette:2;Burger:2;RicePot:2;RicePan:2;PastaPot:2;PastaPan:2;Taco:2;Burrito:2,
+		Packaged = TRUE,
+		ReplaceOnUse = WaterBottleEmpty,
+		Spice = true,
+		HungerChange = -20,
+		UnhappyChange = 10,
+		Calories = 500,
+		Carbohydrates = 150,
+		Lipids = 1.5,
+		Proteins = 4,
+		WorldStaticModel = Ketchup,
+		FoodType = NoExplicit,
+	}
+	
+	item MushroomGeneric1
+	{
+		DisplayName = Mushrooms,
+		DisplayCategory = Food,
+		Type = Food,
+		Weight = 0.2,
+		Icon = MushroomGeneric1,
+		EvolvedRecipe = Pizza:13;Burger:13;Omelette:13;Stir fry Griddle Pan:13;Stir fry:13;Stew:13;Pie:13;Soup:13;Sandwich:13;Sandwich Baguette:13;Salad:13;Roasted Vegetables:13;RicePot:13;RicePan:13;PastaPot:13;PastaPan:13;HotDrink:6;HotDrinkRed:6;HotDrinkWhite:6;HotDrinkSpiffo:6;HotDrinkTea:6,
+		FoodType = Mushroom,
+		HerbalistType = Mushroom,
+		OnEat = OnEat_WildFoodGeneric,
+		DaysFresh = 3,
+		DaysTotallyRotten = 4,
+		HungerChange = -7,
+		ThirstChange = -1,
+		Calories = 20,
+		Carbohydrates = 2.12,
+		Lipids = 0.24,
+		Proteins = 2.04,
+		WorldStaticModel = MushroomGeneric1,
+		EvolvedRecipeName = Mushroom,
+	}
+	
+	recipe Make Can of Berries
+    {
+        TinCanEmpty,
+        Strewberrie/BerryGeneric1/BerryGeneric2/BerryGeneric3/BerryGeneric4/BerryGeneric5/BerryBlack/BerryBlue=10,
+        Water=3,
+        Salt;1,
+		keep [Recipe.GetItemTypes.SharpKnife],
+		keep WoodenBarrel/Pot/BucketEmpty,
+		keep CanSealer,
+
+        Result:HomemadeBerryNew,
+        Time:200.0,
+        Category:Cooking,
+		NeedToBeLearn:true,
+		OnTest:PoisonA1_OnCreate,
+		OnCreate:Recipe.OnCreate.CannedFood,
+		SkillRequired:Cooking=3,
+        OnGiveXP:Recipe.OnGiveXP.Cooking3,
+    }
+	
+	item HomemadeBerryNew
+	{
+	    DisplayCategory = Food,
+		Type				=		Food,
+		DisplayName			=		Can of Berries - Homemade,
+		Icon				=		HomemadeCan,
+		Weight				=		0.5,
+		DaysFresh 			=		4,
+		DaysTotallyRotten 	=	 	8,
+		OnCooked            =       CannedMeat_OnCookedNew,
+		IsCookable	        =	    TRUE,
+        MinutesToBurn	    =	    120,
+        MinutesToCook	    =	    60,
+        StaticModel = CanClosed,
+        WorldStaticModel = CanClosedMushroom,
+	}
+	
+	recipe Open Can of Homemade Berries
+    {
+        HomemadeBerryNew,
+		keep [Recipe.GetItemTypes.CanOpener]/[Recipe.GetItemTypes.SharpKnife]/[Recipe.GetItemTypes.Hammer]/MeatCleaver/Saw/HandAxe/AxeStone/Axe/WoodAxe,
+
+        Result:BerryGeneric5=10,
+        Time:30.0,
+        OnCreate:Recipe.OnCreate.OpenCanNahhui,
+        Category:Cooking,
+        OnGiveXP:Recipe.OnGiveXP.None,
+		AllowRottenItem:true,
+		Override:true
+    }
+	
+	recipe Make Can of Mushrooms
+    {
+        TinCanEmpty,
+        MushroomGeneric1/MushroomGeneric2/MushroomGeneric3/MushroomGeneric4/MushroomGeneric5/MushroomGeneric6/MushroomGeneric7=10,
+        Water=3,
+        Salt;1,
+		keep [Recipe.GetItemTypes.SharpKnife],
+		keep WoodenBarrel/Pot/BucketEmpty,
+		keep CanSealer,
+
+        Result:HomemadeMushroomsNew,
+        Time:200.0,
+        Category:Cooking,
+		NeedToBeLearn:true,
+		OnTest:PoisonA2_OnCreate,
+		OnCreate:Recipe.OnCreate.CannedFood,
+		SkillRequired:Cooking=3,
+        OnGiveXP:Recipe.OnGiveXP.Cooking3,
+    }
+	
+	item HomemadeMushroomsNew
+	{
+	    DisplayCategory = Food,
+		Type				=		Food,
+		DisplayName			=		Can of Mushrooms - Homemade,
+		Icon				=		HomemadeCan,
+		Weight				=		0.8,
+		DaysFresh 			=		4,
+		DaysTotallyRotten 	=	 	8,
+		OnCooked            =       CannedMeat_OnCookedNew,
+		IsCookable	        =	    TRUE,
+        MinutesToBurn	    =	    120,
+        MinutesToCook	    =	    60,
+        StaticModel = CanClosed,
+        WorldStaticModel = CanClosedMushroom,
+	}
+	
+	recipe Open Can of Homemade Mushrooms
+    {
+        HomemadeMushroomsNew,
+		keep [Recipe.GetItemTypes.CanOpener]/[Recipe.GetItemTypes.SharpKnife]/[Recipe.GetItemTypes.Hammer]/MeatCleaver/Saw/HandAxe/AxeStone/Axe/WoodAxe,
+
+        Result:MushroomGeneric1=10,
+        Time:30.0,
+        OnCreate:Recipe.OnCreate.OpenCanNahhui,
+        Category:Cooking,
+        OnGiveXP:Recipe.OnGiveXP.None,
+		AllowRottenItem:true,
+		Override:true
+    }
+	
+	/****************************** HUNTING TRAPING ******************************/
+	
+	recipe Make Can of Meat
+    {
+        TinCanEmpty,
+        FishFillet/SteakSlice/Steak/Smallanimalmeat/Rabbitmeat/Smallbirdmeat;60,
+        Water=3,
+        Salt;1,
+		keep CanSealer,
+
+        Result:HomemadeMeatRaw,
+        Time:200.0,
+        Category:Cooking,
+		NeedToBeLearn:true,
+		OnTest:MeatIsCookedAlready_OnTest,
+		SkillRequired:Cooking=3,
+        OnGiveXP:Recipe.OnGiveXP.Cooking3,
+    }
+
+	item HomemadeMeatRaw
+	{
+		DisplayCategory 	= Food,
+		Type				= Food,
+		DisplayName			= Can of Meat - Homemade (Uncooked),
+		Weight				= 1.2,
+		DaysFresh = 2,
+		DaysTotallyRotten = 4,
+		HungerChange = -60,
+		Calories = 750,
+		Carbohydrates = 30,
+		Lipids = 30,
+		Proteins = 250,
+		Icon				= HomemadeCan,
+		StaticModel 		= HomemadeCan,
+		WorldStaticModel 	= HomemadeCan,
+		Tags 				= HasMetal,
+		MinutesToCook = 100,
+		MinutesToBurn = 150,
+		IsCookable = TRUE,
+		RemoveNegativeEffectOnCooked = TRUE,
+		DangerousUncooked = TRUE,
+		BadInMicrowave = TRUE,
+		UnhappyChange = 30,
+		ReplaceOnCooked = Base.HomemadeMeat
+	}
+	
+	item HomemadeMeat
+	{
+		DisplayCategory 	= Food,
+		Type				= Food,
+		DisplayName			= Can of Meat - Homemade,
+		Weight				= 1.2,
+		Icon				= HomemadeCan,
+		StaticModel 		= HomemadeCan,
+		WorldStaticModel 	= HomemadeCan,
+		Tags 				= HasMetal,
+	}
+	
+	recipe Open Can of Meat
+    {
+		HomemadeMeat,
+		keep [Recipe.GetItemTypes.CanOpener]/[Recipe.GetItemTypes.SharpKnife]/[Recipe.GetItemTypes.Hammer]/MeatCleaver/Saw/HandAxe/AxeStone/Axe/WoodAxe,
+		
+        Result:HomemadeMeatOpen,
+        Time:100.0,
+        Category:Cooking,
+        OnGiveXP:Recipe.OnGiveXP.None,
+    }
+		
+	item HomemadeMeatOpen
+	{
+		DisplayName = Opened Can of Meat - Homemade,
+		DisplayCategory = Food,
+		Type = Food,
+		Weight = 1.2,
+		CannedFood = TRUE,
+		EatType = can,
+		EvolvedRecipe = Omelette:15;Stew:25;Stir fry Griddle Pan:25;Stir fry:25;RicePot:25;RicePan:50;Sandwich:15;Sandwich Baguette:15;Taco:15;Burrito:25,
+		FoodType = Beef,
+		Packaged = TRUE,
+		ReplaceOnUse = TinCanEmpty,
+		DaysFresh = 2,
+		DaysTotallyRotten = 4,
+		HungerChange = -50,
+		Calories = 750,
+		Carbohydrates = 30,
+		Lipids = 30,
+		Proteins = 250,
+		Icon 				= HomemadeCanOpen,
+		StaticModel 		= HomemadeCanOpen,
+		WorldStaticModel 	= HomemadeCanOpen,
+		Tags 				= HasMetal,
+	}
+	
+	/****************************** CANDELS, SOAP AND GLUE ******************************/
+	
+	recipe Pour away stuff from pan
+    {
+        FatOnPan/GlueMixOnPan/SoapMixOnPan,
+		
+        Result: Saucepan,
+        Time: 30.0,
+        Category: Cooking,
+		AllowRottenItem:true,
+    }
+		
+	recipe Prepare Tallow
+    {
+        FishFillet;300,
+        destroy Base.Saucepan,
+		
+        Result: FatOnPan,
+        Category: Cooking,
+		NeedToBeLearn:true,
+		SkillRequired:Cooking=3,
+        Time: 100.0,
+        OnGiveXP:Recipe.OnGiveXP.Cooking3,
+    }
+	
+	recipe Prepare Tallow
+    {
+        Smallanimalmeat/Rabbitmeat/Smallbirdmeat;150,
+        destroy Base.Saucepan,
+		
+        Result: FatOnPan,
+        Category: Cooking,
+		NeedToBeLearn:true,
+		SkillRequired:Cooking=3,
+        Time: 100.0,
+        OnGiveXP:Recipe.OnGiveXP.Cooking3,
+    }
+	
+	recipe Prepare Tallow
+    {
+		SteakSlice/Steak;60,
+        destroy Base.Saucepan,
+		
+        Result: FatOnPan,
+        Category: Cooking,
+		NeedToBeLearn:true,
+		SkillRequired:Cooking=3,
+        Time: 100.0,
+        OnGiveXP:Recipe.OnGiveXP.Cooking3,
+    }
+	
+	item FatOnPan
+    {
+        DisplayName = Saucepan (Animal fat),
+		Weight = 2.0,
+        Icon = SaucepanFilled,
+        Type = Food,
+		DisplayCategory = Food,
+		DaysFresh = 2,
+		DaysTotallyRotten = 4,
+		HungerChange = -50,
+		Calories = 1500,
+		Carbohydrates = 0,
+		Lipids = 200,
+		Proteins = 0,
+		MinutesToCook = 80,
+		MinutesToBurn = 120,
+		IsCookable = TRUE,
+		RemoveNegativeEffectOnCooked = TRUE,
+		DangerousUncooked = TRUE,
+		BadInMicrowave = TRUE,
+		UnhappyChange = 30,
+		WorldStaticModel = SaucePanPasta,
+		ReplaceOnCooked = Base.TallowOnPan
+    }
+	
+	item TallowOnPan
+    {
+        DisplayName = Saucepan (Tallow),
+		Weight = 2.0,
+        Icon = SaucepanFilled,
+        Type = Food,
+		DisplayCategory = Food,
+		DaysFresh = 30,
+		DaysTotallyRotten = 60,
+		HungerChange = -40,
+		Calories = 1500,
+		Carbohydrates = 0,
+		Lipids = 200,
+		Proteins = 0,
+		UnhappyChange = 40,
+		WorldStaticModel = SaucePanPasta,
+    }
+	
+	recipe Empty Tallow from Saucepan
+    {
+        destroy TallowOnPan,
+        Result: Tallow,
+        Time: 125.0,
+        Category: Cooking,
+        OnCreate: GetSaucepan_OnCreate
+    }
+  
+    item Tallow
+    {
+        DisplayName = Tallow,
+		DisplayCategory = Food,
+		Type = Food,
+		Weight = 0.3,
+		Icon = Tallow,
+		EvolvedRecipe = Sandwich:10;Sandwich Baguette:10;Stir fry Griddle Pan:15;Stir fry:15;Roasted Vegetables:15;PastaPot:15;PastaPan:15;Taco:2;Burrito:5;Toast:5;Soup:10;Stew:10,
+		FoodType = NoExplicit,
+		Spice = true,
+		Packaged = TRUE,
+		DaysFresh = 30,
+		DaysTotallyRotten = 60,
+		HungerChange = -30,
+		UnhappyChange = 50,
+		Calories = 1500,
+		Carbohydrates = 0,
+		Lipids = 200,
+		Proteins = 0,
+		Tags = BakingFat;MinorIngredient,
+		WorldStaticModel = Tallow,
+		Tooltip = Tooltip_item_Tallow,
+    }
+	
+	recipe Make Candles
+    {
+        Tallow,
+		keep Saucepan/Pot/BucketEmpty,
+
+        Result:Candle=5,
+        Time:200.0,
+        Category:Cooking,
+		NeedToBeLearn:true,
+		SkillRequired:Cooking=3,
+        OnGiveXP:Recipe.OnGiveXP.Cooking3,
+    }
+	
+	item CandleLit
+	{
+	    DisplayCategory = LightSource,
+		LightDistance	=	3,
+		Weight	=	0.2,
+		Type	=	Drainable,
+	    UseWhileUnequipped  =   TRUE,
+		TorchCone	=	FALSE,
+		UseDelta	=	0.0006,
+		LightStrength	=	0.6,
+		DisplayName	=	Lit Candle,
+		ActivatedItem	=	TRUE,
+		Icon	=	CandleLit,
+		cantBeConsolided = TRUE,
+		StaticModel = Candle,
+		WorldStaticModel = CandleGround,
+		Tags = StartFire,
+	}
+	
+	recipe Prepare Glue Mix
+    {
+        Corn;50,
+		SweetJuice;1,
+		Vinegar;1,
+		Water;5,
+        destroy Base.Saucepan,
+		
+        Result: GlueMixOnPan,
+        Category: Cooking,
+		NeedToBeLearn:true,
+		SkillRequired:Cooking=4,
+        Time: 100.0,
+        OnGiveXP:Recipe.OnGiveXP.Cooking3,
+    }
+	
+	recipe Prepare Glue Mix
+    {
+        CrushedBones,
+		Vinegar;1,
+		Water;5,
+        destroy Base.Saucepan,
+		
+        Result: GlueMixOnPan,
+        Category: Cooking,
+		NeedToBeLearn:true,
+		SkillRequired:Cooking=4,
+        Time: 100.0,
+        OnGiveXP:Recipe.OnGiveXP.Cooking3,
+    }
+	
+	recipe Prepare Glue Mix
+    {
+        LeatherStrips/LeatherStripsDirty=20,
+		Vinegar;1,
+		Water;5,
+        destroy Base.Saucepan,
+		
+        Result: GlueMixOnPan,
+        Category: Cooking,
+		NeedToBeLearn:true,
+		SkillRequired:Cooking=4,
+        Time: 100.0,
+        OnGiveXP:Recipe.OnGiveXP.Cooking3,
+    }
+	
+	item GlueMixOnPan
+    {
+        DisplayName = Saucepan (GlueMix),
+		Weight = 2.0,
+        Icon = SaucepanFilled,
+        Type = Food,
+		DisplayCategory = Food,
+		DaysFresh = 4,
+		DaysTotallyRotten = 8,
+		HungerChange = -50,
+		Calories = 220,
+		Carbohydrates = 240,
+		Lipids = 10,
+		Proteins = 50,
+		MinutesToCook = 80,
+		MinutesToBurn = 120,
+		IsCookable = TRUE,
+		RemoveNegativeEffectOnCooked = TRUE,
+		DangerousUncooked = TRUE,
+		BadInMicrowave = TRUE,
+		UnhappyChange = 30,
+		WorldStaticModel = SaucePanPasta,
+		ReplaceOnCooked = Base.GlueOnPan
+    }
+	
+	item GlueOnPan
+    {
+        DisplayName = Saucepan (Glue),
+		Weight = 2.0,
+        Icon = SaucepanFilled,
+        Type = Food,
+		DisplayCategory = Food,
+		HungerChange = -10,
+		Calories = 220,
+		Carbohydrates = 0,
+		Lipids = 40,
+		Proteins = 20,
+		UnhappyChange = 50,
+		WorldStaticModel = SaucePanPasta,
+    }
+	
+	recipe Empty Glue from Saucepan
+    {
+        destroy GlueOnPan,
+        Result: Glue,
+        Time: 125.0,
+        Category: Cooking,
+        OnCreate: GetSaucepan_OnCreate
+    }
+	
+	item Glue
+    {
+        DisplayCategory = Material,
+        Weight	=	0.2,
+        Type	=	Drainable,
+        UseDelta	=	0.1,
+        UseWhileEquipped	=	FALSE,
+        DisplayName	=	Glue,
+        Icon	=	Glue,
+        Tooltip = Tooltip_FixItems,
+        SurvivalGear = TRUE,
+        WorldStaticModel = Glue,
+        Tags = Glue,
+    }
+	
+	recipe Prepare Soap Mix
+    {
+        FishFillet/SteakSlice/Steak/Smallanimalmeat/Rabbitmeat/Smallbirdmeat;100,
+		Charcoal;1,
+		Water;10,
+        destroy Base.Saucepan,
+		
+        Result: SoapMixOnPan,
+        Category: Cooking,
+		NeedToBeLearn:true,
+		SkillRequired:Cooking=4,
+        Time: 100.0,
+        OnGiveXP:Recipe.OnGiveXP.Cooking3,
+    }
+	
+	item SoapMixOnPan
+    {
+        DisplayName = Saucepan (SoapMix),
+		Weight = 2.0,
+        Icon = SaucepanFilled,
+        Type = Food,
+		DisplayCategory = Food,
+		DaysFresh = 4,
+		DaysTotallyRotten = 8,
+		HungerChange = -30,
+		Calories = 120,
+		Carbohydrates = 140,
+		Lipids = 50,
+		Proteins = 40,
+		MinutesToCook = 80,
+		MinutesToBurn = 120,
+		IsCookable = TRUE,
+		RemoveNegativeEffectOnCooked = TRUE,
+		DangerousUncooked = TRUE,
+		BadInMicrowave = TRUE,
+		UnhappyChange = 60,
+		WorldStaticModel = SaucePanPasta,
+		ReplaceOnCooked = Base.SoapOnPan
+    }
+	
+	item SoapOnPan
+    {
+        DisplayName = Saucepan (Soap),
+		Weight = 2.0,
+        Icon = SaucepanFilled,
+        Type = Food,
+		DisplayCategory = Food,
+		HungerChange = -10,
+		Calories = 120,
+		Carbohydrates = 0,
+		Lipids = 20,
+		Proteins = 10,
+		UnhappyChange = 100,
+		WorldStaticModel = SaucePanPasta,
+    }
+	
+	recipe Empty Soap from Saucepan
+    {
+        destroy SoapOnPan,
+        Result: Soap2,
+        Time: 125.0,
+        Category: Cooking,
+        OnCreate: GetSaucepan_OnCreate
+    }
+	
+	item Soap2
+    {
+        DisplayCategory = Household,
+        Type	            =	        Drainable,
+        UseDelta	        =	        0.01,
+        UseWhileEquipped	=           FALSE,
+        DisplayName			=		    Soap,
+        Icon				=			Soap,
+        Weight				=			0.1,
+        cantBeConsolided    =           TRUE,
+        WorldStaticModel = Soap,
+    }
+	
+	/****************************** VODKA AND VINEGAR ******************************/
+	
+	recipe Pour away stuff from barrel
+    {
+        VodkaBrewWorking/VodkaBrewReady/VinegarBrewWorking/VinegarBrewReady,
+		
+        Result: WoodenBarrel,
+        Time: 60.0,
+        Category: Cooking,
+    }
+	
+	
+	recipe Make Wooden Barrel
+    {
+		LeatherStrips=20,
+		Wire=10,
+		Plank=10,
+		keep [Recipe.GetItemTypes.Hammer],
+
+        Result:WoodenBarrel,
+        Time:500.0,
+        Category:Carpentry,
+		NeedToBeLearn:true,
+		SkillRequired:Woodwork=3,
+        OnGiveXP:Recipe.OnGiveXP.WoodWork5,
+		CanBeDoneFromFloor      : TRUE,
+    }
+	
+	recipe Break Wooden Barrel
+    {
+		WoodenBarrel/VodkaBrewWorking/VodkaBrewReady,
+		keep [Recipe.GetItemTypes.Hammer],
+
+        Result:Plank,
+        Time:150.0,
+        Category:Carpentry,
+		OnCreate: GetSmashedBarrel_OnCreate,
+		CanBeDoneFromFloor      : TRUE,
+    }
+	
+	item WoodenBarrel
+	{
+		DisplayCategory = Material,
+		Type			= Normal,
+		Icon			= WoodenBarrel,
+		Weight		  	= 15,
+		DisplayName		= Wooden Barrel(Empty),
+		WorldStaticModel = WoodenBarrel,
+		Tooltip = Tooltip_item_WoodenBarrel,
+	}
+	
+	recipe Make Ethanol Wort
+    {	
+		Potato/Corn;10,
+		keep WoodenBarrel/Pot/BucketEmpty/Saucepan,
+		keep Log,
+
+        Result:SWortEthanol,
+        Time:20.0,
+        Category:Cooking,
+		CanBeDoneFromFloor      : TRUE,
+    }
+	
+	item SWortEthanol
+    {
+        DisplayCategory = Food,
+        Weight	=	0.1,
+        Type	=	Food,
+		HungerChange = -2,
+		UnhappyChange = 10,
+		DangerousUncooked 	= TRUE,
+		IsCookable 			= FALSE,
+        DisplayName	=	Ethanol Wort,
+        Icon	=	MashedHerbs,
+		DaysFresh = 10,
+		DaysTotallyRotten = 15,
+		Carbohydrates = 10.52,
+        Proteins = 2.88,
+        Lipids = 0.20,
+        Calories = 50,
+		ReplaceOnRotten 	= SMush,
+        WorldStaticModel = Poultice,
+    }
+	
+	recipe Make Ethanol Brew
+    {
+        WoodenBarrel,
+		SWortEthanol;100,
+		Yeast=5,
+		Water=25,
+		keep Saucepan/Pot/BucketEmpty,
+
+        Result:VodkaBrewWorking,
+        Time:200.0,
+        Category:Cooking,
+		NeedToBeLearn:true,
+		SkillRequired:Cooking=3,
+        OnGiveXP:Recipe.OnGiveXP.Cooking3,
+		CanBeDoneFromFloor      : TRUE,
+    }
+	
+	item VodkaBrewWorking
+	{
+		DisplayCategory = Food,
+		Type			= Food,
+		Icon			= WoodenBarrel,
+		Weight		  	= 25,
+		DisplayName		= Ethanol Brew (Brewing),
+		CantBeFrozen 		= TRUE,
+		ReplaceOnRotten 	= VodkaBrewReady,
+		DaysFresh 			=		3,
+		DaysTotallyRotten 	=	 	15,
+		WorldStaticModel = WoodenBarrel,
+		Tooltip = Tooltip_item_WBWorking,
+	}
+	
+	item VodkaBrewReady
+	{
+		DisplayCategory = Food,
+		Type			= Food,
+		Icon			= WoodenBarrel,
+		Weight		  	= 25,
+		DisplayName		= Ethanol Brew (Brew Ready),
+		WorldStaticModel = WoodenBarrel,
+	}
+	
+	recipe Open Ethanol Brew Barrel
+    {
+        VodkaBrewReady,
+		WaterBottleEmpty/PopBottleEmpty=5,
+		
+        Result: SpoonEthanol=5,
+        Time: 200.0,
+        Category: Cooking,
+        OnCreate: GetEmptyBarrel_OnCreate,
+		CanBeDoneFromFloor      : TRUE,
+    }
+
+	recipe Mix Ethanol with water
+    {
+        SpoonEthanol=1,
+		Water=5,
+		WaterBottleEmpty/PopBottleEmpty,
+		
+        Result: SpoonVodka,
+        Time: 20.0,
+        Category: Cooking,
+		CanBeDoneFromFloor      : TRUE,
+    }
+	
+	item SpoonEthanol
+	{
+		DisplayCategory = VehicleMaintenance,
+		DisplayName = Bottle of Ethanol,
+		Type = Drainable,
+		Weight = 0.8,
+		Icon = BottleWithGas,
+		ReplaceOnDeplete = WaterBottleEmpty,
+		UseDelta = 0.5,
+		UseWhileEquipped = FALSE,
+		StaticModel = WaterBottleGasoline,
+		WorldStaticModel = WaterBottleFullGasoline,
+		Tags = Petrol,
+	}
+	
+	item SpoonVodka
+	{
+		DisplayName = Vodka,
+		DisplayCategory = Food,
+		Type = Food,
+		Weight = 1,
+		Icon = WaterBottle_Full,
+		/*EvolvedRecipe = Beverage:4;Beverage2:4;Soup:4;Stew:4;PastaPot:4;PastaPan:4;WineInGlass:4,*/
+		EvolvedRecipe = Beverage:4;Beverage2:4;WineInGlass:4;PastaPot:4;PastaPan:4,
+		FoodType = Liquor,
+		AlcoholPower = 6,
+		Alcoholic = TRUE,
+		CantBeFrozen = TRUE,
+		EatType = Bourbon,
+		Packaged = TRUE,
+		ReplaceOnUse = WaterBottleEmpty,
+		HungerChange = -20,
+		ThirstChange = -40,
+		UnhappyChange = -100,
+		Calories = 1000,
+		Carbohydrates = 0,
+		Lipids = 0,
+		Proteins = 0,
+		CustomContextMenu = Drink,
+		CustomEatSound = DrinkingFromBottlePlastic,
+		StaticModel = WaterBottle,
+		WorldStaticModel = WaterBottleFull,
+		Tags = Liquor,
+	}
+	
+	recipe Make Vinegar Wort
+    {	
+		Potato/Carrots/Cabbage/Strewberrie/Corn/Apple;10,
+		keep WoodenBarrel/Pot/BucketEmpty/Saucepan,
+		keep Log,
+
+        Result:SWortVinegar,
+        Time:20.0,
+        Category:Cooking,
+		CanBeDoneFromFloor      : TRUE,
+    }
+	
+	item SWortVinegar
+    {
+        DisplayCategory = Food,
+        Weight	=	0.1,
+        Type	=	Food,
+		HungerChange = -2,
+		UnhappyChange = 10,
+		DangerousUncooked 	= TRUE,
+		IsCookable 			= FALSE,
+        DisplayName	=	Vinegar Wort,
+        Icon	=	MashedHerbs,
+		DaysFresh = 10,
+		DaysTotallyRotten = 15,
+		Carbohydrates = 10.52,
+        Proteins = 2.88,
+        Lipids = 0.20,
+        Calories = 50,
+		ReplaceOnRotten 	= SMush,
+        WorldStaticModel = Poultice,
+    }
+
+	recipe Make Vinegar Brew
+    {	
+		SWortVinegar;50,
+        WoodenBarrel,
+		SpoonEthanol=3,
+		Water=25,
+		keep Saucepan/Pot/BucketEmpty,
+
+        Result:VinegarBrewWorking,
+        Time:200.0,
+        Category:Cooking,
+		NeedToBeLearn:true,
+		SkillRequired:Cooking=3,
+        OnGiveXP:Recipe.OnGiveXP.Cooking3,
+		CanBeDoneFromFloor      : TRUE,
+    }
+	
+	item VinegarBrewWorking
+	{
+		DisplayCategory = Food,
+		Type			= Food,
+		Icon			= WoodenBarrel,
+		Weight		  	= 25,
+		DisplayName		= Vinegar Brew (Brewing),
+		CantBeFrozen 		= TRUE,
+		ReplaceOnRotten 	= VinegarBrewReady,
+		DaysFresh 			=		3,
+		DaysTotallyRotten 	=	 	10,
+		WorldStaticModel = WoodenBarrel,
+		Tooltip = Tooltip_item_WBWorking,
+	}
+	
+	item VinegarBrewReady
+	{
+		DisplayCategory = Food,
+		Type			= Food,
+		Icon			= WoodenBarrel,
+		Weight		  	= 25,
+		DisplayName		= Vinegar Brew (Brew Ready),
+		WorldStaticModel = WoodenBarrel,
+	}
+	
+	recipe Open Vinegar Brew Barrel
+    {
+        VinegarBrewReady,
+		WaterBottleEmpty/PopBottleEmpty=5,
+		
+        Result: Vinegar=5,
+        Time: 200.0,
+        Category: Cooking,
+        OnCreate: GetEmptyBarrel_OnCreate,
+		CanBeDoneFromFloor      : TRUE,
+    }
+	
+	item Vinegar
+    {
+        DisplayCategory = Food,
+        Type	            =	        Drainable,
+        UseDelta	        =	        0.1,
+        UseWhileEquipped	=           FALSE,
+        DisplayName			=		    Vinegar,
+        Icon				=			Vinegar,
+        Weight				=			0.3,
+        WorldStaticModel = Vinegar,
+		ReplaceOnDeplete = WaterBottleEmpty,
+    }
+	
+	recipe Make Veggies Bulp
+    {	
+		Carrots/Corn/Strewberrie/Banana/Orange/Apple/Grapes/Pear/Cherry/BerryGeneric1/BerryGeneric2/BerryGeneric3/BerryGeneric4/BerryGeneric5/BerryBlack/BerryBlue;10,
+		keep [Recipe.GetItemTypes.SharpKnife],
+		keep WoodenBarrel/Pot/BucketEmpty,
+
+        Result:SJBulp,
+        Time:25.0,
+        Category:Cooking,
+		OnTest:PoisonA1_OnCreate,
+		SkillRequired:Cooking=1,
+		CanBeDoneFromFloor      : TRUE,
+    }
+	
+	recipe Stomp Veggies to Sweet Juice
+    {	
+		SJBulp;150,       
+		WaterBottleEmpty/PopBottleEmpty,
+		keep WoodenBarrel/Pot/BucketEmpty,
+		keep Log,
+
+        Result:SweetJuice,
+        Time:400.0,
+        Category:Cooking,
+		NeedToBeLearn:true,
+		SkillRequired:Cooking=2,
+        OnGiveXP:Recipe.OnGiveXP.Cooking3,
+		OnCreate: GetYeast_OnCreate,
+		CanBeDoneFromFloor      : TRUE,
+    }
+	
+	recipe Make Mushrooms Bulp
+    {	
+		MushroomGeneric1/MushroomGeneric2/MushroomGeneric3/MushroomGeneric4/MushroomGeneric5/MushroomGeneric6/MushroomGeneric7;10,
+		keep [Recipe.GetItemTypes.SharpKnife],
+		keep WoodenBarrel/Pot/BucketEmpty,
+
+        Result:YBulp,
+        Time:25.0,
+        Category:Cooking,
+		OnTest:PoisonA2_OnCreate,
+		SkillRequired:Cooking=1,
+		CanBeDoneFromFloor      : TRUE,
+    }
+	
+	recipe Stomp Mushrooms to Yeast
+    {	
+		YBulp;150,
+		keep WoodenBarrel/Pot/BucketEmpty,
+		keep Log,
+
+        Result:Yeast,
+        Time:400.0,
+        Category:Cooking,
+		NeedToBeLearn:true,
+		SkillRequired:Cooking=2,
+        OnGiveXP:Recipe.OnGiveXP.Cooking3,
+		CanBeDoneFromFloor      : TRUE,
+    }
+	
+	item SJBulp
+    {
+        DisplayCategory = Food,
+        Weight	=	0.1,
+        Type	=	Food,
+		HungerChange = -10,
+		UnhappyChange = 5,
+		DaysFresh = 3,
+		DaysTotallyRotten = 6,
+		Carbohydrates = 2.52,
+        Proteins = 2.88,
+        Lipids = 0.20,
+        Calories = 10,
+        DisplayName	=	Sweet Veggie Bulp,
+        Icon	=	MashedHerbs,
+        WorldStaticModel = Poultice,
+		Tooltip = Tooltip_item_SweetBulp,
+    }
+	
+	item YBulp
+    {
+        DisplayCategory = Food,
+        Weight	=	0.1,
+        Type	=	Food,
+		HungerChange = -10,
+		UnhappyChange = 25,
+		DaysFresh = 3,
+		DaysTotallyRotten = 6,
+		Carbohydrates = 2.52,
+        Proteins = 2.88,
+        Lipids = 0.20,
+        Calories = 10,
+        DisplayName	=	Mushroom Bulp,
+        Icon	=	MashedHerbs,
+        WorldStaticModel = Poultice,
+		Tooltip = Tooltip_item_YBulp,
+    }
+
+	item SweetJuice
+	{
+		DisplayName = Sweet Juice,
+		DisplayCategory = Food,
+		Type = Food,
+		Weight = 0.8,
+		WeightEmpty = 0.1,
+		Icon = BottleWithGas,
+		EvolvedRecipe = HotDrink:1;HotDrinkRed:1;HotDrinkWhite:1;HotDrinkSpiffo:1;HotDrinkTea:1;Toast:1;Oatmeal:1;Beverage:1;Beverage2:1,
+		Spice = true,
+		ReplaceOnUse = WaterBottleEmpty,
+		UseDelta = 0.16,
+		UseWhileEquipped = FALSE,
+		HungerChange = -30,
+		Calories = 987,
+		Carbohydrates = 100,
+		Lipids = 6,
+		Proteins = 6,
+		WorldStaticModel = WaterBottleGasoline,
+		Tags = Sugar,
+		FoodType = Sugar,
+		Tooltip = Tooltip_item_SS,
+	}
+
+	recipe Dry Fruits and Veggies
+	{
+		SJBulp;100,
+		TreeBranch/Twigs,		
+		keep Stone/BakingPan/Pan/RoastingPan/Saucepan,
+		
+		NearItem 	: Campfire,
+		Result 		: DryBerry,
+		Time 		: 400,
+		NeedToBeLearn:true,
+		SkillRequired:Cooking=2,
+		OnTest:PoisonA1_OnCreate,
+		OnGiveXP:Recipe.OnGiveXP.Cooking3,
+		CanBeDoneFromFloor 	: True,
+		Category 		: Cooking,
+	}
+	
+	item DryBerry
+	{
+	    DisplayCategory 	= 		Food,
+		Type				=		Food,
+		DisplayName			=		Dried Fruits and Veggies,
+		Icon				=		DryBerry,
+		Weight				=		0.1,
+		HungerChange 		=		-40,
+		ThirstChange		=		-5,
+		UnhappyChange 		= 		-20,
+		DaysFresh 			=		30,
+		DaysTotallyRotten 	=	 	60,
+		EvolvedRecipe = Cake:5;FruitSalad:5;Pancakes:5;Waffles:5;ConeIcecream:5;Oatmeal:5;PieSweet:5;Salad:5;HotDrink:5;HotDrinkRed:5;HotDrinkWhite:5;HotDrinkSpiffo:5;HotDrinkTea:5,
+		FoodType    =   Berry,
+        Carbohydrates = 80.92,
+        Proteins = 3.5,
+        Lipids = 4.3,
+        Calories = 450,
+        StaticModel = RoundFood_Red,
+        WorldStaticModel = Strawberry_Ground,
+		EvolvedRecipeName = Strawberry,
+	}
+	
+	/****************************** LITERATURE ******************************/
+	
+	item SpoonMagazinePrserving
+	{
+    Weight	=	0.1,
+    Type	=	Literature,
+    DisplayName	=	Preserving Food For Dummies,
+    Icon	=	MagazineYesICan,
+    TeachedRecipes  =   Stomp Salt Rocks to Salt;Crush Bones;Make Candles;Prepare Tallow;Make Can of Meat;Make Can of Cabbage;Make Can of Carrots;Make Can of Tomatoes;Create Can Sealer;Prepare Smokepit for Smoking Meat;Prepare Salt for Salting Meat;Make Jar of Tomatoes;Make Jar of Carrots;Make Jar of Potatoes;Make Jar of Eggplants;Make Jar of Leeks;Make Jar of Red Radishes;Make Jar of Bell Peppers;Make Jar of Cabbage;Make Jar of Broccoli;Prepare Spice Mix to Create Salami;Stomp Tomatoes to Tomatoe Paste;Make Can of Berries;Make Can of Mushrooms,
+    ReplaceOnUse    =   SpoonMagazinePrserving,
+    StaticModel = Magazine,
+    WorldStaticModel = MagazineMetal1Ground,
+	}
+	 
+	item SpoonMagazineBrewing 
+	{
+    Weight	=	0.1,
+    Type	=	Literature,
+    DisplayName	=	Brewing For Dummies,
+    Icon	=	MagazineFood,
+    TeachedRecipes  =   Make Vinegar Brew;Make Wooden Barrel;Stomp Mushrooms to Yeast;Dry Fruits and Veggies;Make Ethanol Brew;Stomp Veggies to Sweet Juice;Prepare Glue Mix;Prepare Soap Mix;Make Biogas Refinery,
+    ReplaceOnUse    =   SpoonMagazineBrewing,
+    StaticModel = Magazine,
+    WorldStaticModel = MagazineMetal1Ground,
+	}
+	
+}

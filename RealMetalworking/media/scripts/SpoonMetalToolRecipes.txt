@@ -1,0 +1,1301 @@
+module SpoonMetalworkStuff
+{
+
+	imports
+	{
+		Base
+	}
+	
+	/****************************** FURNACE (MAIN MATERIALS)******************************/
+	
+	recipe Forge Metal Sheet
+    {
+       IronIngot=20,
+	   Charcoal=2,
+       SpoonMoldFull=3,
+       keep Tongs,
+       keep SpoonFurnace,
+       keep PercedWood/Lighter/Matches,
+	   keep [Recipe.GetItemTypes.Hammer],
+
+       Result                   :SheetMetal,
+       Time                     :400.0,
+       Sound                    :SpoonMetal,
+       AnimNode 				:Disassemble,
+       Prop1					:Tongs,
+       Category                 :Welding,
+	   NeedToBeLearn            :true,
+	   SkillRequired            :MetalWelding=4,
+	   OnGiveXP:Recipe.OnGiveXP.MetalWelding10,
+	   OnCreate: GetMetalworkingInjury_OnCreate,
+       CanBeDoneFromFloor       :TRUE,
+    }
+	
+	recipe Forge Metal Pipe
+    {
+       IronIngot=20,
+	   Charcoal=1,
+       SpoonMoldFull=1,
+       keep Tongs,
+       keep SpoonFurnace,
+       keep PercedWood/Lighter/Matches,
+	   keep [Recipe.GetItemTypes.Hammer],
+
+       Result                   :MetalPipe,
+       Time                     :400.0,
+       Sound                    :SpoonMetal,
+       AnimNode 				:Disassemble,
+       Prop1					:Tongs,
+       Category                 :Welding,
+	   NeedToBeLearn            :true,
+	   SkillRequired            :MetalWelding=4,
+	   OnGiveXP:Recipe.OnGiveXP.MetalWelding10,
+	   OnCreate: GetMetalworkingInjury_OnCreate,
+       CanBeDoneFromFloor       :TRUE,
+    }
+	
+	recipe Forge Metal Bar
+    {
+       IronIngot=60,
+	   Charcoal=1,
+       SpoonMoldFull=1,
+       keep Tongs,
+       keep SpoonFurnace,
+       keep PercedWood/Lighter/Matches,
+	   keep [Recipe.GetItemTypes.Hammer],
+
+       Result                   :MetalBar,
+       Time                     :400.0,
+       Sound                    :SpoonMetal,
+       AnimNode 				:Disassemble,
+       Prop1					:Tongs,
+       Category                 :Welding,
+	   NeedToBeLearn            :true,
+	   SkillRequired            :MetalWelding=4,
+	   OnGiveXP:Recipe.OnGiveXP.MetalWelding10,
+	   OnCreate: GetMetalworkingInjury_OnCreate,
+       CanBeDoneFromFloor       :TRUE,
+    }
+	
+	recipe Forge Scrap Metal
+    {
+       UnusableMetal,
+	   Charcoal=1,
+       SpoonMoldFull=1,
+       keep Tongs,
+	   keep SpoonHandDrill,
+	   keep SpoonMetalCutter,
+	   keep SpoonAnvil,
+       keep SpoonFurnace,
+       keep PercedWood/Lighter/Matches,
+	   keep [Recipe.GetItemTypes.Hammer],
+
+       Result                   :ScrapMetal=10,
+       Time                     :400.0,
+       Sound                    :SpoonMetal,
+       AnimNode 				:Disassemble,
+       Prop1					:Tongs,
+       Category                 :Welding,
+	   NeedToBeLearn            :true,
+	   SkillRequired            :MetalWelding=4,
+	   OnGiveXP                 :MetalWeldingXPLow,
+	   OnCreate: GetMetalworkingInjury_OnCreate,
+       CanBeDoneFromFloor       :TRUE,
+    }
+	
+	/****************************** FURNACE (COOKWARE)******************************/
+	
+	recipe Cut Pots out of Propane Tank
+    {
+       PropaneTankEmpty,
+	   keep SpoonHandDrill,
+	   keep SpoonMetalCutter,
+	   keep [Recipe.GetItemTypes.Hammer],
+
+       Result                   :Pot=2,
+       Time                     :300.0,
+       Sound                    :SpoonMetal,
+       AnimNode 				:Disassemble,
+       Prop1					:Hammer,
+       Category                 :Welding,
+	   SkillRequired            :MetalWelding=2,
+	   OnGiveXP:Recipe.OnGiveXP.MetalWelding15,
+	   OnCreate: GetMetalworkingInjury_OnCreate,
+       CanBeDoneFromFloor       :TRUE,
+    }
+	
+	recipe Cut Buckets out of Propane Tank
+    {
+       PropaneTankEmpty,
+	   keep SpoonHandDrill,
+	   keep SpoonMetalCutter,
+	   keep [Recipe.GetItemTypes.Hammer],
+
+       Result                   :BucketEmpty=2,
+       Time                     :300.0,
+       Sound                    :SpoonMetal,
+       AnimNode 				:Disassemble,
+       Prop1					:Hammer,
+       Category                 :Welding,
+	   SkillRequired            :MetalWelding=2,
+	   OnGiveXP:Recipe.OnGiveXP.MetalWelding15,
+	   OnCreate: GetMetalworkingInjury_OnCreate,
+       CanBeDoneFromFloor       :TRUE,
+    }
+	
+	recipe Cut Pots out of Propane Tank
+    {
+       PropaneTankEmpty,
+       BlowTorch,
+	   keep [Recipe.GetItemTypes.Hammer],
+
+       Result                   :Pot=2,
+       Time                     :100.0,
+       Sound                    :SpoonMetal,
+       AnimNode 				:Disassemble,
+       Prop1					:Hammer,
+       Category                 :Welding,
+	   SkillRequired            :MetalWelding=2,
+	   OnGiveXP:Recipe.OnGiveXP.MetalWelding15,
+	   OnCreate: GetMetalworkingInjury_OnCreate,
+       CanBeDoneFromFloor       :TRUE,
+    }
+	
+	recipe Cut Buckets out of Propane Tank
+    {
+       PropaneTankEmpty,
+       BlowTorch,
+	   keep [Recipe.GetItemTypes.Hammer],
+
+       Result                   :BucketEmpty=2,
+       Time                     :100.0,
+       Sound                    :SpoonMetal,
+       AnimNode 				:Disassemble,
+       Prop1					:Hammer,
+       Category                 :Welding,
+	   SkillRequired            :MetalWelding=2,
+	   OnGiveXP:Recipe.OnGiveXP.MetalWelding15,
+	   OnCreate: GetMetalworkingInjury_OnCreate,
+       CanBeDoneFromFloor       :TRUE,
+    }
+	
+	recipe Forge Cooking Pot
+    {
+       SheetMetal,
+       IronIngot=5,
+	   Charcoal=2,
+       SpoonMoldFull=2,
+       keep Tongs,
+	   keep SpoonHandDrill,
+	   keep SpoonMetalCutter,
+       keep SpoonFurnace,
+       keep PercedWood/Lighter/Matches,
+       keep [Recipe.GetItemTypes.Hammer],
+
+       Result                   :Pot,
+       Time                     :400.0,
+       Sound                    :SpoonMetal,
+       AnimNode 				:Disassemble,
+       Prop1					:Tongs,
+       Category                 :Welding,
+	   NeedToBeLearn            :true,
+	   SkillRequired            :MetalWelding=6,
+	   OnGiveXP:Recipe.OnGiveXP.MetalWelding25,
+	   OnCreate: GetMetalworkingInjury_OnCreate,
+       CanBeDoneFromFloor       :TRUE,
+    }
+	
+	recipe Forge Roasting Pan
+    {
+       SheetMetal,
+       IronIngot=5,
+	   Charcoal=2,
+       SpoonMoldFull=2,
+       keep Tongs,
+	   keep SpoonHandDrill,
+	   keep SpoonMetalCutter,
+       keep SpoonFurnace,
+       keep PercedWood/Lighter/Matches,
+       keep [Recipe.GetItemTypes.Hammer],
+
+       Result                   :RoastingPan,
+       Time                     :400.0,
+       Sound                    :SpoonMetal,
+       AnimNode 				:Disassemble,
+       Prop1					:Tongs,
+       Category                 :Welding,
+	   NeedToBeLearn            :true,
+	   SkillRequired            :MetalWelding=6,
+	   OnGiveXP:Recipe.OnGiveXP.MetalWelding25,
+	   OnCreate: GetMetalworkingInjury_OnCreate,
+       CanBeDoneFromFloor       :TRUE,
+    }
+	
+	recipe Forge Saucepan
+    {
+       SheetMetal,
+       IronIngot=5,
+	   Charcoal=2,
+       SpoonMoldFull=2,
+       keep Tongs,
+	   keep SpoonHandDrill,
+	   keep SpoonMetalCutter,
+       keep SpoonFurnace,
+       keep PercedWood/Lighter/Matches,
+       keep [Recipe.GetItemTypes.Hammer],
+
+       Result                   :Saucepan,
+       Time                     :400.0,
+       Sound                    :SpoonMetal,
+       AnimNode 				:Disassemble,
+       Prop1					:Tongs,
+       Category                 :Welding,
+	   NeedToBeLearn            :true,
+	   SkillRequired            :MetalWelding=6,
+	   OnGiveXP:Recipe.OnGiveXP.MetalWelding25,
+	   OnCreate: GetMetalworkingInjury_OnCreate,
+       CanBeDoneFromFloor       :TRUE,
+    }
+	
+	recipe Forge Baking Tray
+    {
+       SheetMetal,
+       IronIngot=5,
+	   Charcoal=2,
+       SpoonMoldFull=2,
+       keep Tongs,
+	   keep SpoonHandDrill,
+	   keep SpoonMetalCutter,
+       keep SpoonFurnace,
+       keep PercedWood/Lighter/Matches,
+       keep [Recipe.GetItemTypes.Hammer],
+
+       Result                   :BakingTray,
+       Time                     :400.0,
+       Sound                    :SpoonMetal,
+       AnimNode 				:Disassemble,
+       Prop1					:Tongs,
+       Category                 :Welding,
+	   NeedToBeLearn            :true,
+	   SkillRequired            :MetalWelding=6,
+	   OnGiveXP:Recipe.OnGiveXP.MetalWelding25,
+	   OnCreate: GetMetalworkingInjury_OnCreate,
+       CanBeDoneFromFloor       :TRUE,
+    }
+	
+	recipe Forge Baking Pan
+    {
+       SheetMetal,
+       IronIngot=5,
+	   Charcoal=2,
+       SpoonMoldFull=2,
+       keep Tongs,
+	   keep SpoonHandDrill,
+	   keep SpoonMetalCutter,
+       keep SpoonFurnace,
+       keep PercedWood/Lighter/Matches,
+       keep [Recipe.GetItemTypes.Hammer],
+
+       Result                   :BakingPan,
+       Time                     :400.0,
+       Sound                    :SpoonMetal,
+       AnimNode 				:Disassemble,
+       Prop1					:Tongs,
+       Category                 :Welding,
+	   NeedToBeLearn            :true,
+	   SkillRequired            :MetalWelding=6,
+	   OnGiveXP:Recipe.OnGiveXP.MetalWelding25,
+	   OnCreate: GetMetalworkingInjury_OnCreate,
+       CanBeDoneFromFloor       :TRUE,
+    }
+	
+	recipe Forge Pan
+    {
+       SheetMetal,
+       IronIngot=5,
+	   Charcoal=2,
+       SpoonMoldFull=2,
+       keep Tongs,
+	   keep SpoonHandDrill,
+	   keep SpoonMetalCutter,
+       keep SpoonFurnace,
+       keep PercedWood/Lighter/Matches,
+       keep [Recipe.GetItemTypes.Hammer],
+
+       Result                   :Pan,
+       Time                     :400.0,
+       Sound                    :SpoonMetal,
+       AnimNode 				:Disassemble,
+       Prop1					:Tongs,
+       Category                 :Welding,
+	   NeedToBeLearn            :true,
+	   SkillRequired            :MetalWelding=6,
+	   OnGiveXP:Recipe.OnGiveXP.MetalWelding25,
+	   OnCreate: GetMetalworkingInjury_OnCreate,
+       CanBeDoneFromFloor       :TRUE,
+    }
+	
+	recipe Forge Bucket
+    {
+       SheetMetal,
+       IronIngot=5,
+	   Charcoal=2,
+       SpoonMoldFull=2,
+       keep Tongs,
+	   keep SpoonHandDrill,
+	   keep SpoonMetalCutter,
+       keep SpoonFurnace,
+       keep PercedWood/Lighter/Matches,
+       keep [Recipe.GetItemTypes.Hammer],
+
+       Result                   :BucketEmpty,
+       Time                     :400.0,
+       Sound                    :SpoonMetal,
+       AnimNode 				:Disassemble,
+       Prop1					:Tongs,
+       Category                 :Welding,
+	   NeedToBeLearn            :true,
+	   SkillRequired            :MetalWelding=6,
+	   OnGiveXP:Recipe.OnGiveXP.MetalWelding25,
+	   OnCreate: GetMetalworkingInjury_OnCreate,
+       CanBeDoneFromFloor       :TRUE,
+    }
+	
+	recipe Forge Paintbucket
+    {
+       SheetMetal,
+       IronIngot=5,
+	   Charcoal=2,
+       SpoonMoldFull=2,
+       keep Tongs,
+	   keep SpoonHandDrill,
+	   keep SpoonMetalCutter,
+       keep SpoonFurnace,
+       keep PercedWood/Lighter/Matches,
+       keep [Recipe.GetItemTypes.Hammer],
+
+       Result                   :PaintbucketEmpty,
+       Time                     :400.0,
+       Sound                    :SpoonMetal,
+       AnimNode 				:Disassemble,
+       Prop1					:Tongs,
+       Category                 :Welding,
+	   NeedToBeLearn            :true,
+	   SkillRequired            :MetalWelding=6,
+	   OnGiveXP:Recipe.OnGiveXP.MetalWelding25,
+	   OnCreate: GetMetalworkingInjury_OnCreate,
+       CanBeDoneFromFloor       :TRUE,
+    }
+	
+	recipe Forge Empty Propane Tank
+    {
+       SheetMetal=4,
+	   MetalPipe=2,
+	   Charcoal=2,
+	   WeldingRods=2,
+       BlowTorch,
+	   keep SpoonHandDrill,
+	   keep SpoonMetalCutter,
+       keep [Recipe.GetItemTypes.Hammer],
+
+       Result                   :PropaneTankEmpty,
+       Time                     :400.0,
+       Sound                    :SpoonMetal,
+       AnimNode 				:Disassemble,
+       Prop1					:Tongs,
+       Category                 :Welding,
+	   NeedToBeLearn            :true,
+	   SkillRequired            :MetalWelding=8,
+	   OnGiveXP:Recipe.OnGiveXP.MetalWelding25,
+	   OnCreate: GetMetalworkingInjury_OnCreate,
+       CanBeDoneFromFloor       :TRUE,
+    }
+	
+	recipe Forge-Cut a Tincans
+    {
+       SmallSheetMetal,
+	   Charcoal=1,
+       SpoonMoldFull=1,
+       keep Tongs,
+	   keep SpoonMetalCutter,
+	   keep SpoonAnvil,
+       keep SpoonFurnace,
+       keep PercedWood/Lighter/Matches,
+       keep [Recipe.GetItemTypes.Hammer],
+
+       Result                   :TinCanEmpty=3,
+       Time                     :200.0,
+       Sound                    :SpoonMetal,
+       AnimNode 				:Disassemble,
+       Prop1					:Tongs,
+       Category                 :Welding,
+	   NeedToBeLearn            :true,
+	   SkillRequired            :MetalWelding=4,
+	   OnGiveXP                 :MetalWeldingXPLow,
+	   OnCreate: GetMetalworkingInjury_OnCreate,
+       CanBeDoneFromFloor       :TRUE,
+    }
+	
+	/****************************** ANVIL+FURNACE (ITEMS)******************************/
+	
+	recipe Forge Door Knob
+    {
+       IronIngot=10,
+	   Charcoal=1,
+       SpoonMoldFull=1,
+       keep Tongs,
+	   keep SpoonGrindstone,
+	   keep SpoonHandDrill,
+	   keep SpoonAnvil,
+       keep SpoonFurnace,
+       keep PercedWood/Lighter/Matches,
+       keep [Recipe.GetItemTypes.Hammer],
+
+       Result                   :Doorknob,
+       Time                     :400.0,
+       Sound                    :SpoonMetal,
+       AnimNode 				:Disassemble,
+       Prop1					:Tongs,
+       Category                 :Welding,
+	   NeedToBeLearn            :true,
+	   SkillRequired            :MetalWelding=6,
+	   OnGiveXP:Recipe.OnGiveXP.MetalWelding15,
+	   OnCreate: GetMetalworkingInjury_OnCreate,
+       CanBeDoneFromFloor       :TRUE,
+    }
+	
+	recipe Forge Hinge
+    {
+       IronIngot=6,
+	   Charcoal=1,
+       SpoonMoldFull=1,
+       keep Tongs,
+	   keep SpoonGrindstone,
+	   keep SpoonHandDrill,
+	   keep SpoonAnvil,
+       keep SpoonFurnace,
+       keep PercedWood/Lighter/Matches,
+       keep [Recipe.GetItemTypes.Hammer],
+
+       Result                   :Hinge,
+       Time                     :400.0,
+       Sound                    :SpoonMetal,
+       AnimNode 				:Disassemble,
+       Prop1					:Tongs,
+       Category                 :Welding,
+	   NeedToBeLearn            :true,
+	   SkillRequired            :MetalWelding=6,
+	   OnGiveXP:Recipe.OnGiveXP.MetalWelding15,
+	   OnCreate: GetMetalworkingInjury_OnCreate,
+       CanBeDoneFromFloor       :TRUE,
+    }
+	
+	recipe Forge Padlock
+    {
+       IronIngot=5,
+	   Charcoal=1,
+       SpoonMoldFull=1,
+       keep Tongs,
+	   keep SpoonGrindstone,
+	   keep SpoonHandDrill,
+	   keep SpoonAnvil,
+       keep SpoonFurnace,
+       keep PercedWood/Lighter/Matches,
+       keep [Recipe.GetItemTypes.Hammer],
+
+       Result                   :Padlock,
+       Time                     :400.0,
+       Sound                    :SpoonMetal,
+       AnimNode 				:Disassemble,
+       Prop1					:Tongs,
+       Category                 :Welding,
+	   NeedToBeLearn            :true,
+	   SkillRequired            :MetalWelding=8,
+	   OnGiveXP:Recipe.OnGiveXP.MetalWelding25,
+	   OnCreate: GetMetalworkingInjury_OnCreate,
+       CanBeDoneFromFloor       :TRUE,
+    }
+	
+	recipe Forge JarLid
+    {
+       IronIngot=20,
+	   Charcoal=3,
+       SpoonMoldFull=3,
+       keep Tongs,
+	   keep SpoonGrindstone,
+	   keep SpoonHandDrill,
+	   keep SpoonAnvil,
+       keep SpoonFurnace,
+       keep PercedWood/Lighter/Matches,
+       keep [Recipe.GetItemTypes.Hammer],
+
+       Result                   :JarLid=10,
+       Time                     :400.0,
+       Sound                    :SpoonMetal,
+       AnimNode 				:Disassemble,
+       Prop1					:Tongs,
+       Category                 :Welding,
+	   NeedToBeLearn            :true,
+	   SkillRequired            :MetalWelding=4,
+	   OnGiveXP:Recipe.OnGiveXP.MetalWelding15,
+	   OnCreate: GetMetalworkingInjury_OnCreate,
+       CanBeDoneFromFloor       :TRUE,
+    }
+	
+	recipe Forge-Cut Screws
+    {
+       IronIngot=5,
+	   Charcoal=1,
+       SpoonMoldFull=1,
+       keep Tongs,
+	   keep SpoonMetalCutter,
+	   keep SpoonAnvil,
+       keep SpoonFurnace,
+       keep PercedWood/Lighter/Matches,
+       keep [Recipe.GetItemTypes.Hammer],
+
+       Result                   :Screws=20,
+       Time                     :400.0,
+       Sound                    :SpoonMetal,
+       AnimNode 				:Disassemble,
+       Prop1					:Tongs,
+       Category                 :Welding,
+	   NeedToBeLearn            :true,
+	   SkillRequired            :MetalWelding=6,
+	   OnGiveXP                 :MetalWeldingXPLow,
+	   OnCreate: GetMetalworkingInjury_OnCreate,
+       CanBeDoneFromFloor       :TRUE,
+    }
+
+	/****************************** ANVIL+GRINDSTONE+FURNACE (TOOLS WITH WOODEN HANDLE)******************************/
+	
+	recipe Forge Shovel
+    {
+       IronIngot=60,
+	   TreeBranch=1,
+	   Charcoal=1,
+       SpoonMoldFull=1,
+       keep Tongs,
+	   keep SpoonGrindstone,
+	   keep SpoonAnvil,
+       keep SpoonFurnace,
+       keep PercedWood/Lighter/Matches,
+	   keep [Recipe.GetItemTypes.SharpKnife],
+       keep [Recipe.GetItemTypes.Hammer],
+
+       Result                   :Shovel,
+       Time                     :400.0,
+       Sound                    :SpoonMetal,
+       AnimNode 				:Disassemble,
+       Prop1					:Tongs,
+       Category                 :Welding,
+	   NeedToBeLearn            :true,
+	   SkillRequired            :MetalWelding=4,
+	   OnGiveXP:Recipe.OnGiveXP.MetalWelding20,
+	   OnCreate: GetMetalworkingInjury_OnCreate,
+       CanBeDoneFromFloor       :TRUE,
+    }
+	
+	recipe Forge PickAxe
+    {
+       IronIngot=60,
+	   TreeBranch=1,
+	   Charcoal=1,
+       SpoonMoldFull=1,
+       keep Tongs,
+	   keep SpoonGrindstone,
+	   keep SpoonAnvil,
+       keep SpoonFurnace,
+       keep PercedWood/Lighter/Matches,
+	   keep [Recipe.GetItemTypes.SharpKnife],
+       keep [Recipe.GetItemTypes.Hammer],
+
+       Result                   :PickAxe,
+       Time                     :400.0,
+       Sound                    :SpoonMetal,
+       AnimNode 				:Disassemble,
+       Prop1					:Tongs,
+       Category                 :Welding,
+	   NeedToBeLearn            :true,
+	   SkillRequired            :MetalWelding=4,
+	   OnGiveXP:Recipe.OnGiveXP.MetalWelding20,
+	   OnCreate: GetMetalworkingInjury_OnCreate,
+       CanBeDoneFromFloor       :TRUE,
+    }
+
+	recipe Forge Screwdriver
+    {
+       IronIngot=10,
+	   TreeBranch=1,
+	   Charcoal=1,
+       SpoonMoldFull=1,
+       keep Tongs,
+	   keep SpoonGrindstone,
+	   keep SpoonAnvil,
+       keep SpoonFurnace,
+       keep PercedWood/Lighter/Matches,
+	   keep [Recipe.GetItemTypes.SharpKnife],
+       keep [Recipe.GetItemTypes.Hammer],
+
+       Result                   :Screwdriver,
+       Time                     :400.0,
+       Sound                    :SpoonMetal,
+       AnimNode 				:Disassemble,
+       Prop1					:Tongs,
+       Category                 :Welding,
+	   NeedToBeLearn            :true,
+	   SkillRequired            :MetalWelding=3,
+	   OnGiveXP:Recipe.OnGiveXP.MetalWelding20,
+	   OnCreate: GetMetalworkingInjury_OnCreate,
+       CanBeDoneFromFloor       :TRUE,
+    }
+	
+	recipe Forge Crowbar
+    {
+       IronIngot=60,
+	   TreeBranch=1,
+	   Charcoal=1,
+       SpoonMoldFull=1,
+       keep Tongs,
+	   keep SpoonGrindstone,
+	   keep SpoonAnvil,
+       keep SpoonFurnace,
+       keep PercedWood/Lighter/Matches,
+	   keep [Recipe.GetItemTypes.SharpKnife],
+       keep [Recipe.GetItemTypes.Hammer],
+
+       Result                   :Crowbar,
+       Time                     :400.0,
+       Sound                    :SpoonMetal,
+       AnimNode 				:Disassemble,
+       Prop1					:Tongs,
+       Category                 :Welding,
+	   NeedToBeLearn            :true,
+	   SkillRequired            :MetalWelding=4,
+	   OnGiveXP:Recipe.OnGiveXP.MetalWelding20,
+	   OnCreate: GetMetalworkingInjury_OnCreate,
+       CanBeDoneFromFloor       :TRUE,
+    }
+	
+	recipe Forge Hammer
+    {
+       IronIngot=20,
+	   TreeBranch=1,
+	   Charcoal=1,
+       SpoonMoldFull=1,
+       keep Tongs,
+	   keep SpoonGrindstone,
+	   keep SpoonAnvil,
+       keep SpoonFurnace,
+       keep PercedWood/Lighter/Matches,
+	   keep [Recipe.GetItemTypes.SharpKnife],
+       keep [Recipe.GetItemTypes.Hammer],
+
+       Result                   :Hammer,
+       Time                     :400.0,
+       Sound                    :SpoonMetal,
+       AnimNode 				:Disassemble,
+       Prop1					:Tongs,
+       Category                 :Welding,
+	   NeedToBeLearn            :true,
+	   SkillRequired            :MetalWelding=4,
+	   OnGiveXP:Recipe.OnGiveXP.MetalWelding20,
+	   OnCreate: GetMetalworkingInjury_OnCreate,
+       CanBeDoneFromFloor       :TRUE,
+    }
+	
+	recipe Forge Wood Axe
+    {
+       IronIngot=60,
+	   TreeBranch=1,
+	   Charcoal=1,
+       SpoonMoldFull=1,
+       keep Tongs,
+	   keep SpoonGrindstone,
+	   keep SpoonAnvil,
+       keep SpoonFurnace,
+       keep PercedWood/Lighter/Matches,
+	   keep [Recipe.GetItemTypes.SharpKnife],
+       keep [Recipe.GetItemTypes.Hammer],
+
+       Result                   :WoodAxe,
+       Time                     :400.0,
+       Sound                    :SpoonMetal,
+       AnimNode 				:Disassemble,
+       Prop1					:Tongs,
+       Category                 :Welding,
+	   NeedToBeLearn            :true,
+	   SkillRequired            :MetalWelding=4,
+	   OnGiveXP:Recipe.OnGiveXP.MetalWelding20,
+	   OnCreate: GetMetalworkingInjury_OnCreate,
+       CanBeDoneFromFloor       :TRUE,
+    }
+	
+	recipe Forge Sledgehammer
+    {
+       IronIngot=100,
+	   TreeBranch=1,
+	   Charcoal=1,
+       SpoonMoldFull=1,
+       keep Tongs,
+	   keep SpoonGrindstone,
+	   keep SpoonAnvil,
+       keep SpoonFurnace,
+       keep PercedWood/Lighter/Matches,
+	   keep [Recipe.GetItemTypes.SharpKnife],
+       keep [Recipe.GetItemTypes.Hammer],
+
+       Result                   :Sledgehammer2,
+       Time                     :400.0,
+       Sound                    :SpoonMetal,
+       AnimNode 				:Disassemble,
+       Prop1					:Tongs,
+       Category                 :Welding,
+	   NeedToBeLearn            :true,
+	   SkillRequired            :MetalWelding=4,
+	   OnGiveXP:Recipe.OnGiveXP.MetalWelding20,
+	   OnCreate: GetMetalworkingInjury_OnCreate,
+       CanBeDoneFromFloor       :TRUE,
+    }
+	
+	recipe Forge Machete
+    {
+       IronIngot=20,
+	   TreeBranch=1,
+	   Charcoal=1,
+       SpoonMoldFull=1,
+       keep Tongs,
+	   keep SpoonGrindstone,
+	   keep SpoonAnvil,
+       keep SpoonFurnace,
+       keep PercedWood/Lighter/Matches,
+	   keep [Recipe.GetItemTypes.SharpKnife],
+       keep [Recipe.GetItemTypes.Hammer],
+
+       Result                   :Machete,
+       Time                     :400.0,
+       Sound                    :SpoonMetal,
+       AnimNode 				:Disassemble,
+       Prop1					:Tongs,
+       Category                 :Welding,
+	   NeedToBeLearn            :true,
+	   SkillRequired            :MetalWelding=6,
+	   OnGiveXP:Recipe.OnGiveXP.MetalWelding25,
+	   OnCreate: GetMetalworkingInjury_OnCreate,
+       CanBeDoneFromFloor       :TRUE,
+    }
+
+	recipe Forge Pipe Wrench
+    {
+       IronIngot=20,
+	   Charcoal=1,
+       SpoonMoldFull=1,
+       keep Tongs,
+	   keep SpoonAnvil,
+       keep SpoonFurnace,
+       keep PercedWood/Lighter/Matches,
+       keep [Recipe.GetItemTypes.Hammer],
+
+       Result                   :PipeWrench,
+       Time                     :400.0,
+       Sound                    :SpoonMetal,
+       AnimNode 				:Disassemble,
+       Prop1					:Tongs,
+       Category                 :Welding,
+	   NeedToBeLearn            :true,
+	   SkillRequired            :MetalWelding=8,
+	   OnGiveXP:Recipe.OnGiveXP.MetalWelding25,
+	   OnCreate: GetMetalworkingInjury_OnCreate,
+       CanBeDoneFromFloor       :TRUE,
+    }
+	
+	recipe Forge Wrench
+    {
+       IronIngot=20,
+	   Charcoal=1,
+       SpoonMoldFull=1,
+       keep Tongs,
+	   keep SpoonAnvil,
+       keep SpoonFurnace,
+       keep PercedWood/Lighter/Matches,
+       keep [Recipe.GetItemTypes.Hammer],
+
+       Result                   :Wrench,
+       Time                     :400.0,
+       Sound                    :SpoonMetal,
+       AnimNode 				:Disassemble,
+       Prop1					:Tongs,
+       Category                 :Welding,
+	   NeedToBeLearn            :true,
+	   SkillRequired            :MetalWelding=6,
+	   OnGiveXP:Recipe.OnGiveXP.MetalWelding25,
+	   OnCreate: GetMetalworkingInjury_OnCreate,
+       CanBeDoneFromFloor       :TRUE,
+    }
+	
+	recipe Forge Lug Wrench
+    {
+       IronIngot=20,
+	   Charcoal=1,
+       SpoonMoldFull=1,
+       keep Tongs,
+	   keep SpoonAnvil,
+       keep SpoonFurnace,
+       keep PercedWood/Lighter/Matches,
+       keep [Recipe.GetItemTypes.Hammer],
+
+       Result                   :LugWrench,
+       Time                     :400.0,
+       Sound                    :SpoonMetal,
+       AnimNode 				:Disassemble,
+       Prop1					:Tongs,
+       Category                 :Welding,
+	   NeedToBeLearn            :true,
+	   SkillRequired            :MetalWelding=6,
+	   OnGiveXP:Recipe.OnGiveXP.MetalWelding20,
+	   OnCreate: GetMetalworkingInjury_OnCreate,
+       CanBeDoneFromFloor       :TRUE,
+    }
+
+	recipe Cut Metal Sheet
+    {
+       SheetMetal,
+       keep SpoonMetalCutter,
+
+       Result                   :SmallSheetMetal=3,
+       Time                     :400.0,
+       AnimNode 				:Disassemble,
+       Prop1					:SutureNeedleHolder,
+       Category                 :Welding,
+	   SkillRequired            :MetalWelding=1,
+	   OnGiveXP                 :MetalWeldingXPLow,
+	   OnCreate: GetMetalworkingInjury_OnCreate,
+       CanBeDoneFromFloor       :TRUE,
+    }
+	
+	recipe Cut Wire
+    {
+       SheetMetal,
+       keep SpoonMetalCutter,
+
+       Result                   :Wire=4,
+       Time                     :400.0,
+       AnimNode 				:Disassemble,
+       Prop1					:SutureNeedleHolder,
+       Category                 :Welding,
+	   SkillRequired            :MetalWelding=2,
+	   OnGiveXP:Recipe.OnGiveXP.MetalWelding20,
+	   OnCreate: GetMetalworkingInjury_OnCreate,
+       CanBeDoneFromFloor       :TRUE,
+    }
+	
+	recipe Cut Barbed Wire
+    {
+       Wire=10,
+	   keep SpoonGrindstone,
+       keep SpoonMetalCutter,
+	   keep [Recipe.GetItemTypes.Hammer],
+
+       Result                   :BarbedWire,
+       Time                     :400.0,
+       Sound                    :SpoonMetal,
+       AnimNode 				:Disassemble,
+       Prop1					:Hammer,
+       Category                 :Welding,
+	   SkillRequired            :MetalWelding=3,
+	   OnGiveXP:Recipe.OnGiveXP.MetalWelding20,
+	   OnCreate: GetMetalworkingInjury_OnCreate,
+       CanBeDoneFromFloor       :TRUE,
+    }
+
+	recipe Cut Nails
+    {
+       SheetMetal,
+	   keep SpoonGrindstone,
+       keep SpoonMetalCutter,
+	   keep [Recipe.GetItemTypes.Hammer],
+
+       Result                   :Nails=20,
+       Time                     :300.0,
+       Sound                    :SpoonMetal,
+       AnimNode 				:Disassemble,
+       Prop1					:SutureNeedleHolder,
+       Category                 :Welding,
+	   SkillRequired            :MetalWelding=2,
+	   OnGiveXP                 :MetalWeldingXPHigh,
+	   OnCreate: GetMetalworkingInjury_OnCreate,
+       CanBeDoneFromFloor       :TRUE,
+    }
+	
+	recipe Cut Nails
+    {
+       SmallSheetMetal,
+	   keep SpoonGrindstone,
+       keep SpoonMetalCutter,
+	   keep [Recipe.GetItemTypes.Hammer],
+
+       Result                   :Nails=6,
+       Time                     :100.0,
+       Sound                    :SpoonMetal,
+       AnimNode 				:Disassemble,
+       Prop1					:SutureNeedleHolder,
+       Category                 :Welding,
+	   SkillRequired            :MetalWelding=2,
+	   OnGiveXP                 :MetalWeldingXPLow,
+	   OnCreate: GetMetalworkingInjury_OnCreate,
+       CanBeDoneFromFloor       :TRUE,
+    }
+	
+	recipe Cut Paperclip
+    {
+       Nails,
+       keep SpoonMetalCutter,
+
+       Result                   :Paperclip,
+       Time                     :30.0,
+       AnimNode 				:Disassemble,
+       Prop1					:SutureNeedleHolder,
+       Category                 :Welding,
+	   SkillRequired            :MetalWelding=2,
+       CanBeDoneFromFloor       :TRUE,
+    }
+	
+	recipe Cut Needle
+    {
+       Nails,
+	   keep SpoonGrindstone,
+       keep SpoonMetalCutter,
+
+       Result                   :Needle,
+       Time                     :30.0,
+       AnimNode 				:Disassemble,
+       Prop1					:SutureNeedleHolder,
+       Category                 :Welding,
+	   NeedToBeLearn            :true,
+	   SkillRequired            :MetalWelding=2,
+       CanBeDoneFromFloor       :TRUE,
+    }
+	
+	recipe Cut Suture Needle
+    {
+       Needle,
+       keep SpoonMetalCutter,
+	   keep [Recipe.GetItemTypes.Hammer],
+
+       Result                   :SutureNeedle,
+       Time                     :30.0,
+       AnimNode 				:Disassemble,
+       Prop1					:SutureNeedleHolder,
+       Category                 :Welding,
+	   NeedToBeLearn            :true,
+	   SkillRequired            :MetalWelding=2,
+       CanBeDoneFromFloor       :TRUE,
+    }
+	
+	recipe Cut Paperclip
+    {
+       SmallSheetMetal,
+       keep SpoonMetalCutter,
+
+       Result                   :Paperclip=33,
+       Time                     :30.0,
+       AnimNode 				:Disassemble,
+       Prop1					:SutureNeedleHolder,
+       Category                 :Welding,
+	   SkillRequired            :MetalWelding=2,
+	   OnGiveXP                 :MetalWeldingXPLow,
+	   OnCreate: GetMetalworkingInjury_OnCreate,
+       CanBeDoneFromFloor       :TRUE,
+    }
+	
+	recipe Cut Spoon
+    {
+       SmallSheetMetal,
+	   keep SpoonGrindstone,
+	   keep SpoonAnvil,
+       keep SpoonMetalCutter,
+	   keep [Recipe.GetItemTypes.Hammer],
+
+       Result                   :Spoon,
+       Time                     :100.0,
+       Sound                    :SpoonMetal,
+       AnimNode 				:Disassemble,
+       Prop1					:SutureNeedleHolder,
+       Category                 :Welding,
+	   SkillRequired            :MetalWelding=2,
+	   OnGiveXP                 :MetalWeldingXPLow,
+	   OnCreate: GetMetalworkingInjury_OnCreate,
+       CanBeDoneFromFloor       :TRUE,
+    }
+	
+	recipe Forge-Cut Scissors
+    {
+       SmallSheetMetal,
+	   keep SpoonGrindstone,
+	   keep SpoonAnvil,
+       keep SpoonMetalCutter,
+	   keep [Recipe.GetItemTypes.Hammer],
+
+       Result                   :Scissors,
+       Time                     :200.0,
+       Sound                    :SpoonMetal,
+       AnimNode 				:Disassemble,
+       Prop1					:SutureNeedleHolder,
+       Category                 :Welding,
+	   NeedToBeLearn            :true,
+	   SkillRequired            :MetalWelding=4,
+	   OnGiveXP                 :MetalWeldingXPLow,
+	   OnCreate: GetMetalworkingInjury_OnCreate,
+       CanBeDoneFromFloor       :TRUE,
+    }
+	
+	recipe Forge-Cut Hunting Knife
+    {
+       SmallSheetMetal,
+	   TreeBranch,
+	   keep SpoonGrindstone,
+	   keep SpoonAnvil,
+       keep SpoonMetalCutter,
+	   keep [Recipe.GetItemTypes.SharpKnife],
+	   keep [Recipe.GetItemTypes.Hammer],
+
+       Result                   :HuntingKnife,
+       Time                     :200.0,
+       Sound                    :SpoonMetal,
+       AnimNode 				:Disassemble,
+       Prop1					:SutureNeedleHolder,
+       Category                 :Welding,
+	   NeedToBeLearn            :true,
+	   SkillRequired            :MetalWelding=4,
+	   OnGiveXP                 :MetalWeldingXPLow,
+	   OnCreate: GetMetalworkingInjury_OnCreate,
+       CanBeDoneFromFloor       :TRUE,
+    }
+	
+	recipe Forge-Cut Saw
+    {
+       SmallSheetMetal,
+	   TreeBranch,
+	   keep SpoonGrindstone,
+	   keep SpoonAnvil,
+       keep SpoonMetalCutter,
+	   keep [Recipe.GetItemTypes.SharpKnife],
+	   keep [Recipe.GetItemTypes.Hammer],
+
+       Result                   :Saw,
+       Time                     :400.0,
+       Sound                    :SpoonMetal,
+       AnimNode 				:Disassemble,
+       Prop1					:SutureNeedleHolder,
+       Category                 :Welding,
+	   NeedToBeLearn            :true,
+	   SkillRequired            :MetalWelding=4,
+	   OnGiveXP                 :MetalWeldingXPLow,
+	   OnCreate: GetMetalworkingInjury_OnCreate,
+       CanBeDoneFromFloor       :TRUE,
+    }
+	
+	recipe Forge-Cut Suture Needle Holder
+    {
+       SmallSheetMetal,
+	   keep SpoonGrindstone,
+	   keep SpoonAnvil,
+       keep SpoonMetalCutter,
+	   keep [Recipe.GetItemTypes.SharpKnife],
+	   keep [Recipe.GetItemTypes.Hammer],
+
+       Result                   :SutureNeedleHolder,
+       Time                     :400.0,
+       Sound                    :SpoonMetal,
+       AnimNode 				:Disassemble,
+       Prop1					:SutureNeedleHolder,
+       Category                 :Welding,
+	   NeedToBeLearn            :true,
+	   SkillRequired            :MetalWelding=4,
+	   OnGiveXP                 :MetalWeldingXPLow,
+	   OnCreate: GetMetalworkingInjury_OnCreate,
+       CanBeDoneFromFloor       :TRUE,
+    }
+	
+	recipe Forge-Cut Tweezers
+    {
+       SmallSheetMetal,
+	   keep SpoonGrindstone,
+	   keep SpoonAnvil,
+       keep SpoonMetalCutter,
+	   keep [Recipe.GetItemTypes.SharpKnife],
+	   keep [Recipe.GetItemTypes.Hammer],
+
+       Result                   :Tweezers,
+       Time                     :400.0,
+       Sound                    :SpoonMetal,
+       AnimNode 				:Disassemble,
+       Prop1					:SutureNeedleHolder,
+       Category                 :Welding,
+	   NeedToBeLearn            :true,
+	   SkillRequired            :MetalWelding=3,
+	   OnGiveXP                 :MetalWeldingXPLow,
+	   OnCreate: GetMetalworkingInjury_OnCreate,
+       CanBeDoneFromFloor       :TRUE,
+    }
+	
+	recipe Make Choke Tube Full
+    {
+       SmallSheetMetal=2,
+       MetalPipe,
+	   keep Tongs,
+	   keep SpoonMetalCutter,
+	   keep SpoonAnvil,
+       keep SpoonFurnace,
+       keep PercedWood/Lighter/Matches,
+       keep [Recipe.GetItemTypes.Hammer],
+
+       Result                   :ChokeTubeFull,
+       Time                     :400.0,
+       Sound                    :SpoonMetal,
+       AnimNode 				:Disassemble,
+       Prop1					:Tongs,
+       Category                 :Welding,
+	   SkillRequired            :MetalWelding=4,
+	   OnGiveXP:Recipe.OnGiveXP.MetalWelding15,
+	   OnCreate: GetMetalworkingInjury_OnCreate,
+       CanBeDoneFromFloor       :TRUE,
+    }
+	
+	recipe Forge Weapon Parts
+    {
+       IronIngot=40,
+	   WeldingRods=1,
+       BlowTorch=1,
+	   keep Tongs,
+	   keep SpoonMetalCutter,
+	   keep SpoonHandDrill,
+	   keep SpoonAnvil,
+       keep SpoonFurnace,
+       keep PercedWood/Lighter/Matches,
+       keep [Recipe.GetItemTypes.Hammer],
+
+       Result                   :WeaponParts,
+       Time                     :600.0,
+       Sound                    :SpoonMetal,
+       AnimNode 				:Disassemble,
+       Prop1					:Tongs,
+       Category                 :Welding,
+	   NeedToBeLearn            :true,
+	   SkillRequired            :MetalWelding=8;Mechanics=8,
+	   OnGiveXP:Recipe.OnGiveXP.MetalWelding15,
+	   OnCreate: GetMetalworkingInjury_OnCreate,
+       CanBeDoneFromFloor       :TRUE,
+    }
+	
+	/****************************** BIG STUFF ******************************/
+	
+	recipe Build Antique Oven
+    {
+       SheetMetal=10,
+	   MetalPipe=4,
+	   MetalBar=4,
+       IronIngot=100,
+	   Screws=100,
+	   Charcoal=2,
+       SpoonMoldFull=2,
+       keep Tongs,
+	   keep SpoonHandDrill,
+	   keep SpoonMetalCutter,
+       keep SpoonFurnace,
+       keep PercedWood/Lighter/Matches,
+       keep [Recipe.GetItemTypes.Hammer],
+
+       Result                   :Mov_AntiqueStove,
+       Time                     :800.0,
+       Sound                    :SpoonMetal,
+       AnimNode 				:Disassemble,
+       Prop1					:Tongs,
+       Category                 :Welding,
+	   NeedToBeLearn            :true,
+	   SkillRequired            :MetalWelding=6;Woodwork=6,
+	   OnGiveXP:Recipe.OnGiveXP.MetalWelding25,
+	   OnCreate: GetMetalworkingInjury_OnCreate,
+       CanBeDoneFromFloor       :TRUE,
+    }
+	
+	recipe Build a BBQ
+    {
+       SheetMetal=2,
+	   MetalPipe=2,
+	   Screws=20,
+	   Charcoal=1,
+       SpoonMoldFull=1,
+       keep Tongs,
+	   keep SpoonHandDrill,
+	   keep SpoonMetalCutter,
+       keep SpoonFurnace,
+       keep PercedWood/Lighter/Matches,
+       keep [Recipe.GetItemTypes.Hammer],
+
+       Result                   :Mov_RedBBQ,
+       Time                     :400.0,
+       Sound                    :SpoonMetal,
+       AnimNode 				:Disassemble,
+       Prop1					:Tongs,
+       Category                 :Welding,
+	   NeedToBeLearn            :true,
+	   SkillRequired            :MetalWelding=4;Woodwork=4,
+	   OnGiveXP:Recipe.OnGiveXP.MetalWelding25,
+	   OnCreate: GetMetalworkingInjury_OnCreate,
+       CanBeDoneFromFloor       :TRUE,
+    }
+	
+	/****************************** WELDINGRODS******************************/
+	
+	recipe Craft Welding rods
+    {
+       SheetMetal=1,
+	   GoldNugget/SilverNugget,
+	   Charcoal=1,
+       SpoonMoldFull=1,
+       keep Tongs,
+	   keep SpoonMetalCutter,
+	   keep SpoonAnvil,
+       keep SpoonFurnace,
+       keep PercedWood/Lighter/Matches,
+       keep [Recipe.GetItemTypes.Hammer],
+
+       Result                   :WeldingRods,
+       Time                     :400.0,
+       Sound                    :SpoonMetal,
+       AnimNode 				:Disassemble,
+       Prop1					:Tongs,
+       Category                 :Welding,
+	   NeedToBeLearn            :true,
+	   SkillRequired            :MetalWelding=8,
+	   OnGiveXP:Recipe.OnGiveXP.MetalWelding25,
+	   OnCreate: GetMetalworkingInjury_OnCreate,
+       CanBeDoneFromFloor       :TRUE,
+    }
+	
+	recipe Forge a Jack
+    {
+       SmallSheetMetal,
+       MetalPipe=2,
+	   keep Tongs,
+	   keep SpoonMetalCutter,
+	   keep SpoonAnvil,
+       keep SpoonFurnace,
+       keep PercedWood/Lighter/Matches,
+       keep [Recipe.GetItemTypes.Hammer],
+
+       Result                   :Jack,
+       Time                     :400.0,
+       Sound                    :SpoonMetal,
+       AnimNode 				:Disassemble,
+       Prop1					:Tongs,
+       Category                 :Welding,
+	   NeedToBeLearn            :true,
+	   SkillRequired            :MetalWelding=6,
+	   OnGiveXP:Recipe.OnGiveXP.MetalWelding15,
+	   OnCreate: GetMetalworkingInjury_OnCreate,
+       CanBeDoneFromFloor       :TRUE,
+    }
+
+}

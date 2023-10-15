@@ -1,0 +1,16 @@
+Items_IT = {
+  DisplayNameCardboard = "Cartone",
+  DisplayNameCardboard_Bed = "Letto di Cartone",
+  DisplayNameEmpty_Water_Gallon = "Gallone vuoto",
+  DisplayNameLetter = "Lettera",
+  DisplayNamePackage = "Pacchetto",
+  DisplayNamePaint_Bucket_with_Water = "Secchio de Vernice con Acqua",
+  DisplayNameTin_Can_with_Water = "Latta con Acqua",
+  DisplayNameWater_Gallon = "Gallone con Acqua",
+
+  DisplayName_Advanced_Scavenging = "Cercare avanzata",
+  DisplayNameScavenging_for_Beginners = "Cercare per principianti",
+  DisplayNameScavenging_for_Intermediates = "Cercare intermedia",
+  DisplayName_Expert_Scavenging = "Cercare per esperti",
+  DisplayName_Master_Scavenging = "Cercare per maestri",
+}

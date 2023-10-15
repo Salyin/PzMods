@@ -1,0 +1,17 @@
+Recipe_RU = {
+	Recipe_Craft_Herbal_Vitamins = "Сделать травянные витамины",
+	Recipe_Craft_Herbal_Antibiotics Brew = "Сделать ферментированные травянные антибиотики",
+	Recipe_Empty_Bowl_of_Antibiotics = "Вынуть из миски травянные антибиотики",
+	Recipe_Craft_Herbal_Painkillers_Brew = "Сделать травянное болеутоляющие",
+	Recipe_Empty_Bowl_of_Painkillers = "Вынуть из миски тряванные болеутоляющии",
+	Recipe_Disinfect_Rag = "Дезинфицировать тряпку",
+	Recipe_Disinfect_Bandage = "Дезинфицировать бинт",
+	Recipe_Make_Mortar_and_Pestle = "Сделать ступку и пестик",	
+	Recipe_Extract_Antibiotics_from_Moldy_Bread = "Извлечь антибиотики из заплесневелого хлеба",
+	Recipe_Make_Herbal_Antibiotics = "Сделать травянные антибиотики",
+	Recipe_Make_Vitamins = "Сделать витамины",
+	Recipe_Make_Natural_Antidepressants = "Сделать натуральные антидепрессанты",
+	Recipe_Make_Natural_Beta_Blockers = "Сделать натуральные бета-блокаторы",	
+	Recipe_Prepare_Herbal_Tea = "Приготовить травянной чай",
+	Recipe_Break_pieces_of_charcoal = "Сломать уголь на куски",
+}

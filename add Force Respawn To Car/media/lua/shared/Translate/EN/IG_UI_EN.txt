@@ -1,0 +1,26 @@
+IG_UI_EN = {
+   
+IGUI_RIC_kick_the_disconnected_players_info = "To kick the disconnected passengers, the option is visible from the outside, the door must be open.",
+IGUI_RIC_kick_the_disconnected_players_info_Boat = "To kick the disconnected passengers, the option is visible from Inside.",
+IGUI_RIC_no_more_place = "No more place for me !",
+IGUI_RIC_playerIsExpulsed = "",
+IGUI_RIC_Is_Expulsed = " is kicked",
+IGUI_RIC_checkNames = "Check passengers",
+IGUI_RIC_Expulse_player_to = "Kick passenger to",
+IGUI_RIC_SeatNumber = "Seat n°",
+IGUI_RIC_You_should_getout_vehicle = "You should get out vehicle.",
+IGUI_RIC_You_should_get_near_vehicle = "You should get near vehicle",
+IGUI_RIC_JustYou = "You are alone.",
+
+IGUI_Theres_someone_inside = "There's someone inside",
+IGUI_There_is_no_one_on_the_seat = "There is no body on the seat.",
+IGUI_player_is_present_inside = "The passenger is present inside !",
+IGUI_There_is_nobody = "There is nobody !",
+
+
+
+
+
+
+
+    }

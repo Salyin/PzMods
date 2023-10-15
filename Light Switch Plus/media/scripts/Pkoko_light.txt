@@ -1,0 +1,71 @@
+module Base
+{
+    /* 스위치 아이템 */
+	item Light_Switch_01_0 {
+        DisplayCategory = Furniture,
+		Type = Moveable,
+		Icon = PkokoLightSwitch,
+		Weight = 5.0,
+		DisplayName = Light Switch 1(NewBuilding),
+		WorldObjectSprite = Light_Switch_01_0,
+		}
+    item Light_Switch_01_4 {
+        DisplayCategory = Furniture,
+		Type = Moveable,
+		Icon = PkokoLightSwitch,
+		Weight = 5.0,
+		DisplayName = Light Switch 2(NewBuilding),
+		WorldObjectSprite = Light_Switch_01_4,
+		}
+	
+    /*책 레시피*/
+	item Lightswitches_NewBuilding
+    {
+        DisplayCategory = SkillBook,
+        Weight	=	0.2,
+        Type	=	Literature,
+        DisplayName	=	Lightswitches_NewBuilding,
+        Icon	=	MagazineElectronics03,
+        TeachedRecipes  =   Make Light Switch 1 New;Make Light Switch 2 New,
+        ReplaceOnUse    =   Lightswitches_NewBuilding,
+        StaticModel = Magazine,
+        WorldStaticModel = MagazineElec3Ground,
+    }
+	
+    /* 레시피 */
+    recipe Make Light Switch 1 New {
+		keep Screwdriver,
+		keep Wrench,
+		keep Scissors,
+		Wire=5,
+		Radio.ElectricWire=10,
+		ElectronicsScrap=5,
+		Screws=2,
+		OnGiveXP:Recipe.OnGiveXP.DismantleElectronics,
+		AnimNode:Disassemble,
+		Result:Light_Switch_01_0,
+		CanBeDoneFromFloor:TRUE,
+		NeedToBeLearn:true,
+		SkillRequired:Electricity=5,
+		Time:120.0,
+		Category:Electrical,
+	}
+	recipe Make Light Switch 2 New {
+		keep Screwdriver,
+		keep Wrench,
+		keep Scissors,
+		Wire=5,
+		Radio.ElectricWire=10,
+		ElectronicsScrap=5,
+		Screws=2,
+		OnGiveXP:Recipe.OnGiveXP.DismantleElectronics,
+		AnimNode:Disassemble,
+		Result:Light_Switch_01_4,
+		CanBeDoneFromFloor:TRUE,
+		NeedToBeLearn:true,
+		SkillRequired:Electricity=5,
+		Time:120.0,
+		Category:Electrical,
+	}
+
+}

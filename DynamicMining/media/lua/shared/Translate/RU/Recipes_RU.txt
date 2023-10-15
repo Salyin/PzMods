@@ -1,0 +1,15 @@
+Recipes_RU = {
+
+-- SpoonDynamicMining.txt
+	Recipe_Investigate_the_rocks				= "Осмотреть камни",
+	Recipe_Crush_rocks							= "Дробить камни",
+	Recipe_Mine_Iron							= "Добывать железо",
+	Recipe_Mine_Salt							= "Добывать соль",
+	Recipe_Mine_Coal							= "Добывать уголь",
+	Recipe_Mine_Aluminum						= "Добывать алюминий",
+	Recipe_Mine_Silver							= "Добывать серебро",
+	Recipe_Mine_Gold							= "Добывать золото",
+	Recipe_Stomp_Rock_Salt_to_Salt				= "Измельчить каменную соль",
+	Recipe_Break_down_Coal_Ore_to_Charcoal		= "Разбить угольную руду",
+
+}

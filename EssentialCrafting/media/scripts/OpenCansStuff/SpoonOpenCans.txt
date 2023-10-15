@@ -1,0 +1,204 @@
+module SpoonEssentialCrafting
+{
+
+	imports
+	{
+		Base
+	}
+
+	recipe Open Canned Soup the Hardway
+    {
+       TinnedSoup,
+       keep [Recipe.GetItemTypes.SharpKnife]/[Recipe.GetItemTypes.Hammer]/MeatCleaver/Saw/HandAxe/AxeStone/Axe/WoodAxe,
+
+       Result:TinnedSoupOpen,
+       Time:120.0,
+       Category:Cooking,
+       OnGiveXP:Recipe.OnGiveXP.None,
+	   OnCreate: GetCanOpeningInjury_OnCreate,
+       Sound:OpenCannedFood,
+    }
+
+    recipe Open Canned Fruit Cocktail the Hardway
+    {
+       CannedFruitCocktail,
+       keep [Recipe.GetItemTypes.SharpKnife]/[Recipe.GetItemTypes.Hammer]/MeatCleaver/Saw/HandAxe/AxeStone/Axe/WoodAxe,
+
+       Result:CannedFruitCocktailOpen,
+       Time:120.0,
+       Category:Cooking,
+       OnGiveXP:Recipe.OnGiveXP.None,
+	   OnCreate: GetCanOpeningInjury_OnCreate,
+       Sound:OpenCannedFood,
+    }
+
+    recipe Open Canned Fruit Beverage the Hardway
+    {
+       CannedFruitBeverage,
+       keep [Recipe.GetItemTypes.SharpKnife]/[Recipe.GetItemTypes.Hammer]/MeatCleaver/Saw/HandAxe/AxeStone/Axe/WoodAxe,
+
+       Result:CannedFruitBeverageOpen,
+       Time:120.0,
+       Category:Cooking,
+       OnGiveXP:Recipe.OnGiveXP.None,
+	   OnCreate: GetCanOpeningInjury_OnCreate,
+       Sound:OpenCannedFood,
+    }
+
+    recipe Open Canned Peaches the Hardway
+    {
+       CannedPeaches,
+       keep [Recipe.GetItemTypes.SharpKnife]/[Recipe.GetItemTypes.Hammer]/MeatCleaver/Saw/HandAxe/AxeStone/Axe/WoodAxe,
+
+       Result:CannedPeachesOpen,
+       Time:120.0,
+       Category:Cooking,
+       OnGiveXP:Recipe.OnGiveXP.None,
+	   OnCreate: GetCanOpeningInjury_OnCreate,
+       Sound:OpenCannedFood,
+    }
+
+    recipe Open Canned Pineapple the Hardway
+    {
+       CannedPineapple,
+       keep [Recipe.GetItemTypes.SharpKnife]/[Recipe.GetItemTypes.Hammer]/MeatCleaver/Saw/HandAxe/AxeStone/Axe/WoodAxe,
+
+       Result:CannedPineappleOpen,
+       Time:120.0,
+       Category:Cooking,
+       OnGiveXP:Recipe.OnGiveXP.None,
+	   OnCreate: GetCanOpeningInjury_OnCreate,
+       Sound:OpenCannedFood,
+    }
+	
+	recipe Open Canned Beans the Hardway
+	{
+	   TinnedBeans,
+	   keep [Recipe.GetItemTypes.SharpKnife]/[Recipe.GetItemTypes.Hammer]/MeatCleaver/Saw/HandAxe/AxeStone/Axe/WoodAxe,
+
+	   Result:OpenBeans,
+	   Time:120.0,
+	   Category:Cooking,
+	   OnGiveXP:Recipe.OnGiveXP.None,
+	   OnCreate: GetCanOpeningInjury_OnCreate,
+       Sound:OpenCannedFood,
+	}
+
+	recipe Open Dog Food the Hardway
+	{
+	   Dogfood,
+	   keep [Recipe.GetItemTypes.SharpKnife]/[Recipe.GetItemTypes.Hammer]/MeatCleaver/Saw/HandAxe/AxeStone/Axe/WoodAxe,
+
+	   Result:DogfoodOpen,
+	   Time:120.0,
+	   Category:Cooking,
+	   OnGiveXP:Recipe.OnGiveXP.None,
+	   OnCreate: GetCanOpeningInjury_OnCreate,
+       Sound:OpenCannedFood,
+	}
+
+    recipe Open Canned Corn the Hardway
+    {
+       CannedCorn,
+       keep [Recipe.GetItemTypes.SharpKnife]/[Recipe.GetItemTypes.Hammer]/MeatCleaver/Saw/HandAxe/AxeStone/Axe/WoodAxe,
+
+       Result:CannedCornOpen,
+       Time:120.0,
+       Category:Cooking,
+       OnGiveXP:Recipe.OnGiveXP.None,
+	   OnCreate: GetCanOpeningInjury_OnCreate,
+       Sound:OpenCannedFood,
+    }
+
+    recipe Open Canned Bolognese the Hardway
+    {
+       CannedBolognese,
+       keep [Recipe.GetItemTypes.SharpKnife]/[Recipe.GetItemTypes.Hammer]/MeatCleaver/Saw/HandAxe/AxeStone/Axe/WoodAxe,
+
+       Result:CannedBologneseOpen,
+       Time:120.0,
+       Category:Cooking,
+       OnGiveXP:Recipe.OnGiveXP.None,
+	   OnCreate: GetCanOpeningInjury_OnCreate,
+       Sound:OpenCannedFood,
+    }
+
+    recipe Open Canned Chili the Hardway
+    {
+       CannedChili,
+       keep [Recipe.GetItemTypes.SharpKnife]/[Recipe.GetItemTypes.Hammer]/MeatCleaver/Saw/HandAxe/AxeStone/Axe/WoodAxe,
+
+       Result:CannedChiliOpen,
+       Time:120.0,
+       Category:Cooking,
+       OnGiveXP:Recipe.OnGiveXP.None,
+	   OnCreate: GetCanOpeningInjury_OnCreate,
+       Sound:OpenCannedFood,
+    }
+
+    recipe Open Canned Mushroom Soup the Hardway
+    {
+       CannedMushroomSoup,
+       keep [Recipe.GetItemTypes.SharpKnife]/[Recipe.GetItemTypes.Hammer]/MeatCleaver/Saw/HandAxe/AxeStone/Axe/WoodAxe,
+
+       Result:CannedMushroomSoupOpen,
+       Time:120.0,
+       Category:Cooking,
+       OnGiveXP:Recipe.OnGiveXP.None,
+	   OnCreate: GetCanOpeningInjury_OnCreate,
+       Sound:OpenCannedFood,
+    }
+
+    recipe Open Canned Peas the Hardway
+    {
+       CannedPeas,
+       keep [Recipe.GetItemTypes.SharpKnife]/[Recipe.GetItemTypes.Hammer]/MeatCleaver/Saw/HandAxe/AxeStone/Axe/WoodAxe,
+
+       Result:CannedPeasOpen,
+       Time:120.0,
+       Category:Cooking,
+       OnGiveXP:Recipe.OnGiveXP.None,
+	   OnCreate: GetCanOpeningInjury_OnCreate,
+       Sound:OpenCannedFood,
+    }
+
+    recipe Open Canned Potato the Hardway
+    {
+       CannedPotato2,
+       keep [Recipe.GetItemTypes.SharpKnife]/[Recipe.GetItemTypes.Hammer]/MeatCleaver/Saw/HandAxe/AxeStone/Axe/WoodAxe,
+
+       Result:CannedPotatoOpen,
+       Time:120.0,
+       Category:Cooking,
+       OnGiveXP:Recipe.OnGiveXP.None,
+	   OnCreate: GetCanOpeningInjury_OnCreate,
+       Sound:OpenCannedFood,
+    }
+
+    recipe Open Canned Tomato the Hardway
+    {
+       CannedTomato2,
+       keep [Recipe.GetItemTypes.SharpKnife]/[Recipe.GetItemTypes.Hammer]/MeatCleaver/Saw/HandAxe/AxeStone/Axe/WoodAxe,
+
+       Result:CannedTomatoOpen,
+       Time:120.0,
+       Category:Cooking,
+       OnGiveXP:Recipe.OnGiveXP.None,
+	   OnCreate: GetCanOpeningInjury_OnCreate,
+       Sound:OpenCannedFood,
+    }
+
+    recipe Open Canned Carrots the Hardway
+    {
+       CannedCarrots2,
+       keep [Recipe.GetItemTypes.SharpKnife]/[Recipe.GetItemTypes.Hammer]/MeatCleaver/Saw/HandAxe/AxeStone/Axe/WoodAxe,
+
+       Result:CannedCarrotsOpen,
+       Time:120.0,
+       Category:Cooking,
+       OnGiveXP:Recipe.OnGiveXP.None,
+	   OnCreate: GetCanOpeningInjury_OnCreate,
+       Sound:OpenCannedFood,
+    }
+	
+}

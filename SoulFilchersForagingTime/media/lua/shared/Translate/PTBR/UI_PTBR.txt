@@ -1,0 +1,8 @@
+UI_PTBR = {
+  UI_prof_Homeless = "Mendigo",
+
+
+  UI_trait_Scavenger = "Catador",
+  UI_trait_ScavengerDesc = "Perda de resistência mais lenta ao catar.",
+  UI_profdesc_Homeless = "Sabe improvisar.<br>+3 Catar",
+}

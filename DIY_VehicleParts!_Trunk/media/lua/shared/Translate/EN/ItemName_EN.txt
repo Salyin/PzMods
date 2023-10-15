@@ -1,0 +1,5 @@
+Items_EN = {
+	DisplayName_DIY_VehiclePartsMag5 = "DIY Vehicle Parts! - Trunk",
+	ItemName_T15K_VehicleParts.DIY_VehiclePartsMag5 = "DIY Vehicle Parts! - Trunk",
+	ItemName_Base.TrailerTrunk1 = "Trailer Trunk",
+}

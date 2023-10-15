@@ -1,0 +1,184 @@
+/* Ammo Maker by STIMP_TM */
+
+module ammomaker {
+
+	imports
+	{
+		Base
+	}
+
+/* Recipes Ammo */
+
+	recipe Make 5.45x39 Bullets x5
+	{
+		OnTest:Recipe.OnTest.isActivated_PSA,
+
+		GunPowder=2,
+		ScrapMetal=1,
+		BlowTorch=1,
+		keep Hammer/BallPeenHammer,
+
+		Result:Bullets545=1,
+		RemoveResultItem:true,
+		OnCreate:Recipe.OnCreate.Make_PSA_545x39,
+		Sound:Hammering,
+		Time:50.0,
+        Category:Ammo Maker PSA,
+		OnGiveXP:Recipe.OnGiveXP.Reloading5,
+		NeedToBeLearn:false,
+	}
+
+	recipe Make .22 LR Bullets x40
+	{
+		OnTest:Recipe.OnTest.isActivated_PSA,
+
+		GunPowder=1,
+		ScrapMetal=1,
+		BlowTorch=1,
+		keep Hammer/BallPeenHammer,
+
+		Result:Bullets22LR=1,
+		RemoveResultItem:true,
+		OnCreate:Recipe.OnCreate.Make_PSA_22LR,
+		Sound:Hammering,
+		Time:50.0,
+        Category:Ammo Maker PSA,
+		OnGiveXP:Recipe.OnGiveXP.Reloading5,
+		NeedToBeLearn:false,
+	}
+
+	recipe Make 7.62x25 Tok Bullets x10
+	{
+		OnTest:Recipe.OnTest.isActivated_PSA,
+
+		GunPowder=1,
+		ScrapMetal=1,
+		BlowTorch=1,
+		keep Hammer/BallPeenHammer,
+
+		Result:Bullets762Tokarev=1,
+		RemoveResultItem:true,
+		OnCreate:Recipe.OnCreate.Make_PSA_762x25Tok,
+		Sound:Hammering,
+		Time:50.0,
+        Category:Ammo Maker PSA,
+		OnGiveXP:Recipe.OnGiveXP.Reloading5,
+		NeedToBeLearn:false,
+	}
+
+	recipe Make 7.62x38 R Nag Bullets x20
+	{
+		OnTest:Recipe.OnTest.isActivated_PSA,
+
+		GunPowder=1,
+		ScrapMetal=1,
+		BlowTorch=1,
+		keep Hammer/BallPeenHammer,
+
+		Result:Bullets762Nagant=1,
+		RemoveResultItem:true,
+		OnCreate:Recipe.OnCreate.Make_PSA_762x38RNag,
+		Sound:Hammering,
+		Time:50.0,
+        Category:Ammo Maker PSA,
+		OnGiveXP:Recipe.OnGiveXP.Reloading5,
+		NeedToBeLearn:false,
+	}
+
+	recipe Make 7.62x39 Bullets x5
+	{
+		OnTest:Recipe.OnTest.isActivated_PSA,
+
+		GunPowder=2,
+		ScrapMetal=1,
+		BlowTorch=1,
+		keep Hammer/BallPeenHammer,
+
+		Result:Bullets762AK=1,
+		RemoveResultItem:true,
+		OnCreate:Recipe.OnCreate.Make_PSA_762x39,
+		Sound:Hammering,
+		Time:50.0,
+        Category:Ammo Maker PSA,
+		OnGiveXP:Recipe.OnGiveXP.Reloading5,
+		NeedToBeLearn:false,
+	}
+
+	recipe Make 7.62x54 R Bullets x5
+	{
+		OnTest:Recipe.OnTest.isActivated_PSA,
+
+		GunPowder=3,
+		ScrapMetal=1,
+		BlowTorch=1,
+		keep Hammer/BallPeenHammer,
+
+		Result:Bullets762PKM=1,
+		RemoveResultItem:true,
+		OnCreate:Recipe.OnCreate.Make_PSA_762x54R,
+		Sound:Hammering,
+		Time:50.0,
+        Category:Ammo Maker PSA,
+		OnGiveXP:Recipe.OnGiveXP.Reloading5,
+		NeedToBeLearn:false,
+	}
+
+	recipe Make 9x39 Bullets x10
+	{
+		OnTest:Recipe.OnTest.isActivated_PSA,
+
+		GunPowder=1,
+		ScrapMetal=1,
+		BlowTorch=1,
+		keep Hammer/BallPeenHammer,
+
+		Result:Bullets939=1,
+		RemoveResultItem:true,
+		OnCreate:Recipe.OnCreate.Make_PSA_9x39,
+		Sound:Hammering,
+		Time:50.0,
+        Category:Ammo Maker PSA,
+		OnGiveXP:Recipe.OnGiveXP.Reloading5,
+		NeedToBeLearn:false,
+	}
+
+	recipe Make 9x18 Mak Bullets x24
+	{
+		OnTest:Recipe.OnTest.isActivated_PSA,
+
+		GunPowder=1,
+		ScrapMetal=1,
+		BlowTorch=1,
+		keep Hammer/BallPeenHammer,
+
+		Result:Bullets9x18mm=1,
+		RemoveResultItem:true,
+		OnCreate:Recipe.OnCreate.Make_PSA_9x18Mak,
+		Sound:Hammering,
+		Time:50.0,
+        Category:Ammo Maker PSA,
+		OnGiveXP:Recipe.OnGiveXP.Reloading5,
+		NeedToBeLearn:false,
+	}
+
+	recipe Make 4 Gauge Shells x4
+	{
+		OnTest:Recipe.OnTest.isActivated_PSA,
+
+		GunPowder=3,
+		ScrapMetal=1,
+		ammomaker_RecPlastic=1,
+		BlowTorch=1,
+		keep Hammer/BallPeenHammer,
+
+		Result:23x75ShotgunShells=1,
+		RemoveResultItem:true,
+		OnCreate:Recipe.OnCreate.Make_PSA_4Gauge,
+		Sound:Hammering,
+		Time:50.0,
+        Category:Ammo Maker PSA,
+		OnGiveXP:Recipe.OnGiveXP.Reloading5,
+		NeedToBeLearn:false,
+	}
+
+}

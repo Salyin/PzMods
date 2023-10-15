@@ -1,0 +1,7 @@
+ItemName_CA = {
+	ItemName_Base.Bag_Satchel = "Cartera de mà (Davant)",
+	ItemName_Base.Bag_SatchelBack = "Cartera de mà (Esquena)",
+	ItemName_Base.MysteriousSatchel_New = "Cartera táctica de (Davant)",
+	ItemName_Base.MysteriousSatchelBack = "Cartera táctica de (Esquena)",
+	ItemName_Base.MysteriousHazmat = "Trage aïllant",
+}

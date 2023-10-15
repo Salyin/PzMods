@@ -1,0 +1,4 @@
+UI_EN = {
+    -- Main screen (lua)
+	UI_profdesc_engineer = "Can assemble some basic devices, timers, electric wire, triggers, traps and explosives.",
+}

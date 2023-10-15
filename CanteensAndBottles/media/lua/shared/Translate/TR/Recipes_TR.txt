@@ -1,0 +1,8 @@
+Recipes_TR = 
+{
+	Recipe_Extract_Bladder_from_Soccer_Ball = "Futbol Topundan Þamyeli Çýkar",
+	Recipe_Extract_Bladder_from_Football = "Toptan Þamyeli Çýkar",
+	Recipe_Make_a_Small_Waterskin = "Küçük Su Tulumu Yap",
+	Recipe_Make_a_Large_Waterskin = "Büyük Su Tulumu Yap",
+	Recipe_Make_a_Quality_Waterskin = "Kaliteli Su Tulumu Yap",
+}

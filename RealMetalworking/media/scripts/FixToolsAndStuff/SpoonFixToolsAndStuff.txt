@@ -1,0 +1,206 @@
+module SpoonMetalworkStuff
+{
+
+	imports
+	{
+		Base
+	}
+
+	/****************************** WOODEN HANDLE TOOLS - SHARP ******************************/
+	
+	recipe Fix and Sharpen Modern Axe into Regular Axe
+    {
+       HandAxe/Axe,
+	   Plank,
+	   Glue=5,
+	   keep SpoonGrindstone,
+	   keep [Recipe.GetItemTypes.SharpKnife],
+       keep [Recipe.GetItemTypes.Hammer],
+
+       Result                   :WoodAxe,
+       Time                     :400.0,
+       Sound                    :LogAddToStack,
+       AnimNode 				:Disassemble,
+       Prop1					:HuntingKnife,
+       Category                 :Carpentry,
+	   SkillRequired            :Woodwork=2;MetalWelding=2,
+	   OnGiveXP                 :Recipe.OnGiveXP.WoodWork5,
+	   OnCreate: GetMetalworkingInjury_OnCreate,
+       CanBeDoneFromFloor       :TRUE,
+    }
+	
+	recipe Fix and Sharpen Regular Axe
+    {
+       WoodAxe,
+	   Plank,
+	   Glue=5,
+	   keep SpoonGrindstone,
+	   keep [Recipe.GetItemTypes.SharpKnife],
+       keep [Recipe.GetItemTypes.Hammer],
+
+       Result                   :WoodAxe,
+       Time                     :400.0,
+       Sound                    :LogAddToStack,
+       AnimNode 				:Disassemble,
+       Prop1					:HuntingKnife,
+       Category                 :Carpentry,
+	   SkillRequired            :Woodwork=2;MetalWelding=2,
+	   OnGiveXP                 :Recipe.OnGiveXP.WoodWork5,
+	   OnCreate: GetMetalworkingInjury_OnCreate,
+       CanBeDoneFromFloor       :TRUE,
+    }
+	
+	recipe Fix and Sharpen Machete
+    {
+       Machete,
+	   Glue=5,
+	   TreeBranch/Plank,
+	   keep SpoonGrindstone,
+	   keep [Recipe.GetItemTypes.SharpKnife],
+       keep [Recipe.GetItemTypes.Hammer],
+
+       Result                   :Machete,
+       Time                     :400.0,
+       Sound                    :LogAddToStack,
+       AnimNode 				:Disassemble,
+       Prop1					:HuntingKnife,
+       Category                 :Carpentry,
+	   SkillRequired            :Woodwork=2;MetalWelding=2,
+	   OnGiveXP                 :Recipe.OnGiveXP.WoodWork5,
+	   OnCreate: GetMetalworkingInjury_OnCreate,
+       CanBeDoneFromFloor       :TRUE,
+    }
+	
+	recipe Fix and Sharpen PickAxe
+    {
+       PickAxe,
+	   Glue=5,
+	   TreeBranch/Plank,
+	   keep SpoonGrindstone,
+	   keep [Recipe.GetItemTypes.SharpKnife],
+       keep [Recipe.GetItemTypes.Hammer],
+
+       Result                   :PickAxe,
+       Time                     :400.0,
+       Sound                    :LogAddToStack,
+       AnimNode 				:Disassemble,
+       Prop1					:HuntingKnife,
+       Category                 :Carpentry,
+	   SkillRequired            :Woodwork=2;MetalWelding=2,
+	   OnGiveXP                 :Recipe.OnGiveXP.WoodWork5,
+	   OnCreate: GetMetalworkingInjury_OnCreate,
+       CanBeDoneFromFloor       :TRUE,
+    }
+
+	recipe Fix and Sharpen HuntingKnife
+    {
+       HuntingKnife/KitchenKnife,
+	   Glue=5,
+	   TreeBranch/Plank,
+	   keep SpoonGrindstone,
+	   keep [Recipe.GetItemTypes.SharpKnife],
+       keep [Recipe.GetItemTypes.Hammer],
+
+       Result                   :HuntingKnife,
+       Time                     :400.0,
+       Sound                    :LogAddToStack,
+       AnimNode 				:Disassemble,
+       Prop1					:HuntingKnife,
+       Category                 :Carpentry,
+	   SkillRequired            :Woodwork=2;MetalWelding=2,
+	   OnGiveXP                 :Recipe.OnGiveXP.WoodWork5,
+	   OnCreate: GetMetalworkingInjury_OnCreate,
+       CanBeDoneFromFloor       :TRUE,
+    }
+	
+	/****************************** WOODEN HANDLE TOOLS - NONSHARP ******************************/
+	
+	recipe Fix ClubHammer
+    {
+       ClubHammer,
+	   Nails=5,
+	   BlowTorch,
+	   WeldingRods,
+	   TreeBranch/Plank,
+	   keep [Recipe.GetItemTypes.SharpKnife],
+       keep [Recipe.GetItemTypes.Hammer],
+
+       Result                   :ClubHammer,
+       Time                     :400.0,
+       Sound                    :LogAddToStack,
+       AnimNode 				:Disassemble,
+       Prop1					:BlowTorch,
+       Category                 :Carpentry,
+	   SkillRequired            :Woodwork=2;MetalWelding=2,
+	   OnGiveXP                 :Recipe.OnGiveXP.WoodWork5,
+	   OnCreate: GetMetalworkingInjury_OnCreate,
+       CanBeDoneFromFloor       :TRUE,
+    }
+	
+	recipe Fix BallPeenHammer
+    {
+       BallPeenHammer,
+	   Nails=5,
+	   BlowTorch,
+	   WeldingRods,
+	   TreeBranch/Plank,
+	   keep [Recipe.GetItemTypes.SharpKnife],
+       keep [Recipe.GetItemTypes.Hammer],
+
+       Result                   :BallPeenHammer,
+       Time                     :400.0,
+       Sound                    :LogAddToStack,
+       AnimNode 				:Disassemble,
+       Prop1					:BlowTorch,
+       Category                 :Carpentry,
+	   SkillRequired            :Woodwork=2;MetalWelding=2,
+	   OnGiveXP                 :Recipe.OnGiveXP.WoodWork5,
+	   OnCreate: GetMetalworkingInjury_OnCreate,
+       CanBeDoneFromFloor       :TRUE,
+    }
+	
+	recipe Fix Hammer
+    {
+       Hammer,
+	   Nails=5,
+	   BlowTorch,
+	   WeldingRods,
+	   TreeBranch/Plank,
+	   keep [Recipe.GetItemTypes.SharpKnife],
+       keep [Recipe.GetItemTypes.Hammer],
+
+       Result                   :Hammer,
+       Time                     :400.0,
+       Sound                    :LogAddToStack,
+       AnimNode 				:Disassemble,
+       Prop1					:BlowTorch,
+       Category                 :Carpentry,
+	   SkillRequired            :Woodwork=2;MetalWelding=2,
+	   OnGiveXP                 :Recipe.OnGiveXP.WoodWork5,
+	   OnCreate: GetMetalworkingInjury_OnCreate,
+       CanBeDoneFromFloor       :TRUE,
+    }
+
+	recipe Fix Sledgehammer
+    {
+       Sledgehammer2/Sledgehammer,
+	   Nails=5,
+	   Plank,
+	   BlowTorch,
+	   WeldingRods,
+	   keep [Recipe.GetItemTypes.SharpKnife],
+       keep [Recipe.GetItemTypes.Hammer],
+
+       Result                   :Sledgehammer2,
+       Time                     :400.0,
+       Sound                    :LogAddToStack,
+       AnimNode 				:Disassemble,
+       Prop1					:BlowTorch,
+       Category                 :Carpentry,
+	   SkillRequired            :Woodwork=2;MetalWelding=2,
+	   OnGiveXP                 :Recipe.OnGiveXP.WoodWork5,
+	   OnCreate: GetMetalworkingInjury_OnCreate,
+       CanBeDoneFromFloor       :TRUE,
+    }
+
+}

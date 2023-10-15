@@ -1,0 +1,8 @@
+UI_PT = {
+  UI_prof_Homeless = "Mendigo",
+
+
+  UI_trait_Scavenger = "Catador",
+  UI_trait_ScavengerDesc = "Slower endurance loss when scavenging.",
+  UI_profdesc_Homeless = "Knows how to improvise.<br>+3 Scavenging",
+}

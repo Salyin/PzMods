@@ -1,0 +1,24 @@
+module SpoonEssentialCrafting
+{
+
+	imports
+	{
+		Base
+	}
+
+
+	/****************************** BOOKS ******************************/
+	
+	item SpoonMagEssentialC 
+	{
+    Weight	=	0.1,
+    Type	=	Literature,
+    DisplayName	=	Essential Crafting 101,
+    Icon	=	MagazineFood,
+    TeachedRecipes  =   Craft Alcohol Wipes;Craft a Fishing Tackle;Craft a 2X Scope;Carve Ice Hockey Stick;Carve Canoe Paddle;Carve Double Canoe Paddle;Make a Bag of Plaster Powder;Make Duct Tape;Craft Black Boots;Make Denim Pants;Make a Leather Coat;Make Bullet Proof Vest;Make Disinfectant;Make Cleaning Liquid,
+    ReplaceOnUse    =   SpoonMagEssentialC,
+    StaticModel = Magazine,
+    WorldStaticModel = MagazineMetal1Ground,
+	}
+	
+}

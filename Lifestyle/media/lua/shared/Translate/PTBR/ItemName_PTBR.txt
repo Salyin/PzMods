@@ -1,0 +1,13 @@
+ItemName_PTBR = {
+	ItemName_Lifestyle.BookMusic1 = "Música Vol. 1",
+	ItemName_Lifestyle.BookMusic2 = "Música Vol. 2",
+	ItemName_Lifestyle.BookMusic3 = "Música Vol. 3",
+	ItemName_Lifestyle.BookMusic4 = "Música Vol. 4",
+	ItemName_Lifestyle.BookMusic5 = "Música Vol. 5",
+	ItemName_Lifestyle.LSMagazineEdition1 = "HomeStyle: DISCO Edição Especial",
+	ItemName_Lifestyle.BookDancing1 = "Dança Vol. 1",
+	ItemName_Lifestyle.BookDancing2 = "Dança Vol. 2",
+	ItemName_Lifestyle.BookDancing3 = "Dança Vol. 3",
+	ItemName_Lifestyle.BookDancing4 = "Dança Vol. 4",
+	ItemName_Lifestyle.BookDancing5 = "Dança Vol. 5",
+}

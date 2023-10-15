@@ -1,0 +1,914 @@
+module SpoonMetalworkStuff
+{
+
+	imports
+	{
+		Base
+	}
+	/****************************** BOOKS ******************************/
+	
+	item SpoonMagazineBlacksmith 
+	{
+    Weight	=	0.1,
+    Type	=	Literature,
+    DisplayName	=	Metalworking 101,
+    Icon	=	MagazineFood,
+    TeachedRecipes  =   Build Furnace;Build Anvil;Build Grindstone;Craft Bellows;Melt Anvil;Prepare Wood for Charcoal Pit;Build Charcoal Pit;Craft Mold;Fill Mold;Craft Tongs;Forge Tongs;Forge Hand Drill;Forge Metal Cutter;Melt Metal;Forge Iron Ingot;Make a Bag of Concrete Powder;Forge Metal Sheet;Forge Metal Pipe;Forge Metal Bar;Make a Welding Mask,
+    ReplaceOnUse    =   SpoonMagazineBlacksmith,
+    StaticModel = Magazine,
+    WorldStaticModel = MagazineMetal1Ground,
+	}
+	
+	item SpoonMagazineBlacksmithTwo
+	{
+    Weight	=	0.1,
+    Type	=	Literature,
+    DisplayName	=	Metal Is Your Friend,
+    Icon	=	MagazineFood,
+    TeachedRecipes  =   Forge Cooking Pot;Forge Roasting Pan;Forge Saucepan;Forge Baking Tray;Forge Baking Pan;Forge Pan;Forge Bucket;Forge Paintbucket;Forge-Cut Saw;Forge-Cut Hunting Knife;Forge-Cut Tweezers;Forge-Cut Suture Needle Holder;Forge-Cut Scissors;Cut Needle;Cut Suture Needle;Forge Door Knob;Forge Hinge;Forge Shovel;Forge Crowbar;Forge Hammer;Forge Wood Axe;Forge Sledgehammer;Forge Machete;Forge Shovel;Forge Pipe Wrench;Forge Wrench;Forge Lug Wrench;Forge Padlock;Forge JarLid;Melt Gold;Melt Silver;Melt Metal with Blowtorch;Melt Gold with Blowtorch;Melt Silver with Blowtorch;Build Antique Oven;Build a BBQ;Construct-Forge Engine parts;Craft Welding rods;Forge Scrap Metal;Forge-Cut a Tincans;Forge PickAxe;Forge Small Standard Gas tank;Forge Small Sport Gas tank;Forge Small Heavy-Duty Gas tank;Forge Shotty Standard Muffler;Forge Shotty Sport Muffler;Forge Shotty Heavy-Duty Muffler;Forge Empty Propane Tank;Forge-Cut Screws;Forge a Jack;Forge Weapon Parts,
+    ReplaceOnUse    =   SpoonMagazineBlacksmithTwo,
+    StaticModel = Magazine,
+    WorldStaticModel = MagazineMetal1Ground,
+	}
+	
+	/****************************** WORKBENCHES ******************************/
+	
+	item SpoonFurnace
+	{
+		DisplayCategory = Furniture,
+		Type			= Normal,
+		Icon			= SpoonFurnace,
+		Weight		  	= 25,
+		DisplayName		= Furnace,
+		WorldStaticModel = SpoonFurnace,
+	}
+	
+	item SpoonAnvil
+	{
+		DisplayCategory = Furniture,
+		Type			= Normal,
+		Icon			= SpoonAnvil,
+		Weight		  	= 25,
+		DisplayName		= Anvil,
+		WorldStaticModel = SpoonAnvil,
+	}
+	
+	item SpoonGrindstone
+	{
+		DisplayCategory = Furniture,
+		Type			= Normal,
+		Icon			= Grindstone,
+		Weight		  	= 25,
+		DisplayName		= Grindstone,
+		WorldStaticModel = SpoonGrindstone,
+	}
+	
+	recipe Build Furnace
+	{
+		Stone=50,
+		Bellows,
+
+	   Result:SpoonFurnace,
+       Time:1000.0,
+	   Sound:LogAddToStack,
+       AnimNode : Disassemble,
+       Category:Carpentry,
+	   NeedToBeLearn:true,
+       SkillRequired:Woodwork=4,
+	   OnGiveXP:MetalWeldingXPHigh,
+	   CanBeDoneFromFloor      : TRUE,	
+	}
+	
+	recipe Build Anvil
+	{
+       IronIngot=500,
+	   Charcoal=5,
+       keep Tongs,
+	   keep SpoonFurnace,
+	   keep PercedWood/Lighter/Matches,
+
+	   Result:SpoonAnvil,
+       Time:1000.0,
+	   Sound:SpoonMetal,
+		AnimNode 				: Disassemble,
+        Prop1					: Tongs,
+       Category:Welding,
+	   NeedToBeLearn:true,
+       SkillRequired:MetalWelding=4,
+	   OnGiveXP:Recipe.OnGiveXP.MetalWelding25,
+	   CanBeDoneFromFloor      : TRUE,
+	}
+	
+	recipe Build Grindstone
+	{
+		Stone=10,
+		Plank=10,
+		keep [Recipe.GetItemTypes.SharpKnife],
+
+	   Result:SpoonGrindstone,
+       Time:1000.0,
+	   Sound:LogAddToStack,
+       Category:Carpentry,
+       AnimNode : Disassemble,
+	   NeedToBeLearn:true,
+       SkillRequired:Woodwork=3,
+	   OnGiveXP:Recipe.OnGiveXP.WoodWork5,
+	   CanBeDoneFromFloor      : TRUE,	
+	}
+	
+	recipe Craft Bellows
+	{
+		LeatherStrips=20,
+		Twine=10,
+		keep [Recipe.GetItemTypes.SewingNeedle],
+
+	   Result:Bellows,
+       Time:400.0,
+	   Sound:LogAddToStack,
+       Category:Carpentry,
+       AnimNode : Disassemble,
+	   NeedToBeLearn:true,
+       SkillRequired:Woodwork=4;Tailoring=2,
+	   OnGiveXP:Recipe.OnGiveXP.WoodWork5,
+	   CanBeDoneFromFloor      : TRUE,	
+	}
+	
+	recipe Destroy Grindstone
+	{
+		SpoonGrindstone,
+		keep [Recipe.GetItemTypes.Hammer],
+
+	   Result:Stone=6,
+       Time:100.0,
+	   Sound:LogAddToStack,
+       AnimNode : Disassemble,
+       Category:Carpentry,
+	   OnCreate: GetDestroyGrindstone_OnCreate,
+	   CanBeDoneFromFloor      : TRUE,	
+	}
+	
+	recipe Destroy Furnace
+	{
+		SpoonFurnace,
+		keep [Recipe.GetItemTypes.Hammer],
+
+	   Result:Stone=50,
+       Time:500.0,
+	   Sound:LogAddToStack,
+       AnimNode : Disassemble,
+       Category:Carpentry,
+	   OnCreate: GetDestroyFurnace_OnCreate,
+	   CanBeDoneFromFloor      : TRUE,	
+	}
+	
+	recipe Melt Anvil
+	{
+       SpoonAnvil,
+	   Charcoal=5,
+       keep Tongs,
+	   keep SpoonFurnace,
+	   keep PercedWood/Lighter/Matches,
+
+	   Result:UnusableMetal=23,
+       Time:500.0,
+	   Sound:SpoonMetal,
+		AnimNode 				: Disassemble,
+        Prop1					: Tongs,
+       Category:Welding,
+	   NeedToBeLearn:true,
+       SkillRequired:MetalWelding=2,
+	   OnGiveXP:Recipe.OnGiveXP.MetalWelding10,
+	   CanBeDoneFromFloor      : TRUE,
+	}
+	
+	/****************************** CHARCOAL PIT ******************************/
+	
+	recipe Prepare Wood for Charcoal Pit
+	{
+       Log=10,
+	   Twigs=10,
+
+	   Result:LogPrepared=10,
+       Time:200.0,
+       Category:Cooking,
+	   NeedToBeLearn:true,
+       SkillRequired:Woodwork=2,
+		CanBeDoneFromFloor      : TRUE,
+	}
+	
+	item LogPrepared
+	{
+	    DisplayCategory = Food,
+		Weight	=	9,
+		Type	=	Food,
+		DisplayName	=	Prepared Log,
+		Icon	=	Logs,
+		WorldStaticModel = Log,
+	}
+	
+	recipe Build Charcoal Pit
+	{
+       LogPrepared=10,
+	   keep PercedWood/Lighter/Matches,
+
+	   Result:SpoonCharcoalPitWorking,
+       Time:200.0,
+       Category:Cooking,
+	   NeedToBeLearn:true,
+       SkillRequired:Woodwork=2,
+	   OnGiveXP:Recipe.OnGiveXP.WoodWork5,
+		CanBeDoneFromFloor      : TRUE,	   
+	}
+	
+	item SpoonCharcoalPitWorking
+	{
+		DisplayCategory = Food,
+		Type			= Food,
+		Icon			= CharcoalPit,
+		Weight		  	= 25,
+		DisplayName		= Charcoal Pit (Working),
+		CantBeFrozen 		= TRUE,
+		ReplaceOnRotten 	= SpoonCharcoalPitReady,
+		DaysFresh 			=		2,
+		DaysTotallyRotten 	=	 	3,
+		WorldStaticModel = SpoonCharcoalPitWorking,
+	}
+		
+	item SpoonCharcoalPitReady
+	{
+		DisplayCategory = Food,
+		Type			= Food,
+		Icon			= CharcoalPit,
+		Weight		  	= 25,
+		DisplayName		= Charcoal Pit (Ready),
+		WorldStaticModel = SpoonCharcoalPitReady,
+	}
+	
+	recipe Empty Charcoal from the pit
+    {
+        SpoonCharcoalPitReady,
+		
+        Result: Charcoal=5,
+        Time: 200.0,
+        Category:Cooking,
+		CanBeDoneFromFloor      : TRUE,
+    }
+	
+	/****************************** TOOLS ******************************/
+	
+	item SpoonMoldFull
+	{
+	    DisplayCategory = Material,
+		Weight	=	10,
+		Type	            =	        Drainable,
+		UseWhileEquipped	=	FALSE,
+        UseDelta	        =	        0.25,
+		ReplaceOnDeplete	=	SpoonMoldEmpty,
+		DisplayName	=	Basic Mold,
+		Icon	=	SpoonMoldFull,
+		WorldStaticModel = SpoonMoldFull,
+	}
+	
+	item SpoonMoldEmpty
+	{
+	    DisplayCategory = Material,
+		Weight	=	6,
+		DisplayName	=	Basic Mold (Empty),
+		Icon	=	SpoonMoldEmpty,
+		WorldStaticModel = SpoonMoldEmpty,
+	}
+	
+	recipe Craft Mold
+    {
+        Plank=4,
+		Dirtbag;2,
+		Twine,
+		
+        Result:SpoonMoldFull,
+        Time: 100.0,
+        Sound:LogAddToStack,
+		AnimNode 				: Disassemble,
+       Category:Carpentry,
+	   NeedToBeLearn:true,
+	   SkillRequired:MetalWelding=2,
+	   OnGiveXP:MetalWeldingXPLow,
+		CanBeDoneFromFloor      : TRUE,
+    }
+	
+	recipe Fill Mold
+    {
+        SpoonMoldEmpty,
+		Dirtbag;2,
+		
+        Result:SpoonMoldFull,
+        Time: 100.0,
+        Sound:LogAddToStack,
+		AnimNode 				: Disassemble,
+       Category:Carpentry,
+	   NeedToBeLearn:true,
+	   SkillRequired:MetalWelding=2,
+	   OnGiveXP:MetalWeldingXPLow,
+		CanBeDoneFromFloor      : TRUE,
+    }
+	
+	recipe Destroy Mold
+    {
+        destroy SpoonMoldFull/SpoonMoldEmpty,
+		
+        Result:Plank=2,
+        Time: 100.0,
+        Sound:LogAddToStack,
+		AnimNode 				: Disassemble,
+       Category:Carpentry,
+		CanBeDoneFromFloor      : TRUE,
+    }
+	
+	item SpoonHandDrill
+	{
+	    DisplayCategory = Junk,
+		Type				=			Normal,
+		DisplayName			=		    Hand Drill,
+		Icon				=			Corkscrew,
+		Weight				=			1,
+		MetalValue = 5,
+		WorldStaticModel = Corkscrew,
+		Tags = Corkscrew,
+	}
+	
+	item SpoonMetalCutter
+	{
+	    DisplayCategory = Junk,
+		Type				=			Normal,
+		DisplayName			=		    Metal Cutter,
+		Icon				=			SpoonMetalCutter,
+		Weight				=			1,
+		MetalValue = 5,
+		WorldStaticModel = SutureNeedleHolder,
+	}
+	
+	recipe Craft Tongs
+    {
+       UnusableMetal,
+	   TreeBranch=10,
+	   Charcoal=1,
+       SpoonMoldFull=1,
+       keep SpoonFurnace,
+       keep PercedWood/Lighter/Matches,
+       keep [Recipe.GetItemTypes.Hammer],
+		
+       Result                   :Tongs,
+       Time                     :800.0,
+       Sound                    :LogAddToStack,
+       AnimNode 				:Disassemble,
+       Prop1					:Hammer,
+       Category                 :Welding,
+	   NeedToBeLearn            :true,
+	   SkillRequired            :MetalWelding=4,
+	   OnGiveXP                 :MetalWeldingXPLow,
+	   OnCreate: GetMetalworkingInjury_OnCreate,
+       CanBeDoneFromFloor       :TRUE,
+    }
+	
+	recipe Forge Tongs
+    {
+       IronIngot=10,
+	   Charcoal=1,
+       SpoonMoldFull=1,
+       keep Tongs,
+       keep SpoonFurnace,
+       keep PercedWood/Lighter/Matches,
+       keep [Recipe.GetItemTypes.Hammer],
+
+       Result                   :Tongs,
+       Time                     :400.0,
+       Sound                    :SpoonMetal,
+       AnimNode 				:Disassemble,
+       Prop1					:Tongs,
+       Category                 :Welding,
+	   NeedToBeLearn            :true,
+	   SkillRequired            :MetalWelding=4,
+	   OnGiveXP:Recipe.OnGiveXP.MetalWelding20,
+	   OnCreate: GetMetalworkingInjury_OnCreate,
+       CanBeDoneFromFloor       :TRUE,
+    }
+	
+	recipe Forge Hand Drill
+    {
+       IronIngot=20,
+	   TreeBranch=1,
+	   Charcoal=1,
+       SpoonMoldFull=1,
+       keep Tongs,
+	   keep SpoonAnvil,
+       keep SpoonFurnace,
+	   keep SpoonGrindstone,
+       keep PercedWood/Lighter/Matches,
+       keep [Recipe.GetItemTypes.Hammer],
+
+       Result                   :SpoonHandDrill,
+       Time                     :400.0,
+       Sound                    :SpoonMetal,
+       AnimNode 				:Disassemble,
+       Prop1					:Tongs,
+       Category                 :Welding,
+	   NeedToBeLearn            :true,
+	   SkillRequired            :MetalWelding=4,
+	   OnGiveXP:Recipe.OnGiveXP.MetalWelding20,
+	   OnCreate: GetMetalworkingInjury_OnCreate,
+       CanBeDoneFromFloor       :TRUE,
+    }
+	
+	recipe Forge Metal Cutter
+    {
+       IronIngot=20,
+	   TreeBranch=1,
+	   Charcoal=1,
+       SpoonMoldFull=1,
+       keep Tongs,
+	   keep SpoonAnvil,
+	   keep SpoonGrindstone,
+	   keep SpoonHandDrill,
+       keep SpoonFurnace,
+       keep PercedWood/Lighter/Matches,
+       keep [Recipe.GetItemTypes.Hammer],
+
+       Result                   :SpoonMetalCutter,
+       Time                     :400.0,
+       Sound                    :SpoonMetal,
+       AnimNode 				:Disassemble,
+       Prop1					:Tongs,
+       Category                 :Welding,
+	   NeedToBeLearn            :true,
+	   SkillRequired            :MetalWelding=4,
+	   OnGiveXP:Recipe.OnGiveXP.MetalWelding20,
+	   OnCreate: GetMetalworkingInjury_OnCreate,
+       CanBeDoneFromFloor       :TRUE,
+    }
+	
+	recipe Make a Welding Mask
+    {
+       SmashedBottle,
+	   TreeBranch=1,
+	   Charcoal=1,
+       BlowTorch,
+       keep PercedWood/Lighter/Matches,
+       keep [Recipe.GetItemTypes.Hammer],
+
+       Result                   :WeldingMask,
+       Time                     :400.0,
+       Sound                    :SpoonMetal,
+       AnimNode 				:Disassemble,
+       Prop1					:Tongs,
+       Category                 :Welding,
+	   NeedToBeLearn            :true,
+	   OnGiveXP:Recipe.OnGiveXP.MetalWelding20,
+	   OnCreate: GetMetalworkingInjury_OnCreate,
+       CanBeDoneFromFloor       :TRUE,
+    }
+	
+	/****************************** MAKE RAW MATERIALS FROM ITEMS ******************************/
+	
+	recipe Forge Iron Ingot
+    {
+        UnusableMetal=5,
+		Charcoal=1,
+		SpoonMoldFull=1,
+		keep Tongs,
+		keep SpoonFurnace,
+		keep PercedWood/Lighter/Matches,
+		
+        Result:IronIngot,
+        Time: 400.0,
+        Sound:SpoonMetal,
+		AnimNode 				: Disassemble,
+        Prop1					: Tongs,
+       Category:Welding,
+	   NeedToBeLearn:true,
+	   SkillRequired:MetalWelding=2,
+	   OnGiveXP:MetalWeldingXPHigh,
+	   OnCreate: GetMetalworkingInjury_OnCreate,
+		CanBeDoneFromFloor      : TRUE,
+    }
+	
+	recipe Melt Metal
+    {
+        PropaneTankEmpty/DumbBell/BarBell/Sledgehammer/Sledgehammer2,
+		Charcoal=1,
+		keep [Recipe.GetItemTypes.Hammer],
+		keep Tongs,
+		keep SpoonFurnace,
+		keep PercedWood/Lighter/Matches,
+		
+        Result:UnusableMetal=5,
+        Time: 400.0,
+        Sound:SpoonMetal,
+		AnimNode 				: Disassemble,
+        Prop1					: Tongs,
+       Category:Welding,
+	   NeedToBeLearn:true,
+	   SkillRequired:MetalWelding=2,
+	   OnGiveXP:MetalWeldingXPLow,
+	   OnCreate: GetMetalworkingInjury_OnCreate,
+		CanBeDoneFromFloor      : TRUE,
+    }
+
+	recipe Melt Metal
+    {
+        Crowbar/Katana/Shovel/Shovel2/GardenHoe/PickAxe/Axe/WoodAxe/VarmintRifle/HuntingRifle/Shotgun/DoubleBarrelShotgun/AssaultRifle/AssaultRifle2/Extinguisher/TrapCage,
+		Charcoal=1,
+		keep [Recipe.GetItemTypes.Hammer],
+		keep Tongs,
+		keep SpoonFurnace,
+		keep PercedWood/Lighter/Matches,
+		
+        Result:UnusableMetal=3,
+        Time: 400.0,
+        Sound:SpoonMetal,
+		AnimNode 				: Disassemble,
+        Prop1					: Tongs,
+       Category:Welding,
+	   NeedToBeLearn:true,
+	   SkillRequired:MetalWelding=2,
+	   OnGiveXP:MetalWeldingXPLow,
+	   OnCreate: GetMetalworkingInjury_OnCreate,
+		CanBeDoneFromFloor      : TRUE,
+    }
+	
+	recipe Melt Metal
+    {
+        Jack/LugWrench/BucketEmpty/Pot/SpoonHandDrill/SpoonMetalCutter/BakingTray/Kettle/RoastingPan/GardenSaw/Saw/MetalPipe/HandScythe/Saucepan/LeadPipe/BarbedWire/HandFork/HuntingKnife/DoubleBarrelShotgunSawnoff/ShotgunSawnoff/SheetMetal/MetalBar/MeatCleaver/HandAxe/Machete/PipeWrench/Saxophone/Trumpet/Wrench/Pan/GridlePan/Golfclub,
+		Charcoal=1,
+		keep [Recipe.GetItemTypes.Hammer],
+		keep Tongs,
+		keep SpoonFurnace,
+		keep PercedWood/Lighter/Matches,
+		
+        Result:UnusableMetal,
+        Time: 400.0,
+        Sound:SpoonMetal,
+		AnimNode 				: Disassemble,
+        Prop1					: Tongs,
+       Category:Welding,
+	   NeedToBeLearn:true,
+	   SkillRequired:MetalWelding=2,
+	   OnGiveXP:MetalWeldingXPLow,
+	   OnCreate: GetMetalworkingInjury_OnCreate,
+		CanBeDoneFromFloor      : TRUE,
+    }
+	
+	recipe Melt Metal
+    {
+        Hammer/ClubHammer/BallPeenHammer,
+		Charcoal=1,
+		keep Tongs,
+		keep SpoonFurnace,
+		keep PercedWood/Lighter/Matches,
+		
+        Result:UnusableMetal,
+        Time: 400.0,
+        Sound:SpoonMetal,
+		AnimNode 				: Disassemble,
+        Prop1					: Tongs,
+       Category:Welding,
+	   NeedToBeLearn:true,
+	   SkillRequired:MetalWelding=2,
+	   OnGiveXP:MetalWeldingXPLow,
+	   OnCreate: GetMetalworkingInjury_OnCreate,
+		CanBeDoneFromFloor      : TRUE,
+    }
+	
+	recipe Melt Metal
+    {
+        Wire=25,
+		Charcoal=1,
+		keep [Recipe.GetItemTypes.Hammer],
+		keep Tongs,
+		keep SpoonFurnace,
+		keep PercedWood/Lighter/Matches,
+		
+        Result:UnusableMetal,
+        Time: 400.0,
+        Sound:LogAddToStack,
+		AnimNode 				: Disassemble,
+        Prop1					: Tongs,
+       Category:Welding,
+	   NeedToBeLearn:true,
+	   SkillRequired:MetalWelding=2,
+	   OnGiveXP:MetalWeldingXPLow,
+	   OnCreate: GetMetalworkingInjury_OnCreate,
+		CanBeDoneFromFloor      : TRUE,
+    }
+	
+	recipe Make unusable metal
+    {
+        Pistol/Pistol2/Pistol3/Revolver/Revolver_Long/Revolver_Short/PaintbucketEmpty,
+		keep [Recipe.GetItemTypes.Hammer],
+		
+        Result:UnusableMetal,
+        Time: 200.0,
+        Sound:SpoonMetal,
+		AnimNode 				: Disassemble,
+        Prop1					: Hammer,
+       Category:Welding,
+	   OnGiveXP:MetalWeldingXPLow,
+	   OnCreate: GetMetalworkingInjury_OnCreate,
+		CanBeDoneFromFloor      : TRUE,
+    }
+	
+	recipe Make unusable metal
+    {
+        EngineParts/SmallSheetMetal/Tongs/MuffinTray=3,
+		keep [Recipe.GetItemTypes.Hammer],
+		
+        Result:UnusableMetal,
+        Time: 200.0,
+        Sound:SpoonMetal,
+		AnimNode 				: Disassemble,
+        Prop1					: Hammer,
+       Category:Welding,
+	   OnGiveXP:MetalWeldingXPLow,
+	   OnCreate: GetMetalworkingInjury_OnCreate,
+		CanBeDoneFromFloor      : TRUE,
+    }
+	
+	recipe Make unusable metal
+    {
+        Doorknob/Hinge/Fork/Scissors/Spoon/Scalpel/ButterKnife/BreadKnife/KitchenKnife/Screwdriver/ClosedUmbrellaBlue/ClosedUmbrellaRed/ClosedUmbrellaWhite/ClosedUmbrellaBlack/Umbrella/GardenFork/Locket/x2Scope/x4Scope/x8Scope/GunLight/Bayonnet/CombinationPadlock/Padlock=6,
+		keep [Recipe.GetItemTypes.Hammer],
+		
+        Result:UnusableMetal,
+        Time: 200.0,
+        Sound:SpoonMetal,
+		AnimNode 				: Disassemble,
+        Prop1					: Hammer,
+       Category:Welding,
+	   OnGiveXP:MetalWeldingXPLow,
+	   OnCreate: GetMetalworkingInjury_OnCreate,
+		CanBeDoneFromFloor      : TRUE,
+    }
+	
+	recipe Make unusable metal
+    {
+        TinCanEmpty=12,
+		keep [Recipe.GetItemTypes.Hammer],
+		
+        Result:UnusableMetal,
+        Time: 200.0,
+        Sound:SpoonMetal,
+		AnimNode 				: Disassemble,
+        Prop1					: Hammer,
+       Category:Welding,
+	   OnGiveXP:MetalWeldingXPLow,
+	   OnCreate: GetMetalworkingInjury_OnCreate,
+		CanBeDoneFromFloor      : TRUE,
+    }
+	
+	recipe Make unusable metal
+    {
+        ScrapMetal/Hairspray/SutureNeedle/SutureNeedleHolder/Earrings/Necklacepearl/Ring/Corkscrew/BakingPan/WeddingRing_Man/WeddingRing_Woman/IronSight/ChokeTubeFull/ChokeTubeImproved/JarLid/BeerCanEmpty/PopEmpty/Pop2Empty/Pop3Empty/GrillBrush/CarvingFork=12,
+		keep [Recipe.GetItemTypes.Hammer],
+		
+        Result:UnusableMetal,
+        Time: 200.0,
+        Sound:SpoonMetal,
+		AnimNode 				: Disassemble,
+        Prop1					: Hammer,
+       Category:Welding,
+	   OnGiveXP:MetalWeldingXPLow,
+	   OnCreate: GetMetalworkingInjury_OnCreate,
+		CanBeDoneFromFloor      : TRUE,
+    }
+	
+	recipe Make unusable metal
+    {
+        Nails/ElectronicsScrap/Paperclip=100,
+		keep [Recipe.GetItemTypes.Hammer],
+		
+        Result:UnusableMetal,
+        Time: 200.0,
+        Sound:SpoonMetal,
+		AnimNode 				: Disassemble,
+        Prop1					: Hammer,
+       Category:Welding,
+	   OnGiveXP:MetalWeldingXPLow,
+	   OnCreate: GetMetalworkingInjury_OnCreate,
+		CanBeDoneFromFloor      : TRUE,
+    }
+	
+	recipe Make unusable metal
+    {
+        Screws=1000,
+		keep [Recipe.GetItemTypes.Hammer],
+		
+        Result:UnusableMetal,
+        Time: 200.0,
+        Sound:SpoonMetal,
+		AnimNode 				: Disassemble,
+        Prop1					: Hammer,
+       Category:Welding,
+	   OnGiveXP:MetalWeldingXPLow,
+	   OnCreate: GetMetalworkingInjury_OnCreate,
+		CanBeDoneFromFloor      : TRUE,
+    }
+	
+	/****************************** MELT GOLD AND SILVER ******************************/
+	
+	item GoldNugget
+    {
+        DisplayCategory = Material,
+        Weight	=	1,
+        Type	=	Normal,
+        DisplayName	=	Gold Nugget,
+        Icon	=	GoldNugget,
+    }
+	
+	item SilverNugget
+    {
+        DisplayCategory = Material,
+        Weight	=	1,
+        Type	=	Normal,
+        DisplayName	=	Silver Nugget,
+        Icon	=	SilverNugget,
+    }
+	
+	recipe Melt Gold
+    {
+       Necklace_Gold/Necklace_GoldRuby/Necklace_GoldDiamond/NecklaceLong_Gold/NecklaceLong_GoldDiamond/NoseRing_Gold/NoseStud_Gold/Earring_LoopLrg_Gold/Earring_LoopMed_Gold/Earring_LoopSmall_Gold_Both/Earring_LoopSmall_Gold_Top/Earring_Stud_Gold/Ring_Right_MiddleFinger_Gold/Ring_Left_MiddleFinger_Gold/Ring_Right_RingFinger_Gold/Ring_Left_RingFinger_Gold/Ring_Right_MiddleFinger_GoldRuby/Ring_Left_MiddleFinger_GoldRuby/Ring_Right_RingFinger_GoldRuby/Ring_Left_RingFinger_GoldRuby/Ring_Right_MiddleFinger_GoldDiamond/Ring_Left_MiddleFinger_GoldDiamond/Ring_Right_RingFinger_GoldDiamond/Ring_Left_RingFinger_GoldDiamond/WristWatch_Right_ClassicGold/WristWatch_Left_ClassicGold/Bracelet_BangleRightGold/Bracelet_BangleLeftGold/Bracelet_ChainRightGold/Bracelet_ChainLeftGold/BellyButton_DangleGoldRuby/BellyButton_DangleGold/BellyButton_RingGold/BellyButton_RingGoldDiamond/BellyButton_RingGoldRuby/BellyButton_StudGold/BellyButton_StudGoldDiamond=10,
+	   Charcoal=1,
+       SpoonMoldFull=1,
+       keep Tongs,
+       keep SpoonFurnace,
+       keep PercedWood/Lighter/Matches,
+       keep [Recipe.GetItemTypes.Hammer],
+
+       Result                   :GoldNugget,
+       Time                     :100.0,
+       Sound                    :SpoonMetal,
+       AnimNode 				:Disassemble,
+       Prop1					:Tongs,
+       Category                 :Welding,
+	   NeedToBeLearn            :true,
+	   SkillRequired            :MetalWelding=3,
+	   OnGiveXP:Recipe.OnGiveXP.MetalWelding20,
+	   OnCreate: GetMetalworkingInjury_OnCreate,
+       CanBeDoneFromFloor       :TRUE,
+    }
+	
+	recipe Melt Silver
+    {
+       Necklace_Silver/Necklace_SilverSapphire/Necklace_SilverCrucifix/Necklace_SilverDiamond/NecklaceLong_Silver/NecklaceLong_SilverEmerald/NecklaceLong_SilverSapphire/NecklaceLong_SilverDiamond/NoseRing_Silver/NoseStud_Silver/Earring_LoopLrg_Silver/Earring_LoopMed_Silver/Earring_LoopSmall_Silver_Both/Earring_LoopSmall_Silver_Top/Earring_Stud_Silver/Ring_Right_MiddleFinger_Silver/Ring_Left_MiddleFinger_Silver/Ring_Right_RingFinger_Silver/Ring_Left_RingFinger_Silver/Ring_Right_MiddleFinger_SilverDiamond/Ring_Left_MiddleFinger_SilverDiamond/Ring_Right_RingFinger_SilverDiamond/Ring_Left_RingFinger_SilverDiamond/Bracelet_BangleRightSilver/Bracelet_BangleLeftSilver/Bracelet_ChainRightSilver/Bracelet_ChainLeftSilver/BellyButton_DangleSilver/BellyButton_DangleSilverDiamond/BellyButton_RingSilver/BellyButton_RingSilverAmethyst/BellyButton_RingSilverDiamond/BellyButton_RingSilverRuby/BellyButton_StudSilver/BellyButton_StudSilverDiamond=10,
+	   Charcoal=1,
+       SpoonMoldFull=1,
+       keep Tongs,
+       keep SpoonFurnace,
+       keep PercedWood/Lighter/Matches,
+       keep [Recipe.GetItemTypes.Hammer],
+
+       Result                   :SilverNugget,
+       Time                     :100.0,
+       Sound                    :SpoonMetal,
+       AnimNode 				:Disassemble,
+       Prop1					:Tongs,
+       Category                 :Welding,
+	   NeedToBeLearn            :true,
+	   SkillRequired            :MetalWelding=3,
+	   OnGiveXP:Recipe.OnGiveXP.MetalWelding20,
+	   OnCreate: GetMetalworkingInjury_OnCreate,
+       CanBeDoneFromFloor       :TRUE,
+    }
+	
+	/****************************** MELT METALS WITH BLOWTORCH ******************************/
+	
+	recipe Melt Gold with Blowtorch
+    {
+       Necklace_Gold/Necklace_GoldRuby/Necklace_GoldDiamond/NecklaceLong_Gold/NecklaceLong_GoldDiamond/NoseRing_Gold/NoseStud_Gold/Earring_LoopLrg_Gold/Earring_LoopMed_Gold/Earring_LoopSmall_Gold_Both/Earring_LoopSmall_Gold_Top/Earring_Stud_Gold/Ring_Right_MiddleFinger_Gold/Ring_Left_MiddleFinger_Gold/Ring_Right_RingFinger_Gold/Ring_Left_RingFinger_Gold/Ring_Right_MiddleFinger_GoldRuby/Ring_Left_MiddleFinger_GoldRuby/Ring_Right_RingFinger_GoldRuby/Ring_Left_RingFinger_GoldRuby/Ring_Right_MiddleFinger_GoldDiamond/Ring_Left_MiddleFinger_GoldDiamond/Ring_Right_RingFinger_GoldDiamond/Ring_Left_RingFinger_GoldDiamond/WristWatch_Right_ClassicGold/WristWatch_Left_ClassicGold/Bracelet_BangleRightGold/Bracelet_BangleLeftGold/Bracelet_ChainRightGold/Bracelet_ChainLeftGold/BellyButton_DangleGoldRuby/BellyButton_DangleGold/BellyButton_RingGold/BellyButton_RingGoldDiamond/BellyButton_RingGoldRuby/BellyButton_StudGold/BellyButton_StudGoldDiamond=10,
+       BlowTorch=2,
+       keep [Recipe.GetItemTypes.Hammer],
+
+       Result                   :GoldNugget,
+       Time                     :100.0,
+       Sound                    :SpoonMetal,
+       AnimNode 				:Disassemble,
+       Prop1					:Tongs,
+       Category                 :Welding,
+	   NeedToBeLearn            :true,
+	   SkillRequired            :MetalWelding=3,
+	   OnGiveXP:Recipe.OnGiveXP.MetalWelding20,
+	   OnCreate: GetMetalworkingInjury_OnCreate,
+       CanBeDoneFromFloor       :TRUE,
+    }
+	
+	recipe Melt Silver with Blowtorch
+    {
+       Necklace_Silver/Necklace_SilverSapphire/Necklace_SilverCrucifix/Necklace_SilverDiamond/NecklaceLong_Silver/NecklaceLong_SilverEmerald/NecklaceLong_SilverSapphire/NecklaceLong_SilverDiamond/NoseRing_Silver/NoseStud_Silver/Earring_LoopLrg_Silver/Earring_LoopMed_Silver/Earring_LoopSmall_Silver_Both/Earring_LoopSmall_Silver_Top/Earring_Stud_Silver/Ring_Right_MiddleFinger_Silver/Ring_Left_MiddleFinger_Silver/Ring_Right_RingFinger_Silver/Ring_Left_RingFinger_Silver/Ring_Right_MiddleFinger_SilverDiamond/Ring_Left_MiddleFinger_SilverDiamond/Ring_Right_RingFinger_SilverDiamond/Ring_Left_RingFinger_SilverDiamond/Bracelet_BangleRightSilver/Bracelet_BangleLeftSilver/Bracelet_ChainRightSilver/Bracelet_ChainLeftSilver/BellyButton_DangleSilver/BellyButton_DangleSilverDiamond/BellyButton_RingSilver/BellyButton_RingSilverAmethyst/BellyButton_RingSilverDiamond/BellyButton_RingSilverRuby/BellyButton_StudSilver/BellyButton_StudSilverDiamond=10,
+       BlowTorch=2,
+       keep [Recipe.GetItemTypes.Hammer],
+
+       Result                   :SilverNugget,
+       Time                     :100.0,
+       Sound                    :SpoonMetal,
+       AnimNode 				:Disassemble,
+       Prop1					:Tongs,
+       Category                 :Welding,
+	   NeedToBeLearn            :true,
+	   SkillRequired            :MetalWelding=3,
+	   OnGiveXP:Recipe.OnGiveXP.MetalWelding20,
+	   OnCreate: GetMetalworkingInjury_OnCreate,
+       CanBeDoneFromFloor       :TRUE,
+    }
+	
+	recipe Melt Metal with Blowtorch
+    {
+        PropaneTankEmpty/DumbBell/BarBell/Sledgehammer/Sledgehammer2,
+		BlowTorch=1,
+        keep [Recipe.GetItemTypes.Hammer],
+		
+        Result:UnusableMetal=5,
+        Time: 250.0,
+        Sound:SpoonMetal,
+		AnimNode 				: Disassemble,
+        Prop1					: BlowTorch,
+       Category:Welding,
+	   NeedToBeLearn:true,
+	   SkillRequired:MetalWelding=2,
+	   OnGiveXP:MetalWeldingXPLow,
+	   OnCreate: GetMetalworkingInjury_OnCreate,
+		CanBeDoneFromFloor      : TRUE,
+    }
+
+	recipe Melt Metal with Blowtorch
+    {
+        Crowbar/Katana/Shovel/Shovel2/GardenHoe/PickAxe/Axe/WoodAxe/VarmintRifle/HuntingRifle/Shotgun/DoubleBarrelShotgun/AssaultRifle/AssaultRifle2/Extinguisher/TrapCage,
+		BlowTorch=1,
+        keep [Recipe.GetItemTypes.Hammer],
+		
+        Result:UnusableMetal=3,
+        Time: 200.0,
+        Sound:SpoonMetal,
+		AnimNode 				: Disassemble,
+        Prop1					: BlowTorch,
+       Category:Welding,
+	   NeedToBeLearn:true,
+	   SkillRequired:MetalWelding=2,
+	   OnGiveXP:MetalWeldingXPLow,
+	   OnCreate: GetMetalworkingInjury_OnCreate,
+		CanBeDoneFromFloor      : TRUE,
+    }
+	
+	recipe Melt Metal with Blowtorch
+    {
+        Jack/LugWrench/BucketEmpty/Pot/SpoonHandDrill/SpoonMetalCutter/BakingTray/Kettle/RoastingPan/GardenSaw/Saw/MetalPipe/HandScythe/Saucepan/LeadPipe/BarbedWire/HandFork/HuntingKnife/DoubleBarrelShotgunSawnoff/ShotgunSawnoff/SheetMetal/MetalBar/MeatCleaver/HandAxe/Machete/PipeWrench/Saxophone/Trumpet/Wrench/Pan/GridlePan/Golfclub,
+		BlowTorch=1,
+        keep [Recipe.GetItemTypes.Hammer],
+		
+        Result:UnusableMetal,
+        Time: 150.0,
+        Sound:SpoonMetal,
+		AnimNode 				: Disassemble,
+        Prop1					: BlowTorch,
+       Category:Welding,
+	   NeedToBeLearn:true,
+	   SkillRequired:MetalWelding=2,
+	   OnGiveXP:MetalWeldingXPLow,
+	   OnCreate: GetMetalworkingInjury_OnCreate,
+		CanBeDoneFromFloor      : TRUE,
+    }
+	
+	recipe Melt Metal with Blowtorch
+    {
+        Hammer/ClubHammer/BallPeenHammer,
+		BlowTorch=1,
+		
+        Result:UnusableMetal,
+        Time: 150.0,
+        Sound:SpoonMetal,
+		AnimNode 				: Disassemble,
+        Prop1					: BlowTorch,
+       Category:Welding,
+	   NeedToBeLearn:true,
+	   SkillRequired:MetalWelding=2,
+	   OnGiveXP:MetalWeldingXPLow,
+	   OnCreate: GetMetalworkingInjury_OnCreate,
+		CanBeDoneFromFloor      : TRUE,
+    }
+	
+	recipe Melt Metal with Blowtorch
+    {
+        Wire=25,
+		BlowTorch=1,
+        keep [Recipe.GetItemTypes.Hammer],
+		
+        Result:UnusableMetal,
+        Time: 100.0,
+        Sound:SpoonMetal,
+		AnimNode 				: Disassemble,
+        Prop1					: BlowTorch,
+       Category:Welding,
+	   NeedToBeLearn:true,
+	   SkillRequired:MetalWelding=2,
+	   OnGiveXP:MetalWeldingXPLow,
+	   OnCreate: GetMetalworkingInjury_OnCreate,
+		CanBeDoneFromFloor      : TRUE,
+    }
+
+}

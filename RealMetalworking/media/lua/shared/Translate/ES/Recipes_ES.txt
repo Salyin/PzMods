@@ -1,0 +1,140 @@
+Recipes_ES = {
+/****** SpoonMetalVehicleRecipes.txt ******/
+/* FUNDICIÓN HORNO */
+	Recipe_Melt_Metal = "Fundir Metal",
+	
+/* FUNDICIÓN SOPLETE */
+	Recipe_Melt_Metal_with_Blowtorch = "Fundir Metal con Soplete",
+	
+/* ARTESANÍA */
+	Recipe_Construct-Forge_Engine_parts = "Construir-Forjar Partes de Motor",
+	Recipe_Forge_Small_Standard_Gas_tank = "Forjar Depósito de Combustible Pequeño (Estándar)",
+	Recipe_Forge_Small_Sport_Gas_tank = "Forjar Depósito de Combustible Pequeño (Deportivo)",
+	Recipe_Forge_Small_Heavy-Duty_Gas_tank = "Forjar Depósito de Combustible Pequeño (Industrial)",
+	Recipe_Forge_Shotty_Standard_Muffler = "Forjar Silenciador Antiguo (Estándar)",
+	Recipe_Forge_Shotty_Sport_Muffler = "Forjar Silenciador Antiguo (Deportivo)",
+	Recipe_Forge_Shotty_Heavy-Duty_Muffler = "Forjar Silenciador Antiguo (Industrial)",	
+	
+/****** SpoonFixToolsAndStuff.txt ******/
+/* HERRAMIENTAS CON PUÑO DE MADERA - AFILADAS */
+	Recipe_Fix_and_Sharpen_Modern_Axe_into_Regular_Axe = "Reparar y Afilar Hacha en Hacha de Madera",
+	Recipe_Fix_and_Sharpen_Regular_Axe = "Reparar y Afilar Hacha de Madera",
+	Recipe_Fix_and_Sharpen_Machete = "Reparar y Afilar Machete",
+	Recipe_Fix_and_Sharpen_PickAxe = "Reparar y Afilar Pico",
+	Recipe_Fix_and_Sharpen_HuntingKnife = "Reparar y Cuchillo de Caza",
+	
+/* HERRAMIENTAS CON PUÑO DE MADERA - NO AFILADAS */
+	Recipe_Fix_ClubHammer = "Reparar Maza",
+	Recipe_Fix_BallPeenHammer = "Reparar Martillo de Bola",
+	Recipe_Fix_Hammer = "Reparar Martillo",
+	Recipe_Fix_Sledgehammer = "Reparar Almádena",
+
+/****** SpoonVanillaMetalPatch.txt ******/
+	Recipe_Refill_Blowtorch_with_Petrol = "Rellenar Soplete con Gasolina",
+	Recipe_Empty_Propane_Tank = "Vaciar Depósito de Propano",
+	Recipe_Make_a_Bag_of_Concrete_Powder = "Hacer una Bolsa de Cemento",
+
+/****** SpoonMetalToolRecipes.txt ******/
+/* HORNO - MATERIALES PRINCIPALES */
+	Recipe_Forge_Metal_Sheet = "Forjar Chapa Metálica",
+	Recipe_Forge_Metal_Pipe = "Forjar Tubo de Metal",
+	Recipe_Forge_Metal_Bar = "Forjar Barra de Metal",
+	Recipe_Forge_Scrap_Metal = "Forjar Chatarra",
+	
+/* HORNO - UTENSILIOS DE COCINA */
+	Recipe_Cut_Pots_out_of_Propane_Tank = "Cortar Depósito de Propano en 2 Ollas",
+	Recipe_Cut_Buckets_out_of_Propane Tank = "Cortar Depósito de Propano en 2 Cubos",
+	Recipe_Forge_Cooking_Pot = "Forjar Olla de Cocina",
+	Recipe_Forge_Roasting_Pan = "Forjar Asadera",
+	Recipe_Forge_Saucepan = "Forjar Cacerola",
+	Recipe_Forge_Baking_Tray = "Forjar Bandeja de Horno",
+	Recipe_Forge_Baking_Pan = "Forjar Molde de Horno",
+	Recipe_Forge_Pan = "Forjar Sartén",
+	Recipe_Forge_Bucket = "Forjar Cubo",
+	Recipe_Forge_Paintbucket = "Forjar Cubo de Pintura",
+	Recipe_Forge_Empty_Propane_Tank = "Forjar Depósito Vacío de Propano",
+	Recipe_Forge-Cut_a_Tincans = "Forjar Latas Vacías",
+
+/* YUNQUE+HORNO (OBJETOS) */
+	Recipe_Forge_Door_Knob = "Forjar Pomo de Puerta",
+	Recipe_Forge_Hinge = "Forjar Bisagra",
+	Recipe_Forge_Padlock = "Forjar Candado",
+	Recipe_Forge_JarLid = "Forjar Tapa de Tarro",
+	Recipe_Forge-Cut_Screws = "Forjar Tornillos",
+
+/* YUNQUE+ESMOLADERA+HORNO (HERRAMIENTAS CON PUÑO DE MADERA) */
+	Recipe_Forge_Shovel = "Forjar Pala",
+	Recipe_Forge_PickAxe = "Forjar Pico",
+	Recipe_Forge_Screwdriver = "Forjar Destornillador",
+	Recipe_Forge_Crowbar = "Forjar Palanqueta",
+	Recipe_Forge_Hammer = "Forjar Martillo",
+	Recipe_Forge_Wood_Axe = "Forjar Hacha de Madera",
+	Recipe_Forge_Sledgehammer = "Forjar Almádena",
+	Recipe_Forge_Machete = "Forjar Machete",
+	Recipe_Forge_Pipe_Wrench = "Forjar Llave de Tubos",
+	Recipe_Forge_Wrench = "Forjar Llave Inglesa",
+	Recipe_Forge_Lug_Wrench = "Forjar Llave de Cruz",
+	Recipe_Cut_Metal_Sheet = "Cortar Chapa Metálica",
+	Recipe_Cut_Wire = "Cortar Alambre",
+	Recipe_Cut_Barbed_Wire = "Cortar Alambre de Espino",
+	Recipe_Cut_Nails = "Cortar Clavos",
+	Recipe_Cut_Paperclip = "Cortar Clips",
+	Recipe_Cut_Needle = "Cortar Aguja",
+	Recipe_Cut_Suture_Needle = "Cortar Aguja de Sutura",
+	Recipe_Cut_Spoon = "Cortar Cuchara",
+	Recipe_Forge-Cut_Scissors = "Forjar Tijeras",
+	Recipe_Forge-Cut_Hunting_Knife = "Forjar Cuchillo de Caza",
+	Recipe_Forge-Cut_Saw = "Forjar Sierra",
+	Recipe_Forge-Cut_Suture_Needle_Holder = "Forjar Portaagujas de Sutura",
+	Recipe_Forge-Cut_Tweezers = "Forjar Pinzas",
+	Recipe_Make_Choke_Tube_Full = "Forjar Supressor",
+
+/* COSAS GRANDES */
+	Recipe_Build_Antique_Oven = "Construir Horno Antiguo",
+	Recipe_Build_a_BBQ = "Construir Barbacoa",
+
+/* BARILLAS DE SOLDAR */
+	Recipe_Craft_Welding_rods = "Hacer Barillas de Soldar",
+
+/* OTROS */
+	Recipe_Forge_a_Jack = "Forjar un Gato",
+
+/****** SpoonMetalworkStuff.txt ******/
+/* BANCOS DE TRABAJO */
+	Recipe_Build_Furnace = "Construir Horno",
+	Recipe_Build_Anvil = "Construir Yunque",
+	Recipe_Build_Grindstone = "Construir Piedra de Esmolar",
+	Recipe_Craft_Bellows = "Hacer un Fuelle",
+	Recipe_Destroy_Grindstone = "Destruir Piedra de Esmolar",
+	Recipe_Destroy_Furnace = "Destruir Horno",
+	Recipe_Melt_Anvil = "Fundir Yunque",
+
+/* POZO DE CARBÓN */
+	Recipe_Prepare_Wood_for_Charcoal_Pit = "Preparar Madera para Pozo de Carbón",
+	Recipe_Build_Charcoal_Pit = "Construir Pozo de Carbón",
+	Recipe_Empty_Charcoal_from_the_pit = "Vacíar Carbón del Pozo",
+
+/* HERRAMIENTAS */
+	Recipe_Craft_Mold = "Hacer un Molde",
+	Recipe_Fill_Mold = "Llenar Molde",
+	Recipe_Destroy_Mold = "Destruir Molde",
+	Recipe_Craft_Tongs = "Hacer Tenazas",
+	Recipe_Forjar_Tongs = "Forjar Tenazas",
+	Recipe_Forge_Hand_Drill = "Forjar Taladro de Mano",
+	Recipe_Forge_Metal_Cutter = "Forjar Cortadora de Metal",
+	Recipe_Make_a_Welding_Mask = "Hacer una Máscara de Soldadura",
+
+/* MATERIALES A PARTIR DE OBJETOS */
+	Recipe_Forge_Iron_Ingot = "Forjar Lingote de Hierro",
+	Recipe_Melt_Metal = "Fundir Metal",
+	Recipe_Make_unusable_metal = "Hacer Metal No Usable",
+
+/* FUNDIR ORO Y PLATA */
+	Recipe_Melt_Gold = "Fundir Oro",
+	Recipe_Melt_Silver = "Fundir Plata",
+
+/* FUNDIR METALES CON SOPLETE */
+	Recipe_Melt_Gold_with_Blowtorch = "Fundir Oro con Soplete",
+	Recipe_Melt_Silver_with_Blowtorch = "Fundir Plata con Soplete",
+	Recipe_Melt_Metal_with_Blowtorch = "Fundir Metal con Soplete",
+}

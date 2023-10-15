@@ -1,0 +1,6 @@
+ItemName_CN = { 
+	ItemName_SpoonEssentialCrafting.PolymerScrap = "废塑料",
+	ItemName_SpoonEssentialCrafting.SheetPaperX = "碎纸片",
+	ItemName_SpoonEssentialCrafting.SpoonMagEssentialC = "教你如何手搓一切",
+	ItemName_SpoonEssentialCrafting.WeaponParts = "武器零件",
+}

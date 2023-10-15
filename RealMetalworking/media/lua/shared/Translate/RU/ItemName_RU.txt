@@ -1,0 +1,22 @@
+ItemName_RU = {
+
+--SpoonMetalworkStuff.txt
+	ItemName_SpoonMetalworkStuff.SpoonMagazineBlacksmith			= "Металлообработка 101",
+	ItemName_SpoonMetalworkStuff.SpoonMagazineBlacksmithTwo			= "Металл - твой друг",
+	ItemName_SpoonMetalworkStuff.SpoonFurnace						= "Кузнечный горн",
+	ItemName_SpoonMetalworkStuff.SpoonAnvil							= "Наковальня",
+	ItemName_SpoonMetalworkStuff.SpoonGrindstone					= "Точильный круг",
+	ItemName_SpoonMetalworkStuff.LogPrepared						= "Подготовленная древесина",
+	ItemName_SpoonMetalworkStuff.SpoonCharcoalPitWorking			= "Углежжение (в процессе)",
+	ItemName_SpoonMetalworkStuff.SpoonCharcoalPitReady				= "Углежжение (готово)",
+	ItemName_SpoonMetalworkStuff.SpoonMoldFull						= "Форма для выплавки",
+	ItemName_SpoonMetalworkStuff.SpoonMoldEmpty						= "Форма для выплавки (пустая)",
+	ItemName_SpoonMetalworkStuff.SpoonHandDrill						= "Ручная дрель",
+	ItemName_SpoonMetalworkStuff.SpoonMetalCutter					= "Ножницы по металлу",
+	ItemName_SpoonMetalworkStuff.GoldNugget							= "Золотой самородок",
+	ItemName_SpoonMetalworkStuff.SilverNugget						= "Серебряный самородок",
+
+-- SpoonVanillaMetalPatch.txt
+	ItemName_Base.PropaneTankEmpty									= "Баллон для пропана (пустой)",
+
+}

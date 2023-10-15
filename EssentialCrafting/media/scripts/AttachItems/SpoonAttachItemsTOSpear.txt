@@ -1,0 +1,312 @@
+module SpoonEssentialCrafting
+{
+
+	imports
+	{
+		Base
+	}
+	
+	/************************ Tie to Spear ************************/
+
+	recipe Tie Bread Knife to Spear
+    {
+        SpearCrafted,
+        BreadKnife,
+        LeatherStrips/LeatherStripsDirty=2,
+
+        Result:SpearBreadKnife,
+        Time:100.0,
+        OnCreate:Recipe.OnCreate.UpgradeSpearTwo,
+        Category:Survivalist,
+    }
+
+    recipe Tie Butter Knife to Spear
+    {
+        SpearCrafted,
+        ButterKnife,
+        LeatherStrips/LeatherStripsDirty=2,
+
+        Result:SpearButterKnife,
+        Time:100.0,
+        OnCreate:Recipe.OnCreate.UpgradeSpearTwo,
+        Category:Survivalist,
+    }
+
+    recipe Tie Fork to Spear
+    {
+        SpearCrafted,
+        Fork,
+        LeatherStrips/LeatherStripsDirty=2,
+
+        Result:SpearFork,
+        Time:100.0,
+        OnCreate:Recipe.OnCreate.UpgradeSpearTwo,
+        Category:Survivalist,
+    }
+
+    recipe Tie Letter Opener to Spear
+    {
+        SpearCrafted,
+        LetterOpener,
+        LeatherStrips/LeatherStripsDirty=2,
+
+        Result:SpearLetterOpener,
+        Time:100.0,
+        OnCreate:Recipe.OnCreate.UpgradeSpearTwo,
+        Category:Survivalist,
+    }
+
+    recipe Tie Scalpel to Spear
+    {
+        SpearCrafted,
+        Scalpel,
+        LeatherStrips/LeatherStripsDirty=2,
+
+        Result:SpearScalpel,
+        Time:100.0,
+        OnCreate:Recipe.OnCreate.UpgradeSpearTwo,
+        Category:Survivalist,
+    }
+
+    recipe Tie Spoon to Spear
+    {
+        SpearCrafted,
+        Spoon,
+        LeatherStrips/LeatherStripsDirty=2,
+
+        Result:SpearSpoon,
+        Time:100.0,
+        OnCreate:Recipe.OnCreate.UpgradeSpearTwo,
+        Category:Survivalist,
+    }
+
+    recipe Tie Scissors to Spear
+    {
+        SpearCrafted,
+        Scissors,
+        LeatherStrips/LeatherStripsDirty=2,
+
+        Result:SpearScissors,
+        Time:100.0,
+        OnCreate:Recipe.OnCreate.UpgradeSpearTwo,
+        Category:Survivalist,
+    }
+
+    recipe Tie Hand Fork to Spear
+    {
+        SpearCrafted,
+        HandFork,
+        LeatherStrips/LeatherStripsDirty=2,
+
+        Result:SpearHandFork,
+        Time:100.0,
+        OnCreate:Recipe.OnCreate.UpgradeSpearTwo,
+        Category:Survivalist,
+    }
+
+    recipe Tie Screwdriver to Spear
+    {
+        SpearCrafted,
+        Screwdriver,
+        LeatherStrips/LeatherStripsDirty=2,
+
+        Result:SpearScrewdriver,
+        Time:100.0,
+        OnCreate:Recipe.OnCreate.UpgradeSpearTwo,
+        Category:Survivalist,
+    }
+
+    recipe Tie Kitchen Knife to Spear
+    {
+        SpearCrafted,
+        KitchenKnife,
+        LeatherStrips/LeatherStripsDirty=2,
+
+        Result:SpearKnife,
+        Time:100.0,
+        OnCreate:Recipe.OnCreate.UpgradeSpearTwo,
+        Category:Survivalist,
+    }
+
+    recipe Tie Hunting Knife to Spear
+    {
+        SpearCrafted,
+        HuntingKnife,
+        LeatherStrips/LeatherStripsDirty=2,
+
+        Result:SpearHuntingKnife,
+        Time:100.0,
+        OnCreate:Recipe.OnCreate.UpgradeSpearTwo,
+        Category:Survivalist,
+    }
+
+    recipe Tie Machete to Spear
+    {
+        SpearCrafted,
+        Machete,
+        LeatherStrips/LeatherStripsDirty=2,
+
+        Result:SpearMachete,
+        Time:100.0,
+        OnCreate:Recipe.OnCreate.UpgradeSpearTwo,
+        Category:Survivalist,
+    }
+
+    recipe Tie Ice Pick to Spear
+    {
+        SpearCrafted,
+        IcePick,
+        LeatherStrips/LeatherStripsDirty=2,
+
+        Result:SpearIcePick,
+        Time:100.0,
+        OnCreate:Recipe.OnCreate.UpgradeSpearTwo,
+        Category:Survivalist,
+    }
+	
+	/************************ Untie from Spear ************************/
+	
+	recipe Untie Bread Knife from Spear
+    {
+        SpearBreadKnife,
+
+        Result:BreadKnife,
+        OnCreate:Recipe.OnCreate.DismantleSpearTwo,
+        Time:60.0,
+        Category:Survivalist,
+        AllowDestroyedItem:true,
+    }
+
+    recipe Untie Butter Knife from Spear
+    {
+        SpearButterKnife,
+
+        Result:ButterKnife,
+        OnCreate:Recipe.OnCreate.DismantleSpearTwo,
+        Time:60.0,
+        Category:Survivalist,
+        AllowDestroyedItem:true,
+    }
+
+    recipe Untie Fork from Spear
+    {
+        SpearFork,
+
+        Result:Fork,
+        OnCreate:Recipe.OnCreate.DismantleSpearTwo,
+        Time:60.0,
+        Category:Survivalist,
+        AllowDestroyedItem:true,
+    }
+
+    recipe Untie Letter Opener from Spear
+    {
+        SpearLetterOpener,
+
+        Result:LetterOpener,
+        OnCreate:Recipe.OnCreate.DismantleSpearTwo,
+        Time:60.0,
+        Category:Survivalist,
+        AllowDestroyedItem:true,
+    }
+
+    recipe Untie Scalpel from Spear
+    {
+        SpearScalpel,
+
+        Result:Scalpel,
+        OnCreate:Recipe.OnCreate.DismantleSpearTwo,
+        Time:60.0,
+        Category:Survivalist,
+        AllowDestroyedItem:true,
+    }
+
+    recipe Untie Spoon from Spear
+    {
+        SpearSpoon,
+
+        Result:Spoon,
+        OnCreate:Recipe.OnCreate.DismantleSpearTwo,
+        Time:60.0,
+        Category:Survivalist,
+        AllowDestroyedItem:true,
+    }
+
+    recipe Untie Scissors from Spear
+    {
+        SpearScissors,
+
+        Result:Scissors,
+        OnCreate:Recipe.OnCreate.DismantleSpearTwo,
+        Time:60.0,
+        Category:Survivalist,
+        AllowDestroyedItem:true,
+    }
+
+    recipe Untie Hand Fork from Spear
+    {
+        SpearHandFork,
+
+        Result:HandFork,
+        OnCreate:Recipe.OnCreate.DismantleSpearTwo,
+        Time:60.0,
+        Category:Survivalist,
+        AllowDestroyedItem:true,
+    }
+
+    recipe Untie Screwdriver from Spear
+    {
+        SpearScrewdriver,
+
+        Result:Screwdriver,
+        OnCreate:Recipe.OnCreate.DismantleSpearTwo,
+        Time:60.0,
+        Category:Survivalist,
+        AllowDestroyedItem:true,
+    }
+
+    recipe Untie Kitchen Knife from Spear
+    {
+        SpearKnife,
+
+        Result:KitchenKnife,
+        OnCreate:Recipe.OnCreate.DismantleSpearTwo,
+        Time:60.0,
+        Category:Survivalist,
+        AllowDestroyedItem:true,
+    }
+
+    recipe Untie Hunting Knife from Spear
+    {
+        SpearHuntingKnife,
+
+        Result:HuntingKnife,
+        OnCreate:Recipe.OnCreate.DismantleSpearTwo,
+        Time:60.0,
+        Category:Survivalist,
+        AllowDestroyedItem:true,
+    }
+
+    recipe Untie Machete from Spear
+    {
+        SpearMachete,
+
+        Result:Machete,
+        OnCreate:Recipe.OnCreate.DismantleSpearTwo,
+        Time:60.0,
+        Category:Survivalist,
+        AllowDestroyedItem:true,
+    }
+
+    recipe Untie Ice Pick from Spear
+    {
+        SpearIcePick,
+
+        Result:IcePick,
+        OnCreate:Recipe.OnCreate.DismantleSpearTwo,
+        Time:60.0,
+        Category:Survivalist,
+        AllowDestroyedItem:true,
+    }
+	
+}

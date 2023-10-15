@@ -1,0 +1,13 @@
+ItemName_FR = {
+	ItemName_filcher.SFAcorns = "Galnds",
+	ItemName_filcher.SFRaspberry = "Baies",
+	ItemName_filcher.Cigarette = "Cigarette",
+	ItemName_filcher.SFDeadCrow = "Corbeau (mort)",
+	ItemName_filcher.SFHickoryNut = "Noix",
+	ItemName_filcher.SFPawpaw = "Papaye",
+	ItemName_filcher.SFPersimmon = "Kaki",
+	ItemName_filcher.SFPineNuts = "Pignons de pin",
+	ItemName_filcher.SFPlum = "Prune",
+	ItemName_filcher.SFTruffles = "Truffes",
+	ItemName_filcher.SFWildHoney = "Miel sauvage",
+}

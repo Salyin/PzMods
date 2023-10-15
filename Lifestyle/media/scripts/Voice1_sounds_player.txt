@@ -1,0 +1,334 @@
+module Base {
+
+
+    sound ManFrustrated11
+    {
+        category = Item, loop = false, is3D = true,
+        clip {
+		
+		file = media/sound/voice/ManFrustrated11.ogg,
+		distanceMin = 2, distanceMax = 20,
+		reverbFactor = 0.1, volume = 0.5,
+		
+		
+		}
+    }
+
+    sound ManFrustrated12
+    {
+        category = Item, loop = false, is3D = true,
+        clip {
+		
+		file = media/sound/voice/ManFrustrated12.ogg,
+		distanceMin = 2, distanceMax = 20,
+		reverbFactor = 0.1, volume = 0.5,
+		
+		
+		}
+    }
+
+    sound ManFrustrated13
+    {
+        category = Item, loop = false, is3D = true,
+        clip {
+		
+		file = media/sound/voice/ManFrustrated13.ogg,
+		distanceMin = 2, distanceMax = 20,
+		reverbFactor = 0.1, volume = 0.5,
+		
+		
+		}
+    }
+
+    sound WomanFrustrated11
+    {
+        category = Item, loop = false, is3D = true,
+        clip {
+		
+		file = media/sound/voice/WomanFrustrated11.ogg,
+		distanceMin = 2, distanceMax = 20,
+		reverbFactor = 0.1, volume = 0.5,
+		
+		
+		}
+    }
+
+    sound WomanFrustrated12
+    {
+        category = Item, loop = false, is3D = true,
+        clip {
+		
+		file = media/sound/voice/WomanFrustrated12.ogg,
+		distanceMin = 2, distanceMax = 20,
+		reverbFactor = 0.1, volume = 0.5,
+		
+		
+		}
+    }
+
+    sound WomanFrustrated13
+    {
+        category = Item, loop = false, is3D = true,
+        clip {
+		
+		file = media/sound/voice/WomanFrustrated13.ogg,
+		distanceMin = 2, distanceMax = 20,
+		reverbFactor = 0.1, volume = 0.5,
+		
+		
+		}
+    }
+ 
+
+    sound ManBooing11
+    {
+        category = Item, loop = false, is3D = true,
+        clip {
+		
+		file = media/sound/voice/ManBooing11.ogg,
+		distanceMin = 2, distanceMax = 20,
+		reverbFactor = 0.1, volume = 0.5,
+		
+		
+		}
+    }
+
+    sound ManBooing12
+    {
+        category = Item, loop = false, is3D = true,
+        clip {
+		
+		file = media/sound/voice/ManBooing12.ogg,
+		distanceMin = 2, distanceMax = 20,
+		reverbFactor = 0.1, volume = 0.5,
+		
+		
+		}
+    }
+
+    sound ManBooing13
+    {
+        category = Item, loop = false, is3D = true,
+        clip {
+		
+		file = media/sound/voice/ManBooing13.ogg,
+		distanceMin = 2, distanceMax = 20,
+		reverbFactor = 0.1, volume = 0.5,
+		
+		
+		}
+    }
+
+    sound WomanBooing11
+    {
+        category = Item, loop = false, is3D = true,
+        clip {
+		
+		file = media/sound/voice/WomanBooing11.ogg,
+		distanceMin = 2, distanceMax = 20,
+		reverbFactor = 0.1, volume = 0.5,
+		
+		
+		}
+    }
+
+    sound WomanBooing12
+    {
+        category = Item, loop = false, is3D = true,
+        clip {
+		
+		file = media/sound/voice/WomanBooing12.ogg,
+		distanceMin = 2, distanceMax = 20,
+		reverbFactor = 0.1, volume = 0.5,
+		
+		
+		}
+    }
+
+    sound WomanBooing13
+    {
+        category = Item, loop = false, is3D = true,
+        clip {
+		
+		file = media/sound/voice/WomanBooing13.ogg,
+		distanceMin = 2, distanceMax = 20,
+		reverbFactor = 0.1, volume = 0.5,
+		
+		
+		}
+    }
+
+ 
+     sound ManWoohoo11
+    {
+        category = Item, loop = false, is3D = true,
+        clip {
+		
+		file = media/sound/voice/ManWoohoo11.ogg,
+		distanceMin = 2, distanceMax = 20,
+		reverbFactor = 0.1, volume = 0.5,
+		
+		
+		}
+    }
+
+    sound ManWoohoo12
+    {
+        category = Item, loop = false, is3D = true,
+        clip {
+		
+		file = media/sound/voice/ManWoohoo12.ogg,
+		distanceMin = 2, distanceMax = 20,
+		reverbFactor = 0.1, volume = 0.5,
+		
+		
+		}
+    }
+
+    sound ManWoohoo13
+    {
+        category = Item, loop = false, is3D = true,
+        clip {
+		
+		file = media/sound/voice/ManWoohoo13.ogg,
+		distanceMin = 2, distanceMax = 20,
+		reverbFactor = 0.1, volume = 0.5,
+		
+		
+		}
+    }
+
+    sound WomanWoohoo11
+    {
+        category = Item, loop = false, is3D = true,
+        clip {
+		
+		file = media/sound/voice/WomanWoohoo11.ogg,
+		distanceMin = 2, distanceMax = 20,
+		reverbFactor = 0.1, volume = 0.5,
+		
+		
+		}
+    }
+
+    sound WomanWoohoo12
+    {
+        category = Item, loop = false, is3D = true,
+        clip {
+		
+		file = media/sound/voice/WomanWoohoo12.ogg,
+		distanceMin = 2, distanceMax = 20,
+		reverbFactor = 0.1, volume = 0.5,
+		
+		
+		}
+    }
+
+    sound WomanWoohoo13
+    {
+        category = Item, loop = false, is3D = true,
+        clip {
+		
+		file = media/sound/voice/WomanWoohoo13.ogg,
+		distanceMin = 2, distanceMax = 20,
+		reverbFactor = 0.1, volume = 0.5,
+		
+		
+		}
+    }
+ 
+  
+     sound ManDanceHappy11
+    {
+        category = Item, loop = false, is3D = true,
+        clip {
+		
+		file = media/sound/voice/ManDanceHappy11.ogg,
+		distanceMin = 2, distanceMax = 20,
+		reverbFactor = 0.1, volume = 0.5,
+		}
+    }
+      sound ManDanceHappy12
+    {
+        category = Item, loop = false, is3D = true,
+        clip {
+		
+		file = media/sound/voice/ManDanceHappy12.ogg,
+		distanceMin = 2, distanceMax = 20,
+		reverbFactor = 0.1, volume = 0.5,
+		}
+    }
+     sound ManDanceHappy13
+    {
+        category = Item, loop = false, is3D = true,
+        clip {
+		
+		file = media/sound/voice/ManDanceHappy13.ogg,
+		distanceMin = 2, distanceMax = 20,
+		reverbFactor = 0.1, volume = 0.5,
+		}
+    }
+     sound ManDanceHappy14
+    {
+        category = Item, loop = false, is3D = true,
+        clip {
+		
+		file = media/sound/voice/ManDanceHappy14.ogg,
+		distanceMin = 2, distanceMax = 20,
+		reverbFactor = 0.1, volume = 0.5,
+		}
+    }
+ 
+      sound WomanDanceHappy11
+    {
+        category = Item, loop = false, is3D = true,
+        clip {
+		
+		file = media/sound/voice/WomanDanceHappy11.ogg,
+		distanceMin = 2, distanceMax = 20,
+		reverbFactor = 0.1, volume = 0.5,
+		}
+    }
+      sound WomanDanceHappy12
+    {
+        category = Item, loop = false, is3D = true,
+        clip {
+		
+		file = media/sound/voice/WomanDanceHappy12.ogg,
+		distanceMin = 2, distanceMax = 20,
+		reverbFactor = 0.1, volume = 0.5,
+		}
+    }
+     sound WomanDanceHappy13
+    {
+        category = Item, loop = false, is3D = true,
+        clip {
+		
+		file = media/sound/voice/WomanDanceHappy13.ogg,
+		distanceMin = 2, distanceMax = 20,
+		reverbFactor = 0.1, volume = 0.5,
+		}
+    }
+     sound WomanDanceHappy14
+    {
+        category = Item, loop = false, is3D = true,
+        clip {
+		
+		file = media/sound/voice/WomanDanceHappy14.ogg,
+		distanceMin = 2, distanceMax = 20,
+		reverbFactor = 0.1, volume = 0.5,
+		}
+    }
+      sound WomanDanceHappy15
+    {
+        category = Item, loop = false, is3D = true,
+        clip {
+		
+		file = media/sound/voice/WomanDanceHappy15.ogg,
+		distanceMin = 2, distanceMax = 20,
+		reverbFactor = 0.1, volume = 0.5,
+		}
+    }
+ 
+ 
+}

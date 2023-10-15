@@ -1,0 +1,126 @@
+module Base
+{
+	model 97bushmasterSpareRight
+	{
+		mesh = vehicles/Vehicles_97bushmaster_Body|bush_spare_right,
+		texture = Vehicles/Vehicles_RunFlatTire_MK2,
+		shader = vehiclewheel,
+		scale = 0.1,
+	}
+
+	model 97bushmasterSpareRoof
+	{
+		mesh = vehicles/Vehicles_97bushmaster_Body|bush_spare_roof,
+		texture = Vehicles/Vehicles_RunFlatTire_MK2,
+		shader = vehiclewheel,
+		scale = 0.1,
+	}
+
+	template vehicle BUSHSpareTires
+		{
+		part BUSHSpareRight
+        	{
+
+			model Bushspare1
+				{
+                	file = 97bushmasterSpareRight,
+				}
+				area = TireRearRight,
+
+				table install
+					{
+                	complete = BUSH.InstallComplete.SpareTire,
+            		}
+
+            	table uninstall
+            		{
+					complete = BUSH.UninstallComplete.SpareTire,
+
+            		}
+
+            		lua
+            		{
+            			init = BUSH.Init.SpareTire,
+						create = BUSH.Create.SpareTire,
+					}
+			}
+
+		part BUSHSpareRoof
+        	{
+
+			model Bushspare2
+				{
+                	file = 97bushmasterSpareRoof,
+				}
+
+				area = RearDoor,
+
+				table install
+					{
+                	complete = BUSH.InstallComplete.SpareTireRoof,
+            		}
+
+            	table uninstall
+            		{
+					complete = BUSH.UninstallComplete.SpareTireRoof,
+            		}
+
+            		lua
+            		{
+            			init = BUSH.Init.SpareTireRoof,
+						create = BUSH.Create.SpareTireRoof,
+					}
+			}
+
+			part BUSHSpare*
+        	{
+
+				category = bodywork,
+				specificItem = false,
+				itemType = Base.BushmasterTire,
+				mechanicRequireKey = false,
+
+				table install
+				{
+                	items
+                	{
+                    	1
+                    		{
+                        	type = Base.Wrench,
+                        	count = 1,
+                        	keep = true,
+							equip = primary,
+                    		}
+                	}
+
+                	time = 800,
+                	skills = Mechanics:1,
+                	recipes = Intermediate Mechanics,
+                	test = Vehicles.InstallTest.Default,
+            		}
+
+            	table uninstall
+            		{
+                	items
+                	{
+                    	1
+                    		{
+				  				type = Base.Wrench,
+								count = 1,
+								keep = true,
+								equip = primary,
+                    		}
+                	}
+
+					time = 750,
+					skills = Mechanics:1,
+					recipes = Intermediate Mechanics,
+		            test = Vehicles.UninstallTest.Default,
+
+            		}
+
+			}
+	}
+
+		
+}

@@ -1,0 +1,73 @@
+Sandbox_FR = {
+    
+    Sandbox_BasementAddOptions = "Ajoute des options au sous-sol",
+    
+    Sandbox_BasementAddOptionsbuildHatchfromRVinteriorIsForbidden = "Interdiction de construire une trappe dans les interieur RV",
+    Sandbox_BasementAddOptionsbuildHatchfromRVinteriorIsForbidden_tooltip = "Si TRUE et que vous avez le mod RVinterior d'installé, cela empéche la construction/pose des trappes dans les salle de camping car.",
+    
+
+
+    Sandbox_BasementAddOptionsTimeElapsedToAllowTraveling = "Ajustez le temps d'attente des voyages",
+    Sandbox_BasementAddOptionsTimeElapsedToAllowTraveling_tooltip = "Ajustez le temps d'attente en heure entre chaque voyage",
+
+    Sandbox_BasementAddOptionsStatsConsumptionToTraveling = "Ajustez la cossomation des stats lors d'un voyage",
+    Sandbox_BasementAddOptionsStatsConsumptionToTraveling_tooltip = "Lors d'un voyage prévu par les trappes specifiques, le joueur subira une consomation d'energie concernant la faim, soif, fatigue et d'endurance, ce chiffre est un multiplicateur, plus il sera élevé, plus les stats subiront suivant la distance parcouru.",
+
+
+
+    Sandbox_BasementAddOptionspadlockvanillaBasement = "Ajoute cadenas sur sous sols vanilla",
+    Sandbox_BasementAddOptionspadlockvanillaBasement_tooltip = "Si TRUE, en tant que joueur non admin, vous aurez la possibilité d'ajouter un cadenas sur les trappes du type basement constructible par les joueurs du mod basement vanilla.<br> Plusieurs options de bac à sable associées sont répertoriées ci-dessous.",
+
+    Sandbox_BasementAddOptionspadlockplayerBasement = "Ajoute cadenas sur sous sols",
+    Sandbox_BasementAddOptionspadlockplayerBasement_tooltip = "Si TRUE, en tant que joueur non admin, vous aurez la possibilité d'ajouter un cadenas sur les trappes du type basement constructible par les joueurs du mod addOption.<br> Plusieurs options de bac à sable associées sont répertoriées ci-dessous.",
+
+    Sandbox_BasementAddOptionspadlockSewer = "Ajoute cadenas sur plaque d'égout",
+    Sandbox_BasementAddOptionspadlockSewer_tooltip = "Si TRUE, en tant que joueur non admin, vous aurez la possibilité d'ajouter un cadenas sur les trappes du type sewer/égout constructible par un admin.<br> Plusieurs options de bac à sable associées sont répertoriées ci-dessous.",
+
+    Sandbox_BasementAddOptionspadlockTravel = "Ajoute cadenas sur trappes de voyage",
+    Sandbox_BasementAddOptionspadlockTravel_tooltip = "Si TRUE, en tant que joueur non admin, vous aurez la possibilité d'ajouter un cadenas sur les trappes du type travel/voyage constructible par un admin.<br> Plusieurs options de bac à sable associées sont répertoriées ci-dessous.",
+
+    Sandbox_BasementAddOptionspadlockBasement = "Ajoute cadenas sur sous sols admin",
+    Sandbox_BasementAddOptionspadlockBasement_tooltip = "Si TRUE, en tant que joueur non admin, vous aurez la possibilité d'ajouter un cadenas sur les trappes du type basement constructible par un admin.<br> Plusieurs options de bac à sable associées sont répertoriées ci-dessous.",
+    
+
+    
+    Sandbox_BasementAddOptionsCrowbarvanillaBasement = "Forcer les trappes sous sols vanilla",
+    Sandbox_BasementAddOptionsCrowbarvanillaBasement_tooltip = "Si TRUE, Les joueurs auront la possibilité de forcer les trappes de basement de joueur du mod vanilla avec un pied de biche, si la trappe est verrouillée.",
+
+    Sandbox_BasementAddOptionsCrowbarplayerBasement = "Forcer les trappes sous sols",
+    Sandbox_BasementAddOptionsCrowbarplayerBasement_tooltip = "Si TRUE, Les joueurs auront la possibilité de forcer les trappes de basements de joueur avec un pied de biche, constructible par les joueurs du mod addOption, si la trappe est verrouillée.",
+
+    Sandbox_BasementAddOptionsCrowbarSewer = "Forcer les plaque d'égout",
+    Sandbox_BasementAddOptionsCrowbarSewer_tooltip = "Si TRUE, Les joueurs auront la possibilité de forcer les plaques d'égouts avec un pied de biche, si la trappe est verrouillée.",
+
+    Sandbox_BasementAddOptionsCrowbarTravel = "Forcer les trappes de voyage",
+    Sandbox_BasementAddOptionsCrowbarTravel_tooltip = "Si TRUE, Les joueurs auront la possibilité de forcer les trappes de voyage avec un pied de biche, si la trappe est verrouillée.",
+
+    Sandbox_BasementAddOptionsCrowbarBasement = "Forcer les trappes sous sols d'admin",
+    Sandbox_BasementAddOptionsCrowbarBasement_tooltip = "Si TRUE, Les joueurs auront la possibilité de forcer les trappes de basement construit par les l'admin avec un pied de biche, si la trappe est verrouillée.",
+
+
+
+    Sandbox_BasementAddOptionsunlockInsideWithoutKey = "Déverrouiller la trappe sans clé",
+    Sandbox_BasementAddOptionsunlockInsideWithoutKey_tooltip = "Si TRUE, vous n'aurez pas besoin de clé pour déverrouiller la trappe depuis l'intérieur du sous-sol uniquement.",
+
+    Sandbox_BasementAddOptionslockInsideWithoutKey = "Verrouillez la trappe sans clé",
+    Sandbox_BasementAddOptionslockInsideWithoutKey_tooltip = "Si TRUE, vous n'aurez pas besoin d'une clé pour verrouiller la trappe depuis l'intérieur du sous-sol uniquement.",
+
+    Sandbox_BasementAddOptionsattractZombies = "Attraction des zombies",
+    Sandbox_BasementAddOptionsattractZombies_tooltip = "0 = Désactivé, le nombre correspond au rayon d'attraction des zombies lorsque vous forcez une trappe (cette option fonctionne avec la permission du pied de biche).",
+
+    Sandbox_BasementAddOptionscrowbarDamageConditionMultiplier = "Dégâts infligés au pied de biche",
+    Sandbox_BasementAddOptionscrowbarDamageConditionMultiplier_tooltip = "0 = Désactivé (aucun dégât infligé au pied de biche), 15 = 100% de dégâts infligés. Ce nombre correspond au multiplicateur de dégâts infligés au pied de biche à la fin de l'action de forçage d'une trappe de sous-sol."
+
+    Sandbox_BasementAddOptionschanceToLoseCrowbarIfIsBroken = "Risque de perdre le pied de biche",
+    Sandbox_BasementAddOptionschanceToLoseCrowbarIfIsBroken_tooltip = "0 = Désactivé 1 = Systématiquement, plus le chiffre est proche de 2, plus il y aura de chance de perdre le pied de biche si celui-ci est retrouvé cassé, plus le chiffre est élevé, plus vous aurez de chances de le garder malgré qu'il soit cassé à la fin d'une action.",
+
+    Sandbox_BasementAddOptionschanceToSucceedBreakPadlockAction = "Chance de succès en forçant le cadenas",
+    Sandbox_BasementAddOptionschanceToSucceedBreakPadlockAction_tooltip = "0 = Succès assuré, plus le chiffre est élevé, moins il y aura de chances de réussir à forcer le cadenas, 1 = une chance sur deux, 10 = une chance sur dix de réussir.",
+
+    Sandbox_BasementAddOptionstimeActionToBreakPadlock = "Durée de l'action de forcage du cadenas",
+    Sandbox_BasementAddOptionstimeActionToBreakPadlock_tooltip = "C'est la durée de l'action de forçage d'un cadenas posé sur une trappe de sous-sol.",
+   
+}

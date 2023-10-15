@@ -1,0 +1,8 @@
+Recipes_CN =
+{
+	Recipe_Extract_Bladder_from_Soccer_Ball = "从足球中取出囊袋",
+	Recipe_Extract_Bladder_from_Football = "从橄榄球中取出囊袋",
+	Recipe_Make_a_Small_Waterskin = "制作一个小革制水袋",
+	Recipe_Make_a_Large_Waterskin = "制作一个大革制水袋",
+	Recipe_Make_a_Quality_Waterskin = "制作一个耐用革制水袋",
+}

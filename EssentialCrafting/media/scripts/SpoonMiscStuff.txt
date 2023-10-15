@@ -1,0 +1,184 @@
+module SpoonEssentialCrafting
+{
+
+	imports
+	{
+		Base
+	}
+	
+	/************************ STUFF AND STUFF ************************/
+	
+	recipe Make a Garbagebag
+    {
+       Plasticbag/GroceryBag1/GroceryBag2/GroceryBag3/GroceryBag4/GroceryBag5,
+
+       Result:Garbagebag,
+       Time:100.0,
+       Category:Survivalist,
+	   Override:true
+    }
+	
+	recipe Make Disinfectant
+    {
+        Bleach;1,
+		Water;5,
+		PopBottleEmpty/WaterBottleEmpty,
+
+        Result:Disinfectant,
+        Time:100.0,
+        Category:Survivalist,
+        NeedToBeLearn:true,
+		CanBeDoneFromFloor: True,
+    }
+	
+	recipe Make Disinfectant
+    {
+		Water;5,
+		Salt;5,
+		PopBottleEmpty/WaterBottleEmpty,
+
+        Result:Disinfectant,
+        Time:100.0,
+        Category:Survivalist,
+        NeedToBeLearn:true,
+		CanBeDoneFromFloor: True,
+    }
+	
+	recipe Make Cleaning Liquid
+    {
+        Bleach;1,
+		Soap2=5,
+		Water;5,
+		PopBottleEmpty/WaterBottleEmpty,
+
+        Result:CleaningLiquid2,
+        Time:100.0,
+        Category:Survivalist,
+        NeedToBeLearn:true,
+		CanBeDoneFromFloor: True,
+    }
+
+	/************************ PAPERWORK ************************/
+	
+	recipe Craft a Notebook
+	{
+		SheetPaper2=15,
+		Twine,
+		
+		Result:Notebook,
+		Time:200.0,
+	}
+	
+	recipe Rip Drawing Paper
+	{
+		Notebook/Journal,
+		
+		Result:SheetPaper2=10,
+		Time:100.0,
+	}
+	
+	recipe Make Drawing Paper
+	{
+		SheetPaperX=30,
+		DuctTape,
+		
+		Result:SheetPaper2=5,
+		Time:200.0,
+	}
+	
+	recipe Make Toilet Paper
+	{
+		SheetPaperX=10,
+		
+		Result:ToiletPaper,
+		Time:100.0,
+	}
+	
+	recipe Make Toilet Paper
+	{
+		CottonBalls=5,
+		
+		Result:ToiletPaper,
+		Time:100.0,
+	}
+	
+	recipe Make Toilet Paper
+	{
+		RippedSheets=3,
+		
+		Result:ToiletPaper,
+		Time:100.0,
+	}
+	
+	recipe Rip Scrambled Paper
+	{
+		MechanicMag1/MechanicMag2/MechanicMag3/FarmingMag1/FishingMag1/HuntingMag1/HuntingMag2/HuntingMag3/HerbalistMag/MetalworkMag1/MetalworkMag2/MetalworkMag3/MetalworkMag4/SmithingMag1/SmithingMag2/SmithingMag3/SmithingMag4/CookingMag1/CookingMag2/ElectronicsMag1/ElectronicsMag2/ElectronicsMag3/ElectronicsMag4/ElectronicsMag5/EngineerMagazine1/EngineerMagazine2/Magazine/TVMagazine/HottieZ/Newspaper/ComicBook/MagazineCrossword1/MagazineCrossword2/MagazineCrossword3/MagazineWordsearch1/MagazineWordsearch2/MagazineWordsearch3,
+		
+		Result:SheetPaperX=30,
+		Time:200.0,
+	}
+	
+	recipe Rip Scrambled Paper
+	{
+		MagazineOld/NewspaperOld,
+		
+		Result:SheetPaperX=30,
+		Time:200.0,
+	}
+	
+	recipe Rip Scrambled Paper
+	{
+		Book/BookTrapping1/BookTrapping2/BookTrapping3/BookTrapping4/BookTrapping5/BookFishing1/BookFishing2/BookFishing3/BookFishing4/BookFishing5/BookCarpentry1/BookCarpentry2/BookCarpentry3/BookCarpentry4/BookCarpentry5/BookMechanic1/BookMechanic2/BookMechanic3/BookMechanic4/BookMechanic5/BookFirstAid1/BookFirstAid2/BookFirstAid3/BookFirstAid4/BookFirstAid5/BookBlacksmith1/BookBlacksmith2/BookBlacksmith3/BookBlacksmith4/BookBlacksmith5/BookMetalWelding1/BookMetalWelding2/BookMetalWelding3/BookMetalWelding4/BookMetalWelding5/BookElectrician1/BookElectrician2/BookElectrician3/BookElectrician4/BookElectrician5/BookCooking1/BookCooking2/BookCooking3/BookCooking4/BookCooking5/BookFarming1/BookFarming2/BookFarming3/BookFarming4/BookFarming5/BookForaging1/BookForaging2/BookForaging3/BookForaging4/BookForaging5/BookTailoring1/BookTailoring2/BookTailoring3/BookTailoring4/BookTailoring5,
+		
+		Result:SheetPaperX=100,
+		Time:600.0,
+	}
+	
+	recipe Rip Scrambled Paper
+	{
+		BookOld/SpoonBible,
+		
+		Result:SheetPaperX=100,
+		Time:600.0,
+	}
+	
+	item SheetPaperX
+    {
+        DisplayCategory = Literature,
+        Weight	=	0.01,
+        Type	=	Normal,
+        DisplayName	= Scrambled Paper,
+        Icon	=	Paper,
+        WorldStaticModel = SheetOfPaper,
+    }
+	
+	item PolymerScrap
+    {
+        DisplayCategory = Material,
+        Weight	=	0.1,
+        Type	=	Normal,
+        DisplayName	= Useless Scrap,
+        Icon	=	Wasabi,
+        WorldStaticModel = Wasabi,
+    }
+	
+	/************************ DESTROY ************************/
+	
+	recipe Smash against the ground
+	{
+		Mugl/MugRed/MugWhite/MugSpiffo/Cologne/Jar/LightBulb/LightBulbRed/LightBulbGreen/LightBulbBlue/LightBulbYellow/LightBulbCyan/LightBulbMagenta/LightBulbOrange/LightBulbPurple/LightBulbPink/WaterDish/Mirror/GlassTumbler/GlassWine/Plate/PlateBlue/PlateOrange/PlateFancy/Teacup,
+		
+		Result: brokenglass_1_3,
+		Time:100.0,
+	}
+	
+	recipe Scrap
+	{
+		Hat_Army/Hat_BaseballHelmet_KY/Hat_BaseballHelmet_Rangers/Hat_BaseballHelmet_Z/Hat_BicycleHelmet/Hat_CrashHelmet/Hat_CrashHelmetFULL/Hat_CrashHelmet_Police/Hat_CrashHelmet_Stars/Hat_DustMask/Hat_EarMuffs/Hat_EarMuff_Protectors/Hat_Fireman/Hat_FootballHelmet/Hat_GasMask/Hat_HardHat_Miner/Hat_HockeyHelmet/Hat_JockeyHelmet01/Hat_JockeyHelmet02/Hat_JockeyHelmet03/Hat_JockeyHelmet04/Hat_JockeyHelmet05/Hat_JockeyHelmet06/Hat_NBCmask/Hat_RidingHelmet/Hat_RiotHelmet/Hat_ShowerCap/Hat_SPHhelmet/Hat_SurgicalCap_Blue/Hat_SurgicalCap_Green/Hat_SurgicalMask_Blue/Hat_SurgicalMask_Green/WeldingMask/Hat_NewspaperHat/Hat_PartyHat_Stars/Hat_PartyHat_TINT/Hat_TinFoilHat/Hat_HockeyMask/Hat_BandanaTINT/Glasses/Glasses_Aviators/Glasses_Normal/Glasses_Reading/Glasses_SafetyGoggles/Glasses_Shooting/Glasses_SkiGoggles/Glasses_Sun/Glasses_SwimmingGoggles/Glasses_Eyepatch_Left/Glasses_Eyepatch_Right/Gloves_FingerlessGloves/Gloves_Surgical/Shoes_ArmyBoots/Shoes_ArmyBootsDesert/Shoes_Black/Shoes_BlackBoots/Shoes_BlueTrainers/Shoes_Brown/Shoes_Random/Shoes_RedTrainers/Shoes_RidingBoots/Shoes_Slippers/Shoes_TrainerTINT/Shoes_Wellies/Shoes_FlipFlop/Shoes_Bowling/Shoes_Fancy/Shoes_Sandals/Shoes_Strapped/Bra_Strapless_Black/Bra_Strapless_RedSpots/Bra_Strapless_White/Bra_Straps_Black/Bra_Straps_White/TightsFishnets/Bra_Strapless_AnimalPrint/Bra_Straps_AnimalPrint/Bra_Straps_FrillyBlack/Bra_Strapless_FrillyBlack/Bra_Straps_FrillyPink/Bra_Strapless_FrillyPink/Bra_Straps_FrillyRed/Bra_Strapless_FrillyRed/Necklace_Silver/Necklace_SilverSapphire/Necklace_SilverCrucifix/Necklace_SilverDiamond/NecklaceLong_Silver/NecklaceLong_SilverEmerald/NecklaceLong_SilverSapphire/NecklaceLong_SilverDiamond/NoseRing_Silver/NoseStud_Silver/Earring_LoopLrg_Silver/Earring_LoopMed_Silver/Earring_LoopSmall_Silver_Both/Earring_LoopSmall_Silver_Top/Earring_Stud_Silver/Ring_Right_MiddleFinger_Silver/Ring_Left_MiddleFinger_Silver/Ring_Right_RingFinger_Silver/Ring_Left_RingFinger_Silver/Ring_Right_MiddleFinger_SilverDiamond/Ring_Left_MiddleFinger_SilverDiamond/Ring_Right_RingFinger_SilverDiamond/Ring_Left_RingFinger_SilverDiamond/Bracelet_BangleRightSilver/Bracelet_BangleLeftSilver/Bracelet_ChainRightSilver/Bracelet_ChainLeftSilver/BellyButton_DangleSilver/BellyButton_DangleSilverDiamond/BellyButton_RingSilver/BellyButton_RingSilverAmethyst/BellyButton_RingSilverDiamond/BellyButton_RingSilverRuby/BellyButton_StudSilver/BellyButton_StudSilverDiamond/Necklace_Gold/Necklace_GoldRuby/Necklace_GoldDiamond/NecklaceLong_Gold/NecklaceLong_GoldDiamond/NoseRing_Gold/NoseStud_Gold/Earring_LoopLrg_Gold/Earring_LoopMed_Gold/Earring_LoopSmall_Gold_Both/Earring_LoopSmall_Gold_Top/Earring_Stud_Gold/Ring_Right_MiddleFinger_Gold/Ring_Left_MiddleFinger_Gold/Ring_Right_RingFinger_Gold/Ring_Left_RingFinger_Gold/Ring_Right_MiddleFinger_GoldRuby/Ring_Left_MiddleFinger_GoldRuby/Ring_Right_RingFinger_GoldRuby/Ring_Left_RingFinger_GoldRuby/Ring_Right_MiddleFinger_GoldDiamond/Ring_Left_MiddleFinger_GoldDiamond/Ring_Right_RingFinger_GoldDiamond/Ring_Left_RingFinger_GoldDiamond/WristWatch_Right_ClassicGold/WristWatch_Left_ClassicGold/Bracelet_BangleRightGold/Bracelet_BangleLeftGold/Bracelet_ChainRightGold/Bracelet_ChainLeftGold/BellyButton_DangleGoldRuby/BellyButton_DangleGold/BellyButton_RingGold/BellyButton_RingGoldDiamond/BellyButton_RingGoldRuby/BellyButton_StudGold/BellyButton_StudGoldDiamond/Necklace_DogTag/Necklace_Crucifix/Necklace_YingYang/Necklace_Pearl/NecklaceLong_Amber/Necklace_Choker/Necklace_Choker_Sapphire/Necklace_Choker_Amber/Necklace_Choker_Diamond/Earring_Stone_Sapphire/Earring_Stone_Emerald/Earring_Stone_Ruby/Earring_Pearl/Earring_Dangly_Sapphire/Earring_Dangly_Emerald/Earring_Dangly_Ruby/Earring_Dangly_Diamond/Earring_Dangly_Pearl/WristWatch_Left_ClassicBlack/WristWatch_Right_ClassicBlack/WristWatch_Right_ClassicBrown/WristWatch_Left_ClassicBrown/WristWatch_Right_ClassicMilitary/Bracelet_LeftFriendshipTINT/Bracelet_RightFriendshipTINT,
+		keep [Recipe.GetItemTypes.Hammer],
+		
+		Result: PolymerScrap,
+		Time:100.0,
+	}
+	
+}

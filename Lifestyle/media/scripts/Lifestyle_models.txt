@@ -1,0 +1,11 @@
+module Lifestyle
+{
+
+    /* -------------------------------- Literature -------------------------------- */
+	model LSMagazineEdition1Model
+	{
+		mesh = WorldItems/Magazine,
+		texture = WorldItems/LSMagazineEdition1,
+		scale =  0.5,
+	}
+}

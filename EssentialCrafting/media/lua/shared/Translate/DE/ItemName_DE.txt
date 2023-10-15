@@ -1,0 +1,8 @@
+ItemName_DE = {
+ 
+	ItemName_SpoonEssentialCrafting.PolymerScrap = "Polymerschrott",
+	ItemName_SpoonEssentialCrafting.SheetPaperX = "Papierfetzen",
+	ItemName_SpoonEssentialCrafting.SpoonMagEssentialC = "Löffelmagie - Alles in Handarbeit",
+	ItemName_SpoonEssentialCrafting.WeaponParts = "Waffenteile",
+ 
+}

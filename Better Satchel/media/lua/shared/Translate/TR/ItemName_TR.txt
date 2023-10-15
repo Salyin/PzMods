@@ -1,0 +1,7 @@
+ItemName_TR = {
+	ItemName_Base.Bag_Satchel = "El Çantasý (Önde)",
+    ItemName_Base.Bag_SatchelBack = "El Çantasý (Arkada)",
+	ItemName_Base.MysteriousSatchel_New = "Taktik Sýrt Çantasý (Önde)",
+	ItemName_Base.MysteriousSatchelBack = "Taktik Sýrt Çantasý (Arkada)",
+	ItemName_Base.MysteriousHazmat = "Koruyucu Elbise",
+}

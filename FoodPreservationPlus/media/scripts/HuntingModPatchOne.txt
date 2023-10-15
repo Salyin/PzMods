@@ -1,0 +1,277 @@
+module HuntingMod
+{
+
+	imports
+	{
+		Base,
+	}
+	/****************************** BUTCHER SMALLANIMAL DEFAULT ******************************/
+	
+	recipe Butcher Small Animal
+    {
+        keep KitchenKnife/HuntingKnife/FlintKnife/MeatCleaver/Machete,
+        HMDeadFox/HMDeadSquirrel/HMDeadSkunk/HMDeadOpossum/HMDeadRaccoon/HMDeadBeaver,
+        Result:Smallanimalmeat,
+        Sound:SliceMeat,
+        Time:100.0,
+        OnCreate:Recipe.OnCreate.CutAnimal,
+        Category:Cooking,
+		OnGiveXP:Recipe.OnGiveXP.Cooking10,
+		Override:true
+    }
+
+	recipe Butcher Rabbit
+    {
+        keep KitchenKnife/HuntingKnife/FlintKnife/MeatCleaver/Machete,
+        HMDeadRabbit,
+        Result:Rabbitmeat,
+        Sound:SliceMeat,
+        Time:100.0,
+        OnCreate:Recipe.OnCreate.CutAnimal,
+		OnGiveXP:Recipe.OnGiveXP.Cooking10,
+        Category:Cooking,
+		Override:true
+    }
+
+	recipe Butcher Bird
+    {
+		keep KitchenKnife/HuntingKnife/FlintKnife/MeatCleaver/Machete,
+        HMDeadPigeon/HMDeadQuail/HMDeadDuck/HMDeadGoose/HMDeadTurkey,
+        Result:Smallbirdmeat,
+        Sound:SliceMeat,
+        Time:100.0,
+        OnCreate:Recipe.OnCreate.CutAnimal,
+		OnGiveXP:Recipe.OnGiveXP.Cooking10,
+        Category:Cooking,
+		Override:true
+    }
+
+	recipe Butcher Deer
+    {
+		HMDeadDeer,
+        keep KitchenKnife/HuntingKnife/FlintKnife/MeatCleaver/Machete,
+        Result:Steak,
+        Sound:SliceMeat,
+        Time:300.0,
+		Category:Cooking,
+		OnGiveXP:Recipe.OnGiveXP.Cooking10,
+		OnCreate: GetLeatherDeer_OnCreate,
+		CanBeDoneFromFloor      : TRUE,
+		Override:true
+    }
+
+	recipe Butcher Elk
+    {
+		HMDeadElk,
+        keep KitchenKnife/HuntingKnife/FlintKnife/MeatCleaver/Machete,
+        Result:Steak,
+        Sound:SliceMeat,
+        Time:400.0,
+		Category:Cooking,
+		OnGiveXP:Recipe.OnGiveXP.Cooking10,
+		OnCreate: GetLeatherElk_OnCreate,
+		CanBeDoneFromFloor      : TRUE,
+		Override:true
+    }
+
+	recipe Butcher Wild Pig
+    {
+		HMDeadWildpig,
+		keep KitchenKnife/HuntingKnife/FlintKnife/MeatCleaver/Machete,
+        Result:Steak,
+        Sound:SliceMeat,
+        Time:300.0,
+        Category:Cooking,
+		OnGiveXP:Recipe.OnGiveXP.Cooking10,
+		OnCreate: GetLeatherPig_OnCreate,
+		CanBeDoneFromFloor      : TRUE,
+		Override:true
+    }
+
+	recipe Butcher Bear
+    {
+		HMDeadBear,
+		keep KitchenKnife/HuntingKnife/FlintKnife/MeatCleaver/Machete,
+		Result:Steak,
+        Sound:SliceMeat,
+        Time:450.0,
+        Category:Cooking,
+		OnGiveXP:Recipe.OnGiveXP.Cooking10,
+		OnCreate: GetLeatherBear_OnCreate,
+		CanBeDoneFromFloor      : TRUE,
+		Override:true
+    }
+	
+	recipe Hunt Small Game with Throwing Spears
+    {
+		SpearCrafted=1,
+    	HMAnimalTracks;6, 
+		Result:HMAnimalTraces,
+    	Time:750.0,
+    	Category:Survivalist,
+    	OnCreate:getHuntSGS,
+		OnGiveXP:Recipe.OnGiveXP.SpearLow,
+		Override:true
+    }
+
+	recipe Hunt Deer with Throwing Spears
+    {
+		SpearCrafted=2,
+		HMAnimalTracksLarge;4,
+		Result:HMAnimalTraces,
+		Time:600.0,
+		Category:Survivalist,
+		OnCreate:getHuntDES,
+		OnGiveXP:Recipe.OnGiveXP.SpearHigh,
+		Override:true
+    }
+
+	recipe Hunt Wild Pigs with Throwing Spears
+    {
+		SpearCrafted=2,
+		HMAnimalTracksLarge;4,
+		Result:HMAnimalTraces,
+		Time:650.0,
+		Category:Survivalist,
+		OnCreate:getHuntPIS,
+		OnGiveXP:Recipe.OnGiveXP.SpearHigh,
+		Override:true
+    }
+
+	recipe Hunt Birds with Shotgun
+    {
+		keep Shotgun,
+        ShotgunShells=1,
+		HMAnimalTracks;6,
+		Result:HMAnimalTraces,
+		Category:Survivalist,
+		Time:250.0,
+		OnCreate:getHuntBIG,
+		OnGiveXP:Recipe.OnGiveXP.HuntingLow,
+		Override:true
+    }
+
+	recipe Hunt Wild Pigs with Shotgun
+    {
+		keep Shotgun,
+        ShotgunShells=2,
+		HMAnimalTracksLarge;4,
+		Result:HMAnimalTraces,
+		Category:Survivalist,
+		Time:300.0,
+		OnCreate:getHuntPIG,
+		OnGiveXP:Recipe.OnGiveXP.HuntingHigh,
+		Override:true
+    }
+
+	recipe Hunt Bear with Shotgun
+    {
+		keep Shotgun,
+		ShotgunShells=4,
+		HMAnimalTracksLarge;4,
+		Result:HMAnimalTraces,
+		Category:Survivalist,
+		Time:400.0,
+		OnCreate:getHuntBEG,
+		OnGiveXP:Recipe.OnGiveXP.HuntingHigh,
+		Override:true
+    }
+
+	recipe Hunt Small Game with Varmint Rifle
+    {
+		keep HuntingRifle/VarmintRifle,
+        223Bullets=2,
+		HMAnimalTracks;6,
+		Result:HMAnimalTraces,
+		Category:Survivalist,
+		Time:400.0,
+		OnCreate:getHuntSGV,
+		OnGiveXP:Recipe.OnGiveXP.HuntingLow,
+		Override:true
+	}
+
+	recipe Hunt Birds with Varmint Rifle
+    {
+		keep HuntingRifle/VarmintRifle,
+        223Bullets=4,
+		HMAnimalTracks;6,
+		Result:HMAnimalTraces,
+		Category:Survivalist,
+		Time:500.0,
+		OnCreate:getHuntBIG,
+		OnGiveXP:Recipe.OnGiveXP.HuntingLow,
+		Override:true
+    }
+
+	recipe Hunt Deer with Rifle
+    {
+		keep HuntingRifle/VarmintRifle,
+        308Bullets=2,
+		HMAnimalTracksLarge;4,
+		Result:HMAnimalTraces,
+		Category:Survivalist,
+		Time:250.0,
+		OnCreate:getHuntDER,
+		OnGiveXP:Recipe.OnGiveXP.HuntingHigh,
+		Override:true
+    }
+
+	recipe Hunt Wild Pigs with Rifle
+    {
+		keep HuntingRifle/VarmintRifle,
+        308Bullets=2,
+		HMAnimalTracksLarge;4,
+		Result:HMAnimalTraces,
+		Category:Survivalist,
+		Time:250.0,
+		OnCreate:getHuntPIG,
+		OnGiveXP:Recipe.OnGiveXP.HuntingHigh,
+		Override:true
+    }
+
+	recipe Hunt Bear with Rifle
+    {
+		keep HuntingRifle/VarmintRifle,
+        308Bullets=3,
+		HMAnimalTracksLarge;4,
+		Result:HMAnimalTraces,
+		Category:Survivalist,
+		Time:350.0,
+		OnCreate:getHuntBEG,
+		OnGiveXP:Recipe.OnGiveXP.HuntingHigh,
+		Override:true
+    }
+	
+	recipe Track Game
+    {
+		HMAnimalTraces;2,
+        Result:HMAnimalTracks,
+        Time:250.0,
+        Category:Survivalist,
+		OnGiveXP:Recipe.OnGiveXP.ForagingLow,
+		Override:true
+	}
+
+	recipe Track Large Game
+    {
+		HMAnimalTracks;24,
+        Result:HMAnimalTracksLarge,
+        Time:250.0,
+        Category:Survivalist,
+		OnGiveXP:Recipe.OnGiveXP.ForagingHigh,
+		Override:true
+    }
+	
+	recipe Throw Away This Shit
+    {
+        HMAnimalTraces/HMAnimalTracks/HMAnimalTracksLarge=25,
+
+        Result:Twigs,
+        Time:10.0,
+        Category:Cooking,
+        OnGiveXP:Recipe.OnGiveXP.None,
+		AllowRottenItem:true,
+		Override:true
+    }
+
+}

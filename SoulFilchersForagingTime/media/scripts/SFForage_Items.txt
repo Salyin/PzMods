@@ -1,0 +1,232 @@
+module filcher
+{
+	imports
+	{
+		Base
+	}
+
+/************************Items - Food************************/
+
+    item SFAcorns
+    {
+        Type			= Food,
+        DisplayName		= Acorns,
+        Icon			= SFAcorns,
+        Weight			= 0.1,
+        HungerChange 		= -5,
+        Carbohydrates 		= 14.12,
+        Proteins 		= 4.34,
+        Lipids 			= 5.48,
+        Calories 		= 155,
+        CantBeFrozen 		= TRUE,
+    }
+
+    item SFHickoryNut
+    {
+        Type			=	Food,
+        DisplayName		=	Hickory Nut,
+        Icon			=	SFHickoryNut,
+        Weight			=	0.1,
+        EvolvedRecipe		=       Cake:6,
+        HungerChange 		=	-6,
+        Carbohydrates 		= 14.12,
+        Proteins 		= 4.34,
+        Lipids 			= 5.48,
+        Calories 		= 155,
+        CantBeFrozen 		= TRUE,
+    }
+
+    item SFHoney
+    {
+        Type		=		Food,
+        DisplayName	=		Wild Honey,
+        Icon		=		Honey,
+        Weight		=		0.4,
+        HungerChange 	=		-20,
+        EvolvedRecipe   =       Cake:5;Sandwich:5;Salad:5;Roasted Vegetables:5;Stir fry:5;HotDrink:5,
+        Carbohydrates	= 187,
+        Proteins	= 0,
+        Lipids		= 0,
+        Calories	= 660,
+        FoodType	= NoExplicit,
+        CantBeFrozen	= TRUE,
+    }
+
+    item SFPawpaw
+    {
+        Type			=	Food,
+        DisplayName		=	Pawpaw,
+        Icon			=	Pawpaw,
+        Weight			=	0.1,
+        EvolvedRecipe		=       Cake:6,
+        HungerChange 		=	-15,
+        Carbohydrates 		= 18.80,
+        Proteins 		= 1.20,
+        Lipids 			= 1.20,
+        Calories 		= 80,
+        CantBeFrozen 		= TRUE,
+    }
+
+    item SFPersimmon
+    {
+        Type			=	Food,
+        DisplayName		=	Persimmon,
+        Icon			=	SFHickoryNut,
+        Weight			=	0.1,
+        EvolvedRecipe		=       Cake:6,
+        HungerChange 		=	-6,
+        Carbohydrates 		= 14.12,
+        Proteins 		= 4.34,
+        Lipids 			= 5.48,
+        Calories 		= 155,
+        CantBeFrozen 		= TRUE,
+    }
+
+    item SFPineNuts
+    {
+        Type				=		Food,
+        DisplayName			=		Pine Nuts,
+        Icon				=		SFPineNuts,
+        Weight				=		0.1,
+        HungerChange 		=		-5,
+        Carbohydrates = 14.12,
+        Proteins = 4.34,
+        Lipids = 5.48,
+        Calories = 155,
+        CantBeFrozen = TRUE,
+    }
+
+    item SFPlum
+    {
+        Type			=	Food,
+        DisplayName		=	Plum,
+        Icon			=	SFHickoryNut,
+        Weight			=	0.1,
+        EvolvedRecipe		=       Cake:6,
+        HungerChange 		=	-6,
+        Carbohydrates 		= 14.12,
+        Proteins 		= 4.34,
+        Lipids 			= 5.48,
+        Calories 		= 155,
+        CantBeFrozen 		= TRUE,
+    }
+
+	item SFRaspberry
+	{
+		HungerChange	=	-10,
+		Weight	=	0.1,
+		AlwaysWelcomeGift	=	true,
+		Type	=	Food,
+		DisplayName	=	Berries,
+		Icon	=	SFRaspberry,
+		DaysTotallyRotten	=	8,
+        DaysFresh	=	4,
+        EvolvedRecipe = Cake:10;FruitSalad:10,
+        FoodType    =   Fruits,
+        ThirstChange	=	-1,
+        HerbalistType = Berry,
+        Carbohydrates = 5,
+        Proteins = 4,
+        Lipids = 0,
+        Calories = 23,
+	}
+
+    item SFTruffles
+    {
+        Type			=	Food,
+        DisplayName		=	Truffles,
+        Icon			=	SFTruffles,
+        Weight			=	0.15,
+        HungerChange 		=	-10,
+	DaysTotallyRotten	=	12,
+        DaysFresh		=	6,
+        EvolvedRecipe	=	Soup:10;Stew:10;Pie:10;Stir fry:10;Salad:5;Roasted Vegetables:10,
+        Carbohydrates 		= 8.10,
+        Proteins 		= 1.64,
+        Lipids 			= 0.08,
+        Calories 		= 40,
+    }
+
+/************************Miscellaneous Items************************/
+
+	item Cigarette
+	{
+	    	DisplayCategory = Junk,
+		HungerChange	=	0,
+		Weight	=	0.005,
+		RequireInHandOrInventory	=	Lighter/Matches,
+		Type	=	Food,
+		DisplayName	=	Cigarette,
+		StressChange	=	-5,
+		Icon	=	Cigarette,
+		CustomContextMenu = Smoke,
+		CantBeFrozen = TRUE,
+		OnEat = OnEat_Cigarettes,
+		StaticModel = Cigarette,
+		EatType = Cigarettes,
+		WorldStaticModel = CigarettePack_Ground,
+		CustomEatSound = ,
+	}
+
+    item SFDeadCrow
+    {
+        HungerChange	=	-30,
+        Weight		=	0.4,
+        Type		=	Food,
+        DisplayName	=	Dead Crow,
+        Icon		=	SFCrowDead,
+        IsCookable	=	TRUE,
+        DangerousUncooked	=	TRUE,
+        DaysTotallyRotten	=	12,
+        MinutesToBurn	=	60,
+        MinutesToCook	=	25,
+        DaysFresh	=	8,
+        Carbohydrates 	= 0,
+        Proteins 	= 30,
+        Lipids 		= 3.25,
+        Calories 	= 161,
+    }
+
+    item Roadkill
+    {
+        DisplayCategory = Food,
+        HungerChange	=	-40,
+        Weight	=	1.0,
+        Type	=	Food,
+        DisplayName	=	Roadkill,
+        Icon	=	RabbitDead,
+        IsCookable	=	TRUE,
+        DangerousUncooked	=	TRUE,
+        DaysTotallyRotten	=	12,
+        MinutesToBurn	=	60,
+        MinutesToCook	=	25,
+        DaysFresh	=	0,
+        Carbohydrates = 0,
+        Proteins = 300,
+        Lipids = 28,
+        Calories = 1670,
+        BadInMicrowave = true,
+        GoodHot = true,
+        BadCold = true,
+        UnhappyChange	=	30,
+        RemoveUnhappinessWhenCooked = true,
+        WorldStaticModel = DeadRabbit,
+        CustomEatSound = EatingDeadAnimal,
+    }
+
+/************************Recipes - Cooking************************/
+
+    recipe Butcher Crow
+    {
+        keep KitchenKnife/HuntingKnife/MeatCleaver/FlintKnife/Machete,
+        SFDeadCrow,
+
+        Result:Smallbirdmeat,
+        Sound:PZ_FoodSwoosh,
+        Time:50.0,
+        OnCreate:Recipe.OnCreate.CutAnimal,
+        Category:Cooking,
+        OnGiveXP:Recipe.OnGiveXP.Cooking10,
+    }
+
+}

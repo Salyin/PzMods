@@ -1,0 +1,13 @@
+Recipes_ES = {
+    Recipe_Make_97bushmaster_Windshield = "Hacer parabrisas",
+	Recipe_Make_97bushmaster_Window_Front = "Hacer ventana lateral delantera",
+	Recipe_Make_97bushmaster_Window_Side = "Hacer ventana lateral",
+	Recipe_Make_97bushmaster_Windshield_Rear = "Hacer parabrisas trasero",
+	Recipe_Make_97bushmaster_Hood = "Hacer capó",
+	Recipe_Make_97bushmaster_Door = "Hacer puerta",
+	Recipe_Make_97bushmaster_Hatch = "Hacer escotilla",
+	Recipe_Make_97bushmaster_Storage_Lid_Small = "Hacer tapa de almacenamiento izquierdo",
+	Recipe_Make_97bushmaster_Storage_Lid_Large = "Hacer tapa de almacenamiento derecho",
+	Recipe_Make_97bushmaster_Roof_Crates = "Hacer cajas de almacenamiento",
+	Recipe_Make_97bushmaster_Bullbar = "Hacer parachoques",
+}

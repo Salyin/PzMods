@@ -1,0 +1,7 @@
+UI_RU = {
+    UI_no_more_workshop_tab_problem_welcome = "Мод 'No More Workshop Tab Problem' активирован.",
+    UI_no_more_workshop_tab_problem_forgot = "Вы забыли активировать мод на вкладке 'Мастерская Steam'.",
+    UI_no_more_workshop_tab_problem_ok = "Мод добавлен на сервер.",
+    UI_no_more_workshop_tab_problem_local = "Этот мод установлен локально. Убедитесь, что у ваших друзей он тоже есть на компьютере.",
+    UI_no_more_workshop_tab_problem_require = "Сперва активируйте обязательные моды: ",
+}

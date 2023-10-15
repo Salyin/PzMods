@@ -1,0 +1,5 @@
+IGUI_RU = {
+	IGUI_CraftCategory_Weapons = "Оружие",
+	IGUI_CraftCategory_Scrapping = "Разборка",
+	IGUI_CraftCategory_Armor = "Броня",
+}

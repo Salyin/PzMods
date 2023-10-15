@@ -1,0 +1,9 @@
+ItemName_UA = {
+	ItemName_Base.Bag_FannyPackBack = "Поясная сумка(спина)",
+	ItemName_Base.Bag_FannyPackFront = "Поясная сумка(живіт)",
+	ItemName_Base.Bag_Satchel = "Сумка(живіт)",
+	ItemName_Base.Bag_SatchelBack = "Сумка(спина)",
+	ItemName_Base.MysteriousSatchel_New = "Тактична сумка(живіт)",
+	ItemName_Base.MysteriousSatchelBack = "Тактична сумка(спина)",
+	ItemName_Base.MysteriousHazmat = "Костюм захисний загальновійськовий",
+}

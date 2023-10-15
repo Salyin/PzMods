@@ -1,0 +1,7 @@
+ItemName_IT = {
+	ItemName_Base.Bag_Satchel = "Borsa (anteriore)",
+    ItemName_Base.Bag_SatchelBack = "Borsa (Retro)",
+	ItemName_Base.MysteriousSatchel_New = "Borsa Tattica (anteriore)",
+	ItemName_Base.MysteriousSatchelBack = "Borsa Tattica (Retro)",
+	ItemName_Base.MysteriousHazmat = "Tuta Hazmat",
+}

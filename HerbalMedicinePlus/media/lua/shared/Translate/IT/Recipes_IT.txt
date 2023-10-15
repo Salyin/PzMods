@@ -1,0 +1,17 @@
+Recipe_IT = {
+	Recipe_Craft_Herbal_Vitamins = "Crea vitamine a base di erbe",
+	Recipe_Craft_Herbal_Antibiotics Brew = "Crea infuso di antibiotici a base di erbe",
+	Recipe_Empty_Bowl_of_Antibiotics = "Ciotola vuota con infuso di antibiotici a base di erbe",
+	Recipe_Craft_Herbal_Painkillers_Brew = "Crea infuso di antidolorifici a base di erbe",
+	Recipe_Empty_Bowl_of_Painkillers = "Ciotola vuota con infuso di antidolorifici a base di erbe",
+	Recipe_Disinfect_Rag = "Disinfetta straccio",
+	Recipe_Disinfect_Bandage = "Disinfetta bendaggio",
+	Recipe_Make_Mortar_and_Pestle = "Crea mortaio e pestello",
+	Recipe_Extract_Antibiotics_from_Moldy_Bread = "Estrai antibiotici dal pane ammuffito",
+	Recipe_Make_Herbal_Antibiotics = "Crea antibiotici a base di erbe",
+	Recipe_Make_Vitamins = "Crea vitamine",
+	Recipe_Make_Natural_Antidepressants = "Crea antidepressivi naturali",
+	Recipe_Make_Natural_Beta Blockers = "Crea Betabloccanti naturali ",
+	Recipe_Prepare_Herbal_Tea = "prepara tè alle erbe",
+	Recipe_Break_pieces_of_charcoal = "rompi pezzi di carbone",
+}

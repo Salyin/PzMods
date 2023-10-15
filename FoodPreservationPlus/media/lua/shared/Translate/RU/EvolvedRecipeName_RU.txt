@@ -1,0 +1,6 @@
+EvolvedRecipeName_RU = {
+	EvolvedRecipeName_Base.ESaltedMeat = "Солонина",
+	EvolvedRecipeName_Base.ESmokedMeat = "Копченое мясо",
+	EvolvedRecipeName_Base.ESalami = "Салями",
+}
+

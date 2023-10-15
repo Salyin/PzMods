@@ -1,0 +1,8 @@
+IGUI_EN = {
+    IGUI_VehicleRecycling_ConfirmDialog_Vehicle = "Do you really want to dismantle this vehicle?",
+    IGUI_VehicleRecycling_ConfirmDialog_Trailer = "Do you really want to dismantle this trailer?",
+	
+	IGUI_VehicleRecycling_VehicleIsClamedThe15karatFix = "The car is in claim",
+	IGUI_VRR_Not_BlowTorch = "I don't have a torch in my inventory",
+	IGUI_VRR_Not_BlowTorchLow = "Not enough propane to disassemble",
+}

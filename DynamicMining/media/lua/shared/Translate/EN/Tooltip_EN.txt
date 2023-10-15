@@ -1,0 +1,7 @@
+Tooltip_EN = {
+	-- Item tooltip
+	Tooltip_item_MineWarning = "WARNING: Mining activities drain your endurance, thirst and hunger and will give you fatigue. Be sure to have a safe spot to rest and some food/drinks with you. You might get minor injuries as well.",
+	Tooltip_item_SaltOre = "Rock Salt can be crushed into table salt.",
+	Tooltip_item_CoalOre = "Coal can be broke up to charcoal and then used to fuel a fire or other stuff.",
+	Tooltip_item_WhatIsThisOre = "You have come across some rocks, investigate further with a pickaxe to see if it has more valuable ores in it or is it just a punch of ordinary rocks.",
+}

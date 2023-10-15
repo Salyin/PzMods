@@ -1,0 +1,4 @@
+Items_DE = {
+	DisplayName_DIY_VehiclePartsMag5 = "DIY-Fahrzeugteile! - Stamm",
+	ItemName_T15K_VehicleParts.DIY_VehiclePartsMag5 = "DIY-Fahrzeugteile! - Stamm",
+}

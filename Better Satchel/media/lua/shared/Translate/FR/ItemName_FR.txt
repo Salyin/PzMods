@@ -1,0 +1,7 @@
+ItemName_FR = {
+	ItemName_Base.Bag_Satchel = "Cartable (devant)",
+    ItemName_Base.Bag_SatchelBack = "Cartable (derrière)",
+	ItemName_Base.MysteriousSatchel_New = "Tactique cartable (devant)",
+	ItemName_Base.MysteriousSatchelBack = "Tactique cartable (derrière)",
+	ItemName_Base.MysteriousHazmat = "Combinaison Hazmat",
+}

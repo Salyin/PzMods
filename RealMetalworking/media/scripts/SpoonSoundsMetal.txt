@@ -1,0 +1,9 @@
+module Base {
+
+    sound SpoonMetal
+    {
+        category = Metalworking, loop = true, is3D = true,
+        clip { file = media/sound/MetalSound.ogg, distanceMax = 50, volume = 1.5, }
+    }
+
+}

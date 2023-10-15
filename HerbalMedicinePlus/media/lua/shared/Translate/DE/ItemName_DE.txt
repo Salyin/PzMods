@@ -1,0 +1,11 @@
+ItemName_DE = {
+    ItemName_Base.AntibioticsHerbalBrew = "Fermentiertes Kräuterantibiotikum (roh)",
+    ItemName_Base.AntibioticsHerbalBrewReady = "Fermentiertes Kräuterantibiotikum (bereit)",
+    ItemName_Base.AntibioticsHerbal = "Kräuterantibiotikum",
+    ItemName_Base.PainkillersHerbalBrew = "Fermentierte Kräuterschmerzmittel (roh)",
+    ItemName_Base.PainkillersHerbalBrewReady = "Fermentierte Kräuterschmerzmittel (bereit)",
+    ItemName_Base.PainkillersHerbal = "Kräuterschmerzmittel",
+    ItemName_Base.SpoonHerbalTea = "Kräutertee",
+    ItemName_Base.PieceOfCharcoal = "Stück Holzkohle",
+    ItemName_Base.SpoonMagazineHerbal = "Kräuterrezepte-Magazin",
+}

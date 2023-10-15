@@ -1,0 +1,11 @@
+ItemName_IT = {
+ItemName_Base.AntibioticsHerbalBrew = "Infuso di antibiotici a base di erbe (crudo)",
+ItemName_Base.AntibioticsHerbalBrewReady = "Infuso di antibiotici a base di erbe (pronto)",
+ItemName_Base.AntibioticsHerbal = "Antibiotici a base di erbe",
+ItemName_Base.PainkillersHerbalBrew = "Infuso di antidolorifici a base di erbe (crudo)",
+ItemName_Base.PainkillersHerbalBrewReady = "Infuso di antidolorifici a base di erbe (pronto)",
+ItemName_Base.PainkillersHerbal = "Antidolorifici a base di erbe",
+ItemName_Base.SpoonHerbalTea = "Té alle erbe",
+ItemName_Base.PieceOfCharcoal = "Pezzo di carbone",
+ItemName_Base.SpoonMagazineHerbal = "Rivista di ricette a base di erbe",
+}

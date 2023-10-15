@@ -1,0 +1,62 @@
+Moodles_PTBR = {
+
+	Moodles_MindfulState_L1 = "Plenitude",
+	Moodles_MindfulState_L1_desc = "Sua mente está limpa...",
+	Moodles_MindfulState_L2 = "Forte Plenitude",
+	Moodles_MindfulState_L2_desc = "Abandone dor e fome...",
+	Moodles_MindfulState_L3 = "Perfeita Plenitude",
+	Moodles_MindfulState_L3_desc = "Seus olhos estão abertos de verdade...",
+
+	Moodles_HomeSick_L1 = "Um Pouco Saudoso",
+	Moodles_HomeSick_L1_desc = "Sentindo falta do conforto de um casa.",
+	Moodles_HomeSick_L2 = "Saudoso",
+	Moodles_HomeSick_L2_desc = "Desejando voltar para dentro de um abrigo.",
+	Moodles_HomeSick_L3 = "Muito Saudoso",
+	Moodles_HomeSick_L3_desc = "Desesperado por um lugar para ficar.",
+	Moodles_HomeSick_L4 = "Severamente Saudoso",
+	Moodles_HomeSick_L4_desc = "Cada hora que passa é um tormento.",
+
+	Moodles_AtHouse_L1 = "Confortavelmente Abrigado",
+	Moodles_AtHouse_L1_desc = "Passou algum tempo dentro de um abrigo. Zero preocupações.",
+
+	Moodles_MusicGood_L1 = "Música Boa",
+	Moodles_MusicGood_L1_desc = "Curtiu uma música boa recentemente.",
+	Moodles_MusicGood_L2 = "Música Ótima",
+	Moodles_MusicGood_L2_desc = "A melodia harmoniosa te enche de alegria.",
+	
+	Moodles_MusicBad_L1 = "Música Ruim",
+	Moodles_MusicBad_L1_desc = "Ninguém merece ouvir isso.",
+	Moodles_MusicBad_L2 = "Barulho Insuportável",
+	Moodles_MusicBad_L2_desc = "AAahh!! Alguém para isso!",
+
+	Moodles_PartyGood_L1 = "Festa Tranquila",
+	Moodles_PartyGood_L1_desc = "Bom, mas poderia melhorar. Se a gente pudesse ter mais pessoas aqui...",
+	Moodles_PartyGood_L2 = "Festa do Arromba",
+	Moodles_PartyGood_L2_desc = "Só curtir como se não houvesse amanhã.",
+	Moodles_PartyGood_L3 = "Festa Insana",
+	Moodles_PartyGood_L3_desc = "Caramba, não esqueço dessa tão cedo!",
+	
+	Moodles_PartyBad_L1 = "Festa Irritante",
+	Moodles_PartyBad_L1_desc = "Desejando escapar dessa vergonha alheia.",
+	Moodles_PartyBad_L2 = "Festa Muito Irritante",
+	Moodles_PartyBad_L2_desc = "Grande risco de estresse.",
+	Moodles_PartyBad_L3 = "Festa Extremamente Irritante",
+	Moodles_PartyBad_L3_desc = "Alegria forçada, conversa fiada, só quero sair daqui!",
+
+	Moodles_DJAudience_L1 = "Público Pequeno",
+	Moodles_DJAudience_L1_desc = "Mixando para um público pós-apocalíptico!",
+	Moodles_DJAudience_L2 = "Audiência Considerável",
+	Moodles_DJAudience_L2_desc = "Aumente o volume porque o grupo é grande - hora de brilhar!",
+	Moodles_DJAudience_L3 = "Público Enorme",
+	Moodles_DJAudience_L3_desc = "Aumentar a energia para esse público gigante!",
+	
+	Moodles_Embarrassed_L1 = "Um Pouco Envergonhado",
+	Moodles_Embarrassed_L1_desc = "Se envergonhou.",
+	Moodles_Embarrassed_L2 = "Envergonhado",
+	Moodles_Embarrassed_L2_desc = "Risco de ficar infeliz",
+	Moodles_Embarrassed_L3 = "Muito Envergonhado",
+	Moodles_Embarrassed_L3_desc = "Grande risco de ficar infeliz",
+	Moodles_Embarrassed_L4 = "Extremamente Envergonhado",
+	Moodles_Embarrassed_L4_desc = "Queria que abrisse um buraco pra poder cair dentro!",
+
+}

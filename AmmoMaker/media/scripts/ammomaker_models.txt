@@ -1,0 +1,52 @@
+/* Ammo Maker by STIMP_TM */
+
+module ammomaker {
+
+	imports
+	{
+		Base
+	}
+
+	model ammomaker_BirdExcrement
+	{
+		mesh = WorldItems/ammomaker_BirdExcrement,
+		texture = WorldItems/ammomaker_BirdExcrement,
+		scale = 0.02,
+	}
+
+	model ammomaker_PotOfBridExcrement
+	{
+		mesh = WorldItems/ammomaker_PotOfBridExcrement,
+		texture = WorldItems/ammomaker_PotOfBridExcrement,
+		scale = 0.4,
+	}
+
+	model ammomaker_Nitre
+	{
+		mesh = WorldItems/ammomaker_Nitre,
+		texture = WorldItems/ammomaker_Nitre,
+		scale = 0.02,
+	}
+
+	model ammomaker_Sulfur
+	{
+		mesh = WorldItems/ammomaker_Sulfur,
+		texture = WorldItems/ammomaker_Sulfur,
+		scale = 0.02,
+	}
+
+	model ammomaker_CharcoalPowder
+	{
+		mesh = WorldItems/ammomaker_CharcoalPowder,
+		texture = WorldItems/ammomaker_CharcoalPowder,
+		scale = 0.02,
+	}
+
+	model ammomaker_RecPlastic
+	{
+		mesh = WorldItems/ammomaker_RecPlastic,
+		texture = WorldItems/ammomaker_RecPlastic,
+		scale = 0.02,
+	}
+
+}

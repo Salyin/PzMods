@@ -1,0 +1,153 @@
+/* Ammo Maker by STIMP_TM */
+
+module ammomaker {
+
+	imports
+	{
+		Base
+	}
+
+/* Recipes Ammo */
+
+	recipe Make .223 Rem Bullets x5
+	{
+		GunPowder=2,
+		ScrapMetal=1,
+		BlowTorch=1,
+		keep Hammer/BallPeenHammer,
+
+		Result:223Bullets=1,
+		RemoveResultItem:true,
+		OnCreate:Recipe.OnCreate.Make_Base_223Rem,
+		Sound:Hammering,
+		Time:50.0,
+        Category:Ammo Maker Base,
+		OnGiveXP:Recipe.OnGiveXP.Reloading5,
+		NeedToBeLearn:false,
+	}
+
+	recipe Make 5.56x45 NATO Bullets x5
+	{
+		GunPowder=2,
+		ScrapMetal=1,
+		BlowTorch=1,
+		keep Hammer/BallPeenHammer,
+
+		Result:556Bullets=1,
+		RemoveResultItem:true,
+		OnCreate:Recipe.OnCreate.Make_Base_556x45NATO,
+		Sound:Hammering,
+		Time:50.0,
+        Category:Ammo Maker Base,
+		OnGiveXP:Recipe.OnGiveXP.Reloading5,
+		NeedToBeLearn:false,
+	}
+
+	recipe Make .308 Win Bullets x5
+	{
+		GunPowder=3,
+		ScrapMetal=1,
+		BlowTorch=1,
+		keep Hammer/BallPeenHammer,
+
+		Result:308Bullets=1,
+		RemoveResultItem:true,
+		OnCreate:Recipe.OnCreate.Make_Base_308Win,
+		Sound:Hammering,
+		Time:50.0,
+        Category:Ammo Maker Base,
+		OnGiveXP:Recipe.OnGiveXP.Reloading5,
+		NeedToBeLearn:false,
+	}
+
+	recipe Make 9mm Luger Bullets x15
+	{
+		GunPowder=1,
+		ScrapMetal=1,
+		BlowTorch=1,
+		keep Hammer/BallPeenHammer,
+
+		Result:Bullets9mm=1,
+		RemoveResultItem:true,
+		OnCreate:Recipe.OnCreate.Make_Base_9mmLuger,
+		Sound:Hammering,
+		Time:50.0,
+        Category:Ammo Maker Base,
+		OnGiveXP:Recipe.OnGiveXP.Reloading5,
+		NeedToBeLearn:false,
+	}
+
+	recipe Make .38 SP Bullets x15
+	{
+		GunPowder=1,
+		ScrapMetal=1,
+		BlowTorch=1,
+		keep Hammer/BallPeenHammer,
+
+		Result:Bullets38=1,
+		RemoveResultItem:true,
+		OnCreate:Recipe.OnCreate.Make_Base_38SP,
+		Sound:Hammering,
+		Time:50.0,
+        Category:Ammo Maker Base,
+		OnGiveXP:Recipe.OnGiveXP.Reloading5,
+		NeedToBeLearn:false,
+	}
+
+	recipe Make .44 Mag Bullets x6
+	{
+		OnTest:Recipe.OnTest.isNotActivated_A26GF_FA,
+
+		GunPowder=1,
+		ScrapMetal=1,
+		BlowTorch=1,
+		keep Hammer/BallPeenHammer,
+
+		Result:Bullets44=1,
+		RemoveResultItem:true,
+		OnCreate:Recipe.OnCreate.Make_Base_44Mag,
+		Sound:Hammering,
+		Time:50.0,
+        Category:Ammo Maker Base,
+		OnGiveXP:Recipe.OnGiveXP.Reloading5,
+		NeedToBeLearn:false,
+	}
+
+	recipe Make .45 ACP Bullets x10
+	{
+		GunPowder=1,
+		ScrapMetal=1,
+		BlowTorch=1,
+		keep Hammer/BallPeenHammer,
+
+		Result:Bullets45=1,
+		RemoveResultItem:true,
+		OnCreate:Recipe.OnCreate.Make_Base_45ACP,
+		Sound:Hammering,
+		Time:50.0,
+        Category:Ammo Maker Base,
+		OnGiveXP:Recipe.OnGiveXP.Reloading5,
+		NeedToBeLearn:false,
+	}
+
+	recipe Make 12 Gauge Shells x6
+	{
+		OnTest:Recipe.OnTest.isNotActivated_A26GF_FA,
+
+		GunPowder=2,
+		ScrapMetal=1,
+		ammomaker_RecPlastic=1,
+		BlowTorch=1,
+		keep Hammer/BallPeenHammer,
+
+		Result:ShotgunShells=1,
+		RemoveResultItem:true,
+		OnCreate:Recipe.OnCreate.Make_Base_12Gauge,
+		Sound:Hammering,
+		Time:50.0,
+        Category:Ammo Maker Base,
+		OnGiveXP:Recipe.OnGiveXP.Reloading5,
+		NeedToBeLearn:false,
+	}
+
+}

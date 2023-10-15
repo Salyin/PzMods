@@ -1,0 +1,24 @@
+ItemName_PL = {
+
+ItemName_Base.PropaneTankEmpty = "Pusty zbiornik propanu",
+
+ItemName_SpoonMetalworkStuff.SpoonMagazineBlacksmith = "Kowalstwo metali 101",
+ItemName_SpoonMetalworkStuff.SpoonMagazineBlacksmithTwo = "Metal to twój przyjaciel",
+
+ItemName_SpoonMetalworkStuff.SpoonFurnace = "Piece",
+ItemName_SpoonMetalworkStuff.SpoonAnvil = "Kowadło",
+ItemName_SpoonMetalworkStuff.SpoonGrindstone = "Kamień do ostrzenia",
+
+ItemName_SpoonMetalworkStuff.LogPrepared = "Przygotowany kłoda",
+ItemName_SpoonMetalworkStuff.SpoonCharcoalPitWorking = "Węgiel drzewny (pracujący)",
+ItemName_SpoonMetalworkStuff.SpoonCharcoalPitReady = "Węgiel drzewny (gotowy)",
+
+ItemName_SpoonMetalworkStuff.SpoonMoldFull = "Podstawowa forma",
+ItemName_SpoonMetalworkStuff.SpoonMoldEmpty = "Podstawowa forma (pusta)",
+ItemName_SpoonMetalworkStuff.SpoonHandDrill = "Wiertło ręczne",
+ItemName_SpoonMetalworkStuff.SpoonMetalCutter = "Piła do metalu",
+
+ItemName_SpoonMetalworkStuff.GoldNugget = "Kruszec złota",
+ItemName_SpoonMetalworkStuff.SilverNugget = "Kruszec srebra",
+
+}

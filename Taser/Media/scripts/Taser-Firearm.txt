@@ -1,0 +1,130 @@
+module Base
+{
+    imports    
+    {
+		Base
+	}
+
+    item Taser
+    {
+	DisplayCategory = Weapon,
+        DisplayName	                =	Taser,
+        Icon	                    =	Taser,
+        WeaponSprite	            =	Taser,
+        Weight	                    =	0.5,
+        AmmoType                    =   TaserCart,
+        MaxAmmo                     =   1,
+        RecoilDelay	                =	5,
+        ReloadTime                  =   5,
+        AimingTime                  =   19,
+        MinRange	                =	0,
+        MaxRange	                =	2,
+        MinAngle	                =	0.965,
+        DoorDamage	                =	0,
+        MinDamage	                =	0,
+        MaxDamage	                =	0,
+        StopPower                   =   3,
+        PiercingBullets             =   FALSE,
+        KnockdownMod	            =	0,
+        PushBackMod	                =	0,
+        FireMode                    =   Single,
+        FireModePossibilities       =   Single,
+
+        CriticalChance                  = 0,
+        AimingPerkCritModifier          = 0,
+        HitChance                       = 85,
+        AimingPerkHitChanceModifier     = 2,
+        AimingPerkMinAngleModifier      = 0.01,
+        AimingPerkRangeModifier         = 3,
+        
+        SoundVolume	            = 70,
+        SoundRadius	            = 1,
+        SwingSound	            = ShootTaser,
+        BreakSound              = DesertEagleBreak,
+        InsertAmmoSound         = DesertEagleInsertAmmo,
+        EjectAmmoSound          = DesertEagleEjectAmmo,
+        RackSound               = null,
+        BringToBearSound        = DesertEagleBringToBear,
+        HitSound                = ShootTaser,
+	ClickSound              = DesertEagleJam,
+        EquipSound              = DesertEagleEquip,
+	UnequipSound            = DesertEagleUnequip,
+        InsertAmmoStartSound    = null,
+	InsertAmmoStopSound     = null,
+	EjectAmmoStartSound     = null,
+	EjectAmmoStopSound      = null,
+        ShellFallSound          = null,
+
+        Type	                        =	Weapon,
+        IsAimedFirearm	                =	TRUE,
+        UseEndurance	                =	FALSE,
+        ConditionMax	                =	10,
+        JamGunChance                    =   0,
+        Ranged	                        =	TRUE,
+        MetalValue                      =   0,
+        SwingTime	                    =	0.5,
+        MinimumSwingTime	            =	0.5,
+        ToHitModifier	                =	1.5,
+        SwingAmountBeforeImpact	        =	0,
+        MultipleHitConditionAffected	=	FALSE,
+        SplatSize	                    =	0,
+        SplatNumber	                    =	0,
+        SplatBloodOnNoDeath	            =	FALSE,
+        ImpactSound	                    =	null,
+        NPCSoundBoost	                =	1.5,
+        SoundGain                       =   2,
+        SwingAnim	                    =	Handgun,
+        RunAnim	                        =	Run_Weapon2,
+        IdleAnim	                    =	Idle_Weapon2,
+        ShareDamage	                    =	FALSE,
+        MaxHitCount	                    =	1,
+        KnockBackOnNoDeath	            =	FALSE,
+        ProjectileCount	                =	1,
+        ConditionLowerChanceOneIn	    =	60,
+        TwoHandWeapon                   =   False,
+        RequiresEquippedBothHands       =   False,
+        WeaponReloadType                =   handgun,
+        AttachmentType                  =   Hammer,
+	haveChamber = FALSE,
+	InsertAllBulletsReload = true,
+	DamageMakeHole = FALSE,
+	RackAfterShoot = FALSE,
+	WorldStaticModel = Taser,
+    }
+
+    item TaserCart
+    {
+        Count	=	5,
+        Weight	=	0.01,
+        Type	=	Normal,
+        DisplayCategory = Ammo,
+        DisplayName	=	Taser Cartridge,
+        Icon	=	TaserCart,
+        MetalValue = 1,
+        WorldStaticModel = TaserCart,
+    }
+
+    model Taser
+	{
+		mesh = weapons/firearm/taser,
+		texture = weapons/firearm/taser,
+
+		attachment world
+		{
+			offset = 0.0000 0.0000 0.0000,
+			rotate = 0.0000 0.0000 90.0000,
+		}
+	}
+
+    model TaserCart
+	{
+		mesh = WorldItems/tasercart,
+		texture = weapons/firearm/taser,
+
+		attachment world
+		{
+			offset = 0.0000 0.0000 0.0000,
+			rotate = 0.0000 0.0000 0.0000,
+		}
+	}
+}

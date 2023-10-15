@@ -1,0 +1,15 @@
+module Base {
+
+    sound miningSound1
+    {
+        category = SpoonDM, loop = true, is3D = true,
+        clip { file = media/sound/Mining/SpoonDMSound1.ogg, distanceMax = 50, volume = 0.5, }
+    }
+	
+	sound miningSound2
+    {
+        category = SpoonDM, loop = false, is3D = true,
+        clip { file = media/sound/Mining/SpoonDMSound2.ogg, distanceMax = 50, volume = 0.5, }
+    }
+
+}

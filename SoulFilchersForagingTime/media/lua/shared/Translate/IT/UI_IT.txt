@@ -1,0 +1,8 @@
+UI_PT = {
+  UI_prof_Homeless = "Mendicante",
+
+
+  UI_trait_Scavenger = "Toelettatore",
+  UI_trait_ScavengerDesc = "Perdita di durata più lenta durante lo cercare.",
+  UI_profdesc_Homeless = "Sa come improvvisare.<br>+3 Cercare",
+}

@@ -1,0 +1,6 @@
+name=Lifestyle
+id=Lifestyle
+description=WIP mod that adds several hobby activities and items.
+pack=LS_Tiles
+tiledef=LS_Tiles 5620
+poster=lifestylecover.png

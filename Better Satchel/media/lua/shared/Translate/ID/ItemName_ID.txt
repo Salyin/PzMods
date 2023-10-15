@@ -1,0 +1,7 @@
+﻿ItemName_ID = {
+	ItemName_Base.Bag_Satchel = "Satchel  (Depan)",
+    ItemName_Base.Bag_SatchelBack = "Satchel (Belakang)",
+	ItemName_Base.MysteriousSatchel_New = "Satchel taktis  (Depan)",
+	ItemName_Base.MysteriousSatchelBack = "Satchel taktis  (Belakang)",
+	ItemName_Base.MysteriousHazmat = "Baju Hazmat",
+}

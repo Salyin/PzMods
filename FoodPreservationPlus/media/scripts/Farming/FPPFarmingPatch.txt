@@ -1,0 +1,181 @@
+module farming
+{
+	imports
+	{
+		Base
+	}
+
+    item GardeningSprayMilk
+  	{
+  	    DisplayCategory = Gardening,
+    	Type				=		Drainable,
+		DisplayName			=		Mildew Spray,
+		Icon				=		TZ_GardeningSprayCan,
+		Weight				=		1.0,
+    	UseDelta			=		0.05,
+    	ReplaceOnDeplete 	= 		GardeningSprayEmpty,
+	    UseWhileEquipped	=	    false,
+    	StaticModel = GardenSpray,
+    	WorldStaticModel = GardenSprayGround,
+  	}
+
+    item GardeningSprayCigarettes
+ 	{
+ 	    DisplayCategory = Gardening,
+    	Type				=		Drainable,
+		DisplayName			=		Insecticide Spray,
+		Icon				=		TZ_GardeningSprayCan,
+		Weight				=		1.0,
+    	UseDelta			=		0.05,
+    	ReplaceOnDeplete 	= 		GardeningSprayEmpty,
+	    UseWhileEquipped = false,
+    	UseWhileEquipped	=	    false,
+    	StaticModel = GardenSpray,
+    	WorldStaticModel = GardenSprayGround,
+  	}
+	
+	item CompostBag
+    {
+        DisplayCategory = Gardening,
+        Type				=		Drainable,
+        DisplayName			=		Compost Bag,
+        Icon				=		Compost,
+        Weight				=		2.0,
+        UseDelta			=		0.1,
+        UseWhileEquipped	=	    false,
+        ReplaceOnDeplete	=	EmptySandbag,
+        Tooltip = Tooltip_Fertilizer,
+        SurvivalGear = TRUE,
+        ReplaceInSecondHand = Bag_Sandbag_LHand holdingbagleft,
+        ReplaceInPrimaryHand = Bag_Sandbag_RHand holdingbagright,
+        WorldStaticModel = CompostBag,
+    }
+	
+	item BloomingBroccoli
+	{
+	    DisplayCategory = Food,
+		Type				=		Food,
+		DisplayName			=		Seeding Broccoli,
+		Icon				=		TZ_BloomingBroccoli,
+		Weight				=		0.1,
+		HungerChange 		=		-10,
+		DaysFresh 			=		4,
+		DaysTotallyRotten 	=	 	7,
+        Carbohydrates = 7.06,
+        Proteins = 2.57,
+        Lipids = 0.31,
+        Calories = 22,
+        StaticModel = RoundFood_Green,
+        WorldStaticModel = BloomingBroccoli_Ground,
+	}
+
+    item RedRadish
+	{
+	    DisplayCategory = Food,
+		Type				=		Food,
+		DisplayName			=		Radish,
+		Icon				=		Radish,
+		Weight				=		0.1,
+		HungerChange 		=		-3,
+		DaysFresh 			=		3,
+		DaysTotallyRotten 	=	 	7,
+		EvolvedRecipe = Soup:3;Stew:3;Stir fry Griddle Pan:3;Stir fry:3;Burger:3;Salad:3;Roasted Vegetables:3,
+		ThirstChange	=	-1,
+		FoodType    =   Vegetables,
+        Carbohydrates = 0.95,
+        Proteins = 1,
+        Lipids = 0.1,
+        Calories = 5,
+        StaticModel = RoundFood_Red,
+        WorldStaticModel = RedRadish_Ground,
+	}
+
+    item Strewberrie
+	{
+	    DisplayCategory = Food,
+		Type				=		Food,
+		DisplayName			=		Strawberries,
+		Icon				=		BerryStraw,
+		Weight				=		0.1,
+		HungerChange 		=		-5,
+		ThirstChange		=		-5,
+		UnhappyChange 		= 		-10,
+		DaysFresh 			=		2,
+		DaysTotallyRotten 	=	 	5,
+		EvolvedRecipe = Cake:5;FruitSalad:5;Pancakes:5;Waffles:5;ConeIcecream:5;Oatmeal:5;PieSweet:5;Salad:5;HotDrink:5;HotDrinkRed:5;HotDrinkWhite:5;HotDrinkSpiffo:5;HotDrinkTea:5,
+		FoodType    =   Berry,
+		ThirstChange	=	-1,
+        Carbohydrates = 2.92,
+        Proteins = 0.3,
+        Lipids = 0.2,
+        Calories = 32,
+        StaticModel = RoundFood_Red,
+        WorldStaticModel = Strawberry_Ground,
+		EvolvedRecipeName = Strawberry,
+	}
+
+    item Tomato
+	{
+	    DisplayCategory = Food,
+		Type				=		Food,
+		DisplayName			=		Tomato,
+		Icon				=		Tomato,
+		Weight				=		0.2,
+		HungerChange 		=		-12,
+		ThirstChange		=		-15,
+		DaysFresh 			=		4,
+		DaysTotallyRotten 	=	 	12,
+		EvolvedRecipe       =       Pizza:12;Omelette:6;Soup:12;Stew:12;Pie:12;Stir fry Griddle Pan:12;Stir fry:12;Sandwich:6;Sandwich Baguette:6;Burger:6;Salad:6;Roasted Vegetables:12;RicePot:12;RicePan:12;PastaPot:12;PastaPan:12;Taco:6;Burrito:6,
+		ThirstChange	=	-8,
+		FoodType    =   Vegetables,
+        Carbohydrates = 9.53,
+        Proteins = 3.29,
+        Lipids = 0.61,
+        Calories = 45,
+        StaticModel = RoundFood_Red,
+        WorldStaticModel = Tomato_Ground,
+	}
+
+    item Potato
+	{
+	    DisplayCategory = Food,
+		Type				=		Food,
+		DisplayName			=		Potato,
+		Icon				=		Potato,
+		Weight				=		0.3,
+		HungerChange 		=		-18,
+		DaysFresh 			=		30,
+		DaysTotallyRotten 	=	 	60,
+        EvolvedRecipe       =       Omelette:9;Soup:18;Stew:18;Pie:18;Stir fry Griddle Pan:18;Stir fry:18;Salad:9;Roasted Vegetables:18,
+        ThirstChange	=	-7,
+        FoodType    =   Vegetables,
+        Carbohydrates = 30.52,
+        Proteins = 8.88,
+        Lipids = 0.90,
+        Calories = 180,
+        WorldStaticModel = Potato_Ground,
+	}
+	
+	item Cabbage
+	{
+	    DisplayCategory = Food,
+		Type				=		Food,
+		DisplayName			=		Cabbage,
+		Icon				=		Cabbage,
+		Weight				=		0.5,
+		HungerChange 		=		-24,
+		ThirstChange		=		-15,
+		DaysFresh 			=		2,
+		DaysTotallyRotten 	=	 	4,
+		EvolvedRecipe       =       Soup:12;Stew:12;Stir fry Griddle Pan:12;Stir fry:12;Sandwich:6;Sandwich Baguette:6;Burger:6;Salad:12;Roasted Vegetables:12;Taco:6;Burrito:6,
+		ThirstChange	=	-10,
+		FoodType    =   Vegetables,
+        Carbohydrates = 30.41,
+        Proteins = 7.14,
+        Lipids = 0.71,
+        Calories = 120,
+        StaticModel = RoundFood_Green,
+        WorldStaticModel = Cabbage_Ground,
+	}
+
+}

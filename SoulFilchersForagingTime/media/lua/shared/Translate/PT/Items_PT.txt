@@ -1,0 +1,16 @@
+Items_PT = {
+  DisplayNameCardboard = "Papelão",
+  DisplayNameCardboard_Bed = "Cama de Papelão",
+  DisplayNameEmpty_Water_Gallon = "Galão de Água Vazio",
+  DisplayNameLetter = "Carta",
+  DisplayNamePackage = "Pacote",
+  DisplayNamePaint_Bucket_with_Water = "Balde de Tinta com Água",
+  DisplayNameTin_Can_with_Water = "Lata com Água",
+  DisplayNameWater_Gallon = "Galão de Água",
+
+  DisplayName_Advanced_Scavenging = "Catar Avançada",
+  DisplayNameScavenging_for_Beginners = "Catar para principiantes",
+  DisplayNameScavenging_for_Intermediates = "Catar para novatos",
+  DisplayName_Expert_Scavenging = "Catar profissional",
+  DisplayName_Master_Scavenging = "Mestre de Catar",
+}

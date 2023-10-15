@@ -1,0 +1,13 @@
+UI_ES = {
+    UI_trait_couchpotato = "Teleadicto",
+    UI_trait_couchpotatodesc = "Los teleadictos no son muy activos y prefieren relajarse y disfrutar de la comodidad. Requieren un poco de estímulo para participar en actividades físicas.<br><br>Los juegos, la radio y la televisión reducirán más el aburrimiento y los espectáculos de habilidades darán más xp. <br>Estar cómodo otorgará una mejor bonificación, pero decaerá más rápido.<br>Pueden permanecer en el interior mucho más tiempo antes de aburrirse, pero permanecer demasiado tiempo afuera los estresará.<br>Se cansan más rápido y tienden a dormir más que la mayoría de la gente. <br>Detestan la mayoría de los pasatiempos físicos y se aburrirán o serán infelices rápidamente si se ven obligados a hacerlo.<br>Entra en conflicto con algunos rasgos físicos y con Disciplinado."
+
+    UI_trait_disciplined = "Disciplinado",
+    UI_trait_disciplineddesc = "Las personas disciplinadas son diligentes y enfocadas, y se esfuerzan constantemente por mejorar. Poseen una gran fuerza de voluntad y determinación, lo que los hace formidables en el combate y otras situaciones desafiantes.<br><br>Son los más felices cuando practican la meditación y las artes marciales.<br>No les importa mucho el entretenimiento electrónico y obtendrán menos xp de espectáculos de habilidad. <br>Pueden manejar la incomodidad mejor que la mayoría.<br>Conflictos con fuera de forma, obesos, con sobrepeso y teleadictos."
+
+	UI_trait_virtuoso = "Virtuoso",
+    UI_trait_virtuosodesc = "Los virtuosos son musicos de corazón, con un talento natural para tocar y componer musica. Poseen una comprensión innata del ritmo y la melodía, y pueden improvisar o adaptarse fácilmente a diferentes estilos musicales. También son artistas muy carismáticos que cautivan a su audiencia con su musica y talento para el espectáculo.<br><br>Pueden aprender musica más rápido que nadie y son los más felices cuando tocan un instrumento.<br>Conflictos con Sordera Auditiva, Mal Oído y Sordo."
+
+	UI_trait_tonedeaf = "Mal Oído",
+    UI_trait_tonedeafdesc = "Las personas con mal oído o sordas de tono no están dotadas de un buen oído para la musica. Tienen dificultad para distinguir entre notas y ritmos, y pueden tener problemas para interpretar una melodía. Baste decir que no es su primera opción de entretenimiento.<br><br>No les gusta tocar instrumentos y se enfadarán si se ven obligados a hacerlo.<br>También aprenden más despacio y cometen errores con mucha más frecuencia mientras tocan. <br>Conflictos con Virtuoso y Sordo."
+    }

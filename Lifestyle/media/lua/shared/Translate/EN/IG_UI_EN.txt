@@ -1,0 +1,17 @@
+IGUI_EN = {
+	IGUI_perks_Meditation = "Meditation",
+	IGUI_perks_Dancing = "Dancing",
+	IGUI_perks_Music = "Music",
+	IGUI_perks_Lifestyle = "Lifestyle",
+
+	IGUI_HaloNote_XP = "XP",
+	IGUI_HaloNote_XPBonus = "XP+",
+	IGUI_HaloNote_Stress = "Stress",
+	IGUI_HaloNote_Embarrassed = "Embarrassed",
+	IGUI_HaloNote_Boredom = "Boredom",
+	IGUI_HaloNote_Happyness = "Happiness",
+	IGUI_HaloNote_Unhappyness = "Unhappiness",
+	IGUI_HaloNote_Pain = "Pain",
+	IGUI_HaloNote_Pain_BadPosture = "Bad Posture Pain",
+
+}

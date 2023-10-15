@@ -1,0 +1,161 @@
+module Base
+{
+
+	recipe Make Biogas Refinery
+    {
+		PropaneTankEmpty,
+		SheetMetal=8,
+		MetalPipe=4,
+		Screws=25,
+		BlowTorch,
+		WeldingRods=5,
+		keep [Recipe.GetItemTypes.Hammer],
+		keep Screwdriver,
+
+        Result:BioGasRefinery,
+        Time:500.0,
+        Category:Welding,
+		NeedToBeLearn:true,
+		SkillRequired:MetalWelding=4;Woodwork=2,
+        OnGiveXP:Recipe.OnGiveXP.MetalWelding25,
+		CanBeDoneFromFloor      : TRUE,
+    }
+	
+	recipe Break Biogas Refinery
+    {
+		BioGasRefinery/BioGasRefineryWorking/BioGasRefineryReady,
+		BlowTorch,
+		keep [Recipe.GetItemTypes.Hammer],
+		keep Screwdriver,
+
+        Result:SheetMetal=6,
+        Time:350.0,
+        Category:Welding,
+		SkillRequired:MetalWelding=1;Woodwork=1,
+		OnGiveXP:Recipe.OnGiveXP.MetalWelding20,
+		OnCreate: GetSmashedBioGas_OnCreate,
+		CanBeDoneFromFloor      : TRUE,
+    }
+	
+	recipe Break Biogas Refinery
+    {
+		BioGasRefinery/BioGasRefineryWorking/BioGasRefineryReady,
+		keep [Recipe.GetItemTypes.Hammer],
+		keep Screwdriver,
+
+        Result:SheetMetal=2,
+        Time:650.0,
+        Category:Welding,
+		OnCreate: GetSmashedBioGasTwo_OnCreate,
+		CanBeDoneFromFloor      : TRUE,
+    }
+	
+	item BioGasRefinery
+	{
+		DisplayCategory = Material,
+		Type			= Normal,
+		Icon			= BioGasRefinery,
+		Weight		  	= 25,
+		DisplayName		= Biogas Refinery (Empty),
+		WorldStaticModel = BioGasRefinery,
+		Tooltip = Tooltip_item_BioGas,
+	}
+	
+	recipe Stomp Food to Mush
+    {	
+		FishFillet/SteakSlice/Steak/Smallanimalmeat/Rabbitmeat/Smallbirdmeat/Sugar/SugarBrown/HomemadeMeat/DryBerry/SmokedMeat/SaltedMeat/Cabbage/Corn/Potato/BloomingBroccoli/RedRadish/Strewberrie/Tomato/Carrots/MushroomGeneric1/MushroomGeneric2/MushroomGeneric3/MushroomGeneric4/MushroomGeneric5/MushroomGeneric6/MushroomGeneric7/Onion/Lettuce/BellPepper/Avocado/Zucchini/Peas/Broccoli/Eggplant/Leek/Lemon/BerryBlack/BerryBlue/BerryGeneric1/BerryGeneric2/BerryGeneric3/BerryGeneric4/BerryGeneric5/BerryPoisonIvy/Peach/Pineapple/Cherry/Watermelon/WatermelonSliced/WatermelonSmashed/Grapes/Orange/Apple/Banana;10,
+		keep WoodenBarrel/Pot/BucketEmpty/Saucepan,
+		keep Log,
+
+        Result:SMush,
+        Time:20.0,
+        Category:Cooking,
+		AllowRottenItem:true,
+		CanBeDoneFromFloor      : TRUE,
+    }
+	
+	item SMush
+    {
+        DisplayCategory = Food,
+        Weight	=	0.1,
+        Type	=	Food,
+		HungerChange = -2,
+		UnhappyChange = 5,
+		Poison = true,
+		PoisonDetectionLevel = 0,
+		PoisonPower = 5,
+		DaysFresh = 60,
+		DaysTotallyRotten = 90,
+		Carbohydrates = 10.52,
+        Proteins = 2.88,
+        Lipids = 0.20,
+        Calories = 50,
+		DangerousUncooked 	= TRUE,
+		IsCookable 			= FALSE,
+        DisplayName	=	Stomped Food Mush,
+        Icon	=	MashedHerbs,
+        WorldStaticModel = Poultice,
+    }
+
+	recipe Fill Biogas Refinery
+    {
+        BioGasRefinery,
+		SMush;100,
+		Water=5,
+
+        Result:BioGasRefineryWorking,
+        Time:200.0,
+        Category:Cooking,
+        OnGiveXP:Recipe.OnGiveXP.Cooking3,
+		CanBeDoneFromFloor      : TRUE,
+    }
+	
+	item BioGasRefineryWorking
+	{
+		DisplayCategory = Food,
+		Type			= Food,
+		Icon			= BioGasRefinery,
+		Weight		  	= 25,
+		DisplayName		= Biogas Refinery (Brewing),
+		CantBeFrozen 		= TRUE,
+		ReplaceOnRotten 	= BioGasRefineryReady,
+		DaysFresh 			=		2,
+		DaysTotallyRotten 	=	 	10,
+		WorldStaticModel = BioGasRefinery,
+		Tooltip = Tooltip_item_BioGasW,
+	}
+	
+	item BioGasRefineryReady
+	{
+		DisplayCategory = Food,
+		Type			= Food,
+		Icon			= BioGasRefinery,
+		Weight		  	= 25,
+		DisplayName		= Biogas Refinery (Ready),
+		WorldStaticModel = BioGasRefinery,
+	}
+	
+	recipe Fill Propane Tank from Biogas Refinery
+    {
+        BioGasRefineryReady,
+		PropaneTank/PropaneTankEmpty,
+		
+        Result: PropaneTank,
+        Time: 200.0,
+        Category: Cooking,
+        OnCreate: GetEmptyRefinery_OnCreate,
+		CanBeDoneFromFloor      : TRUE,
+    }
+	
+	recipe Empty Propane Tank
+    {
+		destroy PropaneTank,
+		
+        Result: PropaneTankEmpty,
+        Time: 100.0,
+        Category: Cooking,
+		CanBeDoneFromFloor      : TRUE,
+		Override:true
+    }
+
+}

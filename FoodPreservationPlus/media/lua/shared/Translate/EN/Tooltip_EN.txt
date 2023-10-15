@@ -1,0 +1,15 @@
+Tooltip_EN = {
+	-- Item tooltip
+	Tooltip_item_Salted = "This is a base items.<br>Add more meat to it and then let it cook.",
+	Tooltip_item_Smoked = "This is a base items.<br>Add more meat to it and then let it cook.",
+	Tooltip_item_SaltRock = "Can be found outside with foraging skill 5 and up.<br>Can be stomped into salt.",
+	Tooltip_item_Bones = "Can be harvested from big dead animals and made into glue.",
+	Tooltip_item_Tallow = "Can be used as fat on cooking or made into candles.",
+	Tooltip_item_WoodenBarrel = "Can be used to brew ethanol and vinegar.",
+	Tooltip_item_BioGas = "Can be used to refine biogas from various food.",
+	Tooltip_item_BioGasW = "It may take some time to get ready.<br>If it goes stale then everything is working.",
+	Tooltip_item_WBWorking = "It may take some time to get ready.<br>If it goes stale then everything is working.",
+	Tooltip_item_SweetBulp = "Can be made into sweet juice or dried near campfire. Produces Yeast as a by-product.<br>Can't use poisonous ingredients.",
+	Tooltip_item_YBulp = "Can be stomped into Yeast.<br>Can't use poisonous ingredients.",
+	Tooltip_item_SS = "Can be used as a sugar or just consumed as a regular food. Won't spoil.",
+}

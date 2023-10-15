@@ -1,0 +1,59 @@
+Sandbox_RU = {
+
+	Sandbox_Lifestyle = "Lifestyle: Hobbies - Настройки",
+
+	Sandbox_Divider_Music = "________________ Музыка ________________",
+	Sandbox_Divider_Music_tooltip = "Это лишь отделитель строк, изменение не будет иметь эффекта.",
+	Sandbox_Divider_Dancing = "________________ Танцы ________________",
+	Sandbox_Divider_Dancing_tooltip = "Это лишь отделитель строк, изменение не будет иметь эффекта.",
+	Sandbox_Divider_Meditation = "_______________ Медитация _______________",
+	Sandbox_Divider_Meditation_tooltip = "Это лишь отделитель строк, изменение не будет иметь эффекта.",
+	Sandbox_Divider_Debug = "__________________ Для разработчиков _________________",
+	Sandbox_Divider_Debug_tooltip = "Это лишь отделитель строк, изменение не будет иметь эффекта.",
+	
+	Sandbox_DividerBox_A = "",
+
+	Sandbox_Music_StrengthMultiplier = "Мощность Музыки",
+	Sandbox_Music_StrengthMultiplier_tooltip = "Управляет силой активностей, связанных с музыкой. Чем выше - тем эффективнее.",
+	Sandbox_Music_StrengthMultiplier_option1 = "Низкая",
+	Sandbox_Music_StrengthMultiplier_option2 = "Средная",
+	Sandbox_Music_StrengthMultiplier_option3 = "Высокая",
+	Sandbox_Music_StrengthMultiplier_option4 = "Очень Высокая",
+
+	Sandbox_Dancing_StrengthMultiplier = "Мощность Танцев",
+	Sandbox_Dancing_StrengthMultiplier_tooltip = "Управляет силой активностей, связанных с танцами. Чем выше - тем эффективнее.",
+	Sandbox_Dancing_StrengthMultiplier_option1 = "Низкая",
+	Sandbox_Dancing_StrengthMultiplier_option2 = "Средная",
+	Sandbox_Dancing_StrengthMultiplier_option3 = "Высокая",
+	Sandbox_Dancing_StrengthMultiplier_option4 = "Очень Высокая",
+
+	Sandbox_Meditation_StrengthMultiplier = "Мощность Медитации",
+	Sandbox_Meditation_StrengthMultiplier_tooltip = "Управляет силой медитации. Чем выше - тем эффективнее.",
+	Sandbox_Meditation_StrengthMultiplier_option1 = "Низкая",
+	Sandbox_Meditation_StrengthMultiplier_option2 = "Средная",
+	Sandbox_Meditation_StrengthMultiplier_option3 = "Высокая",
+	Sandbox_Meditation_StrengthMultiplier_option4 = "Очень Высокая",
+
+	Sandbox_Meditation_MindfulnessDuration = "Длительность стадий Медитации",
+	Sandbox_Meditation_MindfulnessDuration_tooltip = "Управляет длительность всех стадий Медитации.",
+	Sandbox_Meditation_MindfulnessDuration_option1 = "Короткая",
+	Sandbox_Meditation_MindfulnessDuration_option2 = "Средняя",
+	Sandbox_Meditation_MindfulnessDuration_option3 = "Высокая",
+
+	Sandbox_Meditation_HealFactor = "Целебный фактор Абсолютного Покоя",
+	Sandbox_Meditation_HealFactor_tooltip = "Сколько здоровья лечится в состоянии Абсолютного Покоя.<br>Количество зависит от общего здоровья вашего персонажа и настроек игрового времени.",
+
+	Sandbox_Meditation_EffectMultiplier = "Мощность Покоя во время Медитации",
+	Sandbox_Meditation_EffectMultiplier_tooltip = "Управляет эффективностью бонусов от Покоя и далее (понижение стресса, боли, паники, т.д...).",
+	Sandbox_Meditation_EffectMultiplier_option1 = "Слабо",
+	Sandbox_Meditation_EffectMultiplier_option2 = "Средне",
+	Sandbox_Meditation_EffectMultiplier_option3 = "Сильно",
+
+	Sandbox_Debug_MoodlePriority = "Задать особый приоритет состояниям",
+	Sandbox_Debug_MoodlePriority_tooltip = "Это позволит другим состояниям из других модов появляться над состояниями Lifestyle.",
+	Sandbox_Debug_Expressions = "Ручные Выражения",
+	Sandbox_Debug_Expressions_tooltip = "Включает ручные выражения в контекст-меню админа.",
+	Sandbox_Debug_DanceAnim = "Внутренние Названия",
+	Sandbox_Debug_DanceAnim_tooltip = "Позволяет некоторым новым анимациям показывать свои названия.",
+
+}

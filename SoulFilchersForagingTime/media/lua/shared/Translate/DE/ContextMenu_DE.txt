@@ -1,0 +1,8 @@
+ContextMenu_PTBR = {
+	ContextMenu_Place_Cardboard_Bed = "Bett aus Karton reiten",
+	ContextMenu_Remove_Cardboard_Bed = "Bett aus Karton entfernen",
+	ContextMenu_Scavenging = "Plünderer",
+	ContextMenu_Sort_Trash = "Plünderer",
+
+	ContextMenu_LetterTo = "Brief an ",
+}

@@ -1,0 +1,7 @@
+UI_EN = {
+  UI_prof_Homeless = "Homeless",
+
+  UI_trait_Scavenger = "Scavenger",
+  UI_trait_ScavengerDesc = "Foraging less impacted by negative conditions.",
+  --UI_profdesc_Homeless = "Knows how to improvise",
+}

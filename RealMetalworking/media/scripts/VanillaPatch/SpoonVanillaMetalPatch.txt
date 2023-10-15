@@ -1,0 +1,91 @@
+module Base
+{
+	
+	item PropaneTank
+	{
+	    DisplayCategory = Material,
+		Weight	=	10.0,
+		Type	=	Drainable,
+		UseWhileEquipped	=	FALSE,
+		UseDelta	=	0.0625,
+		DisplayName	=	Propane Tank,
+		Icon	=	PropaneTank,
+		UseWorldItem = TRUE,
+		ReplaceOnDeplete = PropaneTankEmpty,
+		ScaleWorldIcon = 2.0,
+		WeightEmpty = 5.0,
+		WorldStaticModel = PropaneTank,
+		cantBeConsolided = TRUE,
+	}
+	
+	item PropaneTankEmpty
+	{
+	    DisplayCategory = Material,
+		Weight	=	5.0,
+		Type	=	Normal,
+		UseWhileEquipped	=	FALSE,
+		DisplayName	=	Empty Propane Tank,
+		Icon	=	PropaneTank,
+		UseWorldItem = TRUE,
+		ScaleWorldIcon = 2.0,
+		WorldStaticModel = PropaneTank,
+	}
+	
+	recipe Refill Blowtorch with Petrol
+    {
+       destroy BlowTorch=1,
+       [Recipe.GetItemTypes.Petrol]=2,
+
+       Result:BlowTorch,
+       Time:50.0,
+       Category:Welding,
+	   Override:true
+    }
+	
+	recipe Empty Propane Tank
+    {
+		destroy PropaneTank,
+		
+        Result: PropaneTankEmpty,
+        Time: 100.0,
+        Category: Cooking,
+		CanBeDoneFromFloor      : TRUE,
+		Override:true
+    }
+	
+	recipe Make a Bag of Concrete Powder
+    {	      
+	   Gravelbag,
+	   Sandbag,
+	   Dirtbag,
+	   Garbagebag,
+	   Charcoal;2,
+	   keep Shovel/Shovel2,
+	   keep BucketEmpty/PaintbucketEmpty,
+	   keep SpoonFurnace,
+       keep PercedWood/Lighter/Matches,
+
+       Result:ConcretePowder,
+       Time:300.0,
+       Category:Carpentry,
+	   NeedToBeLearn:true,
+	   SkillRequired:Woodwork=4,
+	   CanBeDoneFromFloor      : TRUE,
+       OnGiveXP:Recipe.OnGiveXP.WoodWork5,
+	   Override:true
+    }
+	
+	item ConcretePowder
+	{
+	    DisplayCategory = Material,
+		Weight	=	5,
+		Type	=	Normal,
+		Type	=	Drainable,
+		UseDelta	=	0.5,
+		ReplaceOnDeplete	=	Garbagebag,
+		DisplayName	=	Bag of Concrete Powder,
+		Icon	=	Concrete_Powder,
+		WorldStaticModel = BagofConcretePowder,
+	}
+	
+}

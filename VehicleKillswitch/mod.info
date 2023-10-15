@@ -1,0 +1,8 @@
+name=Vehicle Killswitch, by AirtightCare
+description=Prevent vehicle theft by installing an engine killswitch.
+id=vehicle_killswitch
+name=Vehicle Killswitch
+poster=poster.png
+
+modversion=1.0
+url=https://github.com/ehargitt/pz-vehicle-killswitch

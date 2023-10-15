@@ -1,0 +1,4 @@
+Items_PT = {
+  DisplayNameBear_Trap = "Armadilha para Urso",
+  DisplayNameDead_Crow = "Corvo Morto",
+}

@@ -1,0 +1,12 @@
+Sandbox_EN = {
+    Sandbox_Permafrost = "Permafrost",
+    
+    Sandbox_PF_MinimumTemperature = "Minimum Temperature (Celcius)",
+    Sandbox_PF_MinimumTemperature_tooltip = "Can be negative, zero or positive. Must be LESS THAN Maximum.",
+
+    Sandbox_PF_MaximumTemperature = "Maximum Temperature (Celcius)",
+    Sandbox_PF_MaximumTemperature_tooltip = "Can be negative, zero or positive. Must be GREATER THAN Minimum.",
+
+    Sandbox_PF_PermanentSnowstorm = "Permanent Snowfall",
+    Sandbox_PF_PermanentSnowstorm_tooltip = "Enables (almost) constant snowfall.",
+}

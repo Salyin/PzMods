@@ -1,0 +1,304 @@
+/* Ammo Maker by STIMP_TM */
+
+module Base {
+
+/* Remove Arsenal 26 Gun Fighter Scrap Ammunition Recipes  */
+
+	recipe Scrap 5.7x28mm Ammunition
+	{
+		Base.Bullets57,
+
+		Result		: GunPowder,
+		Time			: 40.0,
+		CanBeDoneFromFloor: TRUE,
+		NeedToBeLearn	: true,
+		IsHidden:true,
+		Override:true,
+	}
+	recipe Scrap 380-ACP Ammunition
+	{
+		Base.Bullets380,
+
+		Result		: GunPowder,
+		Time			: 40.0,
+		CanBeDoneFromFloor: TRUE,
+		NeedToBeLearn	: true,
+		IsHidden:true,
+		Override:true,
+	}
+	recipe Scrap 9mm Ammunition
+	{
+		Base.Bullets9mm,
+
+		Result		: GunPowder,
+		Time			: 40.0,
+		CanBeDoneFromFloor: TRUE,
+		NeedToBeLearn	: true,
+		IsHidden:true,
+		Override:true,
+	}
+	recipe Scrap 38-SPC Ammunition
+	{
+		Base.Bullets38,
+
+		Result		: GunPowder,
+		Time			: 40.0,
+		CanBeDoneFromFloor: TRUE,
+		NeedToBeLearn	: true,
+		IsHidden:true,
+		Override:true,
+	}
+	recipe Scrap 357-MAG Ammunition
+	{
+		Base.Bullets357,
+
+		Result		: GunPowder,
+		Time			: 40.0,
+		OnCreate		: Scrap_Ammo,
+		CanBeDoneFromFloor: TRUE,
+		NeedToBeLearn	: true,
+		IsHidden:true,
+		Override:true,
+	}
+	recipe Scrap 45-ACP Ammunition
+	{
+		Base.Bullets45,
+
+		Result		: GunPowder,
+		Time			: 40.0,
+		OnCreate		: Scrap_Ammo,
+		CanBeDoneFromFloor: TRUE,
+		NeedToBeLearn	: true,
+		IsHidden:true,
+		Override:true,
+	}
+	recipe Scrap 45-LC Ammunition
+	{
+		Base.Bullets45LC,
+
+		Result		: GunPowder,
+		Time			: 40.0,
+		OnCreate		: Scrap_Ammo,
+		CanBeDoneFromFloor: TRUE,
+		NeedToBeLearn	: true,
+		IsHidden:true,
+		Override:true,
+	}
+	recipe Scrap 44-MAG Ammunition
+	{
+		Base.Bullets44,
+
+		Result		: GunPowder,
+		Time			: 40.0,
+		OnCreate		: Scrap_Ammo,
+		CanBeDoneFromFloor: TRUE,
+		NeedToBeLearn	: true,
+		IsHidden:true,
+		Override:true,
+	}
+	recipe Scrap 50-MAG Ammunition
+	{
+		Base.Bullets50MAG,
+
+		Result		: GunPowder,
+		Time			: 45.0,
+		OnCreate		: Scrap_Ammo,
+		CanBeDoneFromFloor: TRUE,
+		NeedToBeLearn	: true,
+		IsHidden:true,
+		Override:true,
+	}
+	recipe Scrap 45-70 GOV Ammunition
+	{
+		Base.Bullets4570,
+
+		Result		: GunPowder,
+		Time			: 50.0,
+		OnCreate		: Scrap_Ammo,
+		CanBeDoneFromFloor: TRUE,
+		NeedToBeLearn	: true,
+		IsHidden:true,
+		Override:true,
+	}
+	recipe Scrap 223-REM Ammunition
+	{
+		Base.223Bullets,
+
+		Result		: GunPowder,
+		Time			: 50.0,
+		OnCreate		: Scrap_Ammo,
+		CanBeDoneFromFloor: TRUE,
+		NeedToBeLearn	: true,
+		IsHidden:true,
+		Override:true,
+	}
+	recipe Scrap 5.56x45mm Ammunition
+	{
+		Base.556Bullets,
+
+		Result		: GunPowder,
+		Time			: 50.0,
+		OnCreate		: Scrap_Ammo,
+		CanBeDoneFromFloor: TRUE,
+		NeedToBeLearn	: true,
+		IsHidden:true,
+		Override:true,
+	}
+	recipe Scrap 5.45x39mm Ammunition
+	{
+		Base.545x39Bullets,
+
+		Result		: GunPowder,
+		Time			: 50.0,
+		OnCreate		: Scrap_Ammo,
+		CanBeDoneFromFloor: TRUE,
+		NeedToBeLearn	: true,
+		IsHidden:true,
+		Override:true,
+	}
+	recipe Scrap 7.62x39mm Ammunition
+	{
+		Base.762x39Bullets,
+
+		Result		: GunPowder,
+		Time			: 50.0,
+		OnCreate		: Scrap_Ammo,
+		CanBeDoneFromFloor: TRUE,
+		NeedToBeLearn	: true,
+		IsHidden:true,
+		Override:true,
+	}
+	recipe Scrap 308-WIN Ammunition
+	{
+		Base.308Bullets,
+
+		Result		: GunPowder,
+		Time			: 50.0,
+		OnCreate		: Scrap_Ammo,
+		CanBeDoneFromFloor: TRUE,
+		NeedToBeLearn	: true,
+		IsHidden:true,
+		Override:true,
+	}
+	recipe Scrap 7.62x51mm Ammunition
+	{
+		Base.762x51Bullets,
+
+		Result		: GunPowder,
+		Time			: 50.0,
+		OnCreate		: Scrap_Ammo,
+		CanBeDoneFromFloor: TRUE,
+		NeedToBeLearn	: true,
+		IsHidden:true,
+		Override:true,
+	}
+	recipe Scrap 7.62x54r Ammunition
+	{
+		Base.762x54rBullets,
+
+		Result		: GunPowder,
+		Time			: 50.0,
+		OnCreate		: Scrap_Ammo,
+		CanBeDoneFromFloor: TRUE,
+		NeedToBeLearn	: true,
+		IsHidden:true,
+		Override:true,
+	}
+	recipe Scrap 30-06 SPG Ammunition
+	{
+		Base.3006Bullets,
+
+		Result		: GunPowder,
+		Time			: 50.0,
+		OnCreate		: Scrap_Ammo,
+		CanBeDoneFromFloor: TRUE,
+		NeedToBeLearn	: true,
+		IsHidden:true,
+		Override:true,
+	}
+	recipe Scrap 50-BMG Ammunition
+	{
+		Base.50BMGBullets,
+
+		Result		: GunPowder,
+		Time			: 60.0,
+		OnCreate		: Scrap_Ammo,
+		CanBeDoneFromFloor: TRUE,
+		NeedToBeLearn	: true,
+		IsHidden:true,
+		Override:true,
+	}
+	recipe Scrap 410g Shotgun Shell
+	{
+		Base.410gShotgunShells,
+
+		Result		: GunPowder,
+		Time			: 45.0,
+		OnCreate		: Scrap_Ammo,
+		CanBeDoneFromFloor: TRUE,
+		NeedToBeLearn	: true,
+		IsHidden:true,
+		Override:true,
+	}
+	recipe Scrap 20g Shotgun Shell
+	{
+		Base.20gShotgunShells,
+
+		Result		: GunPowder,
+		Time			: 50.0,
+		OnCreate		: Scrap_Ammo,
+		CanBeDoneFromFloor: TRUE,
+		NeedToBeLearn	: true,
+		IsHidden:true,
+		Override:true,
+	}
+	recipe Scrap 12g Shotgun Shell
+	{
+		Base.ShotgunShells,
+
+		Result		: GunPowder,
+		Time			: 50.0,
+		OnCreate		: Scrap_Ammo,
+		CanBeDoneFromFloor: TRUE,
+		NeedToBeLearn	: true,
+		IsHidden:true,
+		Override:true,
+	}
+	recipe Scrap 10g Shotgun Shell
+	{
+		Base.10gShotgunShells,
+
+		Result		: GunPowder,
+		Time			: 50.0,
+		OnCreate		: Scrap_Ammo,
+		CanBeDoneFromFloor: TRUE,
+		NeedToBeLearn	: true,
+		IsHidden:true,
+		Override:true,
+	}
+	recipe Scrap 4g Shotgun Shell
+	{
+		Base.4gShotgunShells,
+
+		Result		: GunPowder,
+		Time			: 60.0,
+		OnCreate		: Scrap_Ammo,
+		CanBeDoneFromFloor: TRUE,
+		NeedToBeLearn	: true,
+		IsHidden:true,
+		Override:true,
+	}
+	recipe Scrap Flare Round
+	{
+		Base.Flare,
+
+		Result		: GunPowder,
+		Time			: 50.0,
+		OnCreate		: Scrap_Ammo,
+		CanBeDoneFromFloor: TRUE,
+		NeedToBeLearn	: true,
+		IsHidden:true,
+		Override:true,
+	}
+
+}

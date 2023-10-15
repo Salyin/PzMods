@@ -1,0 +1,6 @@
+UI_FR = {
+  UI_prof_Homeless = "Sans abri",
+
+  UI_trait_Scavenger = "Charognard",
+  UI_trait_ScavengerDesc = "La recherche est moins impactée par les conditions négatives.",
+}

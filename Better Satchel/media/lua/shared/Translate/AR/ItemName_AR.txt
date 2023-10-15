@@ -1,0 +1,7 @@
+ItemName_AR = {
+	ItemName_Base.Bag_Satchel = "Morral (frente)",
+	ItemName_Base.Bag_SatchelBack = "Morral (espalda)",
+	ItemName_Base.MysteriousSatchel_New = "Morral táctico (frente)",
+	ItemName_Base.MysteriousSatchelBack = "Morral táctico (espalda)",
+	ItemName_Base.MysteriousHazmat = "Traje de protección química",
+}

@@ -1,0 +1,7 @@
+ItemName_PL = {
+	ItemName_Base.Bag_Satchel = "Teczka (przód)",
+    ItemName_Base.Bag_SatchelBack = "Teczka (ty³)",
+	ItemName_Base.MysteriousSatchel_New = "Teczka taktyczna (przód)",
+	ItemName_Base.MysteriousSatchelBack = "Teczka taktyczna (ty³)",
+	ItemName_Base.MysteriousHazmat = "Kombinezon ochronny",
+}

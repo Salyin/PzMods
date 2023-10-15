@@ -1,0 +1,4 @@
+Tooltip_RU = {
+    Tooltip_BookTitle_Music = "Музыка",
+    Tooltip_BookTitle_Dancing = "Танцы",
+}

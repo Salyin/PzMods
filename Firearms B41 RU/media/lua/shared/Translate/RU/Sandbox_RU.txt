@@ -1,0 +1,82 @@
+Sandbox_RU = {
+	Sandbox_Firearms = "Огнестрельное оружие",
+
+	Sandbox_Firearms_SuppressorBreak = "Поломка самодельного глушителя"
+	Sandbox_Firearms_SuppressorBreak_tooltip = "Когда включено, самодельные глушители могут сломаться."
+
+	Sandbox_Firearms_ScrewdriverReq = "Требование наличия отвёртки"
+	Sandbox_Firearms_ScrewdriverReq_tooltip = "Когда включено, установка модулей на оружия невозможна без наличия отвёртки в инвентаре."
+
+	Sandbox_Firearms_FlashlightSuppressorBreakChance = "Шанс поломки самодельного глушителя из фонарика"
+	Sandbox_Firearms_FlashlightSuppressorBreakChance_tooltip = "Общий шанс поломки самодельного глушителя, даже на низком уровне, все еще есть шанс, что он сломается при первом использовании."
+
+	Sandbox_Firearms_BottleSuppressorBreakChance = "Шанс поломки самодельного глушителя из банки"
+	Sandbox_Firearms_BottleSuppressorBreakChance_tooltip = "Общий шанс поломки самодельного глушителя, даже на низком уровне, все еще есть шанс, что он сломается при первом использовании."
+
+	Sandbox_Firearms_BreakChance_option1 = "Одно использование"
+	Sandbox_Firearms_BreakChance_option2 = "Высокий",
+	Sandbox_Firearms_BreakChance_option3 = "Средний",
+	Sandbox_Firearms_BreakChance_option4 = "Низкий",
+
+	Sandbox_Firearms_SuppressorEffectiveness_option1 = "100%"
+	Sandbox_Firearms_SuppressorEffectiveness_option2 = "90%",
+	Sandbox_Firearms_SuppressorEffectiveness_option3 = "80%",
+	Sandbox_Firearms_SuppressorEffectiveness_option4 = "70%",
+	Sandbox_Firearms_SuppressorEffectiveness_option5 = "60%",
+	Sandbox_Firearms_SuppressorEffectiveness_option6 = "50%",
+	Sandbox_Firearms_SuppressorEffectiveness_option7 = "40%",
+	Sandbox_Firearms_SuppressorEffectiveness_option8 = "30%",
+	Sandbox_Firearms_SuppressorEffectiveness_option9 = "20%",
+	Sandbox_Firearms_SuppressorEffectiveness_option10 = "10%",
+
+	Sandbox_Firearms_SuppressorEffectiveness22 = "Эффективность глушителей .22 LR",
+	Sandbox_Firearms_SuppressorEffectiveness22_tooltip = "Эффективность глушителей на оружии, которое использует патроны .22 LR.",
+
+  Sandbox_Firearms_SuppressorEffectiveness9mm = "Эффективность глушителей 9мм",
+  Sandbox_Firearms_SuppressorEffectiveness9mm_tooltip = "Эффективность глушителей на оружии, которое использует патроны 9мм.",
+
+  Sandbox_Firearms_SuppressorEffectiveness45 = "Эффективность глушителей .45 ACP",
+  Sandbox_Firearms_SuppressorEffectiveness45_tooltip = "Эффективность глушителей на оружии, которое использует патроны .45 ACP.",
+
+  Sandbox_Firearms_SuppressorEffectiveness38 = "Эффективность глушителей .38 Спешиал",
+  Sandbox_Firearms_SuppressorEffectiveness38_tooltip = "Эффективность глушителей на оружии, которое использует патроны 38 Спешиал.",
+
+  Sandbox_Firearms_SuppressorEffectiveness44 = "Эффективность глушителей .44 Магнум",
+  Sandbox_Firearms_SuppressorEffectiveness44_tooltip = "Эффективность глушителей на оружии, которое использует патроны .44 Магнум.",
+
+  Sandbox_Firearms_SuppressorEffectiveness223 = "Эффективность глушителей .223 и 5.56x45мм",
+  Sandbox_Firearms_SuppressorEffectiveness223_tooltip = "Эффективность глушителей на оружии, которое использует патроны .223 и 5.56x45мм.",
+
+  Sandbox_Firearms_SuppressorEffectiveness308 = "Эффективность глушителей .308 и 7.62x51мм",
+  Sandbox_Firearms_SuppressorEffectiveness308_tooltip = "Эффективность глушителей на оружии, которое использует патроны .308 и 7.62x51мм.",
+
+  Sandbox_Firearms_SuppressorEffectivenessShotgunShells = "Эффективность глушителей для дробовиков",
+  Sandbox_Firearms_SuppressorEffectivenessShotgunShells_tooltip = "Эффективность глушителей для дробовиков.",
+
+  Sandbox_Firearms_SuppressorEffectivenessImprovised = "Эффективность самодельных глушителей",
+  Sandbox_Firearms_SuppressorEffectivenessImprovised_tooltip = "Эффективность самодельных глушителей.",
+
+    Sandbox_Firearms_SuppressorEffectivenessRevolver = "Эффективность глушителей для револьверов",
+  Sandbox_Firearms_SuppressorEffectivenessRevolver_tooltip = "Эффективность глушителей для револьверов.",
+
+  Sandbox_Firearms_SpawnSuppressors = "Спавн глушителей",
+  Sandbox_Firearms_SpawnSuppressors_tooltip = "Спавн глушителей в игровом мире.",
+
+  Sandbox_Firearms_SpawnHandgunSuppressors = "Спавн глушителей для пистолетов",
+  Sandbox_Firearms_SpawnHandgunSuppressors_tooltip = "Спавн глушителей для пистолетов в игровом мире.",
+
+  Sandbox_Firearms_SpawnRifleSuppressors = "Спавн глушителей для винтовок",
+  Sandbox_Firearms_SpawnRifleSuppressors_tooltip = "Спавн глушителей для винтовок в игровом мире.",
+
+  Sandbox_Firearms_SpawnShotgunSuppressors = "Спавн глушителей для дробовиков",
+  Sandbox_Firearms_SpawnShotgunSuppressors_tooltip = "Спавн глушителей для дробовиков в игровом мире.",
+
+    Sandbox_Firearms_SpawnRevolverSuppressors = "Спавн глушителей для револьверов",
+  Sandbox_Firearms_SpawnRevolverSuppressors_tooltip = "Спавн глушителей для калибра .38 и .357 в игровом мире.",
+
+  Sandbox_Firearms_SpawnAmmoCans = "Спавн ящиков патронов",
+  Sandbox_Firearms_SpawnAmmoCans_tooltip = "Спавн полевых ящиков для патронов, которые содержат в себе коробки с патронами.",
+
+  Sandbox_Firearms_LootSuppressor = "Глушители",
+
+}

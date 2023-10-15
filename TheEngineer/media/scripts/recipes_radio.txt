@@ -1,0 +1,147 @@
+module Base
+{
+    recipe Dismantle Radio
+    {
+       Radio.RadioRed/Radio.RadioBlack/Radio.RadioMakeShift,
+       keep [Recipe.GetItemTypes.Screwdriver],
+
+       NoBrokenItems:true,
+       Result:ElectronicsScrap,
+       Time:200.0,
+       OnTest:Recipe.OnTest.DismantleElectronics,
+       OnCreate:DismantleDefaultRadio_OnCreate,
+       OnGiveXP:Recipe.OnGiveXP.DismantleRadio,
+       Category:Electrical,
+       AnimNode:Disassemble,
+       Prop1:Screwdriver,
+       Prop2:CDplayer,
+       Sound:Dismantle,
+	   CanBeDoneFromFloor      : TRUE,
+	   Override:true
+    }
+    recipe Dismantle Two-way Radio
+    {
+       Radio.WalkieTalkie1/Radio.WalkieTalkie2/Radio.WalkieTalkie3/Radio.WalkieTalkie4/Radio.WalkieTalkie5/Radio.WalkieTalkieMakeShift,
+       keep [Recipe.GetItemTypes.Screwdriver],
+
+       NoBrokenItems:true,
+       Result:ElectronicsScrap,
+       Time:100.0,
+       OnTest:Recipe.OnTest.DismantleElectronics,
+       OnCreate:DismantleWT_OnCreate,
+       OnGiveXP:Recipe.OnGiveXP.DismantleRadio,
+       Category:Electrical,
+       AnimNode:Disassemble,
+       Prop1:Screwdriver,
+       Prop2:CDplayer,
+       Sound:Dismantle,
+	   CanBeDoneFromFloor      : TRUE,
+	   Override:true
+    }
+    recipe Dismantle HAM Radio
+    {
+       Radio.HamRadio1/Radio.HamRadio2/Radio.HamRadioMakeShift,
+       keep [Recipe.GetItemTypes.Screwdriver],
+
+       NoBrokenItems:true,
+       Result:ElectronicsScrap,
+       Time:300.0,
+       OnTest:Recipe.OnTest.DismantleElectronics,
+       OnCreate:DismantleHAM_OnCreate,
+       OnGiveXP:Recipe.OnGiveXP.DismantleRadio,
+       Category:Electrical,
+       AnimNode:Disassemble,
+       Prop1:Screwdriver,
+       Prop2:CDplayer,
+       Sound:Dismantle,
+	   CanBeDoneFromFloor      : TRUE,
+	   Override:true
+    }
+    recipe Dismantle Television
+    {
+       Radio.TvAntique/Radio.TvWideScreen/Radio.TvBlack,
+       keep [Recipe.GetItemTypes.Screwdriver],
+
+       NoBrokenItems:true,
+       Result:ElectronicsScrap,
+       Time:400.0,
+       OnTest:Recipe.OnTest.DismantleElectronics,
+       OnCreate:DismantleTVS_OnCreate,
+       OnGiveXP:Recipe.OnGiveXP.DismantleRadio,
+       Category:Electrical,
+       AnimNode:Disassemble,
+       Prop1:Screwdriver,
+       Prop2:CDplayer,
+       Sound:Dismantle,
+	   CanBeDoneFromFloor      : TRUE,
+	   Override:true
+    }
+    recipe Craft Makeshift Radio
+    {
+        ElectronicsScrap=2,
+        Amplifier,
+        LightBulb,
+		Screws=15,
+        Radio.RadioReceiver,
+        Radio.ElectricWire,
+        Aluminum=2,
+        keep [Recipe.GetItemTypes.Screwdriver],
+
+        NoBrokenItems:true,
+        Result:Radio.RadioMakeShift,
+        SkillRequired:MetalWelding=1;Electricity=4,
+        NeedToBeLearn:true,
+        Time:400.0,
+        OnCreate:Recipe.OnCreate.RadioCraft,
+        OnGiveXP:Recipe.OnGiveXP.RadioCraft,
+        Category:Engineer,
+		CanBeDoneFromFloor      : TRUE,
+		Override:true
+    }
+    recipe Craft Makeshift HAM Radio
+    {
+        ElectronicsScrap=4,
+        Amplifier,
+        LightBulb,
+		Screws=25,
+        Radio.RadioReceiver,
+        Radio.RadioTransmitter,
+        Radio.ElectricWire=3,
+        Aluminum=4,
+        keep [Recipe.GetItemTypes.Screwdriver],
+
+        NoBrokenItems:true,
+        Result:Radio.HamRadioMakeShift,
+        SkillRequired:Woodwork=2;MetalWelding=3;Electricity=6,
+        NeedToBeLearn:true,
+        Time:800.0,
+        OnCreate:Recipe.OnCreate.RadioCraft,
+        OnGiveXP:Recipe.OnGiveXP.RadioCraft,
+        Category:Engineer,
+		CanBeDoneFromFloor      : TRUE,
+		Override:true
+    }
+    recipe Craft Makeshift Walkie Talkie
+    {
+        ElectronicsScrap=3,
+        Amplifier,
+        LightBulb,
+		DuctTape=2,
+        Radio.RadioReceiver,
+        Radio.RadioTransmitter,
+        Radio.ElectricWire=2,
+        Aluminum=3,
+        keep [Recipe.GetItemTypes.Screwdriver],
+
+        NoBrokenItems:true,
+        Result:Radio.WalkieTalkieMakeShift,
+        SkillRequired:MetalWelding=2;Electricity=5,
+        NeedToBeLearn:true,
+        Time:600.0,
+        OnCreate:Recipe.OnCreate.RadioCraft,
+        OnGiveXP:Recipe.OnGiveXP.RadioCraft,
+        Category:Engineer,
+		CanBeDoneFromFloor      : TRUE,
+		Override:true
+    }
+}

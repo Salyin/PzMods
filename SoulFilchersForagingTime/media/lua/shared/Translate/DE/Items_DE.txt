@@ -1,0 +1,16 @@
+Items_DE = {
+  DisplayNameCardboard = "Karton",
+  DisplayNameCardboard_Bed = "Bett aus Karton",
+  DisplayNameEmpty_Water_Gallon = "Wasser Gallone (leer)",
+  DisplayNameLetter = "Brief",
+  DisplayNamePackage = "Paket",
+  DisplayNamePaint_Bucket_with_Water = "Farbeimer mit Wasser",
+  DisplayNameTin_Can_with_Water = "Blechdose mit Wasser",
+  DisplayNameWater_Gallon = "Wasser Gallone",
+
+  DisplayName_Advanced_Scavenging = "Plünderer für Fortgeschrittene",
+  DisplayNameScavenging_for_Beginners = "Plünderer für Anfänger",
+  DisplayNameScavenging_for_Intermediates = "Plünderer für nicht-mehr-Anfänger",
+  DisplayName_Expert_Scavenging = "Plünderer für Experten",
+  DisplayName_Master_Scavenging = "Plünderer für Meister",
+}

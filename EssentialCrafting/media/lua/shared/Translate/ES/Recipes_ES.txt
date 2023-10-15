@@ -1,0 +1,209 @@
+Recipe_ES = {
+	
+	/* SpoonMiscStuff.txt */
+	/************************ COSAS ************************/
+	Recipe_Make_a_Garbagebag = "Hacer Bolsa de Basura",
+	Recipe_Make_Disinfectant = "Elaborar Desinfectante",
+	Recipe_Make_Cleaning_Liquid = "Elaborar Líquido Limpiador",
+	/************************ TRABAJO DEL PAPEL ************************/
+	Recipe_Craft_a_Notebook = "Hacer Libreta",
+	Recipe_Rip_Drawing_Paper = "Rasgar Papel de Dibujo",
+	Recipe_Make_Drawing_Paper = "Crear Papel de Dibujo",
+	Recipe_Make_Toilet_Paper = "Crear Papel Higiénico",
+	Recipe_Rip_Scrambled_Paper = "Rasgar Trozo de papel",
+	/************************ DESTRUIR ************************/
+	Recipe_Smash_against_the_ground = "Aplastar contra el suelo",
+	Recipe_Scrap = "Hacer Chatarra",
+	
+	/* camping.txt */
+	Recipe_Make_Campfire_Kit = "Hacer Kit de Hoguera",
+	Recipe_Make_Tent_Kit = "Hacer Kit de Tienda de Acampar",
+	
+	/* SpoonCarpentryStuff.txt */
+	/************************ OBJETOS HABITUALES ************************/
+	Recipe_Carve_a_Wooden_Bowl = "Tallar Bol de Madera",
+	Recipe_Carve_Knitting_Needles = "Tallar Aguja de Tejer",
+	Recipe_Carve_Buttons_from_Wood = "Tallar Botones de Madera",
+	Recipe_Carve_a_Wooden_Rolling_Pin = "Tallar un Rodillo de Madera",
+	Recipe_Assemble_a_Mop = "Crear Fregona",
+	Recipe_Assemble_a_Paintbrush = "Crear Brocha",
+	Recipe_Craft_a_Pencil = "Crear Lápiz",
+	Recipe_Make_Duct_Tape = "Crear Cinta Adhesiva",
+	/************************ ARMAS ************************/
+	Recipe_Craft_a_Baseball_bat = "Crear Bate de Béisbol",
+	Recipe_Carve_Ice_Hockey_Stick = "Tallar Un Palo de Hockey Sobre Hielo",
+	Recipe_Carve_Hockey_Stick = "Tallar Palo de Hockey",
+	Recipe_Carve_Canoe_Paddle = "Tallar Remo de Canoa",
+	Recipe_Carve_Double_Canoe_Paddle = "Tallar Remo de Canoa Doble",
+	Recipe_Attach_Canoe_Paddles = "Unir Remos de Canoa",
+	Recipe_Detach_Canoe_Paddles = "Separar Remos de Canoa",
+	/************************ MATERIALES ************************/
+	Recipe_Crush_Rocks_to_Gravel = "Triturar rocas en grava",
+	Recipe_Crush_Gravel_to_Sand = "Triturar grava en arena",
+	Recipe_Make_a_Bag_of_Plaster_Powder = "Hacer Bolsa de Polvo de Yeso",
+	
+	/* SpoonSurvivalStuff.txt */
+	/************************ BÁSICOS ************************/
+	Recipe_Chip_a_Stone = "Astilla una Piedra",
+	Recipe_Chop_Tree_Branch_to_Twigs = "Separar Rama en Ramitas",
+	Recipe_Chop_Log_to_Twigs = "Separar Tronco en Ramas",
+	/************************ OBJETOS ************************/
+	Recipe_Craft_Alcohol_Wipes = "Elaborar Toallitas con Alcohol",
+	Recipe_Craft_a_Needle = "Elaborar Aguja",
+	Recipe_Craft_Tweezers = "Elaborar Pinzas",
+	Recipe_Craft_a_Fishing_Tackle = "Elaborar Aparejo de Pescar",
+	Recipe_Craft_a_2X_Scope = "Elaborar Mira 2x",
+	/************************ FOSA COMÚN ************************/
+	Recipe_Prepare_Dead_Body_for_the_Mass_Grave = "Preparar Cadáver para Fosa Común",
+	Recipe_Dig_a_Mass_Grave = "Cavar Fosa Común",
+	Recipe_Fill_Mass_Grave_with_Bodies = "Llenar Fosa Común con cuerpos",
+	
+	/* SpoonTailoringStuff.txt */
+	/************************ RASGAR ROPA ************************/
+	Recipe_Draw_Yarn_from_Clothing = "Deshacer Ropa en Hilo",
+	/************************ HILO CORDELES Y OVILLO ************************/
+	Recipe_Craft_Thread = "Elaborar Hilo",
+	Recipe_Craft_Twine = "Elaborar Cordel",
+	Recipe_Craft_Yarn = "Elaborar Ovillo",
+	Recipe_Craft_Rope = "Elaborar Cuerda",
+	Recipe_Craft_Ripped_Sheet = "Elaborar Retal de Tela",
+	/************************ TELAS Y OTROS ************************/
+	Recipe_Use_as_Towel = "Utilizar como Toalla",
+	Recipe_Use_as_Ripped_Sheets = "Usar como Retal de Tela",
+	Recipe_Tailor_a_Sheet = "Elaborar una Sabana",
+	Recipe_Tailor_a_Tarp = "Elaborar una Lona",
+	Recipe_Rip_Tarp = "Rasgar Lona",
+	Recipe_Tailor_a_Pillow = "Elaborar un Cojín",
+	Recipe_Rip_Pillow = "Rasgar Cojín",
+	Recipe_Tailor_a_Sack = "Elaborar Bolsa",
+	Recipe_Rip_Sack = "Rasgar Bolsa",
+	Recipe_Tailor_Survivor_Bag = "Elaborar Bolsa de Superviviente",
+	Recipe_Convert_to_a_Survivor_Bag = "Convertir a Bolsa de Supervivente",
+	Recipe_Craft_Sandals = "Elaborar Sandalias",
+	Recipe_Craft_Shoes = "Elaborar Zapatos",
+	Recipe_Craft_Black_Boots = "Elaborar Botas Negras",
+	/************************ OBJETOS DE ROPA BÁSICOS ************************/
+	Recipe_Craft_Head_Bandana = "Elaborar Bandana",
+	Recipe_Claim_Ripped_Sheet = "Obtener Retal de Tela",
+	/************************ OBJETOS TEJIDOS ************************/
+	Recipe_Craft_a_Simple_Scarf = "Elaborar Bufanda Simple",
+	Recipe_Knit_a_Scarf = "Tejer Bufanda",
+	Recipe_Knit_Winter_Gloves = "Tejer Guantes de Invierno",
+	Recipe_Knit_a_Balaclava = "Tejer Balaclava",
+	Recipe_Knit_a_Winter_Hat = "Tejer Sombrero de Invierno",
+	Recipe_Knit_a_Woolly_Hat = "Tejer Sombrero de Lana",
+	Recipe_Knit_Long_Socks = "Tejer Calcetines Largos",
+	Recipe_Knit_a_V-Neck_Sweater = "Tejer Sueter de Cuello en V",
+	Recipe_Knit_a_R-Neck_Sweater = "Tejer Sueter de Cuello en R",
+	Recipe_Knit_a_P-Neck_Sweater = "Tejer Sueter de Cuello en P",
+	/************************ OBJETOS DE CUERO ************************/
+	Recipe_Make_a_Sling = "Elaborar Honda",
+	Recipe_Make_a_Belt = "Elaborar Cinturón",
+	Recipe_Make_a_Single_Holster = "Elaborar Funda",
+	Recipe_Make_Double_Holster = "Elaborar Funda Doble",
+	Recipe_Make_Ammo_Straps = "Elaborar Correa de Munición",
+	Recipe_Make_Boxers = "Elaborar Boxers",
+	Recipe_Make_a_T-Shirt = "Elaborar Camiseta",
+	Recipe_Make_Denim_Pants = "Elaborar Vaqueros",
+	Recipe_Make_Leather_Pants = "Elaborar Pantalones de Cuero",
+	Recipe_Make_a_Leather_Coat = "Elaborar Abrigo de Cuero",
+	/************************ OBJETOS EXTRA ************************/
+	Recipe_Make_Bullet_Proof_Vest = "Elaborar Chaleco Antibalas",
+	/************************ DESHACER Y RASGAR TELAS Y OTROS ************************/
+	Recipe_Scrap_Sheet_Rope = "Deshacer Cuerda de Tela",
+	Recipe_Scrap_Bulletproof_vest = "Deshacer Chaleco Antibalas",
+	
+	/* SpoonVanillaECraftingPatch.txt */
+	Recipe_Refill_Lighter = "Recargar Encendedor",
+	Recipe_Create_Spear = "Crear Lanza",
+	Recipe_Rip_Clothing_The_Hardway = "Rasgar Ropa a la Fuerza",
+	Recipe_Craft_Sheet_Rope = "Hacer una Cuerda de Tela",
+	Recipe_Craft_Nicer_Sheet_Rope = "Hacer una Cuerda de Tela Mejorada",
+	Recipe_Take_Mattress_Apart = "Deshacer Colchón",
+	Recipe_Make_Fishing_Net = "Elaborar Red de Pesca",
+	Recipe_Get_Wire_Back = "Obtener Cable de Nuevo",
+	Recipe_Fix_Fishing_Net = "Reparar Red de Pesca",
+	
+	/* SpoonWeaponParts.txt */
+	Recipe_Make_into_Usable_Parts = "Elaborar en Partes Usables",
+	Recipe_Scrap_Weapon_Parts = "Deshacer en Piezas de Arma",
+	
+	/* SpoonPaintingStuff.txt */
+	Recipe_Clean_Light_Bulb = "Limpiar Una Bombilla",
+	Recipe_Clean_Light_Bulbs_Bulk = "Limpiar Todas las Bombillas",
+	Recipe_Make_Purple_Light_Bulb = "Elaborar Bombilla Morada",
+	Recipe_Make_Red_Light_Bulb = "Elaborar Bombilla Roja",
+	Recipe_Make_Green_Light_Bulb = "Elaborar Bombilla Verde",
+	Recipe_Make_Magenta_Light_Bulb = "Elaborar Bombilla Magenta",
+	Recipe_Make_Orange_Light_Bulb = "Elaborar Bombilla Naranja",
+	Recipe_Make_Blue_Light_Bulb = "Elaborar Bombilla Azul",
+	Recipe_Make_Yellow_Light_Bulb = "Elaborar Bombilla Amarilla",
+	Recipe_Make_Cyan_Light_Bulb = "Elaborar Bombilla Cián",
+	Recipe_Make_Pink_Light_Bulb = "Elaborar Bombilla Rosa",
+	Recipe_Make_Green_Paint = "Elaborar Pintura Verde",
+	Recipe_Make_Light_Blue_Paint = "Elaborar Pintura Azul Claro",
+	Recipe_Make_Purple_Paint = "Elaborar Pintura Morada",
+	Recipe_Make_Gray_Paint = "Elaborar Pintura Gris",
+	Recipe_Make_Brown_Paint = "Elaborar Pintura Marrón",
+	Recipe_Make_Turquoise_Paint = "Elaborar Pintura Turquesa",
+	Recipe_Make_Cyan_Paint = "Elaborar Pintura Cián",
+	Recipe_Make_Light_Brown_Paint = "Elaborar Pintura Marrón Claro",
+	Recipe_Make_Orange_Paint = "Elaborar Pintura Naranja",
+	Recipe_Make_Pink_Paint = "Elaborar Pintura Rosa",
+	
+	/* SpoonOpenCans.txt */
+	Recipe_Open_Canned_Soup_the_Hardway = "Abrir Sopa Enlatada a la Fuerza",
+	Recipe_Open_Canned_Fruit_Cocktail_the_Hardway = "Abrir Cóctel de Frutas Enlatado a la Fuerza",
+	Recipe_Open_Canned_Fruit_Beverage_the_Hardway = "Abrir Zumo Enlatado a la Fuerza",
+	Recipe_Open_Canned_Peaches_the_Hardway = "Abrir Melocotón Enlatado a la Fuerza",
+	Recipe_Open_Canned_Pineapple_the_Hardway = "Abrir Piña Enlatada a la Fuerza",
+	Recipe_Open_Canned_Beans_the_Hardway = "Abrir Frijoles Enlatados a la Fuerza",
+	Recipe_Open_Dog_Food_the_Hardway = "Abrir Comida de Perro Enlatada a la Fuerza",
+	Recipe_Open_Canned_Corn_the_Hardway = "Abrir Maíz Enlatado a la Fuerza",
+	Recipe_Open_Canned_Bolognese_the_Hardway = "Abrir Boloñesa Enlatada a la Fuerza",
+	Recipe_Open_Canned_Chili_the_Hardway = "Abrir Chile Enlatado a la Fuerza",
+	Recipe_Open_Canned_Mushroom_Soup_the_Hardway = "Abrir Sopa de Setas a la Fuerza",
+	Recipe_Open_Canned_Peas_the_Hardway = "Abrir Guisantes Enlatados a la Fuerza",
+	Recipe_Open_Canned_Potato_the_Hardway = "Abrir Patata Enlatada a la Fuerza",
+	Recipe_Open_Canned_Tomato_the_Hardway = "Abrir Tomate Enlatado a la Fuerza",
+	Recipe_Open_Canned_Carrots_the_Hardway = "Abrir Zanahoria Enlatada a la Fuerza",
+	
+	/* SpoonFixItems.txt */
+	/************************ HACER CHATARRA HERRAMIENTAS ************************/
+	Recipe_Scrap_Stone_Axe = "Deshacer Hacha de Piedra",
+	Recipe_Scrap_Stone_Hammer = "Deshacer Martillo de Piedra",
+	Recipe_Scrap_Stone_Knife = "Deshacer Cuchillo de Piedra",
+	Recipe_Scrap_Wooden_Tool = "Deshacer Herramienta de Madera",
+	Recipe_Scrap_Wooden_Weapon = "Deshacer Arma de Madera",
+
+	/* SpoonAttachItemsTOSpear.txt */
+	/************************ ATAR A LANZA ************************/
+	Recipe_Tie_Bread_Knife_to_Spear = "Atar Cuchillo de Pan a Lanza",
+	Recipe_Tie_Butter_Knife_to_Spear = "Atar Cuchillo de Untar a Lanza",
+	Recipe_Tie_Fork_to_Spear = "Atar Tenedor a Lanza",
+	Recipe_Tie_Letter_Opener_to_Spear = "Atar Abre Sobres a Lanza",
+	Recipe_Tie_Scalpel_to_Spear = "Atar Bisturí a Lanza",
+	Recipe_Tie_Spoon_to_Spear = "Atar Cuchara a Lanza",
+	Recipe_Tie_Scissors_to_Spear = "Atar Tijeras a Lanza",
+	Recipe_Tie_Hand_Fork_to_Spear = "Atar Tenedor a Lanza",
+	Recipe_Tie_Screwdriver_to_Spear = "Atar Destornillador a Lanza",
+	Recipe_Tie_Kitchen_Knife_to_Spear = "Atar Cuchillo de Cocina a Lanza",
+	Recipe_Tie_Hunting_Knife_to_Spear = "Atar Cuchillo de Caza a Lanza",
+	Recipe_Tie_Machete_to_Spear = "Atar Machete a Lanza",
+	Recipe_Tie_Ice_Pick_to_Spear = "Atar Picahielo a Lanza",
+	/************************ DESATAR DE LANZA ************************/
+	Recipe_Untie_Bread_Knife_from_Spear = "Desatar Cuchillo de Pan de Lanza",
+	Recipe_Untie_Butter_Knife_from_Spear = "Desatar Cuchillo de Untar de Lanza",
+	Recipe_Untie_Fork_from_Spear = "Desatar Tenedor de Lanza",
+	Recipe_Untie_Letter_Opener_from_Spear = "Desatar Abre Sobres de Lanza",
+	Recipe_Untie_Scalpel_from_Spear = "Desatar Bisturí de Lanza",
+	Recipe_Untie_Spoon_from_Spear = "Desatar Cuchara de Lanza",
+	Recipe_Untie_Scissors_from_Spear = "Desatar Tijeras de Lanza",
+	Recipe_Untie_Hand_Fork_from_Spear = "Desatar Tenedor de Lanza",
+	Recipe_Untie_Screwdriver_from_Spear = "Desatar Destornillador de Lanza",
+	Recipe_Untie_Kitchen_Knife_from_Spear = "Desatar Cuchillo de Cocina de Lanza",
+	Recipe_Untie_Hunting_Knife_from_Spear = "Desatar Cuchillo de Caza de Lanza",
+	Recipe_Untie_Machete_from_Spear = "Desatar Machete de Lanza",
+	Recipe_Untie_Ice_Pick_from_Spear = "Desatar Picahielo de Lanza",
+
+}

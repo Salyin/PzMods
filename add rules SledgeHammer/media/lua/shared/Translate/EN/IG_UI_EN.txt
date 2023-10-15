@@ -1,0 +1,13 @@
+IG_UI_EN = {
+
+	IGUI_sledgeBroken = "My sledgehammer is broken !",
+	IGUI_notStrongForThat = "I'm not strong for that !  (level ",
+	IGUI_notStrongForThat2 = " required)",
+	IGUI_noSledge = "I don't have a sledgehammer !",
+	IGUI_imExhausted = "I'm exhausted !!",
+	IGUI_noMoreLong = "One more effort and it will be good ...",
+	IGUI_missed = "Missed !",
+	IGUI_sledgeDestroyed = "Sledgehammer is destroyed and lost !!",
+	IGUI_tooFarSledge = "I have to retry the action here !",
+	IGUI_OtherSafeHouseforbidden = "I'm not at home here !",
+    }

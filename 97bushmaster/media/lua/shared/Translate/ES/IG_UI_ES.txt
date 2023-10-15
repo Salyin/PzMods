@@ -1,0 +1,33 @@
+IG_UI_ES = {
+	IGUI_VehicleName97bushmaster = "'97 Bushmaster"
+	IGUI_VehicleName97bushAmbulance = "'97 Bushmaster Ambulancia"
+	IGUI_VehiclePartSeatDriver = "Asiento de conductor",
+	IGUI_VehiclePartSeatSupport = "Asiento de apoyo",
+	IGUI_VehiclePartSeatCrew1 = "Asiento de tripulación 1",
+	IGUI_VehiclePartSeatCrew2 = "Asiento de tripulación 2",
+	IGUI_VehiclePartSeatCrew3 = "Asiento de tripulación 3",
+	IGUI_VehiclePartSeatCrew4 = "Asiento de tripulación 4",
+	IGUI_VehiclePartSeatCrew5 = "Asiento de tripulación 5",
+	IGUI_VehiclePartSeatCrew6 = "Asiento de tripulación 6",
+	IGUI_VehiclePartSeatCrew7 = "Asiento de tripulación 7",
+	IGUI_VehiclePartSeatCrew8 = "Asiento de tripulación 8",
+	IGUI_VehiclePartGunner = "Asiento de artillero",
+	IGUI_VehiclePartSeatStretcher = "Camilla",
+	IGUI_VehiclePartBUSHMudflaps = "Guardabarros",
+	IGUI_VehiclePartBUSHFenderLeft = "Guardabarros trasero izquierdo",
+	IGUI_VehiclePartBUSHFenderRight = "Guardabarros trasero derecho",
+	IGUI_VehiclePartStorageLid1 = "Tapa de almacenamiento izquierdo",
+	IGUI_VehiclePartStorageLid2 = "Tapa de almacenamiento derecho",
+	IGUI_VehiclePartBUSHStorageLeft = "Almacenamiento lateral izquierdo",
+	IGUI_VehiclePartBUSHStorageRight = "Almacenamiento lateral derecho",
+	IGUI_VehiclePartStorageLid3 = "Tapa de almacenamiento derecho",
+	IGUI_VehiclePartBUSHRoofCrates = "Almacenamiento de techo",
+	IGUI_VehiclePartBUSHAmmoCabinet = "Gabinete de munición",
+	IGUI_VehiclePartBUSHMedicCabinet = "Gabinete médico",
+	IGUI_VehiclePartBUSHFloor = "Suelo del vehículo",
+	IGUI_VehiclePartBUSHSpareRight = "Neumático de repuesto derecho",
+	IGUI_VehiclePartBUSHSpareRoof = "Neumático de repuesto de techo",
+	IGUI_VehiclePartTrunkHatch = "Escotilla de techo",
+	IGUI_CraftCategory_Bushmaster = "'97 ADI Bushmaster",
+}
+

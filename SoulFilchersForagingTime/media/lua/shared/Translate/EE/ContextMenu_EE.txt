@@ -1,0 +1,8 @@
+ContextMenu_EE = {
+	ContextMenu_Place_Cardboard_Bed = "Place Cardboard Bed",
+	ContextMenu_Remove_Cardboard_Bed = "Remove Cardboard Bed",
+	ContextMenu_Scavenging = "Scavenging",
+	ContextMenu_Sort_Trash = "Scavenge",
+
+	ContextMenu_LetterTo = "Letter to ",
+}
