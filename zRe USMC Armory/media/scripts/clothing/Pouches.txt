@@ -1,0 +1,49 @@
+module Base
+{
+
+	item Interceptor_Pouches
+    {
+        Type = Container,
+        DisplayName = Tactical Pouches,
+        ClothingItem = Interceptor_Pouches,
+        Icon	=	Interceptor_Pouches,
+        CanBeEquipped = VestChestRig,
+        RunSpeedModifier = 0.96,
+        BodyLocation = VestChestRig,
+        BloodLocation = ShirtNoSleeves,
+        ClothingItemExtra = Interceptor_Pouches_Straps,
+        ClothingItemExtraOption = UseStraps,
+		clothingExtraSubmenu = Interceptor_Pouches,
+        WeightReduction	= 90,
+        Weight	=	1,
+        Capacity	=	12,
+        OpenSound   =   OpenBag,
+        CloseSound   =   CloseBag,
+        PutInSound   =   PutItemInBag,
+		WorldStaticModel = Interceptor_Pouches_Ground,
+    }
+
+
+    item Interceptor_Pouches_Straps
+    {
+        Type = Container,
+        DisplayName = Tactical Pouches with straps,
+        ClothingItem = Interceptor_Pouches_Straps,
+        Icon	=	Interceptor_Pouches,
+        CanBeEquipped = VestChestRig,
+        RunSpeedModifier = 0.96,
+        BodyLocation = VestChestRig,
+        BloodLocation = ShirtNoSleeves,
+        ClothingItemExtra = Interceptor_Pouches,
+        ClothingItemExtraOption = RemoveStraps,
+		clothingExtraSubmenu = Interceptor_Pouches_Straps,
+        WeightReduction	= 90,
+        Weight	=	1,
+        Capacity	=	12,
+        OpenSound   =   OpenBag,
+        CloseSound   =   CloseBag,
+        PutInSound   =   PutItemInBag,
+		WorldStaticModel = Interceptor_Pouches_Ground,
+    }
+
+}

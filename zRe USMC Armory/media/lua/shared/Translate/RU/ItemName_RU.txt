@@ -1,0 +1,23 @@
+ItemName_RU = {
+/* USMC ARMORY */
+	/* ARMOR */
+    ItemName_Base.Interceptor_Armor = "Бронежилет MARPAT (полный)",
+    ItemName_Base.Interceptor_Armor_s = "Бронежилет MARPAT (пах. защ.)",
+    ItemName_Base.Interceptor_Armor_v = "Бронежилет MARPAT",
+	
+	/* POUNCHES */
+    ItemName_Base.Interceptor_Pouches = "Подсумки тактического жилета",
+    ItemName_Base.Interceptor_Pouches_Straps = "Тактический разгрузочный жилет",
+	
+	/* HELMET */
+    ItemName_Base.Hat_PASGT_Helmet = "Бронешлем PASGT m1",
+    ItemName_Base.Hat_TPASGT_Helmet = "Бронешлем PASGT m2",
+	
+	/* MARPAT */
+    ItemName_Base.Marpat_Jacket_w = "Куртка MARPAT",
+    ItemName_Base.Marpat_Jacket_d = "Куртка MARPAT v2",
+    ItemName_Base.Marpat_Pants_w = "Брюки MARPAT",
+    ItemName_Base.Marpat_Pants_d = "Брюки MARPAT v2",
+    ItemName_Base.Hat_USMC_Cap_w = "Кепка MARPAT",
+    ItemName_Base.Hat_USMC_Cap_d = "Кепка MARPAT v2",
+}

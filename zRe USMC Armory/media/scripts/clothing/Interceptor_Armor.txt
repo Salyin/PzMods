@@ -1,0 +1,62 @@
+module Base
+{
+item Interceptor_Armor
+    {
+        Type = Clothing,
+        DisplayName = Interceptor Body Armor w/ shoulderpads,
+        ClothingItem = Interceptor_Armor,
+        BodyLocation = TorsoExtraVest,
+        Weight	= 2.5,
+	    Icon	= Interceptor_Armor,
+        BloodLocation = Shirt; Neck; Groin,
+        RunSpeedModifier = 0.92,
+        CombatSpeedModifier = 0.95,
+        Insulation = 0.6,
+        WindResistance = 0.45,
+        WaterResistance = 0.4,
+        BiteDefense = 80,
+        ScratchDefense = 90,
+		BulletDefense = 150,
+		WorldStaticModel = Interceptor_Ground
+    }
+	item Interceptor_Armor_s
+    {
+        Type = Clothing,
+        DisplayName = Interceptor Body Armor,
+        ClothingItem = Interceptor_Armor_s,
+        BodyLocation = TorsoExtraVest,
+        Weight	= 2,
+	    Icon	= Interceptor_Armor_s,
+        BloodLocation = ShirtNoSleeves; Neck; Groin,
+        RunSpeedModifier = 0.94,
+        CombatSpeedModifier = 0.95,
+        Insulation = 0.6,
+        WindResistance = 0.45,
+        WaterResistance = 0.4,
+        BiteDefense = 80,
+        ScratchDefense = 90,
+		BulletDefense = 150,
+		WorldStaticModel = Interceptor_s_Ground
+    }
+	item Interceptor_Armor_v
+    {
+        Type = Clothing,
+        DisplayName = Interceptor Armor Vest,
+        ClothingItem = Interceptor_Armor_v,
+        BodyLocation = TorsoExtraVest,
+        Weight	= 1.5,
+	    Icon	= Interceptor_Armor_v,
+        BloodLocation = ShirtNoSleeves; Neck,
+        RunSpeedModifier = 0.96,
+        CombatSpeedModifier = 0.95,
+        Insulation = 0.6,
+        WindResistance = 0.45,
+        WaterResistance = 0.4,
+        BiteDefense = 80,
+        ScratchDefense = 90,
+		BulletDefense = 150,
+		WorldStaticModel = Interceptor_v_Ground
+    }
+
+   
+}

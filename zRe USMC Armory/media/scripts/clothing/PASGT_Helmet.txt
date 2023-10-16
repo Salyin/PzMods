@@ -1,0 +1,44 @@
+module Base
+{
+
+	item Hat_PASGT_Helmet
+	{
+		Type = Clothing,
+		DisplayName = PASGT Helmet,
+		ClothingItem = Hat_PASGT_Helmet,
+		BodyLocation = Hat,
+		Icon = Hat_PASGT_Helmet,
+		CanHaveHoles = false,
+			BloodLocation = Head,
+			BiteDefense = 100,
+			ScratchDefense = 100,
+			BulletDefense = 150,
+		ChanceToFall = 5,
+		Insulation = 0.3,
+		WaterResistance = 1,
+        WindResistance = 0.5,
+		Weight = 1,
+		WorldStaticModel = PASGT_Ground,
+    }
+	
+	item Hat_TPASGT_Helmet
+	{
+		Type = Clothing,
+		DisplayName = AC Helmet,
+		ClothingItem = Hat_TPASGT_Helmet,
+		BodyLocation = Hat,
+		Icon = Hat_TPASGT_Helmet,
+		CanHaveHoles = false,
+			BloodLocation = Head,
+			BiteDefense = 100,
+			ScratchDefense = 100,		
+			BulletDefense = 150,
+		ChanceToFall = 5,
+		Insulation = 0.3,
+		WaterResistance = 1,
+        WindResistance = 0.5,
+        Weight = 1,
+		WorldStaticModel = TPASGT_Ground,
+    }
+
+}

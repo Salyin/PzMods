@@ -1,0 +1,7 @@
+ContextMenu_RU = {
+/* USMC ARMORY */
+	ContextMenu_UseStraps = "С жилетом",
+	ContextMenu_RemoveStraps = "Только подсумки",
+	ContextMenu_Interceptor_Pouches = "Только подсумки",
+	ContextMenu_Interceptor_Pouches_Straps = "С жилетом",
+} 

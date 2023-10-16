@@ -1,0 +1,6 @@
+ContextMenu_EN = {
+	ContextMenu_UseStraps = "Use straps",
+	ContextMenu_RemoveStraps = "Use without straps",
+	ContextMenu_Interceptor_Pouches = "Use without straps",
+	ContextMenu_Interceptor_Pouches_Straps = "Use with straps"
+} 

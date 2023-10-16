@@ -1,0 +1,111 @@
+module Base
+{
+    item Marpat_Jacket_w
+    {
+        Type = Clothing,
+        DisplayName = MARPAT Jacket (w),
+        ClothingItem = Marpat_Jacket_w,
+        BodyLocation = Jacket,
+        BloodLocation = Jumper,
+        Icon = Marpat_Jacket,
+        NeckProtectionModifier = 0.5,
+        BiteDefense = 30,
+        ScratchDefense = 30,
+        Insulation = 0.30,
+        WindResistance = 0.80,
+        WaterResistance = 0.60,
+        Weight = 2,
+		FabricType = Denim,
+		WorldStaticModel = Marpat_Jacket_Ground_w
+    }
+
+    item Marpat_Jacket_d
+    {
+        Type = Clothing,
+        DisplayName = MARPAT Jacket (d),
+        ClothingItem = Marpat_Jacket_d,
+        BodyLocation = Jacket,
+        BloodLocation = Jumper,
+        Icon = Marpat_Jacket,
+        NeckProtectionModifier = 0.5,
+        BiteDefense = 30,
+        ScratchDefense = 30,
+        Insulation = 0.30,
+        WindResistance = 0.80,
+        WaterResistance = 0.60,
+        Weight = 2,
+		FabricType = Denim,
+		WorldStaticModel = Marpat_Jacket_Ground_d
+    }
+
+    item Marpat_Pants_w
+    {
+        Type = Clothing,
+        DisplayName = MARPAT Pants (w),
+        ClothingItem = Marpat_Pants_w,
+        BodyLocation = Pants,
+        BloodLocation = Trousers,
+        Icon = Marpat_Pants,
+        BiteDefense = 30,
+        ScratchDefense = 30,
+        Insulation = 0.45,
+        WindResistance = 0.80,
+        WaterResistance = 0.60,
+		FabricType = Denim,
+		WorldStaticModel = Marpat_Pants_Ground_w
+    }
+
+ item Marpat_Pants_d
+    {
+        Type = Clothing,
+        DisplayName = MARPAT Pants (d),
+        ClothingItem = Marpat_Pants_d,
+        BodyLocation = Pants,
+        BloodLocation = Trousers,
+        Icon = Marpat_Pants,
+        BiteDefense = 30,
+        ScratchDefense = 30,
+        Insulation = 0.45,
+        WindResistance = 0.80,
+        WaterResistance = 0.60,
+		FabricType = Denim,
+		WorldStaticModel = Marpat_Pants_Ground_d
+    }
+
+	item Hat_USMC_Cap_w
+	{
+		Type = Clothing,
+		DisplayName = Marine Cap (w),
+		ClothingItem = Hat_USMC_Cap_w,
+		BodyLocation = Hat,
+		Icon = Hat_USMC_Cap,
+		CanHaveHoles = false,
+		BloodLocation = Head,
+		BiteDefense = 5,
+		ScratchDefense = 10,
+		ChanceToFall = 15,
+		Insulation = 0.45,
+		WaterResistance = 0.40,
+		Weight = 0.2,
+		WorldStaticModel = USMC_Cap_Ground,
+    }
+
+	item Hat_USMC_Cap_d
+	{
+		Type = Clothing,
+		DisplayName = Marine Cap (d),
+		ClothingItem = Hat_USMC_Cap_d,
+		BodyLocation = Hat,
+		Icon = Hat_USMC_Cap,
+		CanHaveHoles = false,
+		BloodLocation = Head,
+		BiteDefense = 5,
+		ScratchDefense = 10,
+		ChanceToFall = 15,
+		Insulation = 0.45,
+		WaterResistance = 0.40,
+		Weight = 0.2,
+		WorldStaticModel = USMC_Cap_Ground,
+    }
+
+}

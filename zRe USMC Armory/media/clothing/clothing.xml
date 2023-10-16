@@ -1,0 +1,78 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<outfitManager>
+
+	<m_MaleOutfits>
+		<m_Name>DRKUSMC1</m_Name>
+		<m_Guid>c08b46bd-03c2-4727-be53-4076f22cdd23</m_Guid>
+		<m_Top>false</m_Top>
+		<m_Pants>false</m_Pants>
+		<m_AllowPantsHue>false</m_AllowPantsHue>
+		<m_AllowTopTint>false</m_AllowTopTint>
+		<m_AllowTShirtDecal>false</m_AllowTShirtDecal>
+		<m_items> <!-- PASGT Helmet -->
+			<itemGUID>6be863b4-560c-4d25-9cec-05954ef80611</itemGUID>
+<probability>0.5</probability>
+		</m_items>
+		<m_items> <!-- Interceptor body armor -->
+		<probability>0.7</probability>
+			<itemGUID>5144fc2e-dd42-4e62-9bbe-c5da68c503b0</itemGUID>
+		</m_items>
+		<m_items> <!-- Marpat Pants -->
+					<itemGUID>92daff4d-76e0-4925-a8f3-034b18fc5149</itemGUID>
+		</m_items>
+		<m_items> <!-- MARPAT Jacket -->
+					<itemGUID>76adf80f-0734-462d-9ffa-72545390f3f6</itemGUID>
+		</m_items>
+		<m_items> <!-- Long Socks -->
+			<itemGUID>fb86bd5f-1931-4b24-a5d7-bd6a43769991</itemGUID>
+		</m_items>	
+		<m_items> <!-- Army Boots -->
+			<itemGUID>227cb2d5-05a5-44ed-872d-ac4ca16e80bc</itemGUID>
+		</m_items>
+		<m_items> <!-- Army green T-Shirt -->
+			<itemGUID>0cc9f034-1d90-4f4c-9b17-e1dcf008b356</itemGUID>
+		</m_items>
+		<m_items> <!-- Interceptor pouches -->
+<probability>0.4</probability>
+			<itemGUID>68056b2b-443c-4f85-a635-36d7cb6ee097</itemGUID>
+		</m_items>
+		
+	</m_MaleOutfits>
+
+
+	<m_MaleOutfits>
+		<m_Name>DRKUSMC2</m_Name>
+		<m_Guid>f44e7253-4ab3-4486-a837-4e06a8b595e2</m_Guid>
+		<m_Top>false</m_Top>
+		<m_Pants>false</m_Pants>
+		<m_AllowPantsHue>false</m_AllowPantsHue>
+		<m_AllowTopTint>false</m_AllowTopTint>
+		<m_AllowTShirtDecal>false</m_AllowTShirtDecal>
+		<m_items> <!-- Marine Cap -->
+			<itemGUID>ed86ac72-1ef6-49d1-acb5-391692589ead</itemGUID>
+<probability>0.5</probability>
+		</m_items>
+				<m_items> <!-- Marpat Pants -->
+					<itemGUID>92daff4d-76e0-4925-a8f3-034b18fc5149</itemGUID>
+		</m_items>
+		<m_items> <!-- MARPAT Jacket -->
+					<itemGUID>76adf80f-0734-462d-9ffa-72545390f3f6</itemGUID>
+		</m_items>
+		<m_items> <!-- Long Socks -->
+			<itemGUID>fb86bd5f-1931-4b24-a5d7-bd6a43769991</itemGUID>
+		</m_items>	
+		<m_items> <!-- Army Boots -->
+			<itemGUID>227cb2d5-05a5-44ed-872d-ac4ca16e80bc</itemGUID>
+		</m_items>
+		<m_items> <!-- Army green T-Shirt -->
+			<itemGUID>0cc9f034-1d90-4f4c-9b17-e1dcf008b356</itemGUID>
+		</m_items>
+		<m_items> <!-- Interceptor pouches straps-->
+<probability>0.4</probability>
+			<itemGUID>7548fd96-079a-4a81-9c97-e954e43c7d98</itemGUID>
+		</m_items>
+		
+	</m_MaleOutfits>
+
+	
+</outfitManager>

@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<clothingItem>
+	<m_MaleModel>skinned\backpacks\m_Interceptor_Pouches</m_MaleModel>
+	<m_FemaleModel>skinned\backpacks\f_Interceptor_Pouches</m_FemaleModel>
+	<m_GUID>68056b2b-443c-4f85-a635-36d7cb6ee097</m_GUID>
+	<m_Static>false</m_Static>
+	<m_AllowRandomTint>false</m_AllowRandomTint>
+	<m_AttachBone></m_AttachBone>
+	<textureChoices>clothes\Interceptor_Pouches</textureChoices>
+</clothingItem>

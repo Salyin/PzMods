@@ -1,0 +1,63 @@
+module Base
+{
+	    model Marpat_Pants_Ground_w
+	{
+		mesh = WorldItems/Marpat_Pants_WorldItem,
+				scale = 1,
+	}
+
+    model Marpat_Pants_Ground_d
+	{
+		mesh = WorldItems/Marpat_Pants_WorldItem,
+				scale = 1,
+	}
+	
+	    model Marpat_Jacket_Ground_w
+	{
+		mesh = WorldItems/Marpat_Jacket_WorldItem,
+				scale = 0.9,
+	}
+
+ 	    model Marpat_Jacket_Ground_d
+	{
+		mesh = WorldItems/Marpat_Jacket_WorldItem,
+				scale = 0.9,
+	}
+
+   model Interceptor_Ground
+	{
+		mesh = WorldItems/Interceptor_WorldItem,
+				scale = 0.9,
+	}
+   model Interceptor_s_Ground
+	{
+		mesh = WorldItems/Interceptor_s_WorldItem,
+				scale = 0.9,
+	}
+   model Interceptor_v_Ground
+	{
+		mesh = WorldItems/Interceptor_v_WorldItem,
+				scale = 0.9,
+	}
+   model Interceptor_Pouches_Ground
+	{
+		mesh = WorldItems/Interceptor_Pouches_WorldItem,
+				scale = 1,
+	}
+model PASGT_Ground
+	{
+		mesh = WorldItems/PASGT_WorldItem,
+				scale = 1,
+	}
+model TPASGT_Ground
+	{
+		mesh = WorldItems/TPASGT_WorldItem,
+				scale = 1,
+	}
+model USMC_Cap_Ground
+	{
+		mesh = WorldItems/USMC_Cap_WorldItem,
+				scale = 1,
+	}
+	
+}

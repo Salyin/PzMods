@@ -1,0 +1,81 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<fileGuidTable>
+
+<!-- **********************************************************
+	VANILA's
+*************************************************************** -->
+	<files>
+		<path>media/clothing/clothingItems/Shoes_ArmyBoots.xml</path>
+		<guid>227cb2d5-05a5-44ed-872d-ac4ca16e80bc</guid>
+	</files>
+<!-- -->
+	<files>
+		<path>media/clothing/clothingItems/Hat_PASGT_Helmet.xml</path>
+		<guid>6be863b4-560c-4d25-9cec-05954ef80611</guid>
+	</files>	
+
+<files>
+		<path>media/clothing/clothingItems/Hat_TPASGT_Helmet.xml</path>
+		<guid>be49637c-1683-439f-baae-2b1ebf77ba8d</guid>
+	</files>
+
+<files>
+		<path>media/clothing/clothingItems/Interceptor_Armor.xml</path>
+		<guid>20e33026-4b64-4cc4-8737-168c1d94a6d0</guid>
+	</files>	
+	
+<files>
+		<path>media/clothing/clothingItems/Interceptor_Armor_s.xml</path>
+		<guid>5144fc2e-dd42-4e62-9bbe-c5da68c503b0</guid>
+	</files>
+
+<files>
+		<path>media/clothing/clothingItems/Interceptor_Armor_v.xml</path>
+		<guid>b44f76fb-8e51-4a36-acc8-6e44311aaf0e</guid>
+	</files>
+
+<files>
+		<path>media/clothing/clothingItems/Marpat_Pants_d.xml</path>
+		<guid>2c3ed030-4aff-4651-9495-8b910a43fe32</guid>
+	</files>
+
+<files>
+		<path>media/clothing/clothingItems/Marpat_Pants_w.xml</path>
+		<guid>92daff4d-76e0-4925-a8f3-034b18fc5149</guid>
+	</files>
+
+
+<files>
+		<path>media/clothing/clothingItems/Marpat_Jacket_d.xml</path>
+		<guid>e8b8073c-f405-416a-8121-6f6a0bc83e29</guid>
+	</files>
+
+
+<files>
+		<path>media/clothing/clothingItems/Marpat_Jacket_w.xml</path>
+		<guid>76adf80f-0734-462d-9ffa-72545390f3f6</guid>
+	</files>
+
+<files>
+		<path>media/clothing/clothingItems/Interceptor_Pouches.xml</path>
+		<guid>68056b2b-443c-4f85-a635-36d7cb6ee097</guid>
+	</files>
+
+<files>
+		<path>media/clothing/clothingItems/Interceptor_Pouches_Straps.xml</path>
+		<guid>7548fd96-079a-4a81-9c97-e954e43c7d98</guid>
+	</files>
+
+
+<files>
+		<path>media/clothing/clothingItems/Hat_USMC_Cap_d.xml</path>
+		<guid>4acb4bcc-d8a9-40bf-af58-73f5c3c05e24</guid>
+	</files>
+
+<files>
+		<path>media/clothing/clothingItems/Hat_USMC_Cap_w.xml</path>
+		<guid>ed86ac72-1ef6-49d1-acb5-391692589ead</guid>
+	</files>
+
+</fileGuidTable>
+
